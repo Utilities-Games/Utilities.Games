@@ -77,6 +77,34 @@
       "url": "manifest.json"
     },
     {
+      "hash": "sha256-KzrE6MUd63dmcGrQgPpsMQbSahyamd\/gRo2vjgoBVQ4=",
+      "url": "Subsites\/LOTR_RiseToWar\/data\/alignmentTypes.json"
+    },
+    {
+      "hash": "sha256-x9bNP8YW1MskvvSpOOYmcZd7r2Z0mnmYDoT2EIvV240=",
+      "url": "Subsites\/LOTR_RiseToWar\/data\/classes.json"
+    },
+    {
+      "hash": "sha256-auVfzgMKVq1LVOlLSaUz9KNPjdMFa8HV7jLL7qJ7NvU=",
+      "url": "Subsites\/LOTR_RiseToWar\/data\/commanders.json"
+    },
+    {
+      "hash": "sha256-EkDKrmzorwjhdwSYoJFbaIuLE\/tbmBtAV5HHOvjiydU=",
+      "url": "Subsites\/LOTR_RiseToWar\/data\/races.json"
+    },
+    {
+      "hash": "sha256-fq0XEjjgIxiSWYz4pv\/h3QhdWcUA\/DN5fZWhGOBlWoI=",
+      "url": "Subsites\/LOTR_RiseToWar\/data\/skills.json"
+    },
+    {
+      "hash": "sha256-mA5A\/PpwUuGT8t9xb1+R4ILv6dNEfswVuLHHbO3n4dQ=",
+      "url": "Subsites\/LOTR_RiseToWar\/images\/favicon.ico"
+    },
+    {
+      "hash": "sha256-J+Rvf6CeuqnkJp+xZ38dx+KIUWM2+nlUdj\/yrjJt1Xg=",
+      "url": "Subsites\/LOTR_RiseToWar\/images\/game_logo.png"
+    },
+    {
       "hash": "sha256-\/mwFhTTF4Kca8PG7G6rxaGqCueWH9XbWEIK1Fm8GbFg=",
       "url": "_framework\/dotnet.timezones.blat"
     },
@@ -169,7 +197,7 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-6q+DUJimPiJYS3iBLeoUNoD+\/ElLtHplrnIHnnMkQp4=",
+      "hash": "sha256-Rj9m51Ig9JupX4Y68JOrV2JsEU\/j3T7D\/+d\/Fmp7jpg=",
       "url": "_framework\/Utilities.Games.dll"
     },
     {
@@ -197,15 +225,19 @@
       "url": "_framework\/System.Linq.dll"
     },
     {
-      "hash": "sha256-uVE578hHS08BHcXcdjD0JypJFZD5xG0D+mUjtwxFTcg=",
+      "hash": "sha256-nzlY3Omfnfw230jQSt\/UwRsI8CKfVkUYNsS9630zmmM=",
       "url": "_framework\/System.Memory.dll"
     },
     {
-      "hash": "sha256-wI7kTJStOXDu5Z2xQGCVDWQDa2hM8cRDWfpRM6iusDY=",
+      "hash": "sha256-TvTiib3ZTDCaFqzF9JvsljmWOe+k8Dd4hOlBxmoL6Uo=",
+      "url": "_framework\/System.Net.Http.Json.dll"
+    },
+    {
+      "hash": "sha256-RCpBMopC19kVIWR4MaWw5d3MMufQWza8RudZaNdfr+U=",
       "url": "_framework\/System.Net.Http.dll"
     },
     {
-      "hash": "sha256-DhjCI47PhEV6+kU\/O+TwqlDiUOg0xI+0Cj67qRKbVTI=",
+      "hash": "sha256-SWvB4ZUAzi30rSsj4acOTBXFklp7nNflObB9hkrEM94=",
       "url": "_framework\/System.Net.Primitives.dll"
     },
     {
@@ -213,15 +245,15 @@
       "url": "_framework\/System.ObjectModel.dll"
     },
     {
-      "hash": "sha256-kXyUfpvIPK3b9cTl5pyabU5nCo43OdGBkGvel8XmW28=",
+      "hash": "sha256-gN4S5nboOM2AmzdjCvD4FvrF1LsLagDzKLc5lEj37ME=",
       "url": "_framework\/System.Private.Runtime.InteropServices.JavaScript.dll"
     },
     {
-      "hash": "sha256-iQnDK0zFRsPbOibq92rtDS2IqTYK1Qzxtztx5089W6M=",
+      "hash": "sha256-rXdlW25VNaLywE6yB21PSnY5dK3DzsZ78\/t\/Z93jvjU=",
       "url": "_framework\/System.Private.Uri.dll"
     },
     {
-      "hash": "sha256-yx10I7BtO+qeow1+0CYXjZ26weJG4HWCfih4nWb9ek0=",
+      "hash": "sha256-rLsLDvKWR60giORbU\/TrPZn6tGx9aMTHHN4Ce+LwSoY=",
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
@@ -233,15 +265,15 @@
       "url": "_framework\/System.Text.Encodings.Web.dll"
     },
     {
-      "hash": "sha256-EdvFWkvl0P6EufNnPiLnydNLQYO2SkPb8sC0IMIqpro=",
+      "hash": "sha256-H0IjRzNLCuuoggMdJp9r844PmXNOO\/qIbNW2V\/L4wNA=",
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-K2BukKVi1ga0e5FcFreuxT1bOcXxv\/vr\/PWC6jKiZgs=",
+      "hash": "sha256-cOhyIQpbGg+F8+YlOR7i\/gCnh7EeKQpVsmkdnUBuw9U=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-x+EtBVYho0F4rmklwzV2KGdIaYGDkc674pJIJtMN2Gs=",
+      "hash": "sha256-KFbGxWCrdeXwhTMDE+EX+Tr+OVGsMyOweI\/WppFEfNQ=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -249,5 +281,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "leYigp44"
+  "version": "Pjqbc\/8U"
 };
