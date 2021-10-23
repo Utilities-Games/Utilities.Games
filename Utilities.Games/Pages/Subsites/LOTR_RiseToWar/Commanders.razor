@@ -1,0 +1,29 @@
+﻿@page "/lotr_risetowar/commanders"
+@inject HttpClient Http
+
+<h3>Commanders</h3>
+
+@if (commanders == null) {
+    <p>Loading...</p>
+} else {
+<ul>
+    @foreach (Models.Commander commander in commanders)
+    {
+    <li>
+        <a href="./lotr_risetowar/commanders/@(commander.Name)">@(commander.Name)</a>
+    </li>
+    }
+</ul>
+}
+
+@code {
+    private Models.Commander[] commanders;
+
+    protected override async Task OnInitializedAsync(){
+        var options = new System.Text.Json.JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        commanders = await Http.GetFromJsonAsync<Models.Commander[]>("Subsites/LOTR_RiseToWar/data/commanders.json", options);
+    }
+}

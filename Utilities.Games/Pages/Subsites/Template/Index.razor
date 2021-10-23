@@ -5,10 +5,44 @@
 <p>Task list:</p>
 <ul>
     <li>
-        <input type="checkbox" id="folder" />
-        <label for="folder">Create folder in <code>/Pages/Subsites/{Sub-Site Name}</code>.</label>
+        Create folders:
+        <ul>
+            <li>
+                <input type="checkbox" id="folder" />
+                <label for="folder"><code>/wwwroot/Subsites/{Sub-Site Name}</code></label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="folder" />
+                        <label for="folder"><code>/wwwroot/Subsites/{Sub-Site Name}/css</code></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="folder" />
+                        <label for="folder"><code>/wwwroot/Subsites/{Sub-Site Name}/data</code></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="folder" />
+                        <label for="folder"><code>/wwwroot/Subsites/{Sub-Site Name}/images</code></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="folder" />
+                        <label for="folder"><code>/wwwroot/Subsites/{Sub-Site Name}/js</code></label>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" id="folder" />
+                <label for="folder"><code>/Pages/Subsites/{Sub-Site Name}</code></label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="folder" />
+                        <label for="folder"><code>/Pages/Subsites/{Sub-Site Name}/Models</code></label>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </li>
 </ul>
+<p>Keep your projects self-contained within the respective sub-site folders you create. No changes should be made directly to the infrastructure for the site, but you may utilize any libraries available in the top-level system.</p>
 @code {
 
 }

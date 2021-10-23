@@ -1,0 +1,80 @@
+﻿@page "/lotr_risetowar/commanders/{name}"
+@inject HttpClient Http
+
+@if (commander == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <h3>@(commander.Name)</h3>
+
+    <h5>Classes</h5>
+    @if (commander.Classes?.Length > 0)
+    {
+        <ul>
+            @foreach (var @class in commander.Classes)
+            {
+                <li>
+                    <a href="./lotr_risetowar/classes/@(@class)">@(@class)</a>
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No classes</p>
+    }
+
+    <h5>Stats</h5>
+    @if (commander.Stats != null && commander.Stats?.Might != null && commander.Stats?.Focus != null && commander.Stats?.Speed != null)
+    {
+        <ul>
+            <li>
+                <strong>Might</strong>: @(commander.Stats?.Might?.Base) + @(commander.Stats?.Might?.Rate)/lvl
+            </li>
+            <li>
+                <strong>Focus</strong>: @(commander.Stats?.Focus?.Base) + @(commander.Stats?.Focus?.Rate)/lvl
+            </li>
+            <li>
+                <strong>Speed</strong>: @(commander.Stats?.Speed?.Base) + @(commander.Stats?.Speed?.Rate)/lvl
+            </li>
+        </ul>
+    }
+    else
+    {
+        <p>No base stats</p>
+    }
+
+    <h5>Skills</h5>
+    @if (commander.Skills?.Length > 0)
+    {
+        <ul>
+            @foreach (var skill in commander.Skills)
+            {
+                <li>
+                    <a href="./lotr_risetowar/skills/@(skill.Name)">@(skill.Name)</a>
+                </li>
+            }
+        </ul>
+    } else {
+        <p>No skills</p>
+    }
+}
+
+@code {
+    [Parameter]
+    public string Name { get; set; }
+
+    private Models.Commander commander;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var options = new System.Text.Json.JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        commander = (await Http.GetFromJsonAsync<Models.Commander[]>("Subsites/LOTR_RiseToWar/data/commanders.json", options))
+            .FirstOrDefault(o => o.Name == Name);
+    }
+}

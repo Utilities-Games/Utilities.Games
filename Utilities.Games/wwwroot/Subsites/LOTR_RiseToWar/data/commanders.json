@@ -1,0 +1,424 @@
+[
+    {
+        "name": "Faramir",
+        "alignment": "Good",
+        "race": "Men"
+    },
+    {
+        "name": "Eowyn",
+        "alignment": "Good",
+        "race": "Men"
+    },
+    {
+        "name": "Haldir",
+        "alignment": "Good",
+        "race": "Men"
+    },
+    {
+        "name": "Dwalin",
+        "alignment": "Good",
+        "race": "Dwarves",
+        "classes": [
+            "Warrior"
+        ],
+        "skills": [
+            {
+                "name": "Experienced Warrior",
+                "tier": 1
+            },
+            {
+                "name": "Musician",
+                "tier": 1
+            },
+            {
+                "name": "Durin's Blood",
+                "tier": 2
+            },
+            {
+                "name": "Warrior of Lonely Mountain",
+                "tier": 3
+            }
+        ],
+        "stats": {
+            "might": {
+                "base": 91,
+                "rate": 2
+            },
+            "focus": {
+                "base": 49,
+                "rate": 0.71
+            },
+            "speed": {
+                "base": 58,
+                "rate": 1.27
+            }
+        }
+    },
+    {
+        "name": "Ori",
+        "alignment": "Good",
+        "race": "Dwarves",
+        "classes": [
+            "Balanced",
+            "Tip Master"
+        ],
+        "skills": [
+            {
+                "name": "Clerk",
+                "tier": 1
+            },
+            {
+                "name": "Musician",
+                "tier": 1
+            },
+            {
+                "name": "Durin's Blood",
+                "tier": 2
+            },
+            {
+                "name": "Warrior of Lonely Mountain",
+                "tier": 3
+            }
+        ],
+        "stats": {
+            "might": {
+                "base": 82,
+                "rate": 1.49
+            },
+            "focus": {
+                "base": 79,
+                "rate": 2.03
+            },
+            "speed": {
+                "base": 55,
+                "rate": 0.9
+            }
+        }
+    },
+    {
+        "name": "Hirgon",
+        "alignment": "Good",
+        "race": "Men"
+    },
+    {
+        "name": "Gimli",
+        "alignment": "Good",
+        "race": "Dwarves",
+        "classes": [
+            "Warrior"
+        ],
+        "skills": [
+            {
+                "name": "Experienced Warrior",
+                "tier": 1
+            },
+            {
+                "name": "Lockbearer",
+                "tier": 1
+            },
+            {
+                "name": "Durin's Blood",
+                "tier": 2
+            },
+            {
+                "name": "Lord of the Glittering Caves",
+                "tier": 3
+            }
+        ],
+        "stats": {
+            "might": {
+                "base": 100,
+                "rate": 2.38
+            },
+            "focus": {
+                "base": 54,
+                "rate": 0.78
+            },
+            "speed": {
+                "base": 35,
+                "rate": 0.7
+            }
+        }
+    },
+    {
+        "name": "Aragorn",
+        "alignment": "Good",
+        "race": "Men"
+    },
+    {
+        "name": "Merry and Pippin",
+        "alignment": "Good",
+        "race": "Hobbits"
+    },
+    {
+        "name": "Boromir",
+        "alignment": "Good",
+        "race": "Men"
+    },
+    {
+        "name": "Legolas",
+        "alignment": "Good",
+        "race": "Elves"
+    },
+    {
+        "name": "Denethor II",
+        "alignment": "Good",
+        "race": "Men"
+    },
+    {
+        "name": "Eomer",
+        "alignment": "Good",
+        "race": "Men"
+    },
+    {
+        "name": "Frodo and Sam",
+        "alignment": "Good",
+        "race": "Hobbits"
+    },
+    {
+        "name": "Balin",
+        "alignment": "Good",
+        "race": "Dwarves",
+        "classes": [
+            "Leader",
+            "Control"
+        ],
+        "skills": [
+            {
+                "name": "Revivalist",
+                "tier": 1
+            },
+            {
+                "name": "Lord of Moria",
+                "tier": 1
+            },
+            {
+                "name": "Durin's Blood",
+                "tier": 2
+            },
+            {
+                "name": "Warrior of Lonely Mountain",
+                "tier": 3
+            }
+        ],
+        "stats": {
+            "might": {
+                "base": 99,
+                "rate": 1.98
+            },
+            "focus": {
+                "base": 89,
+                "rate": 1.78
+            },
+            "speed": {
+                "base": 62,
+                "rate": 0.9
+            }
+        }
+    },
+    {
+        "name": "Arwen",
+        "alignment": "Good",
+        "race": "Elves"
+    },
+    {
+        "name": "Elrond",
+        "alignment": "Good",
+        "race": "Elves"
+    },
+    {
+        "name": "Theoden",
+        "alignment": "Good",
+        "race": "Men"
+    },
+    {
+        "name": "Gandalf the Grey",
+        "alignment": "Good",
+        "race": "Maiar"
+    },
+    {
+        "name": "Gandalf the White",
+        "alignment": "Good",
+        "race": "Maiar"
+    },
+    {
+        "name": "Dain Ironfoot",
+        "alignment": "Good",
+        "race": "Dwarves",
+        "classes": [
+            "Balanced",
+            "Control"
+        ],
+        "skills": [
+            {
+                "name": "Ironfoot",
+                "tier": 1
+            },
+            {
+                "name": "Lord of the Iron Hills",
+                "tier": 1
+            },
+            {
+                "name": "Durin's Blood",
+                "tier": 2
+            },
+            {
+                "name": "King Under the Mountain",
+                "tier": 3
+            }
+        ],
+        "stats": {
+            "might": {
+                "base": 105,
+                "rate": 2.7
+            },
+            "focus": {
+                "base": 45,
+                "rate": 0.57
+            },
+            "speed": {
+                "base": 37,
+                "rate": 0.74
+            }
+        }
+    },
+    {
+        "name": "Galadriel",
+        "alignment": "Good",
+        "race": "Elves"
+    },
+    {
+        "name": "Thranduil",
+        "alignment": "Good",
+        "race": "Elves"
+    },
+    {
+        "name": "Gil-galad",
+        "alignment": "Good",
+        "race": "Elves"
+    },
+    {
+        "name": "Gorbag",
+        "alignment": "Evil",
+        "race": "Orcs"
+    },
+    {
+        "name": "Khaldoon",
+        "alignment": "Evil",
+        "race": "Evil Men"
+    },
+    {
+        "name": "Agzok",
+        "alignment": "Evil",
+        "race": "Evil Men"
+    },
+    {
+        "name": "Sharku",
+        "alignment": "Evil",
+        "race": "Orcs"
+    },
+    {
+        "name": "Grishnakh",
+        "alignment": "Evil",
+        "race": "Orcs"
+    },
+    {
+        "name": "Ugthak",
+        "alignment": "Evil",
+        "race": "Uruk-hai"
+    },
+    {
+        "name": "Maltok",
+        "alignment": "Evil"
+    },
+    {
+        "name": "Khamul",
+        "alignment": "Evil",
+        "race": "Undead"
+    },
+    {
+        "name": "Yusraa",
+        "alignment": "Evil",
+        "race": "Evil Men"
+    },
+    {
+        "name": "Grima Wormtongue",
+        "alignment": "Evil",
+        "race": "Men"
+    },
+    {
+        "name": "Azru-Khor",
+        "alignment": "Evil",
+        "race": "Evil Men"
+    },
+    {
+        "name": "Black Serpent",
+        "alignment": "Evil",
+        "race": "Evil Men"
+    },
+    {
+        "name": "Kirun",
+        "alignment": "Evil",
+        "race": "Evil Men"
+    },
+    {
+        "name": "Mouth of Sauron",
+        "alignment": "Evil",
+        "race": "Evil Men"
+    },
+    {
+        "name": "Radagast the Brown",
+        "alignment": "Good",
+        "race": "Maiar"
+    },
+    {
+        "name": "Saruman",
+        "alignment": "Evil",
+        "race": "Maiar"
+    },
+    {
+        "name": "Sauron",
+        "alignment": "Evil",
+        "race": "Maiar"
+    },
+    {
+        "name": "Gothmog",
+        "alignment": "Evil",
+        "race": "Orcs"
+    },
+    {
+        "name": "King of the Dead",
+        "alignment": "Evil",
+        "race": "Undead"
+    },
+    {
+        "name": "Witch-king",
+        "alignment": "Evil",
+        "race": "Undead"
+    },
+    {
+        "name": "The Undying",
+        "alignment": "Evil",
+        "race": "Undead"
+    },
+    {
+        "name": "The Shadow",
+        "alignment": "Evil",
+        "race": "Undead"
+    },
+    {
+        "name": "Lurtz",
+        "alignment": "Evil",
+        "race": "Uruk-hai"
+    },
+    {
+        "name": "Ugluk",
+        "alignment": "Evil",
+        "race": "Uruk-hai"
+    },
+    {
+        "name": "Shagrat",
+        "alignment": "Evil",
+        "race": "Uruk-hai"
+    }
+]

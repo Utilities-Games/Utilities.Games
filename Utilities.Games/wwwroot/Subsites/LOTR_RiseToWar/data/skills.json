@@ -1,0 +1,267 @@
+[
+    {
+        "name": "Experienced Warrior",
+        "subSkills": [
+            {
+                "name": "Hunt Down",
+                "round": 2
+            },
+            {
+                "name": "Collaboration",
+                "round": 2
+            }
+        ],
+        "levels": [
+            {
+                "level": 15,
+                "effects": [
+                    {
+                        "targetType": "Normal Attack Damage",
+                        "targetScope": "Commander",
+                        "amount": 60,
+                        "units": "percent"
+                    }
+                ]
+            }
+        ],
+        "maxLevelEffect": {
+            "targetType": "Damage against Melee units",
+            "targetScope": "Self",
+            "amount": 10
+        }
+    },
+    {
+        "name": "Hunt Down",
+        "subSkills": []
+    },
+    {
+        "name": "Collaboration",
+        "subSkills": []
+    },
+    {
+        "name": "Musician",
+        "subSkills": [
+            {
+                "name": "Relief",
+                "round": 2
+            },
+            {
+                "name": "Level-headed",
+                "round": 2
+            }
+        ],
+        "levels": [
+            {
+                "level": 15,
+                "effects": [
+                    {
+                        "targetType": "Speed",
+                        "targetScope": "Army",
+                        "amount": 15,
+                        "units": "percent"
+                    },
+                    {
+                        "targetType": "Defence",
+                        "targetScope": "Army",
+                        "amount": 15,
+                        "units": "percent"
+                    }
+                ]
+            }
+        ],
+        "maxLevelEffect": {
+            "targetType": "Attack",
+            "targetScope": "Army",
+            "amount": 3
+        }
+    },
+    {
+        "name": "Relief",
+        "subSkills": [],
+        "levels": [
+            {
+                "level": 7,
+                "effects": [
+                    {
+                        "targetType": "Recover HP",
+                        "targetScope": "Allied Unit with the Highest Defence",
+                        "amount": 228,
+                        "units": "percent"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Level-headed",
+        "subSkills": [],
+        "levels": [
+            {
+                "level": 7,
+                "effects": [
+                    {
+                        "targetType": "Removes one random debuff",
+                        "targetScope": "Allied Units"
+                    },
+                    {
+                        "targetType": "Recovers HP",
+                        "targetScope": "Allied Units",
+                        "amount": 120,
+                        "units": "percent"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Durin's Blood",
+        "subSkills": [
+            {
+                "name": "Whirlwind"
+            },
+            {
+                "name": "All-In"
+            }
+        ]
+    },
+    {
+        "name": "Whirlwind",
+        "subSkills": []
+    },
+    {
+        "name": "All-In",
+        "subSkills": []
+    },
+    {
+        "name": "Warrior of Lonely Mountain",
+        "subSkills": [
+            {
+                "name": "Longbeard"
+            },
+            {
+                "name": "Giant Slayer"
+            }
+        ]
+    },
+    {
+        "name": "Lockbearer",
+        "subSkills": [
+            {
+                "name": "Friendly Relations"
+            },
+            {
+                "name": "Protect Elves"
+            }
+        ]
+    },
+    {
+        "name": "Friendly Relations",
+        "subSkills": []
+    },
+    {
+        "name": "Protect Elves",
+        "subSkills": []
+    },
+    {
+        "name": "Lord of the Glittering Caves",
+        "subSkills": [
+            {
+                "name": "Break Defences"
+            },
+            {
+                "name": "Open Wound"
+            }
+        ]
+    },
+    {
+        "name": "Break Defences",
+        "subSkills": []
+    },
+    {
+        "name": "Open Wound",
+        "subSkills": []
+    },
+    {
+        "name": "Revivalist",
+        "subSkills": [
+            {
+                "name": "Frightened"
+            },
+            {
+                "name": "Inspiration"
+            }
+        ]
+    },
+    {
+        "name": "Frightened",
+        "subSkills": []
+    },
+    {
+        "name": "Inspiration",
+        "subSkills": []
+    },
+    {
+        "name": "Lord of Moria",
+        "subSkills": [
+            {
+                "name": "Dwarven Leader"
+            },
+            {
+                "name": "Open Wound"
+            }
+        ]
+    },
+    {
+        "name": "Dwarven Leader",
+        "subSkills": []
+    },
+    {
+        "name": "Open Wound",
+        "subSkills": []
+    },
+    {
+        "name": "Ironfoot",
+        "subSkills": [
+            {
+                "name": "Open Wound"
+            },
+            {
+                "name": "Vengeance"
+            }
+        ]
+    },
+    {
+        "name": "Vengeance",
+        "subSkills": []
+    },
+    {
+        "name": "Lord of the Iron Hills",
+        "subSkills": [
+            {
+                "name": "Fortify"
+            },
+            {
+                "name": "Dwarven Leader"
+            }
+        ]
+    },
+    {
+        "name": "Fortify",
+        "subSkills": []
+    },
+    {
+        "name": "King Under the Mountain",
+        "subSkills": [
+            {
+                "name": "Longbeard"
+            },
+            {
+                "name": "Detect Weakness"
+            }
+        ]
+    },
+    {
+        "name": "Detect Weakness",
+        "subSkills": []
+    }
+]
