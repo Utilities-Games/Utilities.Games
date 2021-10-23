@@ -1,10 +1,11 @@
 {
   "name": "Utilities.Games",
-  "short_name": "Utilities.Games",
+  "short_name": "DotGames",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#03173d",
+  "orientation": "portrait",
+  "background_color": "#222222",
+  "theme_color": "#A45ACD",
   "icons": [
     {
       "src": "icon-512.png",
