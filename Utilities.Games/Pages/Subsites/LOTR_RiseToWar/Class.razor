@@ -1,0 +1,40 @@
+﻿@page "/lotr_risetowar/classes/{name}"
+@inject HttpClient Http
+
+@if (commanderClass == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <h3>@(commanderClass.Name)</h3>
+    
+    <h5>Effects</h5>
+    @if (commanderClass.Effects?.Length > 0) {
+        <ul>
+        @foreach (var effect in commanderClass.Effects)
+        {
+            <li>[@(effect.TargetScope)] @(effect.TargetType) @(effect.Amount != null ? (effect.Amount > 0 ? $"+{effect.Amount}" : $"-{effect.Amount}") + effect.Units?.ToString() : "")</li>
+        }
+        </ul>
+     } else {
+     <p>No effects</p>
+     }
+}
+
+@code {
+    [Parameter]
+    public string Name { get; set; }
+
+    private Models.CommanderClass commanderClass;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var options = new System.Text.Json.JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        commanderClass = (await Http.GetFromJsonAsync<Models.CommanderClass[]>("Subsites/LOTR_RiseToWar/data/classes.json", options))
+            .FirstOrDefault(o => o.Name == Name);
+    }
+}

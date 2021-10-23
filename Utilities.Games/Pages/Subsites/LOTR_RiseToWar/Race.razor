@@ -1,0 +1,29 @@
+﻿@page "/lotr_risetowar/races/{name}"
+@inject HttpClient Http
+
+@if (race == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <h3>@(race.Name)</h3>
+
+}
+
+@code {
+    [Parameter]
+    public string Name { get; set; }
+
+    private Models.Race race;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var options = new System.Text.Json.JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        race = (await Http.GetFromJsonAsync<Models.Race[]>("Subsites/LOTR_RiseToWar/data/races.json", options))
+            .FirstOrDefault(o => o.Name == Name);
+    }
+}

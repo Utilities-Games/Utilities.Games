@@ -1,0 +1,33 @@
+﻿@page "/lotr_risetowar/classes"
+@inject HttpClient Http
+
+<h3>Classes</h3>
+
+@if (classes == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <ul>
+        @foreach (Models.CommanderClass @class in classes)
+        {
+            <li>
+                <a href="./lotr_risetowar/classes/@(@class.Name)">@(@class.Name)</a>
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private Models.CommanderClass[] classes;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var options = new System.Text.Json.JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        classes = await Http.GetFromJsonAsync<Models.CommanderClass[]>("Subsites/LOTR_RiseToWar/data/classes.json", options);
+    }
+}

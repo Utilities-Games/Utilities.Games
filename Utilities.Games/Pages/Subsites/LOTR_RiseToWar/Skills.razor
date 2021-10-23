@@ -1,0 +1,33 @@
+﻿@page "/lotr_risetowar/skills"
+@inject HttpClient Http
+
+<h3>Skills</h3>
+
+@if (skills == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <ul>
+        @foreach (Models.Skill skill in skills)
+        {
+            <li>
+                <a href="./lotr_risetowar/skills/@(skill.Name)">@(skill.Name)</a>
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private Models.Skill[] skills;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var options = new System.Text.Json.JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        skills = await Http.GetFromJsonAsync<Models.Skill[]>("Subsites/LOTR_RiseToWar/data/skills.json", options);
+    }
+}
