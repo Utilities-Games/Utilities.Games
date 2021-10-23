@@ -53,19 +53,27 @@
       "url": "favicon.ico"
     },
     {
-      "hash": "sha256-IpHFcQvs03lh6W54zoeJRG1jW+VnGmwymzxLoXtKX7Y=",
+      "hash": "sha256-chq+7Jf+\/ACjb3fQbLKasACX\/QmjJtGR0pdJN475u3Q=",
+      "url": "icon-48.png"
+    },
+    {
+      "hash": "sha256-AuKeaqO0\/ngfCoepcIy1VkWSVc7Lriol86yn4COpCWU=",
       "url": "icon-512.png"
+    },
+    {
+      "hash": "sha256-r0+eOlx11xiPXnlFI9FqYg9mUWExKqR0w7Yt6dXWGNw=",
+      "url": "icon-96.png"
     },
     {
       "hash": "sha256-cazm\/imwjXMeXV9kFRRqDMCjhYokBxai\/p86ikc1IZs=",
       "url": "idb.js"
     },
     {
-      "hash": "sha256-9wDYa2C2NNrphKzlJaIcKrhMOFYik\/uu\/TEjw2Ug4Oo=",
+      "hash": "sha256-yFMFSPeMFrrC3Xy0n8+7NjpNvHiPSdA6W8pwSbxjk7g=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-sNI2agz3dc\/552seuw4lWcMuGbTrTNA5AapFLWvFJGY=",
+      "hash": "sha256-vQThwC1AmKeptWUjIHnntpfY9\/oRLoGzku3g7R\/nnx4=",
       "url": "manifest.json"
     },
     {
@@ -161,7 +169,7 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-b2gZtyNA+369IhoIk\/JNa6iy92z5H0XVG1Ro91RNjuQ=",
+      "hash": "sha256-6q+DUJimPiJYS3iBLeoUNoD+\/ElLtHplrnIHnnMkQp4=",
       "url": "_framework\/Utilities.Games.dll"
     },
     {
@@ -233,7 +241,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-C14qHm50dFBcHYq3oiAfWaESidD1QPED3CbxFVQ3Fj0=",
+      "hash": "sha256-x+EtBVYho0F4rmklwzV2KGdIaYGDkc674pJIJtMN2Gs=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -241,5 +249,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "5HpafsVr"
+  "version": "leYigp44"
 };
