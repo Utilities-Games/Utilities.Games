@@ -2,17 +2,89 @@
     {
         "name": "Faramir",
         "alignment": "Good",
-        "race": "Men"
+        "race": "Men",
+        "classes": [
+            "Warrior",
+            "Tip Master"
+        ],
+        "skills": [
+            {
+                "name": "Rangers Ithilien",
+                "tier": 1
+            },
+            {
+                "name": "Last Steward",
+                "tier": 1
+            },
+            {
+                "name": "Guide",
+                "tier": 2
+            },
+            {
+                "name": "Heir",
+                "tier": 3
+            }
+        ],
+        "stats": {
+            "might": {
+                "base": 76,
+                "rate": 1.52
+            },
+            "focus": {
+                "base": 95,
+                "rate": 1.9
+            },
+            "speed": {
+                "base": 73,
+                "rate": 1.46
+            }
+        }
     },
     {
         "name": "Eowyn",
         "alignment": "Good",
-        "race": "Men"
+        "race": "Men",
+        "classes": [
+            "Balanced"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 80,
+                "rate": 1.75
+            },
+            "focus": {
+                "base": 71,
+                "rate": 1.03
+            },
+            "speed": {
+                "base": 107,
+                "rate": 1.54
+            }
+        }
     },
     {
         "name": "Haldir",
         "alignment": "Good",
-        "race": "Men"
+        "race": "Elves",
+        "classes": [
+            "Balanced"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 89,
+                "rate": 1.78
+            },
+            "focus": {
+                "base": 65,
+                "rate": 1.06
+            },
+            "speed": {
+                "base": 77,
+                "rate": 1.26
+            }
+        }
     },
     {
         "name": "Dwalin",
@@ -98,7 +170,26 @@
     {
         "name": "Hirgon",
         "alignment": "Good",
-        "race": "Men"
+        "race": "Men",
+        "classes": [
+            "Warrior",
+            "Tip Master"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 81,
+                "rate": 1.32
+            },
+            "focus": {
+                "base": 77,
+                "rate": 1.26
+            },
+            "speed": {
+                "base": 100,
+                "rate": 2.19
+            }
+        }
     },
     {
         "name": "Gimli",
@@ -141,39 +232,170 @@
         }
     },
     {
-        "name": "Aragorn",
+        "name": "Aragorn II",
         "alignment": "Good",
-        "race": "Men"
+        "race": "Men",
+        "classes": [
+            "Balanced"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 96,
+                "rate": 1
+            },
+            "focus": {
+                "base": 70,
+                "rate": 1.01
+            },
+            "speed": {
+                "base": 89,
+                "speed": 1.62
+            }
+        }
     },
     {
         "name": "Merry and Pippin",
         "alignment": "Good",
-        "race": "Hobbits"
+        "race": "Hobbits",
+        "classes": [
+            "Support",
+            "Tip Master"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 32,
+                "rate": 0.58
+            },
+            "focus": {
+                "base": 85,
+                "rate": 1.55
+            },
+            "speed": {
+                "base": 85,
+                "rate": 1.39
+            }
+        }
     },
     {
         "name": "Boromir",
         "alignment": "Good",
-        "race": "Men"
+        "race": "Men",
+        "classes": [
+            "Leader",
+            "Special"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 93,
+                "rate": 2.04
+            },
+            "focus": {
+                "base": 58,
+                "rate": 0.95
+            },
+            "speed": {
+                "base": 65,
+                "rate": 1.06
+            }
+        }
     },
     {
         "name": "Legolas",
         "alignment": "Good",
-        "race": "Elves"
+        "race": "Elves",
+        "classes": [
+            "Warrior",
+            "Special"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 90,
+                "rate": 1.8
+            },
+            "focus": {
+                "base": 77,
+                "rate": 1.54
+            },
+            "speed": {
+                "base": 82,
+                "rate": 1.64
+            }
+        }
     },
     {
         "name": "Denethor II",
         "alignment": "Good",
-        "race": "Men"
+        "race": "Men",
+        "classes": [
+            "Support",
+            "Tip Master"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 21,
+                "rate": 0.27
+            },
+            "focus": {
+                "base": 95,
+                "rate": 2.08
+            },
+            "speed": {
+                "base": 52,
+                "rate": 0.75
+            }
+        }
     },
     {
         "name": "Eomer",
         "alignment": "Good",
-        "race": "Men"
+        "race": "Men",
+        "classes": [
+            "Balanced"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 95,
+                "rate": 1.9
+            },
+            "focus": {
+                "base": 68,
+                "rate": 0.85
+            },
+            "speed": {
+                "base": 108,
+                "rate": 2.37
+            }
+        }
     },
     {
         "name": "Frodo and Sam",
         "alignment": "Good",
-        "race": "Hobbits"
+        "race": "Hobbits",
+        "classes": [
+            "Support",
+            "Tip Master"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 32,
+                "rate": 0.4
+            },
+            "focus": {
+                "base": 85,
+                "rate": 2.02
+            },
+            "speed": {
+                "base": 66,
+                "rate": 1.08
+            }
+        }
     },
     {
         "name": "Balin",
@@ -219,27 +441,121 @@
     {
         "name": "Arwen",
         "alignment": "Good",
-        "race": "Elves"
+        "race": "Elves",
+        "classes": [
+            "Support",
+            "Heal"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 48,
+                "rate": 0.6
+            },
+            "focus": {
+                "base": 91,
+                "rate": 1.82
+            },
+            "speed": {
+                "base": 92,
+                "rate": 1.5
+            }
+        }
     },
     {
         "name": "Elrond",
         "alignment": "Good",
-        "race": "Elves"
+        "race": "Elves",
+        "classes": [
+            "Support",
+            "Heal"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 94,
+                "rate": 1.88
+            },
+            "focus": {
+                "base": 99,
+                "rate": 1.98
+            },
+            "speed": {
+                "base": 85,
+                "rate": 1.23
+            }
+        }
     },
     {
         "name": "Theoden",
         "alignment": "Good",
-        "race": "Men"
+        "race": "Men",
+        "classes": [
+            "Leader"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 88,
+                "rate": 1.43
+            },
+            "focus": {
+                "base": 83,
+                "rate": 1.66
+            },
+            "speed": {
+                "base": 103,
+                "rate": 2.06
+            }
+        }
     },
     {
         "name": "Gandalf the Grey",
         "alignment": "Good",
-        "race": "Maiar"
+        "race": "Maiar",
+        "classes": [
+            "Support",
+            "Special"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 80,
+                "rate": 1
+            },
+            "focus": {
+                "base": 101,
+                "rate": 2.4
+            },
+            "speed": {
+                "base": 45,
+                "rate": 0.82
+            }
+        }
     },
     {
         "name": "Gandalf the White",
         "alignment": "Good",
-        "race": "Maiar"
+        "race": "Maiar",
+        "classes": [
+            "Strategist",
+            "Control"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 80,
+                "rate": 1.15
+            },
+            "focus": {
+                "base": 109,
+                "rate": 2.8
+            },
+            "speed": {
+                "base": 81,
+                "rate": 1.32
+            }
+        }
     },
     {
         "name": "Dain Ironfoot",
@@ -285,101 +601,473 @@
     {
         "name": "Galadriel",
         "alignment": "Good",
-        "race": "Elves"
+        "race": "Elves",
+        "classes": [
+            "Strategist",
+            "Heal"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 55,
+                "rate": 0.69
+            },
+            "focus": {
+                "base": 113,
+                "rate": 3.11
+            },
+            "speed": {
+                "base": 35,
+                "rate": 0.84
+            }
+        }
     },
     {
         "name": "Thranduil",
         "alignment": "Good",
-        "race": "Elves"
+        "race": "Elves",
+        "classes": [
+            "Leader",
+            "Special"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 92,
+                "rate": 1.84
+            },
+            "focus": {
+                "base": 81,
+                "rate": 1.32
+            },
+            "speed": {
+                "base": 88,
+                "rate": 1.76
+            }
+        }
     },
     {
         "name": "Gil-galad",
         "alignment": "Good",
-        "race": "Elves"
+        "race": "Elves",
+        "classes": [
+            "Leader",
+            "Special"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 95,
+                "rate": 1.9
+            },
+            "focus": {
+                "base": 92,
+                "rate": 2.02
+            },
+            "speed": {
+                "base": 75,
+                "rate": 1.08
+            }
+        }
     },
     {
         "name": "Gorbag",
         "alignment": "Evil",
-        "race": "Orcs"
+        "race": "Orcs",
+        "classes": [
+            "Leader"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 85,
+                "rate": 1.7
+            },
+            "focus": {
+                "base": 62,
+                "rate": 0.9
+            },
+            "speed": {
+                "base": 74,
+                "rate": 0.93
+            }
+        }
     },
     {
         "name": "Khaldoon",
         "alignment": "Evil",
-        "race": "Evil Men"
+        "race": "Evil Men",
+        "classes": [
+            "Warrior"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 82,
+                "rate": 1.95
+            },
+            "focus": {
+                "base": 61,
+                "rate": 1.11
+            },
+            "speed": {
+                "base": 78,
+                "rate": 1.13
+            }
+        }
     },
     {
         "name": "Agzok",
         "alignment": "Evil",
-        "race": "Evil Men"
+        "race": "Evil Men",
+        "classes": [
+            "Warrior"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 91,
+                "rate": 2
+            },
+            "focus": {
+                "base": 44,
+                "rate": 0.55
+            },
+            "speed": {
+                "base": 51,
+                "rate": 0.83
+            }
+        }
     },
     {
         "name": "Sharku",
         "alignment": "Evil",
-        "race": "Orcs"
+        "race": "Orcs",
+        "classes": [
+            "Stategist",
+            "Tip Master"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 57,
+                "rate": 0.82
+            },
+            "focus": {
+                "base": 87,
+                "rate": 1.58
+            },
+            "speed": {
+                "base": 88,
+                "rate": 1.76
+            }
+        }
     },
     {
         "name": "Grishnakh",
         "alignment": "Evil",
-        "race": "Orcs"
+        "race": "Orcs",
+        "classes": [
+            "Support",
+            "Tip Master"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 45,
+                "rate": 0.57
+            },
+            "focus": {
+                "base": 88,
+                "rate": 1.76
+            },
+            "speed": {
+                "base": 83,
+                "rate": 1.66
+            }
+        }
     },
     {
         "name": "Ugthak",
         "alignment": "Evil",
-        "race": "Uruk-hai"
+        "race": "Uruk-hai",
+        "classes": [
+            "Warrior"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 94,
+                "rate": 2.06
+            },
+            "focus": {
+                "base": 41,
+                "rate": 0.59
+            },
+            "speed": {
+                "base": 45,
+                "rate": 0.74
+            }
+        }
     },
     {
         "name": "Maltok",
-        "alignment": "Evil"
+        "alignment": "Evil",
+        "race": "Evil Men",
+        "classes": [
+            "Leader"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 65,
+                "rate": 1.3
+            },
+            "focus": {
+                "base": 71,
+                "rate": 1.56
+            },
+            "speed": {
+                "base": 92,
+                "rate": 1.84
+            }
+        }
     },
     {
         "name": "Khamul",
         "alignment": "Evil",
-        "race": "Undead"
+        "race": "Undead",
+        "classes": [
+            "Strategist"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 97,
+                "rate": 2.13
+            },
+            "focus": {
+                "base": 72,
+                "rate": 0.9
+            },
+            "speed": {
+                "base": 95,
+                "rate": 1.37
+            }
+        }
     },
     {
         "name": "Yusraa",
         "alignment": "Evil",
-        "race": "Evil Men"
+        "race": "Evil Men",
+        "classes": [
+            "Warrior",
+            "Tip Master"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 76,
+                "rate": 1.1
+            },
+            "focus": {
+                "base": 87,
+                "rate": 1.91
+            },
+            "speed": {
+                "base": 70,
+                "rate": 1.01
+            }
+        }
     },
     {
         "name": "Grima Wormtongue",
         "alignment": "Evil",
-        "race": "Men"
+        "race": "Men",
+        "classes": [
+            "Support",
+            "Control"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 30,
+                "rate": 0.49
+            },
+            "focus": {
+                "base": 87,
+                "rate": 1.74
+            },
+            "speed": {
+                "base": 85,
+                "rate": 1.39
+            }
+        }
     },
     {
         "name": "Azru-Khor",
         "alignment": "Evil",
-        "race": "Evil Men"
+        "race": "Evil Men",
+        "classes": [
+            "Support",
+            "Special"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 82,
+                "rate": 1.49
+            },
+            "focus": {
+                "base": 82,
+                "rate": 1.49
+            },
+            "speed": {
+                "base": 82,
+                "rate": 1.49
+            }
+        }
     },
     {
         "name": "Black Serpent",
         "alignment": "Evil",
-        "race": "Evil Men"
+        "race": "Evil Men",
+        "classes": [
+            "Leader",
+            "Special"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 85,
+                "rate": 1.07
+            },
+            "focus": {
+                "base": 91,
+                "rate": 2
+            },
+            "speed": {
+                "base": 86,
+                "rate": 1.72
+            }
+        }
     },
     {
         "name": "Kirun",
         "alignment": "Evil",
-        "race": "Evil Men"
+        "race": "Evil Men",
+        "classes": [
+            "Leader",
+            "Control"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 91,
+                "rate": 1.82
+            },
+            "focus": {
+                "base": 85,
+                "rate": 1.86
+            },
+            "speed": {
+                "base": 57,
+                "rate": 0.82
+            }
+        }
     },
     {
         "name": "Mouth of Sauron",
         "alignment": "Evil",
-        "race": "Evil Men"
+        "race": "Evil Men",
+        "classes": [
+            "Balanced",
+            "Special"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 38,
+                "rate": 0.48
+            },
+            "focus": {
+                "base": 100,
+                "rate": 2.19
+            },
+            "speed": {
+                "base": 81,
+                "rate": 1.78
+            }
+        }
     },
     {
         "name": "Radagast the Brown",
         "alignment": "Good",
-        "race": "Maiar"
+        "race": "Maiar",
+        "classes": [
+            "Support",
+            "Heal"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 58,
+                "rate": 0.73
+            },
+            "focus": {
+                "base": 103,
+                "rate": 2.26
+            },
+            "speed": {
+                "base": 110,
+                "rate": 2
+            }
+        }
     },
     {
         "name": "Saruman",
         "alignment": "Evil",
-        "race": "Maiar"
+        "race": "Maiar",
+        "classes": [
+            "Balanced",
+            "Control"
+        ],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 75,
+                "rate": 1.08
+            },
+            "focus": {
+                "base": 108,
+                "rate": 2.77
+            },
+            "speed": {
+                "base": 45,
+                "rate":  0.57
+            }
+        }
     },
     {
         "name": "Sauron",
         "alignment": "Evil",
-        "race": "Maiar"
+        "race": "Maiar",
+        "classes": [],
+        "skills": [],
+        "stats": {
+            "might": {
+                "base": 120,
+                "rate": 3.3
+            },
+            "focus": {
+                "base": 105,
+                "rate": 2.5
+            },
+            "speed": {
+                "base": 80,
+                "rate": 2.05
+            }
+        }
     },
     {
         "name": "Gothmog",
