@@ -85,7 +85,7 @@
       "url": "Subsites\/LOTR_RiseToWar\/data\/classes.json"
     },
     {
-      "hash": "sha256-auVfzgMKVq1LVOlLSaUz9KNPjdMFa8HV7jLL7qJ7NvU=",
+      "hash": "sha256-23mOOGVDlVC1Xe+AkTE3KLyY7U\/0an6DzTJuxrJLEJI=",
       "url": "Subsites\/LOTR_RiseToWar\/data\/commanders.json"
     },
     {
@@ -93,7 +93,7 @@
       "url": "Subsites\/LOTR_RiseToWar\/data\/races.json"
     },
     {
-      "hash": "sha256-fq0XEjjgIxiSWYz4pv\/h3QhdWcUA\/DN5fZWhGOBlWoI=",
+      "hash": "sha256-uZ2nB0ziYqIv+FOspuMc2poKfLX\/13SGQUUmtSYhEfQ=",
       "url": "Subsites\/LOTR_RiseToWar\/data\/skills.json"
     },
     {
@@ -281,5 +281,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "Pjqbc\/8U"
+  "version": "kjfRqFvq"
 };

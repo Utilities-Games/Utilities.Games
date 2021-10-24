@@ -263,5 +263,73 @@
     {
         "name": "Detect Weakness",
         "subSkills": []
+    },
+    {
+        "name": "Rangers of Ithilien",
+        "subSkills": [
+            {
+                "name": "Flanking"
+            },
+            {
+                "name": "Rush"
+            }
+        ]
+    },
+    {
+        "name": "Flanking",
+        "subSkills": []
+    },
+    {
+        "name": "Rush",
+        "subSkills": []
+    },
+    {
+        "name": "Last Steward",
+        "subSkills": [
+            {
+                "name": "Inquisitive"
+            },
+            {
+                "name": "Leader"
+            }
+        ]
+    },
+    {
+        "name": "Inquisitive",
+        "subSkills": []
+    },
+    {
+        "name": "Leader",
+        "subSkills": []
+    },
+    {
+        "name": "Guide",
+        "subSkills": [
+            {
+                "name": "Armed Escort"
+            },
+            {
+                "name": "Foresight"
+            }
+        ]
+    },
+    {
+        "name": "Armed Escort",
+        "subSkills": []
+    },
+    {
+        "name": "Foresight",
+        "subSkills": []
+    },
+    {
+        "name": "Heir",
+        "subSkills": [
+            {
+                "name": "Gallant"
+            },
+            {
+                "name": "Nobility"
+            }
+        ]
     }
 ]
