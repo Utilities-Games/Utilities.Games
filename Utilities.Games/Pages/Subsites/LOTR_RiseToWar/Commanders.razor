@@ -3,18 +3,23 @@
 
 <h3>Commanders</h3>
 
-@if (commanders == null) {
-    <p>Loading...</p>
-} else {
-<ul>
-    @foreach (Models.Commander commander in commanders)
+<div class="row">
+    @if (commanders == null)
     {
-    <li>
-        <a href="./lotr_risetowar/commanders/@(commander.Name)">@(commander.Name)</a>
-    </li>
+        <p class="alert alert-light">Loading...</p>
     }
-</ul>
-}
+    else
+    {
+        <ul>
+            @foreach (Models.Commander commander in commanders)
+            {
+                <li>
+                    <a href="./lotr_risetowar/commanders/@(commander.Name)">@(commander.Name)</a>
+                </li>
+            }
+        </ul>
+    }
+</div>
 
 @code {
     private Models.Commander[] commanders;

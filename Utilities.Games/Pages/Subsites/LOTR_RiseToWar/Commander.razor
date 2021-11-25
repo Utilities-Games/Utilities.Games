@@ -3,63 +3,81 @@
 
 @if (commander == null)
 {
-    <p>Loading...</p>
+    <p class="alert alert-light">Loading...</p>
 }
 else
 {
     <h3>@(commander.Name)</h3>
 
     <h5>Classes</h5>
-    @if (commander.Classes?.Length > 0)
-    {
-        <ul>
-            @foreach (var @class in commander.Classes)
-            {
-                <li>
-                    <a href="./lotr_risetowar/classes/@(@class)">@(@class)</a>
-                </li>
-            }
-        </ul>
-    }
-    else
-    {
-        <p>No classes</p>
-    }
+    <div class="row">
+        @if (commander.Classes?.Length > 0)
+        {
+            <ul>
+                @foreach (var @class in commander.Classes)
+                {
+                    <li>
+                        <a href="./lotr_risetowar/classes/@(@class)">@(@class)</a>
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p class="alert alert-info">No classes</p>
+        }
+    </div>
 
     <h5>Stats</h5>
     @if (commander.Stats != null && commander.Stats?.Might != null && commander.Stats?.Focus != null && commander.Stats?.Speed != null)
     {
-        <ul>
-            <li>
-                <strong>Might</strong>: @(commander.Stats?.Might?.Base) + @(commander.Stats?.Might?.Rate)/lvl
-            </li>
-            <li>
-                <strong>Focus</strong>: @(commander.Stats?.Focus?.Base) + @(commander.Stats?.Focus?.Rate)/lvl
-            </li>
-            <li>
-                <strong>Speed</strong>: @(commander.Stats?.Speed?.Base) + @(commander.Stats?.Speed?.Rate)/lvl
-            </li>
-        </ul>
+<div class="row">
+    <ul>
+        <li>
+            <strong>Might</strong>: @(commander.Stats?.Might?.Base) + @(commander.Stats?.Might?.Rate)/lvl
+        </li>
+        <li>
+            <strong>Focus</strong>: @(commander.Stats?.Focus?.Base) + @(commander.Stats?.Focus?.Rate)/lvl
+        </li>
+        <li>
+            <strong>Speed</strong>: @(commander.Stats?.Speed?.Base) + @(commander.Stats?.Speed?.Rate)/lvl
+        </li>
+    </ul>
+</div>
+<div class="row">
+    @if (statsChartModel != null)
+    {
+    <GrowthChart Model="statsChartModel" GrowthInstances="25"></GrowthChart>
     }
     else
     {
-        <p>No base stats</p>
+    <p class="alert alert-info">Loading Chart...</p>
+    }
+</div>
+    }
+    else
+    {
+        <p class="alert alert-info">No base stats</p>
     }
 
     <h5>Skills</h5>
-    @if (commander.Skills?.Length > 0)
-    {
-        <ul>
-            @foreach (var skill in commander.Skills)
-            {
-                <li>
-                    <a href="./lotr_risetowar/skills/@(skill.Name)">@(skill.Name)</a>
-                </li>
-            }
-        </ul>
-    } else {
-        <p>No skills</p>
-    }
+    <div class="row">
+        @if (commander.Skills?.Length > 0)
+        {
+            <ul>
+                @foreach (var skill in commander.Skills)
+                {
+                    <li>
+                        <a href="./lotr_risetowar/skills/@(skill.Name)">@(skill.Name)</a>
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p class="alert alert-info">No skills</p>
+        }
+    </div>
 }
 
 @code {
@@ -67,6 +85,8 @@ else
     public string Name { get; set; }
 
     private Models.Commander commander;
+
+    private Utilities.Games.Models.GrowthChartModel statsChartModel;
 
     protected override async Task OnInitializedAsync()
     {
@@ -76,5 +96,30 @@ else
         };
         commander = (await Http.GetFromJsonAsync<Models.Commander[]>("Subsites/LOTR_RiseToWar/data/commanders.json", options))
             .FirstOrDefault(o => o.Name == Name);
+        var chartModel = new Games.Models.GrowthChartModel($"{commander.Name}'s Growth Chart");
+        Console.WriteLine("Loading Chart Model!");
+        chartModel.Datasets.Add(new Games.Models.GrowthChartModel.Dataset()
+        {
+            Label = "Might",
+            Color = "red",
+            BaseValue = commander.Stats.Might.Base,
+            GrowthRate = commander.Stats.Might.Rate
+        });
+        chartModel.Datasets.Add(new Games.Models.GrowthChartModel.Dataset()
+        {
+            Label = "Focus",
+            Color = "blue",
+            BaseValue = commander.Stats.Focus.Base,
+            GrowthRate = commander.Stats.Focus.Rate
+        });
+        chartModel.Datasets.Add(new Games.Models.GrowthChartModel.Dataset()
+        {
+            Label = "Speed",
+            Color = "green",
+            BaseValue = commander.Stats.Speed.Base,
+            GrowthRate = commander.Stats.Speed.Rate
+        });
+        statsChartModel = chartModel;
+        statsChartModel.InstanceLabel = "Lvl";
     }
 }

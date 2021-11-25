@@ -1,0 +1,140 @@
+﻿@using Blazor.Extensions
+@using Blazor.Extensions.Canvas
+@using Blazor.Extensions.Canvas.Canvas2D
+@inject IJSRuntime JsRuntime;
+
+@if (Model == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div class="growth-chart w-100">
+        <h3>@(Model.Title)</h3>
+        <div id="canvasHolder" class="w-100">
+            <BECanvas Width="300" Height="400" @ref="CanvasRef"></BECanvas>
+        </div>
+
+        @if (Model.Datasets?.Count > 0)
+        {
+            foreach (Models.GrowthChartModel.Dataset dataset in Model.Datasets)
+            {
+                <span style="color: @(dataset.Color);">@(dataset.Label)</span>
+            }
+        }
+    </div>
+}
+
+@code {
+    [Parameter]
+    public Models.GrowthChartModel Model { get; set; }
+
+    [Parameter]
+    public int GrowthInstances { get; set; }
+
+    protected BECanvasComponent CanvasRef { get; set; }
+    private Canvas2DContext _context;
+    private DateTime LastRender;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (Model?.Datasets?.Count > 0)
+        {
+            Model?.Build(GrowthInstances);
+        }
+        this._context = await CanvasRef.CreateCanvas2DAsync();
+        await JsRuntime.InvokeAsync<object>("initRenderJS", DotNetObjectReference.Create(this));
+        await base.OnInitializedAsync();
+    }
+
+    [JSInvokable]
+    public void ResizeInBlazor(double width, double height) => Model.Resize(width, height);
+
+    [JSInvokable]
+    public async ValueTask RenderInBlazor(float timeStamp)
+    {
+        string backgroundColor = "black";
+        string foregroundColor = "white";
+        double width = Model.Width, height = Model.Height;
+        double margin = width * 0.05; // 5% of width on all sides
+        double maxBarHeight = (height - (margin * 2));
+        double barWidth = (width - (margin * 2)) / GrowthInstances;
+        var rect = new {
+            top = new {
+                left = new {
+                    x = margin,
+                    y = margin
+                },
+                right = new {
+                    x = width - margin,
+                    y = margin
+                }
+            },
+            bottom = new {
+                left = new {
+                    x = margin,
+                    y = height - margin
+                },
+                right = new {
+                    x = width - margin,
+                    y = height - margin
+                }
+            }
+        };
+
+        double fps = 1.0 / (DateTime.Now - LastRender).TotalSeconds;
+        LastRender = DateTime.Now;
+
+        await this._context.BeginBatchAsync();
+        await this._context.ClearRectAsync(0, 0, Model.Width, Model.Height);
+        await this._context.SetTextAlignAsync(TextAlign.Center);
+        await this._context.SetTextBaselineAsync(TextBaseline.Bottom);
+        await this._context.SetFillStyleAsync(backgroundColor);
+        await this._context.FillRectAsync(0, 0, Model.Width, Model.Height);
+
+        await this._context.SetStrokeStyleAsync(foregroundColor);
+        await this._context.SetShadowBlurAsync(0.25F);
+        await this._context.SetLineWidthAsync(1F);
+        await this._context.SetFillStyleAsync(foregroundColor);
+        await this._context.SetFontAsync($"{margin * 0.75}px Segoe UI");
+        await this._context.FillTextAsync($"{Model.Title}", width / 2, margin - 2);
+        await this._context.SetFontAsync("12px Segoe UI");
+
+        // Draw ticks
+        for (int i = 0; i < GrowthInstances; i++)
+        {
+            double pointX = rect.bottom.left.x + (barWidth * i) + (barWidth / 2);
+            double pointY = rect.bottom.left.y + 16;
+            await this._context.FillTextAsync(Model.InstanceLabel + $" {i + 1}", pointX, pointY);
+        }
+
+        double maxValue = Model.Datasets.SelectMany(o => o.Values).Select(o => o.Value).Max();
+        foreach (var dataset in Model.Datasets)
+        {
+            await this._context.BeginPathAsync();
+            for (int i = 0; i < dataset.Values.Count; i++)
+            {
+                var kvp = dataset.Values.ElementAt(i);
+                //       x          Value
+                // ------------ = ---------
+                // maxBarHeight    maxValue
+
+                double pointX = rect.bottom.left.x + (barWidth * i) + (barWidth / 2);
+                double pointY = rect.bottom.left.y - (maxBarHeight * (kvp.Value / maxValue));
+                await this._context.SetStrokeStyleAsync(dataset.Color);
+                await this._context.SetFillStyleAsync(dataset.Color);
+                if (i == 0)
+                {
+                    await this._context.MoveToAsync(pointX, pointY);
+                }
+                await this._context.LineToAsync(pointX, pointY);
+                await this._context.ArcAsync(pointX, pointY, 1.25, 0, 2 * Math.PI, false);
+                await this._context.StrokeAsync();
+                await this._context.FillAsync();
+            }
+            await this._context.ClosePathAsync();
+        }
+
+        await this._context.EndBatchAsync();
+    }
+}
