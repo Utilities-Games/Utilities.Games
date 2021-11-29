@@ -10,14 +10,15 @@
     }
     else
     {
-        <ul>
-            @foreach (Models.Commander commander in commanders)
-            {
-                <li>
-                    <a href="./lotr_risetowar/commanders/@(commander.Name)">@(commander.Name)</a>
-                </li>
-            }
-        </ul>
+        @foreach (Models.Commander commander in commanders)
+        {
+            <a class="card m-3" href="./lotr_risetowar/commanders/@(commander.Name)">
+                <img class="card-img-top" src="./Subsites/LOTR_RiseToWar/images/commanders/@(commander.Name).png" alt="@(commander.Name)" />
+                <div class="card-body">
+                    <h5 class="card-title text-center">@(commander.Name)</h5>
+                </div>
+            </a>
+        }
     }
 </div>
 

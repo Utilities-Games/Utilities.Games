@@ -7,25 +7,22 @@
 }
 else
 {
-    <h3>@(commander.Name)</h3>
-
-    <h5>Classes</h5>
-    <div class="row">
-        @if (commander.Classes?.Length > 0)
-        {
-            <ul>
-                @foreach (var @class in commander.Classes)
+    <div class="card mx-auto" style="width: 18rem;">
+        <img class="card-img-top" src="./Subsites/LOTR_RiseToWar/images/commanders/@(commander.Name).png" />
+        <div class="card-body">
+            <h5 class="card-title text-center">@(commander.Name)</h5>
+            <p class="card-text">{Insert Flavor Text Here}</p>
+        </div>
+        <div class="card-footer">
+            <span class="badge badge-primary mx-1">@(commander.Alignment)</span>
+            @if (commander.Classes?.Length > 0)
+            {
+                foreach (var @class in commander.Classes)
                 {
-                    <li>
-                        <a href="./lotr_risetowar/classes/@(@class)">@(@class)</a>
-                    </li>
+                    <a class="badge badge-secondary mx-1" title="@(@class) Class" href="./lotr_risetowar/classes/@(@class)">@(@class)</a>
                 }
-            </ul>
-        }
-        else
-        {
-            <p class="alert alert-info">No classes</p>
-        }
+            }
+        </div>
     </div>
 
     <h5>Stats</h5>
