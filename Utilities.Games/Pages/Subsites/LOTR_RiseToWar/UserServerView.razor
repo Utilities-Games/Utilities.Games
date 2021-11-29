@@ -1,0 +1,37 @@
+﻿@page "/lotr_risetowar/userserver/{server:int}"
+@inject LOTR_RiseToWar.Models.LocalStores.ServerStore LocalServerStore
+@inject LOTR_RiseToWar.Models.LocalStores.CommanderStore LocalCommanderStore
+@using LOTR_RiseToWar.Models.LocalStores
+@layout LOTR_RiseToWar_Layout
+<h3>Server @(Item.ServerNumber) &mdash; @(Item.Username)</h3>
+
+@foreach (var userCommander in UserCommanders)
+{
+    <div class="card">
+        <img class="card-img-top" src="./Subsites/LOTR_RiseToWar/images/commanders/@(userCommander.CommanderName).png" />
+        <div class="card-body">
+            <h5 class="card-title">@(userCommander.CommanderName)</h5>
+        </div>
+        <div class="card-footer">
+            <span class="badge badge-primary">@(userCommander.CurrentLevel)</span>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int Server { get; set; }
+
+    public Models.LocalStores.UserServer Item { get; set; }
+
+    public List<Models.LocalStores.UserServerCommander> UserCommanders { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Item = await LocalServerStore.Get(Server.ToString());
+
+        UserCommanders = (await LocalCommanderStore.GetAll())
+            .Where(o => o.ServerNumber == Server)
+            .ToList();
+    }
+}

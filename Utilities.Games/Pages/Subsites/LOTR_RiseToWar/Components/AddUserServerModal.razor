@@ -1,0 +1,69 @@
+﻿@using LOTR_RiseToWar.Models.LocalStores
+
+<div class="modal @ModalClass" tabindex="-1" role="dialog" style="display:@ModalDisplay">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">User Server</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <EditForm Model="@Result" OnValidSubmit="@HandleValidSubmit">
+                <div class="modal-body">
+                    <p>Add a new server to your list</p>
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
+                    <InputNumber id="serverNumber" @bind-Value="Result.ServerNumber" />
+                    <InputText id="userName" @bind-Value="Result.Username" />
+                    <InputNumber id="userId" @bind-Value="Result.UserId" />
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" @onclick="() => Close()">Close</button>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+</div>
+
+@if (ShowBackdrop)
+{
+    <div class="modal-backdrop fade show"></div>
+}
+
+@code {
+    public delegate void Callback(UserServer userServer);
+
+    [Parameter]
+    public Callback OnSave { get; set; }
+
+    private UserServer Result = new();
+
+    private Guid Guid = Guid.NewGuid();
+    private string ModalDisplay = "none;";
+    private string ModalClass = "";
+    private bool ShowBackdrop = false;
+
+    public void Open()
+    {
+        ModalDisplay = "block;";
+        ModalClass = "Show";
+        ShowBackdrop = true;
+        StateHasChanged();
+    }
+
+    public void Close()
+    {
+        ModalDisplay = "none";
+        ModalClass = "";
+        ShowBackdrop = false;
+        StateHasChanged();
+    }
+
+    private void HandleValidSubmit() {
+        if (OnSave != null) {
+            OnSave(Result);
+        }
+    }
+}
