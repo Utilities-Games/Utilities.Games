@@ -29,6 +29,32 @@
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
+    <script src='_content/Blazor.Extensions.Canvas/blazor.extensions.canvas.js'></script>
+    <script>
+        function renderJS(timeStamp) {
+            theInstance.invokeMethodAsync('RenderInBlazor', timeStamp);
+            window.requestAnimationFrame(renderJS);
+        }
+
+        function resizeCanvasToFitWindow() {
+            var holder = document.getElementById('canvasHolder');
+            if (typeof holder === 'undefined' || holder === null) return;
+            var canvas = holder.querySelector('canvas');
+            if (canvas) {
+                var parentSize = holder.getBoundingClientRect();
+                canvas.width = parentSize.width;// window.innerWidth;
+                canvas.height = parentSize.height;// window.innerHeight;
+                theInstance.invokeMethodAsync('ResizeInBlazor', canvas.width, canvas.height);
+            }
+        }
+
+        window.initRenderJS = (instance) => {
+            window.theInstance = instance;
+            window.addEventListener("resize", resizeCanvasToFitWindow);
+            resizeCanvasToFitWindow();
+            window.requestAnimationFrame(renderJS);
+        };
+    </script>
 </body>
 
 </html>
