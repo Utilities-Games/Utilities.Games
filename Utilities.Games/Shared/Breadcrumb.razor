@@ -1,0 +1,28 @@
+﻿@using Utilities.Games.Models
+
+<nav aria-label="breadcrumb" style="background-color: #f2f2f3">
+    <div class="mt-max-size">
+        <ol class="breadcrumb">
+            @foreach (var link in Links.OrderBy(x => x.OrderIndex))
+            {
+                if (link.IsActive)
+                {
+                    <li class="breadcrumb-item active mt-bread-item" aria-current="page">@link.Title</li>
+                }
+                else
+                {
+                    <li class="breadcrumb-item"><a class="mt-bread-item-link" href="@link.Address">@link.Title</a></li>
+                }
+            }
+        </ol>
+    </div>
+</nav>
+@code{
+    [Parameter]
+    public List<BreadcrumbLink> Links { get; set; }
+    public Breadcrumb()
+    {
+
+    }
+    protected override Task OnParametersSetAsync() => base.OnParametersSetAsync();
+}
