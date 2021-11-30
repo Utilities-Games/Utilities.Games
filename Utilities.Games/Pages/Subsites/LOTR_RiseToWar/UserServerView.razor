@@ -1,0 +1,88 @@
+﻿@page "/lotr_risetowar/userserver/{server:int}"
+@inject LOTR_RiseToWar.Models.LocalStores.ServerStore LocalServerStore
+@inject LOTR_RiseToWar.Models.LocalStores.CommanderStore LocalCommanderStore
+@using LOTR_RiseToWar.Models.LocalStores
+@layout LOTR_RiseToWar_Layout
+
+@if (Item != null)
+{
+    <h3>Server @(Item.ServerNumber) &mdash; @(Item.Username)</h3>
+    @if (!string.IsNullOrEmpty(Item.FellowshipId) || !string.IsNullOrEmpty(Item.FellowshipName)){
+    <p>
+        Joined @(Item.FellowshipName)
+        @if (!string.IsNullOrEmpty(Item.FellowshipId))
+        {
+            <span>(@(Item.FellowshipId))</span>
+        }
+    </p>
+     }
+    <h4>Commanders</h4>
+    <div class="row">
+        @if (UserCommanders?.Any() == true)
+        {
+            foreach (var userCommander in UserCommanders)
+            {
+                <a class="card m-3" href="./lotr_risetowar/commanders/@(userCommander.CommanderName)">
+                    <img class="card-img-top" src="./Subsites/LOTR_RiseToWar/images/commanders/@(userCommander.CommanderName).png" />
+                    <div class="card-body">
+                        <h5 class="card-title text-center">@(userCommander.CommanderName)</h5>
+                    </div>
+                    <div class="card-footer">
+                        <span class="badge badge-primary">@(userCommander.CurrentLevel)</span>
+                    </div>
+                </a>
+            }
+        }
+        <div class="card m-3">
+            <img class="card-img-top" src="" />
+            <div class="card-body">
+                <h5 class="card-title">New Commander</h5>
+                <p class="card-text">Add a new commander to your list.</p>
+                <button class="btn btn-primary" @onclick="ShowAddUserServerCommanderModal">
+                    <i class="oi oi-plus"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p>Loading...</p>
+}
+
+<Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Components.AddUserServerCommanderModal @ref="AddUserServerCommanderModal" OnSave="SaveUserServerCommander" ServerNumber="Server" />
+
+@code {
+    [Parameter]
+    public int Server { get; set; }
+
+    public Models.LocalStores.UserServer Item { get; set; }
+
+    public List<Models.LocalStores.UserServerCommander> UserCommanders { get; set; } = new List<UserServerCommander>();
+
+    private Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Components.AddUserServerCommanderModal AddUserServerCommanderModal;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Item = await LocalServerStore.Get(Server);
+
+        UserCommanders = (await LocalCommanderStore.GetAll())
+            .Where(o => o.ServerNumber == Server)
+            .ToList();
+    }
+
+    private void ShowAddUserServerCommanderModal()
+    {
+        AddUserServerCommanderModal.Open();
+    }
+
+    private async void SaveUserServerCommander(UserServerCommander userServerCommander)
+    {
+        await LocalCommanderStore.SaveAsync(userServerCommander);
+        AddUserServerCommanderModal.Close();
+        UserCommanders = (await LocalCommanderStore.GetAll())
+            .Where(o => o.ServerNumber == Server)
+            .ToList();
+        StateHasChanged();
+    }
+}

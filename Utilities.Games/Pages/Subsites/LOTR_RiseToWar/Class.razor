@@ -1,5 +1,6 @@
 ﻿@page "/lotr_risetowar/classes/{name}"
 @inject HttpClient Http
+@layout LOTR_RiseToWar_Layout
 
 @if (commanderClass == null)
 {
@@ -8,18 +9,21 @@
 else
 {
     <h3>@(commanderClass.Name)</h3>
-    
+
     <h5>Effects</h5>
-    @if (commanderClass.Effects?.Length > 0) {
+    @if (commanderClass.Effects?.Length > 0)
+    {
         <ul>
-        @foreach (var effect in commanderClass.Effects)
-        {
-            <li>[@(effect.TargetScope)] @(effect.TargetType) @(effect.Amount != null ? (effect.Amount > 0 ? $"+{effect.Amount}" : $"-{effect.Amount}") + effect.Units?.ToString() : "")</li>
-        }
+            @foreach (var effect in commanderClass.Effects)
+            {
+                <li>[@(effect.TargetScope)] @(effect.TargetType) @(effect.Amount != null ? (effect.Amount > 0 ? $"+{effect.Amount}" : $"-{effect.Amount}") + effect.Units?.ToString() : "")</li>
+            }
         </ul>
-     } else {
-     <p>No effects</p>
-     }
+    }
+    else
+    {
+        <p>No effects</p>
+    }
 }
 
 @code {
