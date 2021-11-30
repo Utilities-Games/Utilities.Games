@@ -77,12 +77,16 @@
       "url": "idb.js"
     },
     {
-      "hash": "sha256-0qWhl6\/42gZ7QJFPluYYZX99Ybs8Cq+KTzaU3gpchxE=",
+      "hash": "sha256-JhWhgAMSG\/xx3U69iRaPWQHSMNKpCfnIGZ91\/hl9EAw=",
       "url": "index.html"
     },
     {
       "hash": "sha256-vQThwC1AmKeptWUjIHnntpfY9\/oRLoGzku3g7R\/nnx4=",
       "url": "manifest.json"
+    },
+    {
+      "hash": "sha256-gfS71Fdne4z2Svg5+Y\/4RrWe\/VlTA63MkeGI1EZp+Do=",
+      "url": "notificationTrigger.js"
     },
     {
       "hash": "sha256-KzrE6MUd63dmcGrQgPpsMQbSahyamd\/gRo2vjgoBVQ4=",
@@ -525,7 +529,7 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-zgnAjHbKf4F4bxmCGrQsiS7H6tqZHc4+0bJ3PocsCGI=",
+      "hash": "sha256-+QRMxJwOxwrnjGZFQvBIqJGyHA7TSHTgrw+VuEVUdAY=",
       "url": "_framework\/Utilities.Games.dll"
     },
     {
@@ -921,7 +925,7 @@
       "url": "_framework\/zh-Hant\/Microsoft.CodeAnalysis.Workspaces.resources.dll"
     },
     {
-      "hash": "sha256-3Zr7XorGpLrOYFaxvQA74+sfYI1Yw4K4tFDscNhMces=",
+      "hash": "sha256-c9epgRL8JTYjwDK9KJj88\/BID6H5Xw807HxaA2CX8+k=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -929,5 +933,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "lIqqmF9j"
+  "version": "Nfoz\/\/se"
 };
