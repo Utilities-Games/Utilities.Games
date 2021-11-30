@@ -1,8 +1,39 @@
 ﻿@page "/lotr_risetowar"
+@inject LOTR_RiseToWar.Models.LocalStores.ServerStore LocalServerStore
+@using LOTR_RiseToWar.Models.LocalStores
+@layout LOTR_RiseToWar_Layout
 
 <h3>The Lord of the Rings: Rise To War&trade;</h3>
 <p>Tools for the game <a href="https://www.lotr-risetowar.com/" target="_blank"><em>The Lord of the Rings: Rise to War</em></a>, developed and published by NetEase Interactive Entertainment<sup>&copy;</sup>.</p>
 
+<h4>Your servers</h4>
+<div class="row">
+    @if (UserServers?.Any() == true)
+    {
+        foreach (UserServer userServer in UserServers)
+        {
+            <a class="card m-3" href="./lotr_risetowar/userserver/@(userServer.ServerNumber)">
+                <img class="card-img-top" src="" />
+                <div class="card-body">
+                    <h5 class="card-title">@(userServer.ServerNumber)</h5>
+                    <p class="card-text">@(userServer.Username) <small>(@(userServer.UserId))</small></p>
+                </div>
+            </a>
+        }
+    }
+    <div class="card m-3">
+        <img class="card-img-top" src="" />
+        <div class="card-body">
+            <h5 class="card-title">New Server</h5>
+            <p class="card-text">Add a new server to your list.</p>
+            <button class="btn btn-primary" @onclick="ShowAddUserServerModal">
+                <i class="oi oi-plus"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<h4>Game Resources</h4>
 <ul>
     <li>
         <a href="./lotr_risetowar/commanders">Commanders</a>
@@ -18,6 +49,24 @@
     </li>
 </ul>
 
-@code {
+<Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Components.AddUserServerModal @ref="AddUserServerModal" OnSave="SaveUserServer" />
 
+@code {
+    private IEnumerable<UserServer> UserServers { get; set; }
+    private Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Components.AddUserServerModal AddUserServerModal;
+
+    protected override async Task OnInitializedAsync() {
+        UserServers = await LocalServerStore.GetAll();
+    }
+
+    private void ShowAddUserServerModal() {
+        AddUserServerModal.Open();
+    }
+
+    private async void SaveUserServer(UserServer userServer) {
+        await LocalServerStore.SaveAsync(userServer);
+        AddUserServerModal.Close();
+        UserServers = await LocalServerStore.GetAll();
+        StateHasChanged();
+    }
 }

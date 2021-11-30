@@ -1,5 +1,6 @@
 ﻿@page "/lotr_risetowar/skills/{name}"
 @inject HttpClient Http
+@layout LOTR_RiseToWar_Layout
 
 @if (skill == null)
 {
@@ -9,26 +10,30 @@ else
 {
     <h3>@(skill.Name)</h3>
 
-    @if (skill.Levels?.Length > 0) {
+    @if (skill.Levels?.Length > 0)
+    {
         <ul>
             @foreach (var skillLevel in skill.Levels)
             {
                 <li>
-                    @(skillLevel.Level)) 
-                    @if (skillLevel.Effects?.Length > 0) {
+                    @(skillLevel.Level))
+                    @if (skillLevel.Effects?.Length > 0)
+                    {
                         <ul>
-                        @foreach (var skillEffect in skillLevel.Effects)
-                        {
-                            <li>[@(skillEffect.TargetScope)] @(skillEffect.TargetType) @(skillEffect.Amount != null ? (skillEffect.Amount > 0 ? $"+{skillEffect.Amount}" : $"-{skillEffect.Amount}") + skillEffect.Units?.ToString() : "")</li>
-                        }
+                            @foreach (var skillEffect in skillLevel.Effects)
+                            {
+                                <li>[@(skillEffect.TargetScope)] @(skillEffect.TargetType) @(skillEffect.Amount != null ? (skillEffect.Amount > 0 ? $"+{skillEffect.Amount}" : $"-{skillEffect.Amount}") + skillEffect.Units?.ToString() : "")</li>
+                            }
                         </ul>
-                     } else {
-                     <span>No effects</span>
-                     }
+                    }
+                    else
+                    {
+                        <span>No effects</span>
+                    }
                 </li>
             }
         </ul>
-     }
+    }
 
     <h5>Sub-Skills</h5>
     @if (skill.SubSkills?.Length > 0)

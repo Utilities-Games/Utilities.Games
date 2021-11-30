@@ -1,0 +1,105 @@
+﻿@using LOTR_RiseToWar.Models.LocalStores
+@using LOTR_RiseToWar.Models
+@inject HttpClient Http
+
+<div class="modal @ModalClass" tabindex="-1" role="dialog" style="display:@ModalDisplay">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">User Server Commander</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <EditForm Model="@Result" OnValidSubmit="@HandleValidSubmit">
+                <div class="modal-body">
+                    <p>Add a new commander to your server list</p>
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
+                    <input type="hidden" name="serverNumber" @bind-value="Result.ServerNumber" />
+                    <div class="form-group row">
+                        <div class="col-6">
+                            <label for="faction">Faction</label>
+                            <InputSelect id="commanderName" class="form-control" @bind-Value="Result.CommanderName">
+                                @if (Commanders?.Length > 0)
+                                {
+                                    foreach (Commander commander in Commanders)
+                                    {
+                                        <option value="@(commander.Name)">@(commander.Name)</option>
+                                    }
+                                }
+                            </InputSelect>
+                        </div>
+                        <div class="col-6">
+                            <label for="currentLevel">Current Level</label>
+                            <InputNumber id="currentLevel" class="form-control" @bind-Value="Result.CurrentLevel" />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" @onclick="() => Close()">Close</button>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+</div>
+
+@if (ShowBackdrop)
+{
+    <div class="modal-backdrop fade show"></div>
+}
+
+@code {
+    public delegate void Callback(UserServerCommander userServer);
+
+    [Parameter]
+    public Callback OnSave { get; set; }
+
+    [Parameter]
+    public int ServerNumber { get; set; }
+
+    private UserServerCommander Result = new();
+
+    private Commander[] Commanders;
+
+    private Guid Guid = Guid.NewGuid();
+    private string ModalDisplay = "none;";
+    private string ModalClass = "";
+    private bool ShowBackdrop = false;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        var options = new System.Text.Json.JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        Commanders = (await Http.GetFromJsonAsync<Models.Commander[]>("Subsites/LOTR_RiseToWar/data/commanders.json", options));
+        Result.ServerNumber = ServerNumber;
+    }
+
+    public void Open()
+    {
+        ModalDisplay = "block;";
+        ModalClass = "Show";
+        ShowBackdrop = true;
+        StateHasChanged();
+    }
+
+    public void Close()
+    {
+        ModalDisplay = "none";
+        ModalClass = "";
+        ShowBackdrop = false;
+        StateHasChanged();
+    }
+
+    private void HandleValidSubmit()
+    {
+        if (OnSave != null)
+        {
+            OnSave(Result);
+        }
+    }
+}

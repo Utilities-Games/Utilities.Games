@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using LOTR_RiseToWar = Utilities.Games.Pages.Subsites.LOTR_RiseToWar;
 
 namespace Utilities.Games
 {
@@ -18,6 +19,8 @@ namespace Utilities.Games
             builder.RootComponents.Add<App>("#app");
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            builder.Services.AddScoped<LOTR_RiseToWar.Models.LocalStores.ServerStore>();
+            builder.Services.AddScoped<LOTR_RiseToWar.Models.LocalStores.CommanderStore>();
 
             await builder.Build().RunAsync();
         }

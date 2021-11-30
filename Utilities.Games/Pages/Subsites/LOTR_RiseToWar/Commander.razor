@@ -1,5 +1,6 @@
 ﻿@page "/lotr_risetowar/commanders/{name}"
 @inject HttpClient Http
+@layout LOTR_RiseToWar_Layout
 
 @if (commander == null)
 {
@@ -28,29 +29,29 @@ else
     <h5>Stats</h5>
     @if (commander.Stats != null && commander.Stats?.Might != null && commander.Stats?.Focus != null && commander.Stats?.Speed != null)
     {
-<div class="row">
-    <ul>
-        <li>
-            <strong>Might</strong>: @(commander.Stats?.Might?.Base) + @(commander.Stats?.Might?.Rate)/lvl
-        </li>
-        <li>
-            <strong>Focus</strong>: @(commander.Stats?.Focus?.Base) + @(commander.Stats?.Focus?.Rate)/lvl
-        </li>
-        <li>
-            <strong>Speed</strong>: @(commander.Stats?.Speed?.Base) + @(commander.Stats?.Speed?.Rate)/lvl
-        </li>
-    </ul>
-</div>
-<div class="row">
-    @if (statsChartModel != null)
-    {
-    <GrowthChart Model="statsChartModel" GrowthInstances="25"></GrowthChart>
-    }
-    else
-    {
-    <p class="alert alert-info">Loading Chart...</p>
-    }
-</div>
+        <div class="row">
+            <ul>
+                <li>
+                    <strong>Might</strong>: @(commander.Stats?.Might?.Base) + @(commander.Stats?.Might?.Rate)/lvl
+                </li>
+                <li>
+                    <strong>Focus</strong>: @(commander.Stats?.Focus?.Base) + @(commander.Stats?.Focus?.Rate)/lvl
+                </li>
+                <li>
+                    <strong>Speed</strong>: @(commander.Stats?.Speed?.Base) + @(commander.Stats?.Speed?.Rate)/lvl
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            @if (statsChartModel != null)
+            {
+                <GrowthChart Model="statsChartModel" GrowthInstances="25"></GrowthChart>
+            }
+            else
+            {
+                <p class="alert alert-info">Loading Chart...</p>
+            }
+        </div>
     }
     else
     {
