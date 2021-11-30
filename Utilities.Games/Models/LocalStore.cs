@@ -34,7 +34,7 @@ namespace Utilities.Games.Models
 
         public abstract object GetKey(T item);
 
-        public async Task<T> Get(string key)
+        public async Task<T> Get(object key)
             => await GetAsync<T>(STORE_NAME, key);
 
         public async Task<IEnumerable<T>> GetAll()

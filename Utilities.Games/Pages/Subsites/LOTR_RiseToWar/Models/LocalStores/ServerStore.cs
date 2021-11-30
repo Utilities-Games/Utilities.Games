@@ -36,6 +36,7 @@ namespace Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Models.LocalStores
 
         public override ValueTask SaveAsync(UserServerCommander item)
         {
+            item.Id = $"{item.ServerNumber}:{item.CommanderName}";
             item.LastUpdated = DateTime.UtcNow;
             return base.SaveAsync(item);
         }
@@ -61,11 +62,28 @@ namespace Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Models.LocalStores
         /// </summary>
         public int UserId { get; set; }
 
+        /// <summary>
+        /// Name of the faction the user chose to side with.
+        /// </summary>
+        [Required]
+        public string Faction { get; set; }
+
+        /// <summary>
+        /// Unique ID of the Fellowship/Warband the user joined.
+        /// </summary>
+        [MaxLength(4)]
+        public string FellowshipId { get; set; }
+
+        /// <summary>
+        /// Name of the Fellowship/Warband the user joined.
+        /// </summary>
+        public string FellowshipName { get; set; }
+
         public DateTime LastUpdated { get; set; }
     }
 
     public class UserServerCommander {
-        public string Id { get; set; }// => $"{ServerNumber}:{CommanderName}";
+        public string Id { get; set; }
 
         [Required]
         public int ServerNumber { get; set; }

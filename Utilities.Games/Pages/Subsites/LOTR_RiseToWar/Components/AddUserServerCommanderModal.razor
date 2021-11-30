@@ -6,50 +6,33 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">User Server</h5>
+                <h5 class="modal-title">User Server Commander</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <EditForm Model="@Result" OnValidSubmit="@HandleValidSubmit">
                 <div class="modal-body">
-                    <p>Add a new server to your list</p>
+                    <p>Add a new commander to your server list</p>
                     <DataAnnotationsValidator />
                     <ValidationSummary />
-                    <div class="form-group row">
-                        <label for="serverNumber">Server #</label>
-                        <InputNumber id="serverNumber" class="form-control" @bind-Value="Result.ServerNumber" />
-                    </div>
+                    <input type="hidden" name="serverNumber" @bind-value="Result.ServerNumber" />
                     <div class="form-group row">
                         <div class="col-6">
-                            <label for="userName">Username</label>
-                            <InputText id="userName" class="form-control" @bind-Value="Result.Username" />
-                        </div>
-                        <div class="col-6">
-                            <label for="userId">User ID</label>
-                            <InputNumber id="userId" class="form-control" @bind-Value="Result.UserId" />
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="faction">Faction</label>
-                        <InputSelect id="faction" class="form-control" @bind-Value="Result.Faction">
-                            @if (Factions?.Length > 0)
-                            {
-                                foreach (Faction faction in Factions)
+                            <label for="faction">Faction</label>
+                            <InputSelect id="commanderName" class="form-control" @bind-Value="Result.CommanderName">
+                                @if (Commanders?.Length > 0)
                                 {
-                                    <option value="@(faction.Name)">@(faction.Name)</option>
+                                    foreach (Commander commander in Commanders)
+                                    {
+                                        <option value="@(commander.Name)">@(commander.Name)</option>
+                                    }
                                 }
-                            }
-                        </InputSelect>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-6">
-                            <label for="fellowshipId">Fellowship ID</label>
-                            <InputText id="fellowshipId" class="form-control" @bind-Value="Result.FellowshipId" />
+                            </InputSelect>
                         </div>
                         <div class="col-6">
-                            <label for="fellowshipName">Fellowship Name</label>
-                            <InputText id="fellowshipName" class="form-control" @bind-Value="Result.FellowshipName" />
+                            <label for="currentLevel">Current Level</label>
+                            <InputNumber id="currentLevel" class="form-control" @bind-Value="Result.CurrentLevel" />
                         </div>
                     </div>
                 </div>
@@ -68,14 +51,17 @@
 }
 
 @code {
-    public delegate void Callback(UserServer userServer);
+    public delegate void Callback(UserServerCommander userServer);
 
     [Parameter]
     public Callback OnSave { get; set; }
 
-    private UserServer Result = new();
+    [Parameter]
+    public int ServerNumber { get; set; }
 
-    private Faction[] Factions;
+    private UserServerCommander Result = new();
+
+    private Commander[] Commanders;
 
     private Guid Guid = Guid.NewGuid();
     private string ModalDisplay = "none;";
@@ -89,7 +75,8 @@
         {
             PropertyNameCaseInsensitive = true
         };
-        Factions = (await Http.GetFromJsonAsync<Models.Faction[]>("Subsites/LOTR_RiseToWar/data/factions.json", options));
+        Commanders = (await Http.GetFromJsonAsync<Models.Commander[]>("Subsites/LOTR_RiseToWar/data/commanders.json", options));
+        Result.ServerNumber = ServerNumber;
     }
 
     public void Open()
