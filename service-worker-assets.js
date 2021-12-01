@@ -81,7 +81,7 @@
       "url": "idb.js"
     },
     {
-      "hash": "sha256-3xW\/c+EQdS0Fdz7CgxeKbazZcVPp3HoP\/w7TcDKGsFw=",
+      "hash": "sha256-d0Upw9rsymIj\/71nbuud2ZukTgwy1ZkDF7anRK\/SDFs=",
       "url": "index.html"
     },
     {
@@ -945,5 +945,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "R3o0V5Fs"
+  "version": "JYOSRo1V"
 };
