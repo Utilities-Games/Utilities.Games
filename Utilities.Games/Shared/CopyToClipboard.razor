@@ -1,0 +1,34 @@
+﻿@inject IJSRuntime JSRuntime
+@implements IDisposable
+
+<div class="form-inline">
+    <input class="form-control" readonly type="text" value="@Text" />
+    <button type="button" class="btn btn-primary" @onclick="CopyTextToClipboard">
+        @if (TextCopied) {
+            <span>Copied <i class="oi oi-check"></i></span>
+         } else {
+            <span>Copy</span>
+         }
+    </button>
+</div>
+
+@code {
+    [Parameter] public string Text { get; set; }
+
+    bool TextCopied = false;
+    System.Threading.Timer timer;
+
+    private async Task CopyTextToClipboard() {
+        await JSRuntime.InvokeVoidAsync("clipboardCopy.copyText", Text);
+        TextCopied = true;
+        timer = new System.Threading.Timer(async _ =>
+        {
+            TextCopied = false;
+            await InvokeAsync(StateHasChanged);
+        }, null, 2500, System.Threading.Timeout.Infinite);
+    }
+
+    public void Dispose() {
+        timer?.Dispose();
+    }
+}

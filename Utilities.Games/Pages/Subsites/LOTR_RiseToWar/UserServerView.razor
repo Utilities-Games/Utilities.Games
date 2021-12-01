@@ -1,22 +1,130 @@
 ﻿@page "/lotr_risetowar/userserver/{server:int}"
 @inject LOTR_RiseToWar.Models.LocalStores.ServerStore LocalServerStore
 @inject LOTR_RiseToWar.Models.LocalStores.CommanderStore LocalCommanderStore
+@inject Utilities.Games.Models.Notifications.NotificationTriggers NotificationManager
+@inject NavigationManager NavigationManager
+@using LOTR_RiseToWar.Models.Notifications
 @using LOTR_RiseToWar.Models.LocalStores
+@using Utilities.Games.Models
 @layout LOTR_RiseToWar_Layout
 
 @if (Item != null)
 {
-    <h3>Server @(Item.ServerNumber) &mdash; @(Item.Username)</h3>
-    @if (!string.IsNullOrEmpty(Item.FellowshipId) || !string.IsNullOrEmpty(Item.FellowshipName)){
-    <p>
-        Joined @(Item.FellowshipName)
-        @if (!string.IsNullOrEmpty(Item.FellowshipId))
-        {
-            <span>(@(Item.FellowshipId))</span>
-        }
-    </p>
-     }
+    <h3>Server @(Item.ServerNumber)</h3>
+    <p>[@(Item.UserId)] @(Item.Username)</p>
+    @if (!string.IsNullOrEmpty(Item.FellowshipId) || !string.IsNullOrEmpty(Item.FellowshipName) || !string.IsNullOrEmpty(Item.Faction))
+    {
+        <p>
+            Joined
+            @if (!string.IsNullOrEmpty(Item.FellowshipId))
+            {
+                <span>&nbsp;[@(Item.FellowshipId)]</span>
+            }
+            @if (!string.IsNullOrEmpty(Item.FellowshipName))
+            {
+                <span>&nbsp;<strong>@(Item.FellowshipName)</strong></span>
+                @if (!string.IsNullOrEmpty(Item.Faction))
+                {
+                    <span>&nbsp;of the <strong>@(Item.Faction)</strong> Faction</span>
+                }
+            }
+            else if (!string.IsNullOrEmpty(Item.Faction))
+            {
+                <span>&nbsp;the <strong>@(Item.Faction)</strong> Faction</span>
+            }
+        </p>
+    }
+
+    <hr />
+    <h4>Fellowship Rallies</h4>
+    <p class="alert alert-info">View and create reminders of rally events you are either coordinating or contributing to. You will receive a notification when it's time to prepare for the rally.</p>
+    @if (NotificationsSupported)
+    {
+        <div class="row">
+            @if (RallyReminders?.Any() == true)
+            {
+                foreach (var reminder in RallyReminders)
+                {
+                    <div class="card m-3">
+                        <img class="card-img-top" src="./Subsites/LOTR_RiseToWar/images/game_logo.png" />
+                        <div class="card-body">
+                            <h5 class="card-title text-center">@(reminder.Data.EventTime.ToString())</h5>
+                            <p class="card-text">@(reminder.Body)</p>
+                            <div class="table-responsive-sm">
+                                <table class="table table-sm table-secondary">
+                                    <tbody>
+                                        <tr>
+                                            <td role="rowheader">Server</td>
+                                            <td>@(reminder.Data.ServerNumber)</td>
+                                        </tr>
+                                        <tr>
+                                            <td role="rowheader">Fellowship</td>
+                                            <td>@(reminder.Data.FellowshipName)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <CopyToClipboard Text="@($"{NavigationManager.BaseUri}lotr_risetowar/userserver/{reminder.Data.ServerNumber}?addReminder={reminder.Tokenize()}")" />
+                        </div>
+                    </div>
+                }
+            }
+            @if (NewReminderToken != null)
+            {
+                <div class="card m-3">
+                    <img class="card-img-top" src="" />
+                    <div class="card-body">
+                        <h5 class="card-title">Add Rally Reminder?</h5>
+                        <p class="card-text">@(NewReminderToken.Body)</p>
+                        <div class="table-responsive-sm">
+                            <table class="table table-sm table-secondary">
+                                <tbody>
+                                    <tr>
+                                        <td role="rowheader">Server</td>
+                                        <td>@(NewReminderToken.Data.ServerNumber)</td>
+                                    </tr>
+                                    <tr>
+                                        <td role="rowheader">Fellowship</td>
+                                        <td>@(NewReminderToken.Data.FellowshipName)</td>
+                                    </tr>
+                                    <tr>
+                                        <td role="rowheader">Rally Time</td>
+                                        <td>@(NewReminderToken.Data.EventTime.ToString())</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary" @onclick="AcceptNewReminder"><i class="oi oi-check"></i></button>
+                            <button type="button" class="btn btn-secondary" @onclick="DeclineNewReminder"><i class="oi oi-x"></i></button>
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="card m-3">
+                <img class="card-img-top" src="" />
+                <div class="card-body">
+                    <h5 class="card-title">New Rally</h5>
+                    <p class="card-text">Create a new Rally reminder.</p>
+                    <button class="btn btn-primary" @onclick="ShowAddRallyReminderModal">
+                        <i class="oi oi-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <p class="alert alert-warning">Scheduled notifications are not supported in this browser.</p>
+    }
+
+    <hr />
     <h4>Commanders</h4>
+    <p class="alert alert-info">Maintain a list of which commanders you have in the game on this server. Once added, you can use these commanders in various tools and calculators throughout this site.</p>
     <div class="row">
         @if (UserCommanders?.Any() == true)
         {
@@ -45,12 +153,17 @@
         </div>
     </div>
 }
+else if (NewReminderToken != null)
+{
+    <p class="alert alert-warning">You have not added Server @(NewReminderToken.Data.ServerNumber) to your list of servers yet.</p>
+}
 else
 {
-    <p>Loading...</p>
+    <p class="alert alert-light">Loading...</p>
 }
 
 <Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Components.AddUserServerCommanderModal @ref="AddUserServerCommanderModal" OnSave="SaveUserServerCommander" ServerNumber="Server" />
+<Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Components.AddFellowshipRallyReminderModal @ref="AddRallyReminderModal" OnSave="SaveRallyReminder" UserServer="Item" />
 
 @code {
     [Parameter]
@@ -59,21 +172,56 @@ else
     public Models.LocalStores.UserServer Item { get; set; }
 
     public List<Models.LocalStores.UserServerCommander> UserCommanders { get; set; } = new List<UserServerCommander>();
+    public IEnumerable<ServerFellowshipRallyReminder> RallyReminders { get; set; }
+
+    private bool NotificationsSupported;
+
+    private ServerFellowshipRallyReminder NewReminderToken;
 
     private Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Components.AddUserServerCommanderModal AddUserServerCommanderModal;
+    private Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Components.AddFellowshipRallyReminderModal AddRallyReminderModal;
 
     protected override async Task OnInitializedAsync()
     {
+        NotificationsSupported = await NotificationManager.IsSupported();
         Item = await LocalServerStore.Get(Server);
+
+        if (NavigationManager.TryGetQueryString<string>("addReminder", out string reminderToken))
+        {
+            NewReminderToken = ServerFellowshipRallyReminder.FromToken<ServerFellowshipRallyReminder>(reminderToken);
+            if (NewReminderToken.TriggerTime <= DateTime.UtcNow.AddSeconds(30))
+            {
+                NewReminderToken = null;
+            }
+        }
 
         UserCommanders = (await LocalCommanderStore.GetAll())
             .Where(o => o.ServerNumber == Server)
             .ToList();
+        if (NotificationsSupported)
+        {
+            RallyReminders = (await NotificationManager.GetNotifications<ServerFellowshipRallyReminder>());
+            Console.WriteLine("Notifications: {0}", Newtonsoft.Json.JsonConvert.SerializeObject(RallyReminders));
+        }
+    }
+
+    private async Task AcceptNewReminder()
+    {
+        SaveRallyReminder(NewReminderToken);
+        NewReminderToken = null;
+    }
+    private async Task DeclineNewReminder()
+    {
+        NewReminderToken = null;
     }
 
     private void ShowAddUserServerCommanderModal()
     {
         AddUserServerCommanderModal.Open();
+    }
+    private void ShowAddRallyReminderModal()
+    {
+        AddRallyReminderModal.Open();
     }
 
     private async void SaveUserServerCommander(UserServerCommander userServerCommander)
@@ -84,5 +232,20 @@ else
             .Where(o => o.ServerNumber == Server)
             .ToList();
         StateHasChanged();
+    }
+    private async void SaveRallyReminder(ServerFellowshipRallyReminder reminder)
+    {
+        if (reminder.TriggerTime > DateTime.Now.AddSeconds(30))
+        {
+            Console.WriteLine("Saving Reminder: {0}", Newtonsoft.Json.JsonConvert.SerializeObject(reminder));
+            await NotificationManager.CreateNotificationTrigger<ServerFellowshipRallyReminder>(reminder);
+            AddRallyReminderModal.Close();
+            RallyReminders = await NotificationManager.GetNotifications<ServerFellowshipRallyReminder>();
+            StateHasChanged();
+        }
+        else
+        {
+            Console.WriteLine("Invalid date: {0}", Newtonsoft.Json.JsonConvert.SerializeObject(reminder));
+        }
     }
 }

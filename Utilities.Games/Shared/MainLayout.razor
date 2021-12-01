@@ -52,6 +52,9 @@
             var lastLink = breadcrumbLinks.Last();
             var address = $"{lastLink.Address}/{link}";
             string title = link;
+            if (title.Contains("?")) {
+                title = title.Remove(title.IndexOf('?'));
+            }
             var config = breadcrumbConfig?.FirstOrDefault(o => o.Address == address);
             if (config != null)
             {

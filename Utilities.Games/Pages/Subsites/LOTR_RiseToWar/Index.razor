@@ -6,19 +6,28 @@
 <h3>The Lord of the Rings: Rise To War&trade;</h3>
 <p>Tools for the game <a href="https://www.lotr-risetowar.com/" target="_blank"><em>The Lord of the Rings: Rise to War</em></a>, developed and published by NetEase Interactive Entertainment<sup>&copy;</sup>.</p>
 
-<h4>Your servers</h4>
+<hr />
+<h4>Gameplay Servers</h4>
+<p class="alert alert-info">Maintain a list of which servers you are active on. Once added, you will be able to save and collaborate rally events and manage in-game progress to share with others, compare stats, and plan your conquests.</p>
 <div class="row">
     @if (UserServers?.Any() == true)
     {
         foreach (UserServer userServer in UserServers)
         {
-            <a class="card m-3" href="./lotr_risetowar/userserver/@(userServer.ServerNumber)">
-                <img class="card-img-top" src="" />
+            <div class="card m-3">
+                <img class="card-img-top" src="./Subsites/LOTR_RiseToWar/images/game_logo.png" />
                 <div class="card-body">
-                    <h5 class="card-title">@(userServer.ServerNumber)</h5>
-                    <p class="card-text">@(userServer.Username) <small>(@(userServer.UserId))</small></p>
+                    <h5 class="card-title text-center">Server @(userServer.ServerNumber)</h5>
+                    <p class="card-text">[@(userServer.UserId)] @(userServer.Username)</p>
+                    @if (!string.IsNullOrEmpty(userServer.FellowshipId))
+                    {
+                        <p class="card-text">[@(userServer.FellowshipId)] @(userServer.FellowshipName)</p>
+                    }
                 </div>
-            </a>
+                <div class="card-footer">
+                    <a class="btn btn-primary float-right" href="./lotr_risetowar/userserver/@(userServer.ServerNumber)">View</a>
+                </div>
+            </div>
         }
     }
     <div class="card m-3">
@@ -33,6 +42,7 @@
     </div>
 </div>
 
+<hr />
 <h4>Game Resources</h4>
 <ul>
     <li>
@@ -55,15 +65,18 @@
     private IEnumerable<UserServer> UserServers { get; set; }
     private Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Components.AddUserServerModal AddUserServerModal;
 
-    protected override async Task OnInitializedAsync() {
+    protected override async Task OnInitializedAsync()
+    {
         UserServers = await LocalServerStore.GetAll();
     }
 
-    private void ShowAddUserServerModal() {
+    private void ShowAddUserServerModal()
+    {
         AddUserServerModal.Open();
     }
 
-    private async void SaveUserServer(UserServer userServer) {
+    private async void SaveUserServer(UserServer userServer)
+    {
         await LocalServerStore.SaveAsync(userServer);
         AddUserServerModal.Close();
         UserServers = await LocalServerStore.GetAll();

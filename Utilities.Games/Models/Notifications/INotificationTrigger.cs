@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
 
-namespace Utilities.Games.Models
+namespace Utilities.Games.Models.Notifications
 {
     /// <summary>
     /// An interface for implementing new scheduled notifications via the experimental Notification API.
     /// </summary>
-    public interface INotificationTrigger {
+    public interface INotificationTrigger
+    {
         /// <summary>
         /// An identifier for the type of notification.
         /// </summary>
@@ -26,9 +23,14 @@ namespace Utilities.Games.Models
         string Body { get; set; }
 
         /// <summary>
-        /// Specific time that the notification should be triggered.
+        /// Specific time that the notification should be triggered in UTC time.
         /// </summary>
         DateTime TriggerTime { get; set; }
+
+        /// <summary>
+        /// Mirror of Notification.timestamp
+        /// </summary>
+        long Timestamp { get; set; }
 
         /// <summary>
         /// Icon to be displayed with notification.
