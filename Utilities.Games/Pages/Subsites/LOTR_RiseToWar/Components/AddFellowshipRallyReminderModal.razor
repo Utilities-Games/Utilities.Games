@@ -1,0 +1,100 @@
+﻿@using LOTR_RiseToWar.Models.LocalStores
+@using LOTR_RiseToWar.Models
+@using LOTR_RiseToWar.Models.Notifications
+@inject HttpClient Http
+
+<div class="modal @ModalClass" tabindex="-1" role="dialog" style="display:@ModalDisplay">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Fellowship Rally Reminder</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <EditForm Model="@Result" OnValidSubmit="@HandleValidSubmit">
+                <div class="modal-body">
+                    <p>Create a new Fellowship/Warband Rally Reminder</p>
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <label for="eventTime">Event Date</label>
+                            <input type="datetime-local" id="eventTime" class="form-control" @bind="Result.Data.EventTime" @bind:format="yyyy-MM-ddTHH:mm" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <label for="reminderOffset">Reminder Offset (in minutes)</label>
+                            <InputNumber min="0" max="240" step="15" id="reminderOffset" class="form-control" @bind-Value="ReminderOffset" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <label for="body">Message</label>
+                            <InputTextArea id="body" class="form-control" @bind-Value="Result.Body" />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" @onclick="() => Close()">Close</button>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+</div>
+
+@if (ShowBackdrop)
+{
+    <div class="modal-backdrop fade show"></div>
+}
+
+@code {
+    public delegate void Callback(ServerFellowshipRallyReminder reminder);
+
+    [Parameter]
+    public Callback OnSave { get; set; }
+
+    [Parameter]
+    public UserServer UserServer { get; set; }
+
+    private ServerFellowshipRallyReminder Result { get; set; } = new();
+    private int ReminderOffset = 0;
+
+    private Guid Guid = Guid.NewGuid();
+    private string ModalDisplay = "none;";
+    private string ModalClass = "";
+    private bool ShowBackdrop = false;
+
+
+    public void Open()
+    {
+        ModalDisplay = "block;";
+        ModalClass = "Show";
+        ShowBackdrop = true;
+        StateHasChanged();
+    }
+
+    public void Close()
+    {
+        ModalDisplay = "none";
+        ModalClass = "";
+        ShowBackdrop = false;
+        StateHasChanged();
+    }
+
+    private void HandleValidSubmit()
+    {
+        if (OnSave != null)
+        {
+            Result.TriggerTime = Result.Data.EventTime.AddMinutes(ReminderOffset * -1);
+            if (UserServer != null)
+            {
+                Result.Data.ServerNumber = UserServer.ServerNumber;
+                Result.Data.FellowshipName = UserServer.FellowshipName;
+            }
+            OnSave(Result);
+        }
+    }
+}

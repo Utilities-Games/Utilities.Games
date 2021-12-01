@@ -1,11 +1,10 @@
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
+using Microsoft.JSInterop;
 using System;
-using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
+using System.Reflection;
+using System.Text.Json;
 using System.Threading.Tasks;
 using LOTR_RiseToWar = Utilities.Games.Pages.Subsites.LOTR_RiseToWar;
 
@@ -19,10 +18,13 @@ namespace Utilities.Games
             builder.RootComponents.Add<App>("#app");
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+            builder.Services.AddScoped<Utilities.Games.Models.Notifications.NotificationTriggers>();
             builder.Services.AddScoped<LOTR_RiseToWar.Models.LocalStores.ServerStore>();
             builder.Services.AddScoped<LOTR_RiseToWar.Models.LocalStores.CommanderStore>();
 
-            await builder.Build().RunAsync();
+            var host = builder.Build();
+
+            await host.RunAsync();
         }
     }
 }
