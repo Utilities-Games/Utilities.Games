@@ -1,5 +1,6 @@
 ﻿@inherits LayoutComponentBase
 @inject HttpClient Http
+@inject IJSRuntime JSRuntime
 @inject NavigationManager NavigationManager
 @using Utilities.Games.Models
 
@@ -29,6 +30,16 @@
         };
         var breadcrumbConfig = await Http.GetFromJsonAsync<List<BreadcrumbConfig>>("breadcrumb_config.json", options);
     }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeAsync<IJSObjectReference>("import", "/js/popper/popper.min.js");
+            await JSRuntime.InvokeAsync<IJSObjectReference>("import", "/js/bootstrap/bootstrap.min.js");
+        }
+    }
+
     protected async override void OnParametersSet()
     {
 

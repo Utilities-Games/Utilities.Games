@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\Subsites\LOTR_RiseToWar\css\" />
-    <Folder Include="wwwroot\js\" />
   </ItemGroup>
 
   <ItemGroup>
