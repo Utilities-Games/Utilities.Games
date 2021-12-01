@@ -1,9 +1,10 @@
-﻿namespace Utilities.Games.Models
+﻿namespace Utilities.Games.Models.Notifications
 {
     /// <summary>
     /// An interface for defining types of Notification data.
     /// </summary>
-    public interface INotificationData {
+    public interface INotificationData
+    {
         /// <summary>
         /// Return URL the user should be directed to when notification is clicked.
         /// </summary>
