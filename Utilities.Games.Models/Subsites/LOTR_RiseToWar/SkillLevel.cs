@@ -1,4 +1,6 @@
-﻿namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {
     /// <summary>
     /// An progression level for a Skill.
@@ -8,6 +10,7 @@
         /// <summary>
         /// An achievable level for a Skill.
         /// </summary>
+        [Key]
         public int Level { get; set; }
 
         /// <summary>

@@ -1,4 +1,6 @@
-﻿namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {
     /// <summary>
     /// A faction.
@@ -8,6 +10,7 @@
         /// <summary>
         /// Name of the Faction.
         /// </summary>
+        [Key]
         public string Name { get; set; }
 
         /// <summary>

@@ -28,4 +28,8 @@
     <None Include="wwwroot\Subsites\LOTR_RiseToWar\images\game_logo.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities.Games.Models\Utilities.Games.Models.csproj" />
+  </ItemGroup>
+
 </Project>

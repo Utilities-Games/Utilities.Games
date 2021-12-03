@@ -1,4 +1,6 @@
-﻿namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {
     /// <summary>
     /// A commander unit.
@@ -8,6 +10,7 @@
         /// <summary>
         /// Name of the commander.
         /// </summary>
+        [Key]
         public string Name { get; set; }
 
         /// <summary>
