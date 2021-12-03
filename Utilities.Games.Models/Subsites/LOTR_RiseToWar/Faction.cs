@@ -1,9 +1,10 @@
-﻿namespace Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Models
+﻿namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {
     /// <summary>
     /// A faction.
     /// </summary>
-    public class Faction {
+    public class Faction
+    {
         /// <summary>
         /// Name of the Faction.
         /// </summary>

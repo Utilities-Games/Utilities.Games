@@ -1,9 +1,10 @@
-﻿namespace Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Models
+﻿namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {
     /// <summary>
     /// An altered effect.
     /// </summary>
-    public class Effect {
+    public class Effect
+    {
         /// <summary>
         /// Specifies the target type. For example, Might or Speed.
         /// </summary>

@@ -1,9 +1,10 @@
-﻿namespace Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Models
+﻿namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {
     /// <summary>
     /// A sub-skill that a commander can learn.
     /// </summary>
-    public class SubSkill {
+    public class SubSkill
+    {
         /// <summary>
         /// Name of the skill.
         /// </summary>

@@ -1,9 +1,10 @@
-﻿namespace Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Models
+﻿namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {
     /// <summary>
     /// A class that a commander falls under.
     /// </summary>
-    public class CommanderClass{
+    public class CommanderClass
+    {
         /// <summary>
         /// Name of the class
         /// </summary>

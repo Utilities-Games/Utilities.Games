@@ -55,7 +55,7 @@ else
     [Parameter]
     public string Name { get; set; }
 
-    private Models.Skill skill;
+    private Games.Models.Subsites.LOTR_RiseToWar.Skill skill;
 
     protected override async Task OnInitializedAsync()
     {
@@ -63,7 +63,7 @@ else
         {
             PropertyNameCaseInsensitive = true
         };
-        skill = (await Http.GetFromJsonAsync<Models.Skill[]>("Subsites/LOTR_RiseToWar/data/skills.json", options))
+        skill = (await Http.GetFromJsonAsync<Games.Models.Subsites.LOTR_RiseToWar.Skill[]>("Subsites/LOTR_RiseToWar/data/skills.json", options))
             .FirstOrDefault(o => o.Name == Name);
     }
 }

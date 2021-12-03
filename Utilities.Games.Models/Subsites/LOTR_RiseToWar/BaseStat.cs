@@ -1,9 +1,10 @@
-﻿namespace Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Models
+﻿namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {
     /// <summary>
     /// A commander's base stat.
     /// </summary>
-    public class BaseStat {
+    public class BaseStat
+    {
         /// <summary>
         /// The base value for the specific stat.
         /// </summary>

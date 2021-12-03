@@ -1,9 +1,10 @@
-﻿namespace Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Models
+﻿namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {
     /// <summary>
     /// An progression level for a Skill.
     /// </summary>
-    public class SkillLevel {
+    public class SkillLevel
+    {
         /// <summary>
         /// An achievable level for a Skill.
         /// </summary>

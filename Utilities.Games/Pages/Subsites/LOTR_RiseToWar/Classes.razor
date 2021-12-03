@@ -26,7 +26,7 @@
 
 @code {
     bool LoadingClasses = false;
-    private Models.CommanderClass[] classes;
+    private DataModels.CommanderClass[] classes;
 
     protected override async Task OnInitializedAsync()
     {
@@ -35,7 +35,7 @@
         {
             PropertyNameCaseInsensitive = true
         };
-        classes = await Http.GetFromJsonAsync<Models.CommanderClass[]>("Subsites/LOTR_RiseToWar/data/classes.json", options);
+        classes = await Http.GetFromJsonAsync<DataModels.CommanderClass[]>("Subsites/LOTR_RiseToWar/data/classes.json", options);
         LoadingClasses = false;
     }
 }

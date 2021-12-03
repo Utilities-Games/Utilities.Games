@@ -85,7 +85,7 @@ else if (commander != null)
     [Parameter]
     public string Name { get; set; }
 
-    private Models.Commander commander;
+    private DataModels.Commander commander;
 
     private Utilities.Games.Models.GrowthChartModel statsChartModel;
 
@@ -97,7 +97,7 @@ else if (commander != null)
             PropertyNameCaseInsensitive = true
         };
         Name = Uri.UnescapeDataString(Name);
-        commander = (await Http.GetFromJsonAsync<Models.Commander[]>("Subsites/LOTR_RiseToWar/data/commanders.json", options))
+        commander = (await Http.GetFromJsonAsync<DataModels.Commander[]>("Subsites/LOTR_RiseToWar/data/commanders.json", options))
             .FirstOrDefault(o => o.Name == Name);
         if (commander?.Stats != null && commander?.Stats?.Might != null && commander?.Stats?.Focus != null && commander?.Stats?.Speed != null)
         {

@@ -23,7 +23,7 @@
                             <InputSelect id="commanderName" class="form-control" @bind-Value="Result.CommanderName">
                                 @if (Commanders?.Length > 0)
                                 {
-                                    foreach (Commander commander in Commanders)
+                                    foreach (var commander in Commanders)
                                     {
                                         <option value="@(commander.Name)">@(commander.Name)</option>
                                     }
@@ -61,7 +61,7 @@
 
     private UserServerCommander Result = new();
 
-    private Commander[] Commanders;
+    private DataModels.Commander[] Commanders;
 
     private Guid Guid = Guid.NewGuid();
     private string ModalDisplay = "none;";
@@ -75,7 +75,7 @@
         {
             PropertyNameCaseInsensitive = true
         };
-        Commanders = (await Http.GetFromJsonAsync<Models.Commander[]>("Subsites/LOTR_RiseToWar/data/commanders.json", options));
+        Commanders = (await Http.GetFromJsonAsync<DataModels.Commander[]>("Subsites/LOTR_RiseToWar/data/commanders.json", options));
         Result.ServerNumber = ServerNumber;
     }
 
