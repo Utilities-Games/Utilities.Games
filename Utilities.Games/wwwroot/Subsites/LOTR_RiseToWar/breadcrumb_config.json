@@ -1,0 +1,42 @@
+[
+    {
+        "match": "lotr_risetowar",
+        "title": "LOTR: Rise To War"
+    },
+    {
+        "match": "lotr_risetowar/commanders",
+        "title": "Commanders"
+    },
+    {
+        "match": "lotr_risetowar/commanders/(.+)",
+        "title": "$1"
+    },
+    {
+        "match": "lotr_risetowar/userserver/(.+)",
+        "title": "User Server $1"
+    },
+    {
+        "match": "lotr_risetowar/skills",
+        "title": "Skills"
+    },
+    {
+        "match": "lotr_risetowar/skills/(.+)",
+        "title": "$1"
+    },
+    {
+        "match": "lotr_risetowar/classes",
+        "title": "Classes"
+    },
+    {
+        "match": "lotr_risetowar/classes/(.+)",
+        "title": "$1"
+    },
+    {
+        "match": "lotr_risetowar/races",
+        "title": "Races"
+    },
+    {
+        "match": "lotr_risetowar/races/(.+)",
+        "title": "$1"
+    }
+]
