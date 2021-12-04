@@ -11,7 +11,7 @@
 else
 {
     <ul>
-        @foreach (Models.Race race in races)
+        @foreach (var race in races)
         {
             <li>
                 <a href="./lotr_risetowar/races/@(race.Name)">@(race.Name)</a>
@@ -21,7 +21,7 @@ else
 }
 
 @code {
-    private Models.Race[] races;
+    private DataModels.RaceType[] races;
 
     protected override async Task OnInitializedAsync()
     {
@@ -29,6 +29,6 @@ else
         {
             PropertyNameCaseInsensitive = true
         };
-        races = await Http.GetFromJsonAsync<Models.Race[]>("Subsites/LOTR_RiseToWar/data/races.json", options);
+        races = await Http.GetFromJsonAsync<DataModels.RaceType[]>("Subsites/LOTR_RiseToWar/data/races.json", options);
     }
 }

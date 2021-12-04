@@ -16,7 +16,7 @@ else
     [Parameter]
     public string Name { get; set; }
 
-    private Models.Race race;
+    private DataModels.RaceType race;
 
     protected override async Task OnInitializedAsync()
     {
@@ -24,7 +24,7 @@ else
         {
             PropertyNameCaseInsensitive = true
         };
-        race = (await Http.GetFromJsonAsync<Models.Race[]>("Subsites/LOTR_RiseToWar/data/races.json", options))
+        race = (await Http.GetFromJsonAsync<DataModels.RaceType[]>("Subsites/LOTR_RiseToWar/data/races.json", options))
             .FirstOrDefault(o => o.Name == Name);
     }
 }
