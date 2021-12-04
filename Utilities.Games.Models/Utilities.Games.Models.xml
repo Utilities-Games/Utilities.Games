@@ -4,6 +4,21 @@
         <name>Utilities.Games.Models</name>
     </assembly>
     <members>
+        <member name="T:Utilities.Games.Models.Contracts.Attributes.PseudoForeignKeyAttribute">
+            <summary>
+            Attribute for defining the relationship between a lookup property and a foreign object.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.Attributes.PseudoForeignKeyAttribute.ForeignType">
+            <summary>
+            Reference to the lookup property's target object.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.Attributes.PseudoForeignKeyAttribute.ForeignKey">
+            <summary>
+            Reference to the name of the property on the target object for which to compare the lookup property value(s).
+            </summary>
+        </member>
         <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.AlignmentType">
             <summary>
             The alignment of an entity. (ie. Good, Evil, Neutral)
@@ -154,12 +169,12 @@
             Name of the first, default commander for the Faction.
             </summary>
         </member>
-        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Race">
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RaceType">
             <summary>
             Race of a commander.
             </summary>
         </member>
-        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Race.Name">
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RaceType.Name">
             <summary>
             Name of the race.
             </summary>

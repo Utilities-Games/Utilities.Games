@@ -1,5 +1,4 @@
-﻿using ConsoulLibrary;
-using ConsoulLibrary.Views;
+﻿using ConsoulLibrary.Views;
 using System;
 using System.Collections.Generic;
 using Utilities.Games.Models.Subsites.LOTR_RiseToWar;
@@ -26,7 +25,7 @@ namespace Utilities.Games.ImportTool.Views.Subsites.LOTR_RiseToWar
                 typeof(Commander),
                 typeof(CommanderClass),
                 typeof(Faction),
-                typeof(Race),
+                typeof(RaceType),
                 typeof(Skill),
             };
         }

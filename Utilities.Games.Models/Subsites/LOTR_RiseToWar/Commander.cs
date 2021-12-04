@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Utilities.Games.Models.Contracts.Attributes;
 
 namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {
@@ -16,11 +17,13 @@ namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
         /// <summary>
         /// Where the commander aligns between Good and Evil.
         /// </summary>
+        [PseudoForeignKey(typeof(AlignmentType), nameof(AlignmentType.Name))]
         public string Alignment { get; set; }
 
         /// <summary>
         /// The race of the commander.
         /// </summary>
+        [PseudoForeignKey(typeof(RaceType), nameof(RaceType.Name))]
         public string Race { get; set; }
 
         /// <summary>
