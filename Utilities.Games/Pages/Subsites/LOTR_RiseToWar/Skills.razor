@@ -11,7 +11,7 @@
 else
 {
     <ul>
-        @foreach (Models.Skill skill in skills)
+        @foreach (DataModels.Skill skill in skills)
         {
             <li>
                 <a href="./lotr_risetowar/skills/@(skill.Name)">@(skill.Name)</a>
@@ -21,7 +21,7 @@ else
 }
 
 @code {
-    private Models.Skill[] skills;
+    private DataModels.Skill[] skills;
 
     protected override async Task OnInitializedAsync()
     {
@@ -29,6 +29,6 @@ else
         {
             PropertyNameCaseInsensitive = true
         };
-        skills = await Http.GetFromJsonAsync<Models.Skill[]>("Subsites/LOTR_RiseToWar/data/skills.json", options);
+        skills = await Http.GetFromJsonAsync<DataModels.Skill[]>("Subsites/LOTR_RiseToWar/data/skills.json", options);
     }
 }
