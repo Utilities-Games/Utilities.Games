@@ -2,11 +2,11 @@
 @inject HttpClient Http
 @layout LOTR_RiseToWar_Layout
 
-@if (commander == null)
+@if (LoadingCommander)
 {
     <p class="alert alert-light">Loading...</p>
 }
-else
+else if (commander != null)
 {
     <div class="card mx-auto" style="width: 18rem;">
         <img class="card-img-top" src="./Subsites/LOTR_RiseToWar/images/commanders/@(commander.Name).png" />
@@ -15,12 +15,12 @@ else
             <p class="card-text">{Insert Flavor Text Here}</p>
         </div>
         <div class="card-footer">
-            <span class="badge badge-primary mx-1">@(commander.Alignment)</span>
+            <span class="badge bg-primary mx-1">@(commander.Alignment)</span>
             @if (commander.Classes?.Length > 0)
             {
                 foreach (var @class in commander.Classes)
                 {
-                    <a class="badge badge-secondary mx-1" title="@(@class) Class" href="./lotr_risetowar/classes/@(@class)">@(@class)</a>
+                    <a class="badge bg-secondary mx-1" title="@(@class) Class" href="./lotr_risetowar/classes/@(@class)">@(@class)</a>
                 }
             }
         </div>
@@ -76,48 +76,57 @@ else
             <p class="alert alert-info">No skills</p>
         }
     </div>
+} else {
+    <p class="alert alert-warning">No commander by the name of @(Name).</p>
 }
 
 @code {
+    bool LoadingCommander = false;
     [Parameter]
     public string Name { get; set; }
 
-    private Models.Commander commander;
+    private DataModels.Commander commander;
 
     private Utilities.Games.Models.GrowthChartModel statsChartModel;
 
     protected override async Task OnInitializedAsync()
     {
+        LoadingCommander = true;
         var options = new System.Text.Json.JsonSerializerOptions()
         {
             PropertyNameCaseInsensitive = true
         };
-        commander = (await Http.GetFromJsonAsync<Models.Commander[]>("Subsites/LOTR_RiseToWar/data/commanders.json", options))
+        Name = Uri.UnescapeDataString(Name);
+        commander = (await Http.GetFromJsonAsync<DataModels.Commander[]>("Subsites/LOTR_RiseToWar/data/commanders.json", options))
             .FirstOrDefault(o => o.Name == Name);
-        var chartModel = new Games.Models.GrowthChartModel($"{commander.Name}'s Growth Chart");
-        Console.WriteLine("Loading Chart Model!");
-        chartModel.Datasets.Add(new Games.Models.GrowthChartModel.Dataset()
+        if (commander?.Stats != null && commander?.Stats?.Might != null && commander?.Stats?.Focus != null && commander?.Stats?.Speed != null)
         {
-            Label = "Might",
-            Color = "red",
-            BaseValue = commander.Stats.Might.Base,
-            GrowthRate = commander.Stats.Might.Rate
-        });
-        chartModel.Datasets.Add(new Games.Models.GrowthChartModel.Dataset()
-        {
-            Label = "Focus",
-            Color = "blue",
-            BaseValue = commander.Stats.Focus.Base,
-            GrowthRate = commander.Stats.Focus.Rate
-        });
-        chartModel.Datasets.Add(new Games.Models.GrowthChartModel.Dataset()
-        {
-            Label = "Speed",
-            Color = "green",
-            BaseValue = commander.Stats.Speed.Base,
-            GrowthRate = commander.Stats.Speed.Rate
-        });
-        statsChartModel = chartModel;
-        statsChartModel.InstanceLabel = "Lvl";
+            var chartModel = new Games.Models.GrowthChartModel($"{commander.Name}'s Growth Chart");
+            Console.WriteLine("Loading Chart Model!");
+            chartModel.Datasets.Add(new Games.Models.GrowthChartModel.Dataset()
+            {
+                Label = "Might",
+                Color = "red",
+                BaseValue = commander.Stats.Might.Base,
+                GrowthRate = commander.Stats.Might.Rate
+            });
+            chartModel.Datasets.Add(new Games.Models.GrowthChartModel.Dataset()
+            {
+                Label = "Focus",
+                Color = "blue",
+                BaseValue = commander.Stats.Focus.Base,
+                GrowthRate = commander.Stats.Focus.Rate
+            });
+            chartModel.Datasets.Add(new Games.Models.GrowthChartModel.Dataset()
+            {
+                Label = "Speed",
+                Color = "green",
+                BaseValue = commander.Stats.Speed.Base,
+                GrowthRate = commander.Stats.Speed.Rate
+            });
+            statsChartModel = chartModel;
+            statsChartModel.InstanceLabel = "Lvl";
+        }
+        LoadingCommander = false;
     }
 }

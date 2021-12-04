@@ -4,33 +4,47 @@
 
 <h3>Commanders</h3>
 
-<div class="row">
-    @if (commanders == null)
+<div class="row row-cols-6 row-cols-md-8 g-4">
+    @if (LoadingCommanders)
     {
-        <p class="alert alert-light">Loading...</p>
-    }
-    else
-    {
-        @foreach (Models.Commander commander in commanders)
-        {
-            <a class="card m-3" href="./lotr_risetowar/commanders/@(commander.Name)">
-                <img class="card-img-top" src="./Subsites/LOTR_RiseToWar/images/commanders/@(commander.Name).png" alt="@(commander.Name)" />
+        <div class="col">
+            <div class="card h-100" aria-hidden="true">
+                <img class="card-img-top" src="" />
                 <div class="card-body">
-                    <h5 class="card-title text-center">@(commander.Name)</h5>
+                    <h5 class="card-title placeholder-glow"><span class="placeholder col-6"></span></h5>
                 </div>
-            </a>
+            </div>
+        </div>
+    }
+    else if (commanders?.Length > 0)
+    {
+        foreach (Games.Models.Subsites.LOTR_RiseToWar.Commander commander in commanders)
+        {
+            <div class="col">
+                <a class="card h-100" href="./lotr_risetowar/commanders/@(commander.Name)">
+                    <img class="card-img-top" src="./Subsites/LOTR_RiseToWar/images/commanders/@(commander.Name).png" alt="@(commander.Name)" />
+                    <div class="card-body">
+                        <h5 class="card-title text-center">@(commander.Name)</h5>
+                    </div>
+                </a>
+            </div>
         }
+    } else {
+        <p class="alert alert-warning">No commanders found in dataset. Please submit an Issue on GitHub so the developers can take care of it. <a href="https://github.com/Utilities-Games/Utilities.Games/issues/new?assignees=&labels=bug%2C+lotr-risetowar%2C+subsite&template=-bug--lotr--rise-to-war.md&title=%5BBUG%5D%5BLOTR_RiseToWar%5D+%7BBrief+Description%7D">Create Issue on GitHub</a></p>
     }
 </div>
 
 @code {
-    private Models.Commander[] commanders;
+    bool LoadingCommanders = false;
+    private DataModels.Commander[] commanders;
 
     protected override async Task OnInitializedAsync(){
+        LoadingCommanders = true;
         var options = new System.Text.Json.JsonSerializerOptions()
         {
             PropertyNameCaseInsensitive = true
         };
-        commanders = await Http.GetFromJsonAsync<Models.Commander[]>("Subsites/LOTR_RiseToWar/data/commanders.json", options);
+        commanders = await Http.GetFromJsonAsync<DataModels.Commander[]>("Subsites/LOTR_RiseToWar/data/commanders.json", options);
+        LoadingCommanders = false;
     }
 }

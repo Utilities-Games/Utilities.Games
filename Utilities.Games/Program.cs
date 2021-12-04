@@ -17,12 +17,17 @@ namespace Utilities.Games
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("#app");
 
+
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
             builder.Services.AddScoped<Utilities.Games.Models.Notifications.NotificationTriggers>();
             builder.Services.AddScoped<LOTR_RiseToWar.Models.LocalStores.ServerStore>();
             builder.Services.AddScoped<LOTR_RiseToWar.Models.LocalStores.CommanderStore>();
 
             var host = builder.Build();
+
+            if (builder.HostEnvironment.IsDevelopment()) {
+                var config = new WebAssemblyHostConfiguration();
+            }
 
             await host.RunAsync();
         }

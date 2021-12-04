@@ -21,12 +21,15 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\Subsites\LOTR_RiseToWar\css\" />
-    <Folder Include="wwwroot\js\" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="wwwroot\Subsites\LOTR_RiseToWar\images\favicon.ico" />
     <None Include="wwwroot\Subsites\LOTR_RiseToWar\images\game_logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities.Games.Models\Utilities.Games.Models.csproj" />
   </ItemGroup>
 
 </Project>

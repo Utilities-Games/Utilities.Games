@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
 namespace Utilities.Games.Models
 {
@@ -19,9 +16,27 @@ namespace Utilities.Games.Models
 
         public bool IsActive { get; set; }
     }
-    public class BreadcrumbConfig {
-        public string Address { get; set; }
-
+    public class BreadcrumbConfig
+    {
+        public string Match { get; set; }
         public string Title { get; set; }
+        private Regex _reg;
+        public Regex MatchExpression
+        {
+            get
+            {
+                if (_reg == null) {
+                    _reg = new Regex($"^{Match}$");
+                }
+                return _reg;
+            }
+        }
+
+        public bool IsMatch(string address) => MatchExpression.IsMatch(address);
+
+        public string FormatTitle(string address)
+        {
+            return Regex.Replace(address, MatchExpression.ToString(), Title);
+        }
     }
 }

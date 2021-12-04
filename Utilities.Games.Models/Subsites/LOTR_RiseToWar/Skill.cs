@@ -1,12 +1,16 @@
-﻿namespace Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {
     /// <summary>
     /// A skill that a commander can learn.
     /// </summary>
-    public class Skill {
+    public class Skill
+    {
         /// <summary>
         /// Name of the skill.
         /// </summary>
+        [Key]
         public string Name { get; set; }
 
         /// <summary>

@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities.Games", "Utilities.Games\Utilities.Games.csproj", "{BB89C137-6C7E-4811-A6A3-66F15A9A6E76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.Games.Models", "Utilities.Games.Models\Utilities.Games.Models.csproj", "{8FA4B113-F369-45C6-9314-CB9EC7E19F8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.Games.ImportTool", "Utilities.Games.ImportTool\Utilities.Games.ImportTool.csproj", "{B5D254FA-52DF-4851-9B65-44433CFD0E13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{BB89C137-6C7E-4811-A6A3-66F15A9A6E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB89C137-6C7E-4811-A6A3-66F15A9A6E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB89C137-6C7E-4811-A6A3-66F15A9A6E76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FA4B113-F369-45C6-9314-CB9EC7E19F8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FA4B113-F369-45C6-9314-CB9EC7E19F8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FA4B113-F369-45C6-9314-CB9EC7E19F8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA4B113-F369-45C6-9314-CB9EC7E19F8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5D254FA-52DF-4851-9B65-44433CFD0E13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5D254FA-52DF-4851-9B65-44433CFD0E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5D254FA-52DF-4851-9B65-44433CFD0E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5D254FA-52DF-4851-9B65-44433CFD0E13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
