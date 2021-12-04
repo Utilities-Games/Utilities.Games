@@ -1,5 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using Utilities.Games.Models.Contracts.Attributes;
+using Utilities.Games.Models.Subsites.LOTR_RiseToWar.Contracts;
 
 namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {
@@ -29,6 +31,7 @@ namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
         /// <summary>
         /// Collection of special classes for the commander.
         /// </summary>
+        [PseudoForeignKey(typeof(CommanderClass), nameof(CommanderClass.Name))]
         public string[] Classes { get; set; }
 
         /// <summary>

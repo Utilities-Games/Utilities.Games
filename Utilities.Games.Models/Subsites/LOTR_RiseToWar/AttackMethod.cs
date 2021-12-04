@@ -3,11 +3,11 @@
 namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {
     /// <summary>
-    /// The alignment of an entity. (ie. Good, Evil, Neutral)
+    /// Reference to the type that an attack incurs.
     /// </summary>
-    public class AlignmentType {
+    public class AttackMethod {
         /// <summary>
-        /// Name of the alignment.
+        /// Name of the attack type.
         /// </summary>
         [Key]
         public string Name { get; set; }
