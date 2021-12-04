@@ -3,19 +3,18 @@
 namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {
     /// <summary>
-    /// A sub-skill that a commander can learn.
+    /// Represents an item type.
     /// </summary>
-    public class SubSkill
-    {
+    public class ItemType {
         /// <summary>
-        /// Name of the skill.
+        /// Name of the item type. For example: Equipment, Respect, Boost, Special.
         /// </summary>
         [Key]
         public string Name { get; set; }
 
         /// <summary>
-        /// The round that this skill kicks in.
+        /// Available sub-types. For example: Head, Armour, Hand, Accessory.
         /// </summary>
-        public int Round { get; set; }
+        public string[] SubTypes { get; set; }
     }
 }

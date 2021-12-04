@@ -1,4 +1,4 @@
-﻿namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
+﻿namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar.Contracts
 {
     /// <summary>
     /// A commander's base stat.

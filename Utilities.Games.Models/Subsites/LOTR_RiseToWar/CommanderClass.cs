@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Utilities.Games.Models.Subsites.LOTR_RiseToWar.Contracts;
 
 namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Utilities.Games.Models.Subsites.LOTR_RiseToWar.Contracts;
 
 namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {
@@ -27,5 +28,37 @@ namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
         /// The achievable effect once all levels have been achieved.
         /// </summary>
         public Effect MaxLevelEffect { get; set; }
+    }
+    /// <summary>
+    /// An progression level for a Skill.
+    /// </summary>
+    public class SkillLevel
+    {
+        /// <summary>
+        /// An achievable level for a Skill.
+        /// </summary>
+        [Key]
+        public int Level { get; set; }
+
+        /// <summary>
+        /// The effects gained when the level is achieved.
+        /// </summary>
+        public Effect[] Effects { get; set; }
+    }
+    /// <summary>
+    /// A sub-skill that a commander can learn.
+    /// </summary>
+    public class SubSkill
+    {
+        /// <summary>
+        /// Name of the skill.
+        /// </summary>
+        [Key]
+        public string Name { get; set; }
+
+        /// <summary>
+        /// The round that this skill kicks in.
+        /// </summary>
+        public int Round { get; set; }
     }
 }

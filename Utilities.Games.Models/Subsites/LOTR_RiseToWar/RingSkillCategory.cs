@@ -3,11 +3,11 @@
 namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {
     /// <summary>
-    /// The alignment of an entity. (ie. Good, Evil, Neutral)
+    /// Represents the category for various <see cref="RingSkill"/>s.
     /// </summary>
-    public class AlignmentType {
+    public class RingSkillCategory {
         /// <summary>
-        /// Name of the alignment.
+        /// Name of the <see cref="RingSkill"/> category.
         /// </summary>
         [Key]
         public string Name { get; set; }

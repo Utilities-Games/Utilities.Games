@@ -22,11 +22,21 @@ namespace Utilities.Games.ImportTool.Views.Subsites.LOTR_RiseToWar
             return new List<Type>
             {
                 typeof(AlignmentType),
+                typeof(AttackMethod),
+                typeof(BuildingType),
                 typeof(Commander),
                 typeof(CommanderClass),
+                typeof(CommanderSkill),
+                typeof(EquipmentItem),
                 typeof(Faction),
+                typeof(ItemType),
                 typeof(RaceType),
+                typeof(RingPowerLevel),
+                typeof(RingSkill),
+                typeof(RingSkillCategory),
+                typeof(SignificantStructure),
                 typeof(Skill),
+                typeof(UnitType),
             };
         }
 
