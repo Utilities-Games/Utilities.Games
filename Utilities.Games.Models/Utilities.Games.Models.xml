@@ -29,19 +29,94 @@
             Name of the alignment.
             </summary>
         </member>
-        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BaseStat">
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.AttackMethod">
             <summary>
-            A commander's base stat.
+            Reference to the type that an attack incurs.
             </summary>
         </member>
-        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BaseStat.Base">
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.AttackMethod.Name">
             <summary>
-            The base value for the specific stat.
+            Name of the attack type.
             </summary>
         </member>
-        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BaseStat.Rate">
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BuildingType">
             <summary>
-            The rate per level that the stat increases
+            Represents a building that can be constructed.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BuildingType.Name">
+            <summary>
+            Name of the building type.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BuildingType.Levels">
+            <summary>
+            Reference to which levels are available for this building type and the associated costs, requirements, and effects.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BuildingLevel">
+            <summary>
+            Represents the costs, requirements, and effects associated with acquiring or achieving this level of a building type's construction.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BuildingLevel.Level">
+            <summary>
+            Reference to the building level.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BuildingLevel.Costs">
+            <summary>
+            Base resource/time costs to construct this level of a building type.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BuildingLevel.Requirements">
+            <summary>
+            Collection of other building requirements before construction can begin on this leve.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BuildingConstructionCost">
+            <summary>
+            Represents the construction costs associated with a specific level of a building type.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BuildingConstructionCost.Wood">
+            <summary>
+            Construction cost of Wood resources.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BuildingConstructionCost.Stone">
+            <summary>
+            Construction cost of Stone resources.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BuildingConstructionCost.Iron">
+            <summary>
+            Construction cost of Iron resources.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BuildingConstructionCost.Grain">
+            <summary>
+            Construction cost of Grain resources.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BuildingConstructionCost.Time">
+            <summary>
+            Construction cost of time.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.MinimumConstructionRequirement">
+            <summary>
+            Represents a single minimum building requirement for a building type.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.MinimumConstructionRequirement.Building">
+            <summary>
+            Reference to the building type that his requirement is based on.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.MinimumConstructionRequirement.MinimumLevel">
+            <summary>
+            Represents the minimum level that the <see cref="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BuildingType"/> must achieve before this requirement is satisfied.
             </summary>
         </member>
         <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Commander">
@@ -129,29 +204,84 @@
             Specifies where the skill aligns within the skill tree.
             </summary>
         </member>
-        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Effect">
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Contracts.BaseStat">
+            <summary>
+            A commander's base stat.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Contracts.BaseStat.Base">
+            <summary>
+            The base value for the specific stat.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Contracts.BaseStat.Rate">
+            <summary>
+            The rate per level that the stat increases
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Contracts.Coordinate">
+            <summary>
+            Represents a 2D coordinate point.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Contracts.Coordinate.X">
+            <summary>
+            Represents the -X- location on the World Map.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Contracts.Coordinate.Y">
+            <summary>
+            Represents the -Y- location on the World Map.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Contracts.Effect">
             <summary>
             An altered effect.
             </summary>
         </member>
-        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Effect.TargetType">
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Contracts.Effect.TargetType">
             <summary>
             Specifies the target type. For example, Might or Speed.
             </summary>
         </member>
-        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Effect.Amount">
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Contracts.Effect.Amount">
             <summary>
             The amount that the target type is affected.
             </summary>
         </member>
-        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Effect.TargetScope">
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Contracts.Effect.TargetScope">
             <summary>
             Specifies what scope of the target type. For example, Commander or Army.
             </summary>
         </member>
-        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Effect.Units">
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Contracts.Effect.Units">
             <summary>
             Unit of measurement for the effect amount.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.EquipmentItem">
+            <summary>
+            Represents a specific equipment item.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.EquipmentItem.Name">
+            <summary>
+            Name of the item.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.EquipmentItem.Type">
+            <summary>
+            Reference to the type of item this is.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.EquipmentItem.SubType">
+            <summary>
+            Reference to the sub-type of item this is.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.EquipmentItem.SupportedRaces">
+            <summary>
+            List of race types this equipment can be given to.
             </summary>
         </member>
         <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Faction">
@@ -169,6 +299,21 @@
             Name of the first, default commander for the Faction.
             </summary>
         </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.ItemType">
+            <summary>
+            Represents an item type.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.ItemType.Name">
+            <summary>
+            Name of the item type. For example: Equipment, Respect, Boost, Special.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.ItemType.SubTypes">
+            <summary>
+            Available sub-types. For example: Head, Armour, Hand, Accessory.
+            </summary>
+        </member>
         <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RaceType">
             <summary>
             Race of a commander.
@@ -177,6 +322,106 @@
         <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RaceType.Name">
             <summary>
             Name of the race.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RingPowerLevel">
+            <summary>
+            Represents an instance of a level applied to a Ring of Power.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RingPowerLevel.Level">
+            <summary>
+            Represents the level associated with this level of Ring Power.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RingPowerLevel.MinimumPowerCost">
+            <summary>
+            Reference to the minimum amount of Ring Power is required to unlock this level of Ring Power.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RingSkill">
+            <summary>
+            Represents a skill that can be unlocked as Ring levels progress.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RingSkill.Name">
+            <summary>
+            Name of the Ring skill.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RingSkill.Category">
+            <summary>
+            Reference to the category for which this skill applies.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RingSkill.Levels">
+            <summary>
+            Available progressions for this skill.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RingSkillLevel.Level">
+            <summary>
+            Reference to which level this object applies to.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RingSkillCategory">
+            <summary>
+            Represents the category for various <see cref="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RingSkill"/>s.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RingSkillCategory.Name">
+            <summary>
+            Name of the <see cref="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RingSkill"/> category.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.SignificantStructure">
+            <summary>
+            Represents a significant structure on the world map.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.SignificantStructure.Name">
+            <summary>
+            Name of the structure.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.SignificantStructure.Coordinates">
+            <summary>
+            Location on the World Map that the center of this structure exists.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.SignificantStructure.Tier">
+            <summary>
+            Represents the strength tier of the structure.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.SignificantStructure.HourlyPowerRate">
+            <summary>
+            The hourly Ring Power output rate.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.SignificantStructure.Defenses">
+            <summary>
+            Base, statistical defensive characteristics for this structure.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.StructureDefenses">
+            <summary>
+            The base statistical characteristics of a structure's defenses.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.StructureDefenses.DefenderLevel">
+            <summary>
+            The commander level of the army(ies) currently defending the structure.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.StructureDefenses.TotalArmyCount">
+            <summary>
+            The total number of armies stationed at the structure.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.StructureDefenses.TotalSiegeDefenses">
+            <summary>
+            The total amount of Siege defense is available for this structure.
             </summary>
         </member>
         <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Skill">
@@ -232,6 +477,116 @@
         <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.SubSkill.Round">
             <summary>
             The round that this skill kicks in.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitType">
+            <summary>
+            A recruitable army unit.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitType.Name">
+            <summary>
+            Name of the UnitType
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitType.Tier">
+            <summary>
+            Strength tier of the UnitType. For example: I, II, III, IV
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitType.Alignment">
+            <summary>
+            Where the unit aligns between Good and Evil.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitType.AttackType">
+            <summary>
+            Reference to the primary form of attack this unit incurs.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitType.UnitsPerCommand">
+            <summary>
+            Number of units, for this type, that make up an individual command unit.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitType.Race">
+            <summary>
+            Reference to the race these units represent.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitType.Stats">
+            <summary>
+            Base, statistical characteristics of this unit type.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitType.Costs">
+            <summary>
+            Base costs to conscript a single command unit for this unit type.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitStats">
+            <summary>
+            Base, statistical characteristics of a <see cref="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitType"/>.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitStats.MinimumBaseDamage">
+            <summary>
+            Minimum base value for damage which affects the damage dealt by a single unit.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitStats.MaximumBaseDamage">
+            <summary>
+            Maximum base value for damage which affects the damage dealt by a single unit.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitStats.HP">
+            <summary>
+            Increases or modifies the amount of damage an individual unit can take before dying.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitStats.Speed">
+            <summary>
+            Decides unit's top marching speed and turn order during battle.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitStats.Siege">
+            <summary>
+            After a battle is won, the Durability of a structure or Land is reduced by 1 for every 100 Siege points.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitStats.Defence">
+            <summary>
+            Decreases the amount of Physical Damage units take.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitCosts">
+            <summary>
+            Base costs to conscript a single command unit for a unit type.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitCosts.Wood">
+            <summary>
+            Conscription cost per Command of Wood resources.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitCosts.Stone">
+            <summary>
+            Conscription cost per Command of Stone resources.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitCosts.Iron">
+            <summary>
+            Conscription cost per Command of Iron resources.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitCosts.Grain">
+            <summary>
+            Conscription cost per Command of Grain resources.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitCosts.Time">
+            <summary>
+            Conscription cost per Command of time.
             </summary>
         </member>
     </members>
