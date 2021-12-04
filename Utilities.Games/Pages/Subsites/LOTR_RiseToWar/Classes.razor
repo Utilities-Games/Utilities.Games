@@ -13,7 +13,7 @@
     }
     else if (classes?.Length > 0)
     {
-        @foreach (Models.CommanderClass @class in classes)
+        @foreach (DataModels.CommanderClass @class in classes)
         {
             <li>
                 <a href="./lotr_risetowar/classes/@(@class.Name)">@(@class.Name)</a>
