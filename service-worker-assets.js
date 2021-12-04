@@ -1,11 +1,11 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-kQeZr1KIVvurrqx2Qdo+nE8r9kKyuCZvOIhrDltHTYY=",
+      "hash": "sha256-kwXMpG+uLihv3sJ1uS\/sNWGYuwPkNZoF6LFHW2Sss+A=",
       "url": "_framework\/Utilities.Games.Models.xml"
     },
     {
-      "hash": "sha256-kQeZr1KIVvurrqx2Qdo+nE8r9kKyuCZvOIhrDltHTYY=",
+      "hash": "sha256-kwXMpG+uLihv3sJ1uS\/sNWGYuwPkNZoF6LFHW2Sss+A=",
       "url": "_framework\/Utilities.Games.Models.xml"
     },
     {
@@ -749,11 +749,11 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-bH58JLnRqndGvNC2zUqq6GgdqBNfdGbkuVjrxiaMm\/Q=",
+      "hash": "sha256-70ooCCVCGcCqf5X8XX7YNyJN7xTGNDHlhnblL6UMCKA=",
       "url": "_framework\/Utilities.Games.Models.dll"
     },
     {
-      "hash": "sha256-s3yhugZcesWjxdZTEiQnfIihXiAfMXO+CZJ8xNaWb70=",
+      "hash": "sha256-sncdSo5RE983EnWePVmDxLnhFiVZn+ym8HEPlEgPDgA=",
       "url": "_framework\/Utilities.Games.dll"
     },
     {
@@ -1149,7 +1149,7 @@
       "url": "_framework\/zh-Hant\/Microsoft.CodeAnalysis.Workspaces.resources.dll"
     },
     {
-      "hash": "sha256-Z5dGdHDIjaLt2u+pebSrsw3S12LoWn2\/Nhzuo93AXoo=",
+      "hash": "sha256-COixST3zRsvpQ7AjQZQl+JFReHCo6BPWEKBzaEHNd4g=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -1157,5 +1157,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "r84QRUwH"
+  "version": "TQF5CXQw"
 };
