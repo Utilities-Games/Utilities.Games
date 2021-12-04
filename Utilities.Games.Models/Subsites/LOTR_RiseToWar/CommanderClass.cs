@@ -1,12 +1,16 @@
-﻿namespace Utilities.Games.Pages.Subsites.LOTR_RiseToWar.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
 {
     /// <summary>
     /// A class that a commander falls under.
     /// </summary>
-    public class CommanderClass{
+    public class CommanderClass
+    {
         /// <summary>
         /// Name of the class
         /// </summary>
+        [Key]
         public string Name { get; set; }
 
         /// <summary>

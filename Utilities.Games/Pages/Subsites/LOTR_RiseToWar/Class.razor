@@ -30,7 +30,7 @@ else
     [Parameter]
     public string Name { get; set; }
 
-    private Models.CommanderClass commanderClass;
+    private DataModels.CommanderClass commanderClass;
 
     protected override async Task OnInitializedAsync()
     {
@@ -38,7 +38,7 @@ else
         {
             PropertyNameCaseInsensitive = true
         };
-        commanderClass = (await Http.GetFromJsonAsync<Models.CommanderClass[]>("Subsites/LOTR_RiseToWar/data/classes.json", options))
+        commanderClass = (await Http.GetFromJsonAsync<DataModels.CommanderClass[]>("Subsites/LOTR_RiseToWar/data/classes.json", options))
             .FirstOrDefault(o => o.Name == Name);
     }
 }

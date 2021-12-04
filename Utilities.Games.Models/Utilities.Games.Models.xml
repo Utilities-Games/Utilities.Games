@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Utilities.Games.Models</name>
+    </assembly>
+    <members>
+        <member name="T:Utilities.Games.Models.Contracts.Attributes.PseudoForeignKeyAttribute">
+            <summary>
+            Attribute for defining the relationship between a lookup property and a foreign object.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.Attributes.PseudoForeignKeyAttribute.ForeignType">
+            <summary>
+            Reference to the lookup property's target object.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.Attributes.PseudoForeignKeyAttribute.ForeignKey">
+            <summary>
+            Reference to the name of the property on the target object for which to compare the lookup property value(s).
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.AlignmentType">
+            <summary>
+            The alignment of an entity. (ie. Good, Evil, Neutral)
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.AlignmentType.Name">
+            <summary>
+            Name of the alignment.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BaseStat">
+            <summary>
+            A commander's base stat.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BaseStat.Base">
+            <summary>
+            The base value for the specific stat.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BaseStat.Rate">
+            <summary>
+            The rate per level that the stat increases
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Commander">
+            <summary>
+            A commander unit.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Commander.Name">
+            <summary>
+            Name of the commander.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Commander.Alignment">
+            <summary>
+            Where the commander aligns between Good and Evil.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Commander.Race">
+            <summary>
+            The race of the commander.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Commander.Classes">
+            <summary>
+            Collection of special classes for the commander.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Commander.Skills">
+            <summary>
+            Collection of commander skills.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Commander.Stats">
+            <summary>
+            Base stats for a commander.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BaseStats">
+            <summary>
+            Base stats for a commander.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BaseStats.Might">
+            <summary>
+            Base stats for Might.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BaseStats.Focus">
+            <summary>
+            Base stats for Focus.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.BaseStats.Speed">
+            <summary>
+            Base stats for Speed.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.CommanderClass">
+            <summary>
+            A class that a commander falls under.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.CommanderClass.Name">
+            <summary>
+            Name of the class
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.CommanderClass.Effects">
+            <summary>
+            The effects this class has on the commander.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.CommanderSkill">
+            <summary>
+            A skill available to a commander.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.CommanderSkill.Name">
+            <summary>
+            Name of the skill.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.CommanderSkill.Tier">
+            <summary>
+            Specifies where the skill aligns within the skill tree.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Effect">
+            <summary>
+            An altered effect.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Effect.TargetType">
+            <summary>
+            Specifies the target type. For example, Might or Speed.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Effect.Amount">
+            <summary>
+            The amount that the target type is affected.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Effect.TargetScope">
+            <summary>
+            Specifies what scope of the target type. For example, Commander or Army.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Effect.Units">
+            <summary>
+            Unit of measurement for the effect amount.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Faction">
+            <summary>
+            A faction.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Faction.Name">
+            <summary>
+            Name of the Faction.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Faction.FirstCommander">
+            <summary>
+            Name of the first, default commander for the Faction.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RaceType">
+            <summary>
+            Race of a commander.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.RaceType.Name">
+            <summary>
+            Name of the race.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Skill">
+            <summary>
+            A skill that a commander can learn.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Skill.Name">
+            <summary>
+            Name of the skill.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Skill.SubSkills">
+            <summary>
+            Collection of sub-skills.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Skill.Levels">
+            <summary>
+            The achievable levels for the skill.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.Skill.MaxLevelEffect">
+            <summary>
+            The achievable effect once all levels have been achieved.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.SkillLevel">
+            <summary>
+            An progression level for a Skill.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.SkillLevel.Level">
+            <summary>
+            An achievable level for a Skill.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.SkillLevel.Effects">
+            <summary>
+            The effects gained when the level is achieved.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.SubSkill">
+            <summary>
+            A sub-skill that a commander can learn.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.SubSkill.Name">
+            <summary>
+            Name of the skill.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.SubSkill.Round">
+            <summary>
+            The round that this skill kicks in.
+            </summary>
+        </member>
+    </members>
+</doc>

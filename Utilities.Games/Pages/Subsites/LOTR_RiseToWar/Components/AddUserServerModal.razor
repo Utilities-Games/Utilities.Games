@@ -41,7 +41,7 @@
                             <InputSelect id="faction" class="form-control" @bind-Value="Result.Faction">
                                 @if (Factions?.Length > 0)
                                 {
-                                    foreach (Faction faction in Factions)
+                                    foreach (var faction in Factions)
                                     {
                                         <option value="@(faction.Name)">@(faction.Name)</option>
                                     }
@@ -83,7 +83,7 @@
 
     private UserServer Result = new();
 
-    private Faction[] Factions;
+    private DataModels.Faction[] Factions;
 
     private Guid Guid = Guid.NewGuid();
     private string ModalDisplay = "none;";
@@ -97,7 +97,7 @@
         {
             PropertyNameCaseInsensitive = true
         };
-        Factions = (await Http.GetFromJsonAsync<Models.Faction[]>("Subsites/LOTR_RiseToWar/data/factions.json", options));
+        Factions = (await Http.GetFromJsonAsync<DataModels.Faction[]>("Subsites/LOTR_RiseToWar/data/factions.json", options));
     }
 
     public void Open()

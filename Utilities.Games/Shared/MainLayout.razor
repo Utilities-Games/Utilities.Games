@@ -1,7 +1,5 @@
 ﻿@inherits LayoutComponentBase
-@inject HttpClient Http
-@inject NavigationManager NavigationManager
-@using Utilities.Games.Models
+@inject IJSRuntime JSRuntime
 
 <div class="page">
     <div class="sidebar">
@@ -9,65 +7,17 @@
     </div>
 
     <div class="main">
-        <Breadcrumb Links="@breadcrumbLinks" />
-
-        <div class="content px-4">
-            @Body
-        </div>
+        @Body
     </div>
 </div>
 @code{
-    private string currentUrl;
-    private List<BreadcrumbLink> breadcrumbLinks;
-    private List<BreadcrumbConfig> breadcrumbConfig;
-
-    protected override async Task OnInitializedAsync()
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        var options = new System.Text.Json.JsonSerializerOptions()
+        if (firstRender)
         {
-            PropertyNameCaseInsensitive = true
-        };
-        var breadcrumbConfig = await Http.GetFromJsonAsync<List<BreadcrumbConfig>>("breadcrumb_config.json", options);
-    }
-    protected async override void OnParametersSet()
-    {
-
-        breadcrumbLinks = new List<BreadcrumbLink>();
-        currentUrl = NavigationManager.Uri;
-        var myUrl = currentUrl.Replace(NavigationManager.BaseUri, "");
-        breadcrumbLinks.Add(new BreadcrumbLink
-        {
-            Address = NavigationManager.BaseUri,
-            IsActive = NavigationManager.Uri == NavigationManager.BaseUri,
-            OrderIndex = 1,
-            Title = "Home"
-        });
-        var path = myUrl.Split('/');
-        var count = 1;
-
-        foreach (var link in path)
-        {
-            if (link == "") continue;
-            count++;
-            var lastLink = breadcrumbLinks.Last();
-            var address = $"{lastLink.Address}/{link}";
-            string title = link;
-            if (title.Contains("?")) {
-                title = title.Remove(title.IndexOf('?'));
-            }
-            var config = breadcrumbConfig?.FirstOrDefault(o => o.Address == address);
-            if (config != null)
-            {
-                title = config.Title;
-            }
-            breadcrumbLinks.Add(new Models.BreadcrumbLink
-            {
-                Address = address,
-                IsActive = link == path.Last(),
-                OrderIndex = count,
-                Title = title
-            });
+            await JSRuntime.InvokeAsync<IJSObjectReference>("import", "/js/popper/popper.min.js");
+            await JSRuntime.InvokeAsync<IJSObjectReference>("import", "/js/bootstrap/bootstrap.min.js");
         }
-        base.OnParametersSet();
     }
+
 }

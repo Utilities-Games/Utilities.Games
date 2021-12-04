@@ -4,31 +4,38 @@
 
 <h3>Classes</h3>
 
-@if (classes == null)
-{
-    <p>Loading...</p>
-}
-else
-{
-    <ul>
+<ul>
+    @if (LoadingClasses)
+    {
+        <li><span class="placeholder placeholder-glow col-6"></span></li>
+        <li><span class="placeholder placeholder-glow col-4"></span></li>
+        <li><span class="placeholder placeholder-glow col-8"></span></li>
+    }
+    else if (classes?.Length > 0)
+    {
         @foreach (Models.CommanderClass @class in classes)
         {
             <li>
                 <a href="./lotr_risetowar/classes/@(@class.Name)">@(@class.Name)</a>
             </li>
         }
-    </ul>
-}
+    } else {
+        <li class="bg-warning text-warning">No classes found in dataset. Please submit an Issue on GitHub so the developers can take care of it. <a href="https://github.com/Utilities-Games/Utilities.Games/issues/new?assignees=&labels=bug%2C+lotr-risetowar%2C+subsite&template=-bug--lotr--rise-to-war.md&title=%5BBUG%5D%5BLOTR_RiseToWar%5D+%7BBrief+Description%7D">Create Issue on GitHub</a></li>
+    }
+</ul>
 
 @code {
-    private Models.CommanderClass[] classes;
+    bool LoadingClasses = false;
+    private DataModels.CommanderClass[] classes;
 
     protected override async Task OnInitializedAsync()
     {
+        LoadingClasses = true;
         var options = new System.Text.Json.JsonSerializerOptions()
         {
             PropertyNameCaseInsensitive = true
         };
-        classes = await Http.GetFromJsonAsync<Models.CommanderClass[]>("Subsites/LOTR_RiseToWar/data/classes.json", options);
+        classes = await Http.GetFromJsonAsync<DataModels.CommanderClass[]>("Subsites/LOTR_RiseToWar/data/classes.json", options);
+        LoadingClasses = false;
     }
 }
