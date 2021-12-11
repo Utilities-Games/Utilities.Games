@@ -321,6 +321,10 @@
       "url": "Subsites\/LOTR_RiseToWar\/data\/skills.json"
     },
     {
+      "hash": "sha256-eH++3vrgAQaMeX+Arm9DNkbn0ocGCp+97Ivzvpa+BaA=",
+      "url": "Subsites\/LOTR_RiseToWar\/data\/Utilities-Games Data Model Workbook_LOTR_RiseToWar.xlsx"
+    },
+    {
       "hash": "sha256-0JamdEM2NSJNi5pfoJ91hBT7Pq9oZbH0me4OxbSv+kU=",
       "url": "Subsites\/LOTR_RiseToWar\/images\/commanders\/Agzok.png"
     },
@@ -749,11 +753,11 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-70ooCCVCGcCqf5X8XX7YNyJN7xTGNDHlhnblL6UMCKA=",
+      "hash": "sha256-Y8uUBZmyBszvC4g3QfzOkpTHdEEuQC7LuXGjMEDz4U8=",
       "url": "_framework\/Utilities.Games.Models.dll"
     },
     {
-      "hash": "sha256-sncdSo5RE983EnWePVmDxLnhFiVZn+ym8HEPlEgPDgA=",
+      "hash": "sha256-Y0Mzx1o17y5yT0X2KCCRdKBf4YYBAme6B3v\/PrvQ97I=",
       "url": "_framework\/Utilities.Games.dll"
     },
     {
@@ -1149,7 +1153,7 @@
       "url": "_framework\/zh-Hant\/Microsoft.CodeAnalysis.Workspaces.resources.dll"
     },
     {
-      "hash": "sha256-COixST3zRsvpQ7AjQZQl+JFReHCo6BPWEKBzaEHNd4g=",
+      "hash": "sha256-WKgXfBCOFIgWBDLJCnKeXhq21Hujas7AISpRqeIIHp8=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -1157,5 +1161,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "TQF5CXQw"
+  "version": "QmfX2Va4"
 };
