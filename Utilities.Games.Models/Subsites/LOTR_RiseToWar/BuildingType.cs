@@ -17,7 +17,7 @@ namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
         /// <summary>
         /// Reference to which levels are available for this building type and the associated costs, requirements, and effects.
         /// </summary>
-        public object[] Levels { get; set; }
+        public BuildingLevel[] Levels { get; set; }
     }
     /// <summary>
     /// Represents the costs, requirements, and effects associated with acquiring or achieving this level of a building type's construction.

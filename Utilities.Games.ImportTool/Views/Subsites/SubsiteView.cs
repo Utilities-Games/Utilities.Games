@@ -4,6 +4,7 @@ using OfficeOpenXml;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Utilities.Games.ImportTool.DataModelFactories.Excel;
 
 namespace Utilities.Games.ImportTool.Views.Subsites
@@ -26,19 +27,21 @@ namespace Utilities.Games.ImportTool.Views.Subsites
         public virtual void SaveDataModelWorkbook() {
             Consoul.Write("Constructing package...");
             var fi = new FileInfo($"Utilities-Games Data Model Workbook.xlsx");
-            using (var package = new ExcelPackage())
-            {
-                foreach (var datasetType in Source.DatasetTypes)
-                {
-                    Consoul.Write($"\t{datasetType.Name}...", writeLine: false);
-                    var typeSheet = new TypeSheetUtility(datasetType);
-                    typeSheet.BuildWorksheet(package);
-                    Consoul.Write("Done!", ConsoleColor.Green);
-                }
-                Consoul.Write("Saving...", writeLine: false);
-                package.SaveAs(fi);
+            using (var excelUtility = new ExcelUtility(Source.DatasetTypes.ToArray())) {
+                excelUtility.Package.SaveAs(fi);
             }
             Consoul.Write("Done!", ConsoleColor.Green);
+            //using (var package = new ExcelPackage())
+            //{
+            //    foreach (var datasetType in Source.DatasetTypes)
+            //    {
+            //        var typeSheet = new ExcelUtility(datasetType);
+            //        typeSheet.BuildWorksheet(package);
+            //    }
+            //    Consoul.Write("Saving...", writeLine: false);
+            //    package.SaveAs(fi);
+            //}
+            //Consoul.Write("Done!", ConsoleColor.Green);
             Consoul.Write("Saved to\r\n\t" + fi.FullName, ConsoleColor.Green);
             Consoul.Wait();
 
