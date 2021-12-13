@@ -1,16 +1,41 @@
 {
-  "name": "Utilities.Games",
-  "short_name": "DotGames",
-  "start_url": "./",
-  "display": "standalone",
-  "orientation": "portrait",
-  "background_color": "#222222",
-  "theme_color": "#A45ACD",
-  "icons": [
-    {
-      "src": "icon-512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ]
+    "name": "Utilities.Games",
+    "short_name": "DotGames",
+    "lang": "en-US",
+    "dir": "ltr",
+    "start_url": "./",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#222222",
+    "theme_color": "#A45ACD",
+    "categories": [ "games", "utilities" ],
+    "description": "An open source application that hosts tools, calculators, and game mechanic guides for video games.",
+    "icons": [
+        {
+            "src": "icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icon-512_mono.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "monochrome"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "Screenshot_LOTRRiseToWar_1024x600.png",
+            "sizes": "1024x600",
+            "platform": "wide",
+            "label": "An open source application that hosts tools and game mechanic guides for the mobile game The Lord of the Rings: Rise to War."
+        },
+        {
+            "src": "Screenshot_Home_1024x600.png",
+            "sizes": "1024x600",
+            "platform": "wide",
+            "label": "An open source application that hosts tools and game mechanic guides for video games."
+        }
+    ]
 }
