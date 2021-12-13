@@ -193,6 +193,10 @@
       "url": "icon-512.png"
     },
     {
+      "hash": "sha256-o7BSdJp+vxbQBx3SA2I1590t6fXipNDxh+gDkBquWWU=",
+      "url": "icon-512_mono.png"
+    },
+    {
       "hash": "sha256-r0+eOlx11xiPXnlFI9FqYg9mUWExKqR0w7Yt6dXWGNw=",
       "url": "icon-96.png"
     },
@@ -289,8 +293,16 @@
       "url": "js\/popper\/popper.min.js"
     },
     {
-      "hash": "sha256-vQThwC1AmKeptWUjIHnntpfY9\/oRLoGzku3g7R\/nnx4=",
+      "hash": "sha256-KLwBEJ9+JMSON1szhFlkWQ163GtmWpkfH8hvjWenDSI=",
       "url": "manifest.json"
+    },
+    {
+      "hash": "sha256-1UJon2a+Dk10m3abOreQT6Kj+1UYBo1hTiZfkj\/rjF0=",
+      "url": "Screenshot_Home_1024x600.png"
+    },
+    {
+      "hash": "sha256-Z3nZvhn9QIZPzArd5ETvfcwVWocCBRZzrwgFnTwXzf4=",
+      "url": "Screenshot_LOTRRiseToWar_1024x600.png"
     },
     {
       "hash": "sha256-BEoZaWPqbBLXVlvaRbNOMrNFbz5hbrzBmrJy+CKYdQ8=",
@@ -757,7 +769,7 @@
       "url": "_framework\/Utilities.Games.Models.dll"
     },
     {
-      "hash": "sha256-Y0Mzx1o17y5yT0X2KCCRdKBf4YYBAme6B3v\/PrvQ97I=",
+      "hash": "sha256-7q4+fnAV6nNPEHkVQEqBn256SB2ZSvoAbjXBNxWlsRo=",
       "url": "_framework\/Utilities.Games.dll"
     },
     {
@@ -1153,7 +1165,7 @@
       "url": "_framework\/zh-Hant\/Microsoft.CodeAnalysis.Workspaces.resources.dll"
     },
     {
-      "hash": "sha256-WKgXfBCOFIgWBDLJCnKeXhq21Hujas7AISpRqeIIHp8=",
+      "hash": "sha256-V9COQgRkD0YeP2lt5oXboAeeVhg81ArutBM+x\/6bW3Y=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -1161,5 +1173,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "QmfX2Va4"
+  "version": "8pH3nJh2"
 };
