@@ -769,7 +769,7 @@
       "url": "_framework\/Utilities.Games.Models.dll"
     },
     {
-      "hash": "sha256-DUZYbJgZl+16biSNmHcBd4Af\/Z0WUDDtwSuUQX9jQgE=",
+      "hash": "sha256-yLgOuN730p2krrEXwV2IeK5BL98omiBA3XQJx4b5rpg=",
       "url": "_framework\/Utilities.Games.dll"
     },
     {
@@ -1165,7 +1165,7 @@
       "url": "_framework\/zh-Hant\/Microsoft.CodeAnalysis.Workspaces.resources.dll"
     },
     {
-      "hash": "sha256-lcdWZizDQA+g5yOaR8\/aJp6kXZZ1NHDUVPL7+9lxKcY=",
+      "hash": "sha256-QNYgJ5GZ9X\/H\/gLaoPbmAr52FFLlIT\/Iq5W75URgLZw=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -1173,5 +1173,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "vStQup8R"
+  "version": "J6ZDHiU8"
 };
