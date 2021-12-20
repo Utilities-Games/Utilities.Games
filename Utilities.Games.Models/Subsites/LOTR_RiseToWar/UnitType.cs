@@ -119,5 +119,10 @@ namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
         /// Conscription cost per Command of time.
         /// </summary>
         public TimeSpan Time { get; set; }
+
+        /// <summary>
+        /// Conscription cost per Command of Gold.
+        /// </summary>
+        public int Gold { get; set; }
     }
 }
