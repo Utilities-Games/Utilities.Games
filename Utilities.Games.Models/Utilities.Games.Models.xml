@@ -589,5 +589,10 @@
             Conscription cost per Command of time.
             </summary>
         </member>
+        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitCosts.Gold">
+            <summary>
+            Conscription cost per Command of Gold.
+            </summary>
+        </member>
     </members>
 </doc>
