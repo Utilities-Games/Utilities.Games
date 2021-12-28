@@ -1,11 +1,11 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-kwXMpG+uLihv3sJ1uS\/sNWGYuwPkNZoF6LFHW2Sss+A=",
+      "hash": "sha256-lXIoyLitEoOkASz1Q7YnE2G064FxkqvnRpAhVhXKh3Y=",
       "url": "_framework\/Utilities.Games.Models.xml"
     },
     {
-      "hash": "sha256-kwXMpG+uLihv3sJ1uS\/sNWGYuwPkNZoF6LFHW2Sss+A=",
+      "hash": "sha256-lXIoyLitEoOkASz1Q7YnE2G064FxkqvnRpAhVhXKh3Y=",
       "url": "_framework\/Utilities.Games.Models.xml"
     },
     {
@@ -225,7 +225,7 @@
       "url": "images\/GitHub\/GitHub-Mark-Light-64px.png"
     },
     {
-      "hash": "sha256-zhdl2e8UlhM98pgL\/sX2gTH6eA0sR0u7kntnMY\/Cuao=",
+      "hash": "sha256-5IAp9SfDgckItfBu2PewNjRmJGOeZde69jHEwFGDp9k=",
       "url": "index.html"
     },
     {
@@ -553,6 +553,1222 @@
       "url": "Subsites\/LOTR_RiseToWar\/js\/localStore.js"
     },
     {
+      "hash": "sha256-mCe3wuzMRXmqIZzkdUR3xiMrYPZUttO+v2zm4H3lB8w=",
+      "url": "Subsites\/TheLegendOfZelda\/breadcrumb_config.json"
+    },
+    {
+      "hash": "sha256-fVs3AVRSK1tdITsyttLM2jTF\/eolpCQzfQ9ulgtGUQQ=",
+      "url": "Subsites\/TheLegendOfZelda\/data\/ingredientEffects.json"
+    },
+    {
+      "hash": "sha256-s\/6j1rjq3E80bo6OsWN8frSfeLS+pcEWoYhkrzqV5ZQ=",
+      "url": "Subsites\/TheLegendOfZelda\/data\/ingredients.json"
+    },
+    {
+      "hash": "sha256-irsu9HABaO\/y92dZ1UWcCOIgi1BqzI0FyxCDZt\/w7Mc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/favicon.png"
+    },
+    {
+      "hash": "sha256-lBuwmNML85VvC7S99viTOBx6F4Hx4\/YA8d5YHy\/Ctvc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/game_logo.png"
+    },
+    {
+      "hash": "sha256-SkJYVVKCQJJ6ojTcqM10KoweLmFdR+g54vJ1BEGf3E8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Acorn.png"
+    },
+    {
+      "hash": "sha256-tgjVAl99Nig\/6MO1uATJiGtvis0FfCkH3i2n4aIysuU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Acorn.webp"
+    },
+    {
+      "hash": "sha256-m4KZN++V6dcLyxfaMPLQUDtbHvWdDL97blXBdE8esLI=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Amber.png"
+    },
+    {
+      "hash": "sha256-mS4BNkfYBnzd+55T0xC\/UjZDgkSBtemojlf2P4oXUMU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Amber.webp"
+    },
+    {
+      "hash": "sha256-2FMdWrrUMHgMsuR5BHRAFBqFM8pgKOFVhYBfeG4IJ9Y=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ancient Core.png"
+    },
+    {
+      "hash": "sha256-VchP5XKinEOMy00T1M6Th6+953Ey\/hvWzqUzDIDsGHw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ancient Core.webp"
+    },
+    {
+      "hash": "sha256-Vj9N4aykA2PfE0KrAvovAiC4dk60ukmsU94sElJUbX8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ancient Gear.png"
+    },
+    {
+      "hash": "sha256-hiZ+\/E0r4Vzhq4RZeo0q9MXNyvNv1L1CqBuPRa33xkw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ancient Gear.webp"
+    },
+    {
+      "hash": "sha256-dEjH\/spO55iZHl\/s45KICbTlv1n6IRa+yfsReOkzBtg=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ancient Screw.png"
+    },
+    {
+      "hash": "sha256-\/gZ9GbVvt+aHpmI\/2xx1sdn5eAjsvhVmY0qz8a15uIo=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ancient Screw.webp"
+    },
+    {
+      "hash": "sha256-MYpQX5FBaKW7fkHCc\/WHSnHF2n1Y1GkriaM94MQnXGw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ancient Shaft.png"
+    },
+    {
+      "hash": "sha256-djlYli0\/dE63eb0AUupWY6hVL6MmWVNngb60BBq7Atg=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ancient Shaft.webp"
+    },
+    {
+      "hash": "sha256-lJ0dwzCP3pos2xupZVeZRdv6i0E9TOTipjIcka8pql8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ancient Spring.png"
+    },
+    {
+      "hash": "sha256-Wsu6gD\/ofERst50IM8LKVWPPvNGApaRqkTDj64o1\/Yo=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ancient Spring.webp"
+    },
+    {
+      "hash": "sha256-Z0STi6Q6MX1iyMNPg9XkVC3lClz7hNSU9Iq8FM77GkU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Apple.png"
+    },
+    {
+      "hash": "sha256-xRGY1\/DBezIEoVpin3tiSZQSEm2J2X9LgEBdVRrlnqE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Apple.webp"
+    },
+    {
+      "hash": "sha256-cyhdisVLuDcVD\/SAU63iLFJ6LyU8OsLxJ0TyLZ995n4=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Armoranth.png"
+    },
+    {
+      "hash": "sha256-73i0CHHi4aoF8TQXVlqhg5OGpS2g0VxX8ngWBVZ2LqI=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Armoranth.webp"
+    },
+    {
+      "hash": "sha256-ADjrygpW6lVWYRNksIZnD04zw2vTR6eGP3fqO6BGqZ0=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Armored Carp.png"
+    },
+    {
+      "hash": "sha256-x0mXN052R6u9erK8B9KRChS9nCcbJWxEqcIl79aj4s0=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Armored Carp.webp"
+    },
+    {
+      "hash": "sha256-JKsDqMZA6yRoFOWwJC9HxVEo2CPComdyUjvXu3E8FAk=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Armored Porgy.png"
+    },
+    {
+      "hash": "sha256-q7GYhX2LcU2gc9phaYXBIZsZKAocv\/1syljc3jSM2Cw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Armored Porgy.webp"
+    },
+    {
+      "hash": "sha256-imdEYfhY43J+78Dx1AtT8Psmk47VS4PKf\/GDkK9SPuM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Big Hearty Radish.png"
+    },
+    {
+      "hash": "sha256-4HR3U8bo7K8eMBR2x6M3Td6y9sAz4rmPA9bwiDC4uaY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Big Hearty Radish.webp"
+    },
+    {
+      "hash": "sha256-uUnV3smhm5cTILlDCBI3mww96vxXVAtVr8\/gmh3hHts=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Big Hearty Truffle.png"
+    },
+    {
+      "hash": "sha256-\/fy\/mkTVhLz01lxjRlt9H711yiHFsxnokzbRDrluCmk=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Big Hearty Truffle.webp"
+    },
+    {
+      "hash": "sha256-RfGWZPySde6741tOpjWiy3t8OMD9LAlDIBaoYb77qiM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Bird Egg.png"
+    },
+    {
+      "hash": "sha256-ybnZCBYmEI4Dm2w313tssh5Fi41xaTXvRpIDIkiNoY8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Bird Egg.webp"
+    },
+    {
+      "hash": "sha256-dqB87UD2+lZqLKvPxW8PKUCNp72HeVfuwh80\/qrOYOI=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Bladed Rhino Beetle.png"
+    },
+    {
+      "hash": "sha256-wANc7r6wT0qAwO4rTqB8\/\/UB8L2zB7D9NEAsTtW1Yrg=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Bladed Rhino Beetle.webp"
+    },
+    {
+      "hash": "sha256-gkiBnJA2W+yDDxDwrUCED9O3zYi\/zXVZ05m3VnR8vx4=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Blue Nightshade.png"
+    },
+    {
+      "hash": "sha256-4OBFeAozui9MTBp8ZQ7Ubg7Wk0dgoypMPqj8IfrYJ1U=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Blue Nightshade.webp"
+    },
+    {
+      "hash": "sha256-2DW\/8+KWdseP2ejeqgv+GQa02CnBkpjXWBOv4w+aGUw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Bokoblin Fang.png"
+    },
+    {
+      "hash": "sha256-BvWV2zFpeS\/Ymwx7t2ZKwYBoXpNkeMfrhKnQ3qk+V6g=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Bokoblin Fang.webp"
+    },
+    {
+      "hash": "sha256-7U2Ecbc14j4NsoLHXElizYB+p8gYz1hupyVPlA3jfLM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Bokoblin Guts.png"
+    },
+    {
+      "hash": "sha256-RIo9T4pHZg0MTC2p\/S79qsaQyJujGZ2xHUksFnxnIyw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Bokoblin Guts.webp"
+    },
+    {
+      "hash": "sha256-xCnZyPUSuoIohflWLht2lCxKC3k4QCIJJ+45MVyM32U=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Bokoblin Horn.png"
+    },
+    {
+      "hash": "sha256-Sg3\/E0n0CxT0GDsugwSCfW9toi3H\/HwsRhsd9m38Y\/U=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Bokoblin Horn.webp"
+    },
+    {
+      "hash": "sha256-72cN60FZo03UTt2AtK3olyw2+WGBqEDeQfd3ZuJCkS8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Bright-Eyed Crab.png"
+    },
+    {
+      "hash": "sha256-urr0iI3gb7mZbH34YJ+rxkC8LaavUJOOBK9LvP8TvFU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Bright-Eyed Crab.webp"
+    },
+    {
+      "hash": "sha256-CBMSKkCJtNf9tuYO8Vlz06nHbXByJ4WPx2hy668CtGk=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Cane Sugar.png"
+    },
+    {
+      "hash": "sha256-YwJV1ix6AFAKt\/83VPXamk5oUpImXjaJqaonjkcU5wg=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Cane Sugar.webp"
+    },
+    {
+      "hash": "sha256-wOyGB79fJDzXY66gZ2bBmAh+1g2+eZFGUS2QVwvP\/s0=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Chickaloo Tree Nut.png"
+    },
+    {
+      "hash": "sha256-ybcwUK0TMnfzkX05bPleWY\/x+nRx9WP+dexB0bBJhdU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Chickaloo Tree Nut.webp"
+    },
+    {
+      "hash": "sha256-lstxKPUGtEWX6NSRind+cgb97mYE7YOPrNqUNL6nbtE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Chillfin Trout.png"
+    },
+    {
+      "hash": "sha256-XMJIRETXt5Gd5cYVYdMuFe1ic6Tp8bQWr7M3GJHvOmI=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Chillfin Trout.webp"
+    },
+    {
+      "hash": "sha256-E1byRoNw3RdBQ7\/C8S+PppHGVgZL8y+aLBTGM5hUhT0=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Chillshroom.png"
+    },
+    {
+      "hash": "sha256-\/AgyffyF3YmkSzasRtYXLMNcY+DoZrvQuR9CzjGNHMU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Chillshroom.webp"
+    },
+    {
+      "hash": "sha256-P7IVEUKQvpBO9rurWHEcpCo1TDjpF3618YHyMjNr2x0=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Chuchu Jelly.png"
+    },
+    {
+      "hash": "sha256-cIS\/uh\/qQ9sIO3qxv0u\/ValHwQSk6\/51VQvydjc+qIE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Chuchu Jelly.webp"
+    },
+    {
+      "hash": "sha256-LXoMswuytHIC9KZNHgTl1lAAyixdK5\/Fsfb\/p4hUwe0=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Cold Darner.png"
+    },
+    {
+      "hash": "sha256-fIIM8Su2Nhebvrsdb5DF+W\/LbI1yFhSljzWqQJ24iYg=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Cold Darner.webp"
+    },
+    {
+      "hash": "sha256-BgFBYcBAK5PT\/zuDPv+5GT8J31vg+TmZjy7hCyOQZxc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Cool Safflina.png"
+    },
+    {
+      "hash": "sha256-UVw+SQ\/LRMaTjaplp2GxeEN4Mx80Sv1Z32Oaj01JSXY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Cool Safflina.webp"
+    },
+    {
+      "hash": "sha256-Y1lWIoPUDPZflrWj6pZTBEyEwHN7B5Fcr4ritJG1efo=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Courser Bee Honey.png"
+    },
+    {
+      "hash": "sha256-o9j\/wom0JGPlr6UXdh21BsAdWzDZL8tNituZeUdeC78=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Courser Bee Honey.webp"
+    },
+    {
+      "hash": "sha256-guTnxcxBwl66wunlociPWPTxydM7YdnSFmY7Fw2Ldoo=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Diamond.png"
+    },
+    {
+      "hash": "sha256-6X\/TngBVpWg8HJKHotivRFZfDs6nS0WcqSFkC+kiuZQ=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Diamond.webp"
+    },
+    {
+      "hash": "sha256-\/OsaqE\/pCHmAmnjj6LeNsIOOVCChpm64LIECGjxS340=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Dinraal's Claw.png"
+    },
+    {
+      "hash": "sha256-82kutDWl77FsTtNLcCR\/9DlvJ4mzGR\/pSPvu+cOLRE8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Dinraal's Scale.png"
+    },
+    {
+      "hash": "sha256-B2nGsuyLTZYPDVaoBxBVzaBFMVrDNPmPZlVxx+h7puQ=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Dinraal_s Claw.webp"
+    },
+    {
+      "hash": "sha256-CfJjpgpkSusYnH+k9Wly8EqX1CENyd5KO30aUGVZ1Pc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Dinraal_s Scale.webp"
+    },
+    {
+      "hash": "sha256-i5NRpUwUZYatSXHBzgs3X5bSDTHdNapAg5UtI0Pz5YY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Electric Darner.png"
+    },
+    {
+      "hash": "sha256-JxyStL3wDnFPI2mB68TWGCqpXDfPR57Q8OHtbL4HzMw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Electric Darner.webp"
+    },
+    {
+      "hash": "sha256-FveXGnL\/fQCpdWn046kY6bmJx40p1C5fNOioX4rkzMw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Electric Keese Wing.png"
+    },
+    {
+      "hash": "sha256-m+g4t9HUgRG2+Q39\/4X3GyuRM1\/Y8j81MoqjYqyjgJc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Electric Keese Wing.webp"
+    },
+    {
+      "hash": "sha256-vqSbMEWTWZ72wzRVKChNQIvOkawp0zWGu1cbylHIPKA=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Electric Safflina.png"
+    },
+    {
+      "hash": "sha256-9n43i+Hth5uvMoI1Rufq17w5TEpgrnvHkpavM48bHJ4=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Electric Safflina.webp"
+    },
+    {
+      "hash": "sha256-4MVApmJ\/gsrABI2R40ep2zgeRWGhkzhfqRMoZTRQhqs=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Endura Carrot.png"
+    },
+    {
+      "hash": "sha256-SMTc8ZC+oDLnijBTlO+L+iQwi8olcoUu9qPJIVLttPM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Endura Carrot.webp"
+    },
+    {
+      "hash": "sha256-HajbagCF55qoPt211fdeJF\/hTombtty\/O\/6Fk0ObfsU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Endura Shroom.png"
+    },
+    {
+      "hash": "sha256-D9o7JNo6tCpd7\/qr8QP0BFKlyhaPS7Ukg+yV\/Mp8vWY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Endura Shroom.webp"
+    },
+    {
+      "hash": "sha256-eR2FxbDwCfQOqX0nCCmuvZhQQqsnGWID9PccMxeTzqc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Energetic Rhino Beetle.png"
+    },
+    {
+      "hash": "sha256-sEM3r5cFFkfJPkKRJhp\/3ReG9H406A0fTkBSwTrjhMQ=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Energetic Rhino Beetle.webp"
+    },
+    {
+      "hash": "sha256-KfiPleX2z\/8KXp3DM\/+4gRIYbSHAY9AzpnqHtSINbD4=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Fairy.png"
+    },
+    {
+      "hash": "sha256-4ydgpVHHL1hu+ZIyfqLN9kg+3rGIuQj3l4Yi3IxFClQ=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Fairy.webp"
+    },
+    {
+      "hash": "sha256-h9ex\/S\/1aKsJi52Km1Y3+HTMZbwcbmdLkI1WXe5icoA=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Farosh's Claw.png"
+    },
+    {
+      "hash": "sha256-C6gR3QAGBPw8hYSooAQlOIQ2FPqFS+2Pc1y5g2pPHmo=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Farosh's Scale.png"
+    },
+    {
+      "hash": "sha256-8RfEffPa5Ye650zz3ZNebuxxZPV6h9vNfwc8xJ7j56Y=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Farosh_s Claw.webp"
+    },
+    {
+      "hash": "sha256-GVE1A2KqCbcuVwalrZwJ2h8MvSQ6qaAdTJWRlowcpz0=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Farosh_s Scale.webp"
+    },
+    {
+      "hash": "sha256-P20uzi8VriZBEusd3C9JCxCeuaGYtViUXGc4X\/aJVvc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Fire Keeses Wing.png"
+    },
+    {
+      "hash": "sha256-h7fVLn7x4tkUPT\/gTOe8Zre0yeC8ew58JRN7LoZh5oE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Fire Keeses Wing.webp"
+    },
+    {
+      "hash": "sha256-GztvRsx9k4tpKLkfaKbEhhwQuxn+5iRy2TuMG2wmZxI=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Fireproof Lizard.png"
+    },
+    {
+      "hash": "sha256-UsAs\/KYed1DhBHLhGASJdNcM\/iIm42TmNFafTCeQ1GY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Fireproof Lizard.webp"
+    },
+    {
+      "hash": "sha256-jxhcgHazWS089wUrA8e+dnpFdlL3gZ4Y5DrTJlxNwV4=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Fleet-Lotus Seeds.png"
+    },
+    {
+      "hash": "sha256-9gae8MwxIk6zf6nN+gBKur735omRe2dH89E44uRf\/fA=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Fleet-Lotus Seeds.webp"
+    },
+    {
+      "hash": "sha256-YNpi\/EwxhDsdq7NjWxW4Po0aHSd3vP+1nq4\/OK4Htbk=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Flint.png"
+    },
+    {
+      "hash": "sha256-82FJHQKDqh1G2wa6mtnaZgdUp2kF+UcE6SQeyu6E\/FQ=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Flint.webp"
+    },
+    {
+      "hash": "sha256-5l75rQHEfuqAgxPFXMOHn6M9M6SksPeB5W46N1E3SQU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Fortified Pumpkin.png"
+    },
+    {
+      "hash": "sha256-NYvmJCkQq01PPii6NGn5cRlTLfQu+oGXmINCjHmuxqc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Fortified Pumpkin.webp"
+    },
+    {
+      "hash": "sha256-Zs30PX+NR05v1ep1pjQcYVvxVvUSD+IKR7o4CPv9HuU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Fresh Milk.png"
+    },
+    {
+      "hash": "sha256-v6QcsdM5MOGKlG4JTeLS1Y4J1oCf1ouAzKsaGpqX3pk=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Fresh Milk.webp"
+    },
+    {
+      "hash": "sha256-6Acb87CA2XAYpRhZDTd+MK1FmEiuvUC2QiHownj57dI=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Giant Ancient Core.png"
+    },
+    {
+      "hash": "sha256-oIXRwJi7j3tYWqyXy4mM9keW4WFBQo4Y3CqXaV0duSM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Giant Ancient Core.webp"
+    },
+    {
+      "hash": "sha256-V1x9eJMOdzRrPDe6Q6s0TJY1sYWFaXopWrpUclGkWb8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Goat Butter.png"
+    },
+    {
+      "hash": "sha256-m9ip2pzv5b4sLjz4dP+abRO+PJU1eEMOA7R6EMGcvs0=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Goat Butter.webp"
+    },
+    {
+      "hash": "sha256-9koojjEhvYVowMYPJHHsG4y2yKd1NoqW5kQhuWLxlZc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Goron Spice.png"
+    },
+    {
+      "hash": "sha256-ETP46SWfs\/jgWjhnsY1cNzKB1dSWcVMa7vS5k3rTFBY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Goron Spice.webp"
+    },
+    {
+      "hash": "sha256-N2F44s0MXjINEHrTJcryCZMR9cm6O7TCaaFUGP+Tggc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hearty Bass.png"
+    },
+    {
+      "hash": "sha256-MgYaJAVeNr88hTIeiF7V\/swIaQIAwGoOKgbCw21y2HY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hearty Bass.webp"
+    },
+    {
+      "hash": "sha256-+QYZDYufuA6dNA1uYsZPyH86kvIn\/FmNub7XwuvDsRQ=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hearty Blueshell Snail.png"
+    },
+    {
+      "hash": "sha256-jkV+fBr72xoLXRtuxclhLCKKfJwPCWBw4fWacBZnuIY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hearty Blueshell Snail.webp"
+    },
+    {
+      "hash": "sha256-tJyzzrqP1gkv98P7vSi\/M6hwJdqSusCqxN4tDHuU0WU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hearty Durian.png"
+    },
+    {
+      "hash": "sha256-ZcR1attJ0dTQf5MdmZRmo2E3VYqsmITsGexxwm0E3ss=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hearty Durian.webp"
+    },
+    {
+      "hash": "sha256-WocSmImKachhzwwwzAfMehZ7RPnRtfiIF6nyVFIG1lA=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hearty Lizard.png"
+    },
+    {
+      "hash": "sha256-\/RzJ+5HMZZE5f5bVoU7l+2vRS9WswYjJXau4R1r8GRk=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hearty Lizard.webp"
+    },
+    {
+      "hash": "sha256-qnBMB8zt3+Ybmty6eiJjY7HPz22fHTOSJF18JiUivu8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hearty Radish.png"
+    },
+    {
+      "hash": "sha256-BhxxcQYXdMtMxbCP1b\/uBwcCFjAwqIM6F1oqGKR4q+E=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hearty Radish.webp"
+    },
+    {
+      "hash": "sha256-XzmTazSh5iSNY3fiE8Z2GNxMWBL3J5ezvNgGm8cVWEI=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hearty Salmon.png"
+    },
+    {
+      "hash": "sha256-4mJRCcj+5fRAqfBdfj1PFBggx+vA\/FE+QHPxjvUhtPQ=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hearty Salmon.webp"
+    },
+    {
+      "hash": "sha256-4\/L43RUvq0fWK5cPCLhFzkNgha80iexQ0JGRhKplqRg=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hearty Truffle.png"
+    },
+    {
+      "hash": "sha256-xEucwYviw58VDiNVG7DUXCKuC0rSodF8YoEyQ3x7Y3U=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hearty Truffle.webp"
+    },
+    {
+      "hash": "sha256-wtrjximY4XmrI8fVE\/lix1ChtVB8ryi0dwKp9EFgANw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hightail Lizard.png"
+    },
+    {
+      "hash": "sha256-\/WWR46Q9UfAH2LBfQMA50VXs33W7DD+lOa8qTjnadHM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hightail Lizard.webp"
+    },
+    {
+      "hash": "sha256-nnxxJu5FydaMJ9+jtvesbvaV2N7Jr4yK9gCPL\/MeFVg=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hinox Guts.png"
+    },
+    {
+      "hash": "sha256-rWZFe8IYEOfIBf55CjHXxYChmzOiZagFvaWQjn+CnHs=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hinox Guts.webp"
+    },
+    {
+      "hash": "sha256-hvaAyN6OJwGOv+dJrO30C2jW3PJSNjfvAKItoBQuLOM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hinox Toenail.png"
+    },
+    {
+      "hash": "sha256-AsHunHYrxRCWh6DD3YDLvHTTtk+aFwntMB+21bpFHUA=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hinox Toenail.webp"
+    },
+    {
+      "hash": "sha256-ATtYZhyDX+7HmHB4cot4Ko6a1Tb5YdH8q0GlgQ4hi1k=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hinox Tooth.png"
+    },
+    {
+      "hash": "sha256-0AX3jTwOP8ytO1B6va75gAkrYtdL0zNY8XoCJmcuu+o=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hinox Tooth.webp"
+    },
+    {
+      "hash": "sha256-gb3s+MY05MkwVhzW50srdNXHhaR+3XsBnbTXqYl4U1E=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hot-Footed Frog.png"
+    },
+    {
+      "hash": "sha256-UzVB8fNv6OviGnB3LYd76HFhyS23XV7dJETmkQmDXVI=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hot-Footed Frog.webp"
+    },
+    {
+      "hash": "sha256-IOWG6gDfaqy1dQJkFZTnqA18MhmNrV7603OfKjO6OOY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hydromelon.png"
+    },
+    {
+      "hash": "sha256-sIvLUrIXisfAu7ABxjxU1YK+hvKfw1ZHHGW6dCzrP\/I=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hydromelon.webp"
+    },
+    {
+      "hash": "sha256-Hh7GNoub8OYM9vtL7IUhdaMyqc32RPNDrVqStLCyoYQ=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hylian Rice.png"
+    },
+    {
+      "hash": "sha256-Bgtp9yyHa8ILfg2PaNvBJdVRErGbWYmkFe+XPJeAuH0=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hylian Rice.webp"
+    },
+    {
+      "hash": "sha256-qv9HZ2Yuwsd+5O2QJ2bWYf0tQxn1MtA0ltgDyj\/6yV0=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hylian Shroom.png"
+    },
+    {
+      "hash": "sha256-zIsDW+j4o+Ngr7WFVDZNHQN+oYJRm7tGGDQzhnXRMCo=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hylian Shroom.webp"
+    },
+    {
+      "hash": "sha256-tcB7Em+vgmxkWUGRM6qa8N2\/+11Mtf4E\/3GOPr8Hzt8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hyrule Bass.png"
+    },
+    {
+      "hash": "sha256-Ge91s5oadcZ4vK+vig1dE2ImKcpSay2whyYJ4ZDfg90=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hyrule Bass.webp"
+    },
+    {
+      "hash": "sha256-HqiQN9W7o1wHoWFm87s+YWmHnbSl7J3EH009fqeixw8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hyrule Herb.png"
+    },
+    {
+      "hash": "sha256-e4gXXiF5HrKpnItObjh1fk0L\/3O7sEdvnXApYyQEROw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Hyrule Herb.webp"
+    },
+    {
+      "hash": "sha256-L8Rif\/B4x68rTckfsEKLodo+NA0dbokf7zujTM9Pck0=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ice Keese Wing.png"
+    },
+    {
+      "hash": "sha256-VbkzKQ9RNslVanUiqdLSsWF6j24koltnD48i7EEoId0=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ice Keese Wing.webp"
+    },
+    {
+      "hash": "sha256-2blszHLJVp4u9+4el7WtLA9kj4fP5usKAJnshOB9pxY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Icy Lizalfos Tail.png"
+    },
+    {
+      "hash": "sha256-nZuqNsDVakZLWZaMeVgcbespv9GxKGJDVdzCjeimnnU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Icy Lizalfos Tail.webp"
+    },
+    {
+      "hash": "sha256-BTxGzL9Ohp7qjuAtCi0CQ+bxbZleLsiti9FiB7II1EM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ironshell Crab.png"
+    },
+    {
+      "hash": "sha256-dXemRzBsnLc\/SgRigSzcCfEo15bQydw8Z241l6SmKpA=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ironshell Crab.webp"
+    },
+    {
+      "hash": "sha256-7zUYYnuBC16C6EZGky+618k9ia7J5GQyEOEZEUUNRTE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ironshroom.png"
+    },
+    {
+      "hash": "sha256-VldPMQ0v6dAR7vu\/41duJyomaTMTByYCy0A7yjBTzFQ=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ironshroom.webp"
+    },
+    {
+      "hash": "sha256-xbr7LF5vuNE64YRUnYpg0fYQvwRSy1eD6ItS5s0LKCM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Keese Eyeball.png"
+    },
+    {
+      "hash": "sha256-xx\/ttAMyL5xRUILZkoTTI1mPGqLG21Dhk0gti47S474=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Keese Eyeball.webp"
+    },
+    {
+      "hash": "sha256-xl8QfeP1On6fWqEZLcEtRKJMLRtiYDdC+85ELuYRX\/A=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Keese Wing.png"
+    },
+    {
+      "hash": "sha256-todJxj04P9AgwGsvNvSZOhppy+Zr6EXvYuQFg59oK7Y=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Keese Wing.webp"
+    },
+    {
+      "hash": "sha256-0a36N4znYDZDQTy\/ejIaoL3bTVgvwcczjk2GhNy2z0k=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Lizalfos Horn.png"
+    },
+    {
+      "hash": "sha256-Dm2F1Ug3TnVH4GVBJbrZ7m+EDASQHWO3hpb6xgeuTGg=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Lizalfos Horn.webp"
+    },
+    {
+      "hash": "sha256-UbXr7YEvwErI9r6YKzNEkZ1d\/HA9G6w\/Vm5sTHU7B1k=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Lizalfos Tail.png"
+    },
+    {
+      "hash": "sha256-99+lE7cFYehQkUTJhiV3Soa+qFK5XpjaTGIFc+VE2K8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Lizalfos Tail.webp"
+    },
+    {
+      "hash": "sha256-pI48gMpiNOcXzuVHcvOvwFEeLiCZ\/0sTALQN7E16pcM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Lizalfos Talon.png"
+    },
+    {
+      "hash": "sha256-KHpOfRiej13aItiugndXM2vh4SoX1zuMVEuIejf\/tAY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Lizalfos Talon.webp"
+    },
+    {
+      "hash": "sha256-W8TYk6MyDRervTYRMwoCBbqsj\/uebbn81YMIlyuXkLc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Luminous Stone.png"
+    },
+    {
+      "hash": "sha256-PfeUpXgcqZv3VbFrNOiPjglo+iSFj5TJE5GPDnt165E=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Luminous Stone.webp"
+    },
+    {
+      "hash": "sha256-oFd2pev9o5Aut7VBhJTo7QT4fH+YSFqAaSP5OZn47qw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Lynel Guts.png"
+    },
+    {
+      "hash": "sha256-H6dlKjddc3Xqu2i4mHqVKzJ3YQUHJy06sJ40Lsz67o8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Lynel Guts.webp"
+    },
+    {
+      "hash": "sha256-Mzm+B371\/smJYwsf2U\/LYPVBrB6MFNP+R7zkRyGCAZc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Lynel Hoof.png"
+    },
+    {
+      "hash": "sha256-ZxmdDRbIDE8kYvRLHV+g+7c\/Vkdr5RnNezyLkX89Ogs=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Lynel Hoof.webp"
+    },
+    {
+      "hash": "sha256-rpUTZ9K\/srXoE9D9E6XHFLU3iBxCbhfUeTCxg+7K7P8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Lynel Horn.png"
+    },
+    {
+      "hash": "sha256-FIPMj+OkmXefUnP66pjrBuSk5ksTmRYH3qUwzkac4YU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Lynel Horn.webp"
+    },
+    {
+      "hash": "sha256-UJR7hqFSw6gxGA3oi8feO4m\/i44Qt0GxZkd4m49YJdc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Mighty Bananas.png"
+    },
+    {
+      "hash": "sha256-PTE+Fu9WKSdCI8Z77p4Okh6jpgKlhz5xiISQnOLzeb0=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Mighty Bananas.webp"
+    },
+    {
+      "hash": "sha256-O3ZxpSob0xgJmz2I9akvQyBp\/2ZK+RJ\/QiLTxKtdg\/g=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Mighty Carp.png"
+    },
+    {
+      "hash": "sha256-jNkKi2UllFDPUk+8r4QpADcxsCCFyY3BgPb81gRtnUE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Mighty Carp.webp"
+    },
+    {
+      "hash": "sha256-eONCB7BDxcE3VHfjDo0sMik9cSYkVfFJfuxJoW4iarE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Mighty Porgy.png"
+    },
+    {
+      "hash": "sha256-m6KI4rha9\/5wWheC9vLck3rP1g\/HJK6KFKxcaF3KZVI=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Mighty Porgy.webp"
+    },
+    {
+      "hash": "sha256-mZqMJgbwCwMbNjGheblWeKlUxYWimhik1heAONDCNWE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Mighty Thistle.png"
+    },
+    {
+      "hash": "sha256-5YHKP8A+X3aO7F3QyNeY4FK9NSU1nmE7jKgU+DSH0eU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Mighty Thistle.webp"
+    },
+    {
+      "hash": "sha256-rH2RV2Wj8Tbp\/6QegY40JGJoLxy0BGRgGAEWZs5JMh4=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Moblin Fang.png"
+    },
+    {
+      "hash": "sha256-65opegr9oFX4\/itB0rjvWp0Z2iNdGCo5lw\/JZgFKgeU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Moblin Fang.webp"
+    },
+    {
+      "hash": "sha256-98qDKBjhvDVRyBVCwzUaS4\/TN2Uzrh8D1TH+nvFXFi0=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Moblin Guts.png"
+    },
+    {
+      "hash": "sha256-+EaCQ2HkBLR\/z2Ek8XjhtNEytnHt0F2j74r7F7zLgdg=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Moblin Guts.webp"
+    },
+    {
+      "hash": "sha256-pCK32IqKnbjaMsQiGcLhTONnkSdYQCviHJsFQLnXN5Q=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Moblin Horn.png"
+    },
+    {
+      "hash": "sha256-vbFG3u5aN852NioSfpemEhdlQ9C4jG6kjIO3uTmfJZg=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Moblin Horn.webp"
+    },
+    {
+      "hash": "sha256-Y6Z4PN4Zr8KI6fQhqoyoi6O\/eiPugpAQxvJMDB5b4qY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Molduga Fin.png"
+    },
+    {
+      "hash": "sha256-Wn4hHefstfxWalxFbCzllW1CcLmDS\/j\/i0AsfZZrV6A=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Molduga Fin.webp"
+    },
+    {
+      "hash": "sha256-onQDdHFUCXdVbh8A+BaI4rtGfayt9\/dH\/FFm6V4x6Ys=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Molduga Guts.png"
+    },
+    {
+      "hash": "sha256-eeMBm\/Ku4HNak6GcOQsmRyqqsAiez1vEeNYttYh6elY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Molduga Guts.webp"
+    },
+    {
+      "hash": "sha256-CBFjun8feDQoz6d5l9+NItXpT\/c3Aq+5jImvPN71sc8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Monster Extract.png"
+    },
+    {
+      "hash": "sha256-JGpjRH9oC\/aZZ4+oYuI7J9A7ZgmBDqLlesKSLamC5bo=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Monster Extract.webp"
+    },
+    {
+      "hash": "sha256-Zl2Hl1wEo4DMk9YpyVxt\/cYDpJXYcrH0lrw497O+DOE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Naydra's Claw.png"
+    },
+    {
+      "hash": "sha256-0fR4\/uMg3F49CKLxLGltMB2RhBPrdyC94+tQqmFDPQA=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Naydra's Scale.png"
+    },
+    {
+      "hash": "sha256-vPMnLW5QdKAQfyT0mo0abKq\/SnryrjM+1YKJCgdPnkQ=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Naydra_s Claw.webp"
+    },
+    {
+      "hash": "sha256-5uLJjEygeo4Lw2V8BVIP\/+QxKfrpnLDN66i\/rbQnPD4=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Naydra_s Scale.webp"
+    },
+    {
+      "hash": "sha256-+13BKAEwXBCzBrnsoDTYZuhkcFsRLilnZpBT7dJUKyc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Octo Balloon.png"
+    },
+    {
+      "hash": "sha256-0nwwdnKdWQtAlR+U1xYnDG+e9Bmnn\/xnrk+YIZ0tLec=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Octo Balloon.webp"
+    },
+    {
+      "hash": "sha256-n1PLohweXw8giGnQznJfFIfIIs1QmMnO\/WnB6PUJkDI=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Octorok Eyeball.png"
+    },
+    {
+      "hash": "sha256-Gk4D9xZ6yKZRPZ8zLNgMR6BOqOHyi2d0\/aO7DZBQR98=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Octorok Eyeball.webp"
+    },
+    {
+      "hash": "sha256-eF0AMxZmm2wTF34C6D0x2BE+PeTuBVKE\/RvjBSrrDbM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Octorok Tentacle.png"
+    },
+    {
+      "hash": "sha256-Q1EHykZ4vx6PXGBClF3GSi\/DqpL7sbmkZI3EFgljZWM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Octorok Tentacle.webp"
+    },
+    {
+      "hash": "sha256-xneLKKmAWCLun6I6JR6qsKYupz7GJmS\/JXC7L2XgHyE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Opal.png"
+    },
+    {
+      "hash": "sha256-\/zid8eLmOEyX1K5CMrBP2XBh7JfSXA9cMwfqwpicaR8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Opal.webp"
+    },
+    {
+      "hash": "sha256-R1iG4Y7InyhxJFZCb3q0uC5YQrQkMLfbFUtu\/mauWA4=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Palm Fruit.png"
+    },
+    {
+      "hash": "sha256-MzmsM2OLxvhsY5uYtSdNDueH2Q6imQHKoJHhxt3KdNM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Palm Fruit.webp"
+    },
+    {
+      "hash": "sha256-VjXB9L2d0vYV6kMkRYgOLcXgqaAXe5IRASvGiNym5pY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Raw Bird Drumstick.png"
+    },
+    {
+      "hash": "sha256-ZWMsPWR9OU0sE+\/rTKAt6kYsDrN3hUzXkW8x0qWZiRw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Raw Bird Drumstick.webp"
+    },
+    {
+      "hash": "sha256-RhitdVOxQJWf73KwPvdHyoq76fYwuAyaaGdunV4CpI8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Raw Bird Thigh.png"
+    },
+    {
+      "hash": "sha256-Wr5+mTU4jL1N3ikdSSQxypmX5MHRNJFGKA4JC6YlME8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Raw Bird Thigh.webp"
+    },
+    {
+      "hash": "sha256-wXM2zzvtlPXdifU\/eQAeOEt20PqK+0Gr7qQdi6Ix1KI=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Raw Gourmet Meat.png"
+    },
+    {
+      "hash": "sha256-+MmT3Bsi7KWWe4EEI1LK3knZ7yP91szRqbfwwbyj9iA=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Raw Gourmet Meat.webp"
+    },
+    {
+      "hash": "sha256-7FgVTLOMqEsjTXiO3G6Ii8mnt324\/KXZ\/E7g8QgIOJY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Raw Meat.png"
+    },
+    {
+      "hash": "sha256-J96OilrcdkgDIhLqWQ7Vxv5EThr0ZqidsdWLMVR98+s=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Raw Meat.webp"
+    },
+    {
+      "hash": "sha256-LLsLj2GNQogimR0oQHR9L+XUwhbdhp2N2tyOV0zosnk=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Raw Prime Meat.png"
+    },
+    {
+      "hash": "sha256-2mjhuMwm8Vml1ZOb2kCU1qVxVOVuWmbhB6KgUd8LTh8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Raw Prime Meat.webp"
+    },
+    {
+      "hash": "sha256-ObMaARnbjKTS9IcHg6oy8YpJDfW8zWy3vPFUKr03mwU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Raw Whole Bird.png"
+    },
+    {
+      "hash": "sha256-HmKlR2V2Z4+ipMl1RxsQLJmC1tHG7lpnL9a37GxQ5Vg=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Raw Whole Bird.webp"
+    },
+    {
+      "hash": "sha256-4UQEmZZtgUHlvTI0qWIYD6GVngIO0IBRNLe42HsttDw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Razorclaw Crab.png"
+    },
+    {
+      "hash": "sha256-BWGLvsQGUIn6wZ98Yjlei8YTUYvUNVR4ouHLYG4u6Cw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Razorclaw Crab.webp"
+    },
+    {
+      "hash": "sha256-l6Fk3A6E3Dy4rYOUeJnMaWS5\/FpdAAgj6tcahUq+RAE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Razorshroom.png"
+    },
+    {
+      "hash": "sha256-nKa4MvkOeJDrwqVf2+D3dAL7Uj\/cX+7mFHZh2Q5qrHw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Razorshroom.webp"
+    },
+    {
+      "hash": "sha256-jtJxVW4oNC6mM\/ChaYUyTg7KgWio\/M9CkHgoVn5dekE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Red Chuchu Jelly.png"
+    },
+    {
+      "hash": "sha256-CAQj6kUApQvbglLDSZrRebBmRMgdek2ZUNwv1WRid4c=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Red Chuchu Jelly.webp"
+    },
+    {
+      "hash": "sha256-ylLYUUfe2n1CVtHU7BlWH09WHWqk1j3jou7CqP2yYls=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Red Lizalfos Tail.png"
+    },
+    {
+      "hash": "sha256-yjyQMNHb1SN45TRS8xxQbtLG5WZpSG4HFQvTYRX+qZA=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Red Lizalfos Tail.webp"
+    },
+    {
+      "hash": "sha256-zGr8I4SsNdwXJnUAe5S346PFpUcRo+wvMB8RbjxU7OE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Restless Cricket.png"
+    },
+    {
+      "hash": "sha256-KRFLtLhzNLrEos6UzxjqLqClBPww\/UNFlyravYuHquA=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Restless Cricket.webp"
+    },
+    {
+      "hash": "sha256-tuoL\/xK1yxlT6jCWSYZ5Vy\/MfP2q\/naYRtcL3CWFTJM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Rock Salt.png"
+    },
+    {
+      "hash": "sha256-HVBJzqC7b20o76HI5+JpnIOE31P4VEZWYrF5WMw+OZE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Rock Salt.webp"
+    },
+    {
+      "hash": "sha256-np1xbY3G\/N+zeTStNQcBzOYaF2QfKEGh2Ktl1M0vPXY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ruby.png"
+    },
+    {
+      "hash": "sha256-CiNyz3L0dN3fpzPmSJ02wV76FpCFWqZwmRCCxfoipU4=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Ruby.webp"
+    },
+    {
+      "hash": "sha256-Z9Yf13cuqGjn3yLnkxhxkINiHEAWRTDIEcZ99uUh2ts=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Rugged Rhino Beetle.png"
+    },
+    {
+      "hash": "sha256-VjelCC0o7+FylCAq7oWj94odygY7EPVEXwSXL+WAwmY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Rugged Rhino Beetle.webp"
+    },
+    {
+      "hash": "sha256-h4Zi4sYNotyoDN\/b2n4rrRReqaDy823H8F2Vly4T\/ms=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Rushroom.png"
+    },
+    {
+      "hash": "sha256-B0vkl25c25o9kO4jOIJY+36bC2msZf9CfuBDq9FnCrE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Rushroom.webp"
+    },
+    {
+      "hash": "sha256-4VdCevlOTZpHI+t7xqCRsLLrosuEODxUm1SvUi7zdPk=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Sanke Carp.png"
+    },
+    {
+      "hash": "sha256-fwP83svqdvqkUindDcydrXRwgE1GsGb1\/wqbM1MYXPs=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Sanke Carp.webp"
+    },
+    {
+      "hash": "sha256-u1Pi58zGy5dtXeSKcFv1thwZk\/RPUWRSU96GEimDuXU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Sapphire.png"
+    },
+    {
+      "hash": "sha256-jk5UtXHe8mDLAzaVst0ZRPwHL8cACnIFte1sPFsIko0=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Sapphire.webp"
+    },
+    {
+      "hash": "sha256-FsRnMmQm28rUECPjZKZfkpBKayi608OY3GC53RUO1uo=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Shard of Dinraal's Fang.png"
+    },
+    {
+      "hash": "sha256-YDzcT90BzBIMRH4pzyN\/+eo0f3oADx5YWlOaNmHyLEI=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Shard of Dinraal's Horn.png"
+    },
+    {
+      "hash": "sha256-TRhjEWamaJLkliyY4S8eaAJCQnYLYbB7QfJ1j5E+Rw4=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Shard of Dinraal_s Fang.webp"
+    },
+    {
+      "hash": "sha256-jNh6vMQHV0JhPAa+HHAhthKZDmRnzSsmRhFZ2yU4tww=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Shard of Dinraal_s Horn.webp"
+    },
+    {
+      "hash": "sha256-7pzb91uzUhiVuZCoyi1eqGgvfGWOkvzG2w5keK5Himk=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Shard of Farosh's Fang.png"
+    },
+    {
+      "hash": "sha256-hTDL0\/ju4\/v2MDdm6K3uoFd914mYMJrhMJLTEiQcE9E=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Shard of Farosh's Horn.png"
+    },
+    {
+      "hash": "sha256-2UJj5BtBYA0e8bO08+nR22dO8Vfyhcme2ZimA3C5USI=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Shard of Farosh_s Fang.webp"
+    },
+    {
+      "hash": "sha256-2off+yG1dQBXc3EJ+TgeOq5ZGa+08X9B36PsqUjFRlw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Shard of Farosh_s Horn.webp"
+    },
+    {
+      "hash": "sha256-7\/wZZbjH6pKds+r6ezRGzwYFhyawzmzK61H0kD7ke+I=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Shard of Naydra's Fang.png"
+    },
+    {
+      "hash": "sha256-vLnSmh2BW40RRtOyy4DHDCmaSBcZVHVueW+d9\/gyMfA=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Shard of Naydra's Horn.png"
+    },
+    {
+      "hash": "sha256-atKLWOA+8O12TpaiOaIIIfDBDcOfInoO3GtjKA4tVtQ=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Shard of Naydra_s Fang.webp"
+    },
+    {
+      "hash": "sha256-1aezshgoVR0cotAcGFkPMIsIsPltsSE8Vd9VlIEXOdM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Shard of Naydra_s Horn.webp"
+    },
+    {
+      "hash": "sha256-7sqS3D0WohkDGl8jZihskjQ\/IsV4FGhi5pYez8WVf14=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Silent Princess.png"
+    },
+    {
+      "hash": "sha256-YA+\/dZQiLkUmym2ov3t33ieeicxQhLuFynIFKV26s8o=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Silent Princess.webp"
+    },
+    {
+      "hash": "sha256-VcL57OzgGVpWij+IdLpA+rr9nlxQ7G\/Xt8Zyfa8+Y1Q=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Silent Shroom.png"
+    },
+    {
+      "hash": "sha256-SJ4Um8Sd8cW8BPEC+JRUoY\/ToAWC8JP32zHRV8+\/JhU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Silent Shroom.webp"
+    },
+    {
+      "hash": "sha256-nWKNTkL6RPkr3qBQVuckRDm53DfyrTCXL\/mKY9aoohA=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Sizzlefin Trout.png"
+    },
+    {
+      "hash": "sha256-pCyVUgOV5PP9C9Dvqn1jcbzePwNcMIan4JF7\/3A6Zjk=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Sizzlefin Trout.webp"
+    },
+    {
+      "hash": "sha256-q4ZGpl9HQPOo4nUQgmYjaPhWMkH+\/afrJSqktrI\/PYI=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Smotherwing Butterfly.png"
+    },
+    {
+      "hash": "sha256-FA8YHXiUffy3UUczCj+3OKX+Bl\/wLkbiwyo9cDBsYhk=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Smotherwing Butterfly.webp"
+    },
+    {
+      "hash": "sha256-BO8Wk5yKnpEZWrpUCd6G7h8\/d68niulPrfMwtFAOoLg=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Sneaky River Snail.png"
+    },
+    {
+      "hash": "sha256-n38YnP4IRX78+U511LRhhhwi1D38hbqJDsy1pVj5\/2s=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Sneaky River Snail.webp"
+    },
+    {
+      "hash": "sha256-f0XFiO3zKrKNqVhTlRRjiDAHTUzr\/97nqAlibcviQxw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Spicy Pepper.png"
+    },
+    {
+      "hash": "sha256-wnREawNSxRK+peBsYtXG06NlZQIUPOE4ELDPvdKGi3o=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Spicy Pepper.webp"
+    },
+    {
+      "hash": "sha256-M3Jy7xkxCSEIWuw6vO+EXIPDcUsPwUvvbHdgrVX+lns=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Stamella Shroom.png"
+    },
+    {
+      "hash": "sha256-BDrOzXecFOpzbc1kbeQ+jLTvXwJGYCWMabrpM9wEKCM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Stamella Shroom.webp"
+    },
+    {
+      "hash": "sha256-Bq73dPRBZTMyag86Hn+Rn5jaZJUgCW9by1kfg7mL8RY=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Staminoka Bass.png"
+    },
+    {
+      "hash": "sha256-IxF5UjurLsiFt05TiASihQAUdqh+nNnVomTXmiuURaE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Staminoka Bass.webp"
+    },
+    {
+      "hash": "sha256-xmignobisjPVYBQdLt\/HHopaKPAMrdIercILSOYfZ90=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Star Fragment.png"
+    },
+    {
+      "hash": "sha256-CagBpAApTkakOhmELJk5Gx3Sk90oswVuM6AlkB\/cmu0=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Star Fragment.webp"
+    },
+    {
+      "hash": "sha256-nEBwI3AgdILEP6FMAZH5p\/OxFz0JuRKxtPO3MOti+xM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Stealthfin Trout.png"
+    },
+    {
+      "hash": "sha256-4gcijkmTVGFAXvgKU9KYPpwrgHBVS79sFPQTZdFm+Jg=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Stealthfin Trout.webp"
+    },
+    {
+      "hash": "sha256-+bQiPNe\/bpXKVKlPBswnSwf7hWmVigkzR0r677wsg\/U=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Summerwing Butterfly.png"
+    },
+    {
+      "hash": "sha256-7DImHQJ59TD+pCvp7xY7Mp7K0JHtbSx4TIlT89QwdC8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Summerwing Butterfly.webp"
+    },
+    {
+      "hash": "sha256-7+uKnvUWCyQ\/gvbWHjKWLDzQAZ0\/AQrOUHOvzj2SO+g=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Sunset Firefly.png"
+    },
+    {
+      "hash": "sha256-z6ugTdT84BmAQzV2jyu\/pWoSwaUv2f8UvHurGXwm15o=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Sunset Firefly.webp"
+    },
+    {
+      "hash": "sha256-biw\/mGUw5fJC5A6pS5ULO1Yj2Zv7f5X0EN4vQkShxmk=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Sunshroom.png"
+    },
+    {
+      "hash": "sha256-TGhKInGIIAQ2v7k8PKR8gqoSfGg30rGNLxj46RyMpBU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Sunshroom.webp"
+    },
+    {
+      "hash": "sha256-vNatBBQV9ziAKQnS0VtJLrtdvYp4NpfYY1RdEYgaNDM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Swift Carrot.png"
+    },
+    {
+      "hash": "sha256-JiRe0vMg7fvSex+QzI7wBKiOuf9LuJ5nK9DamQi2oFs=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Swift Carrot.webp"
+    },
+    {
+      "hash": "sha256-IZkHnEzX6FYoAg1w\/gDn9B0KGqnpWZZv5l4rwypZPeU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Swift Violet.png"
+    },
+    {
+      "hash": "sha256-i3Zup\/4qi6b7fo9hcENOPo8Cjw8CW1372mkdOaofNaw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Swift Violet.webp"
+    },
+    {
+      "hash": "sha256-p8oTE4\/G\/+RJFxGO6ST3xTJ4+1mf7rsN9kM3qFOTnlI=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Tabantha Wheat.png"
+    },
+    {
+      "hash": "sha256-00cxWNWfg3Pa7RxVq8ktbfgGUgF5ZQJD8wklNemvynw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Tabantha Wheat.webp"
+    },
+    {
+      "hash": "sha256-2YyPlnzBZEylvVGT5w4QD1Wes2rZLiG0\/C41eJMT4EQ=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Thunderwing Butterfly.png"
+    },
+    {
+      "hash": "sha256-v1sOYqSHdX51f+0cfbfvPLMJSnp2lQc5gSdsRQ\/9V3s=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Thunderwing Butterfly.webp"
+    },
+    {
+      "hash": "sha256-QU3HT6yLLh9p+o1TcQu4yAMNMzvDOSUZ9I1Zk4dOWKM=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Tireless Frog.png"
+    },
+    {
+      "hash": "sha256-Qi2Voe63A40wCZFLpwgzVCc1at75kqTi\/oFhU0ppX3U=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Tireless Frog.webp"
+    },
+    {
+      "hash": "sha256-z4IINNEblwa0Zv\/iUORYAK\/RtL1jkv8hFgcIrNzgjEc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Topaz.png"
+    },
+    {
+      "hash": "sha256-IM6u5v+Y9Bknl4ay1fdJrIsBiGVQgR9SwI9qEI2TDqo=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Topaz.webp"
+    },
+    {
+      "hash": "sha256-6k4qC3E0hASUnriuGV00FhjIFCuDC6F65i3n6vCfAYc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Voltfin Trout.png"
+    },
+    {
+      "hash": "sha256-Ikbt09YpvfWWXb\/HttK0nI+bofxI++fFA11VaUbZMus=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Voltfin Trout.webp"
+    },
+    {
+      "hash": "sha256-yTCbpPOTHtJIzsU6BGhSDZqDwwWdIhA1bXnHIIHl0sU=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Voltfruit.png"
+    },
+    {
+      "hash": "sha256-OQRvvNaaKUPyusoWRLxGJZeafVTtDxxVs84SWFWGiws=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Voltfruit.webp"
+    },
+    {
+      "hash": "sha256-Xikgi\/HuFwnhY\/DWioz9JRJyv4bdE0x+GTFww6O9oHI=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Warm Darner.png"
+    },
+    {
+      "hash": "sha256-HoPq1xdzuJ3if6Ab523NszBpInyHcLcl8pWFTaEOvtw=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Warm Darner.webp"
+    },
+    {
+      "hash": "sha256-prLT4wcnFwL4G4711wXrle7HipmewXKF\/RJkbdtXX9I=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Warm Safflina.png"
+    },
+    {
+      "hash": "sha256-6bnAn4OlF1AQ8mrh62D339dZOHMYb2wNmINqrncKluk=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Warm Safflina.webp"
+    },
+    {
+      "hash": "sha256-Yc18pH9jzceQ7ijnlsbrPa8gGkV4tLWLFzOCnQv6NYE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/White Chuchu Jelly.png"
+    },
+    {
+      "hash": "sha256-\/CvUGFTg\/11whRPwGM4Jd1jNYuHZFp\/Xce6DrnSA3Nk=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/White Chuchu Jelly.webp"
+    },
+    {
+      "hash": "sha256-TieCsoglFognAt2ehrbfhPJTdigiW8rTmPEUBBnD9B0=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Wildberry.png"
+    },
+    {
+      "hash": "sha256-PhSaQioCHYendWE5TaQ4ATkDIHWDJzIR1ygOAgu417s=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Wildberry.webp"
+    },
+    {
+      "hash": "sha256-bq\/7xxKfSmo3MwQG+ksabLqTzhi9Q4I6Puzsz2w3WBc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Winterwing Butterfly.png"
+    },
+    {
+      "hash": "sha256-3yBix0qvyfe\/zCpUBrBdeJUUn6ixJQkvvT45bs\/PmbI=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Winterwing Butterfly.webp"
+    },
+    {
+      "hash": "sha256-+DzPhKbTHYuh8j46ilELcuVDmU8lxr48UTUkM99k+UE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Wood.png"
+    },
+    {
+      "hash": "sha256-ak8qiNJpAdCpkhbS6AsPenCuZx9hyJAa07UX23sh7Wc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Wood.webp"
+    },
+    {
+      "hash": "sha256-4bi+zTpchjSnXox7yBBSoFAJp6YVcfbCgYTgL9Xhctc=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Yellow Chuchu Jelly.png"
+    },
+    {
+      "hash": "sha256-AmBS5fu6ssz9z+\/gl3TUK+Jl3+uwnjkQbovH9KNZ2zE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Yellow Chuchu Jelly.webp"
+    },
+    {
+      "hash": "sha256-smSfQZlzoXV7GGESbD5pEP+CxHLO6xkROnmiDGPk\/TE=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Yellow Lizalfos Tail.png"
+    },
+    {
+      "hash": "sha256-PrBN+\/GGGvF9Ppn6PKamRzfTm451w3cR9yqhyznY0cQ=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Yellow Lizalfos Tail.webp"
+    },
+    {
+      "hash": "sha256-W13MrYXHYayijLdDuSWwnwHSiWW8eyq\/md4flTbIeus=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Zapshroom.png"
+    },
+    {
+      "hash": "sha256-3XmMB7kvFl8YLoUdOtmYU1SLUxOMD7xCKf82g8gZjK8=",
+      "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Zapshroom.webp"
+    },
+    {
+      "hash": "sha256-HY5FWyclqIptAIrJAmI6i1Vmeq6pWeb1m5Ia8HTzLA8=",
+      "url": "Subsites\/TheLegendOfZelda\/js\/localStore.js"
+    },
+    {
       "hash": "sha256-\/mwFhTTF4Kca8PG7G6rxaGqCueWH9XbWEIK1Fm8GbFg=",
       "url": "_framework\/dotnet.timezones.blat"
     },
@@ -765,11 +1981,11 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-Y8uUBZmyBszvC4g3QfzOkpTHdEEuQC7LuXGjMEDz4U8=",
+      "hash": "sha256-L1ZEeaxce5iwp64xuNXyifaqsCMdX3pqjM5mUHogQcY=",
       "url": "_framework\/Utilities.Games.Models.dll"
     },
     {
-      "hash": "sha256-yLgOuN730p2krrEXwV2IeK5BL98omiBA3XQJx4b5rpg=",
+      "hash": "sha256-+xx33hg+1Q4LR2wqEL7HiPPrXDhCaQq0ystimo8vFm0=",
       "url": "_framework\/Utilities.Games.dll"
     },
     {
@@ -1165,7 +2381,7 @@
       "url": "_framework\/zh-Hant\/Microsoft.CodeAnalysis.Workspaces.resources.dll"
     },
     {
-      "hash": "sha256-QNYgJ5GZ9X\/H\/gLaoPbmAr52FFLlIT\/Iq5W75URgLZw=",
+      "hash": "sha256-iGid2k\/OMvYrqPeZlq1zhqtDsiNR0XCEhNpTbpvJ\/YM=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -1173,5 +2389,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "J6ZDHiU8"
+  "version": "p1PojQ5k"
 };
