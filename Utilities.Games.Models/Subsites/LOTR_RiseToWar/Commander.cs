@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using Utilities.Games.Models.Contracts;
 using Utilities.Games.Models.Contracts.Attributes;
 using Utilities.Games.Models.Subsites.LOTR_RiseToWar.Contracts;
 
@@ -8,7 +9,7 @@ namespace Utilities.Games.Models.Subsites.LOTR_RiseToWar
     /// <summary>
     /// A commander unit.
     /// </summary>
-    public class Commander
+    public class Commander : ICharacter
     {
         /// <summary>
         /// Name of the commander.

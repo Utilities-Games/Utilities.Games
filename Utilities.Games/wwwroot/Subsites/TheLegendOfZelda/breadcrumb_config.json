@@ -1,0 +1,14 @@
+[
+    {
+        "match": "thelegendofzelda",
+        "title": "The Legend of Zelda"
+    },
+    {
+        "match": "thelegendofzelda/ingredients",
+        "title": "Ingredients"
+    },
+    {
+        "match": "thelegendofzelda/ingredients/(.+)",
+        "title": "$1"
+    }
+]
