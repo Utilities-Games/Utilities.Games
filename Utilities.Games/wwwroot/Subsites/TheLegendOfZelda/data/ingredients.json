@@ -1,0 +1,1469 @@
+[
+    {
+        "name": "Acorn",
+        "category": "Food",
+        "type": "Seasoning",
+        "effect": null,
+        "effectDuration": "0:50",
+        "potencyLevels": [],
+        "resaleValue": 2
+    },
+    {
+        "name": "Apple",
+        "category": "Food",
+        "type": "Fruit",
+        "effect": null,
+        "effectDuration": "0:30",
+        "potencyLevels": [],
+        "resaleValue": 3
+    },
+    {
+        "name": "Armoranth",
+        "category": "Food",
+        "type": "Green",
+        "effect": "Tough",
+        "effectDuration": "0:50",
+        "potencyLevels": [ "1", "1", "1", "1", "2" ],
+        "resaleValue": 5
+    },
+    {
+        "name": "Armored Carp",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": "Tough",
+        "effectDuration": "0:50",
+        "potencyLevels": [ "1", "1", "2", "3", "3" ],
+        "resaleValue": 10
+    },
+    {
+        "name": "Armored Porgy",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": "Tough",
+        "effectDuration": "0:50",
+        "potencyLevels": [ "1", "2", "3", "3", "3" ],
+        "resaleValue": 10
+    },
+    {
+        "name": "Big Hearty Radish",
+        "category": "Food",
+        "type": "Green",
+        "effect": "Hearty",
+        "effectDuration": null,
+        "potencyLevels": [ "5" ],
+        "resaleValue": 15
+    },
+    {
+        "name": "Big Hearty Truffle",
+        "category": "Food",
+        "type": "Mushroom",
+        "effect": "Hearty",
+        "effectDuration": null,
+        "potencyLevels": [ "4" ],
+        "resaleValue": 15
+    },
+    {
+        "name": "Bird Egg",
+        "category": "Food",
+        "type": "Filler",
+        "effect": null,
+        "effectDuration": "1:30",
+        "potencyLevels": [],
+        "resaleValue": 3
+    },
+    {
+        "name": "Blue Nightshade",
+        "category": "Food",
+        "type": "Green",
+        "effect": "Sneaky",
+        "effectDuration": "2:0",
+        "potencyLevels": [ "1", "1", "1", "1", "1" ],
+        "resaleValue": 4
+    },
+    {
+        "name": "Bright-eyed Crab",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": "Energizing",
+        "effectDuration": null,
+        "potencyLevels": [ "2", "5", "8", "11", "14" ],
+        "resaleValue": 10
+    },
+    {
+        "name": "Cane Sugar",
+        "category": "Food",
+        "type": "Seasoning",
+        "effect": null,
+        "effectDuration": "1:20",
+        "potencyLevels": [],
+        "resaleValue": 3
+    },
+    {
+        "name": "Chickaloo Tree Nut",
+        "category": "Food",
+        "type": "Seasoning",
+        "effect": null,
+        "effectDuration": "0:40",
+        "potencyLevels": [],
+        "resaleValue": 3
+    },
+    {
+        "name": "Chillfin Trout",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": "Chilly",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "2", "2", "2", "2" ],
+        "resaleValue": 6
+    },
+    {
+        "name": "Chillshroom",
+        "category": "Food",
+        "type": "Mushroom",
+        "effect": "Chilly",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "1", "2", "2", "2" ],
+        "resaleValue": 4
+    },
+    {
+        "name": "Cool Saffina",
+        "category": "Food",
+        "type": "Green",
+        "effect": "Chilly",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "1", "1", "1", "1" ],
+        "resaleValue": 3
+    },
+    {
+        "name": "Courser Bee Honey",
+        "category": "Food",
+        "type": "Seasoning",
+        "effect": "Energizing",
+        "effectDuration": null,
+        "potencyLevels": [ "2", "5", "8", "11", "14" ],
+        "resaleValue": 10
+    },
+    {
+        "name": "Electric Saffina",
+        "category": "Food",
+        "type": "Green",
+        "effect": "Electro",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "1", "1", "2", "2" ],
+        "resaleValue": 3
+    },
+    {
+        "name": "Endura Carrot",
+        "category": "Food",
+        "type": "Green",
+        "effect": "Enduring",
+        "effectDuration": null,
+        "potencyLevels": [ "2", "4", "6", "8", "10" ],
+        "resaleValue": 30
+    },
+    {
+        "name": "Endura Shroom",
+        "category": "Food",
+        "type": "Mushroom",
+        "effect": "Enduring",
+        "effectDuration": null,
+        "potencyLevels": [ "1", "1", "1", "2", "2" ],
+        "resaleValue": 6
+    },
+    {
+        "name": "Fairy",
+        "category": "Food",
+        "type": "Filler",
+        "effect": null,
+        "effectDuration": "0:30",
+        "potencyLevels": [],
+        "resaleValue": 2
+    },
+    {
+        "name": "Fleet-Lotus Seeds",
+        "category": "Food",
+        "type": "Fruit",
+        "effect": "Hasty",
+        "effectDuration": "1:0",
+        "potencyLevels": [ "1", "1", "2", "3", "3" ],
+        "resaleValue": 5
+    },
+    {
+        "name": "Fortified Pumpkin",
+        "category": "Food",
+        "type": "Green",
+        "effect": "Tough",
+        "effectDuration": "0:50",
+        "potencyLevels": [ "1", "1", "2", "3", "3" ],
+        "resaleValue": 5
+    },
+    {
+        "name": "Fresh Milk",
+        "category": "Food",
+        "type": "Filler",
+        "effect": null,
+        "effectDuration": "1:20",
+        "potencyLevels": [],
+        "resaleValue": 3
+    },
+    {
+        "name": "Goat Butter",
+        "category": "Food",
+        "type": "Seasoning",
+        "effect": null,
+        "effectDuration": "1:20",
+        "potencyLevels": [],
+        "resaleValue": 3
+    },
+    {
+        "name": "Goron Spice",
+        "category": "Food",
+        "type": "Seasoning",
+        "effect": null,
+        "effectDuration": "1:30",
+        "potencyLevels": [],
+        "resaleValue": 4
+    },
+    {
+        "name": "Hearty Bass",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": "Hearty",
+        "effectDuration": null,
+        "potencyLevels": [ "2" ],
+        "resaleValue": 18
+    },
+    {
+        "name": "Hearty Blueshell Snail",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": "Hearty",
+        "effectDuration": null,
+        "potencyLevels": [ "3" ],
+        "resaleValue": 15
+    },
+    {
+        "name": "Hearty Durian",
+        "category": "Food",
+        "type": "Fruit",
+        "effect": "Hearty",
+        "effectDuration": null,
+        "potencyLevels": [ "4" ],
+        "resaleValue": 15
+    },
+    {
+        "name": "Hearty Radish",
+        "category": "Food",
+        "type": "Green",
+        "effect": "Hearty",
+        "effectDuration": null,
+        "potencyLevels": [ "3" ],
+        "resaleValue": 8
+    },
+    {
+        "name": "Hearty Salmon",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": "Hearty",
+        "effectDuration": null,
+        "potencyLevels": [ "4" ],
+        "resaleValue": 10
+    },
+    {
+        "name": "Hearty Truffle",
+        "category": "Food",
+        "type": "Mushroom",
+        "effect": "Hearty",
+        "effectDuration": null,
+        "potencyLevels": [ "1" ],
+        "resaleValue": 6
+    },
+    {
+        "name": "Hydromelon",
+        "category": "Food",
+        "type": "Fruit",
+        "effect": "Chilly",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "1", "1", "1", "1" ],
+        "resaleValue": 4
+    },
+    {
+        "name": "Hylian Rice",
+        "category": "Food",
+        "type": "Seasoning",
+        "effect": null,
+        "effectDuration": "1:0",
+        "potencyLevels": [],
+        "resaleValue": 3
+    },
+    {
+        "name": "Hylian Shroom",
+        "category": "Food",
+        "type": "Mushroom",
+        "effect": null,
+        "effectDuration": "0:30",
+        "potencyLevels": [],
+        "resaleValue": 3
+    },
+    {
+        "name": "Hyrule Bass",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": null,
+        "effectDuration": "0:30",
+        "potencyLevels": [],
+        "resaleValue": 6
+    },
+    {
+        "name": "Hyrule Herb",
+        "category": "Food",
+        "type": "Green",
+        "effect": null,
+        "effectDuration": "0:30",
+        "potencyLevels": [],
+        "resaleValue": 3
+    },
+    {
+        "name": "Ironshell Crab",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": "Tough",
+        "effectDuration": "0:50",
+        "potencyLevels": [ "1", "1", "2", "3", "3" ],
+        "resaleValue": 8
+    },
+    {
+        "name": "Ironshroom",
+        "category": "Food",
+        "type": "Mushroom",
+        "effect": "Tough",
+        "effectDuration": "0:50",
+        "potencyLevels": [ "1", "1", "2", "3", "3" ],
+        "resaleValue": 5
+    },
+    {
+        "name": "Mighty Bananas",
+        "category": "Food",
+        "type": "Fruit",
+        "effect": "Mighty",
+        "effectDuration": "0:50",
+        "potencyLevels": [ "1", "1", "2", "3", "3" ],
+        "resaleValue": 5
+    },
+    {
+        "name": "Mighty Carp",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": "Mighty",
+        "effectDuration": "0:50",
+        "potencyLevels": [ "1", "1", "2", "3", "3" ],
+        "resaleValue": 10
+    },
+    {
+        "name": "Mighty Porgy",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": "Mighty",
+        "effectDuration": "0:50",
+        "potencyLevels": [ "1", "2", "3", "3", "3" ],
+        "resaleValue": 10
+    },
+    {
+        "name": "Mighty Thistle",
+        "category": "Food",
+        "type": "Green",
+        "effect": "Mighty",
+        "effectDuration": "0:50",
+        "potencyLevels": [ "1", "1", "1", "1", "2" ],
+        "resaleValue": 5
+    },
+    {
+        "name": "Monster Extract",
+        "category": "Food",
+        "type": "Other",
+        "effect": "",
+        "effectDuration": "1:0",
+        "potencyLevels": [],
+        "resaleValue": 3
+    },
+    {
+        "name": "Palm Fruit",
+        "category": "Food",
+        "type": "Fruit",
+        "effect": null,
+        "effectDuration": "0:30",
+        "potencyLevels": [],
+        "resaleValue": 4
+    },
+    {
+        "name": "Raw Bird Drumstick",
+        "category": "Food",
+        "type": "Meat",
+        "effect": null,
+        "effectDuration": "0:30",
+        "potencyLevels": [],
+        "resaleValue": 8
+    },
+    {
+        "name": "Raw Bird Thigh",
+        "category": "Food",
+        "type": "Meat",
+        "effect": null,
+        "effectDuration": "0:30",
+        "potencyLevels": [],
+        "resaleValue": 15
+    },
+    {
+        "name": "Raw Gourmet Meat",
+        "category": "Food",
+        "type": "Meat",
+        "effect": null,
+        "effectDuration": "0:30",
+        "potencyLevels": [],
+        "resaleValue": 35
+    },
+    {
+        "name": "Raw Meat",
+        "category": "Food",
+        "type": "Meat",
+        "effect": null,
+        "effectDuration": "0:30",
+        "potencyLevels": [],
+        "resaleValue": 8
+    },
+    {
+        "name": "Raw Prime Meat",
+        "category": "Food",
+        "type": "Meat",
+        "effect": null,
+        "effectDuration": "0:30",
+        "potencyLevels": [],
+        "resaleValue": 15
+    },
+    {
+        "name": "Raw Whole Bird",
+        "category": "Food",
+        "type": "Meat",
+        "effect": null,
+        "effectDuration": "0:30",
+        "potencyLevels": [],
+        "resaleValue": 35
+    },
+    {
+        "name": "Razorclaw Crab",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": "Mighty",
+        "effectDuration": "0:50",
+        "potencyLevels": [ "1", "1", "2", "3", "3" ],
+        "resaleValue": 8
+    },
+    {
+        "name": "Razorshroom",
+        "category": "Food",
+        "type": "Mushroom",
+        "effect": "Mighty",
+        "effectDuration": "0:50",
+        "potencyLevels": [ "1", "1", "2", "3", "3" ],
+        "resaleValue": 5
+    },
+    {
+        "name": "Rock Salt",
+        "category": "Food",
+        "type": "Seasoning",
+        "effect": null,
+        "effectDuration": "1:0",
+        "potencyLevels": [],
+        "resaleValue": 2
+    },
+    {
+        "name": "Rushroom",
+        "category": "Food",
+        "type": "Mushroom",
+        "effect": "Hasty",
+        "effectDuration": "1:0",
+        "potencyLevels": [ "1", "1", "1", "1", "2" ],
+        "resaleValue": 3
+    },
+    {
+        "name": "Silent Princess",
+        "category": "Food",
+        "type": "Green",
+        "effect": "Sneaky",
+        "effectDuration": "2:0",
+        "potencyLevels": [ "1", "2", "3", "3", "3" ],
+        "resaleValue": 10
+    },
+    {
+        "name": "Silent Shroom",
+        "category": "Food",
+        "type": "Mushroom",
+        "effect": "Sneaky",
+        "effectDuration": "2:0",
+        "potencyLevels": [ "1", "1", "2", "2", "3" ],
+        "resaleValue": 3
+    },
+    {
+        "name": "Sizzlefin Trout",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": "Spicy",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "2", "2", "2", "2" ],
+        "resaleValue": 6
+    },
+    {
+        "name": "Sanke Carp",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": null,
+        "effectDuration": "0:30",
+        "potencyLevels": [],
+        "resaleValue": 20
+    },
+    {
+        "name": "Sneaky River Snail",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": "Sneaky",
+        "effectDuration": "2:0",
+        "potencyLevels": [ "1", "1", "1", "1", "1" ],
+        "resaleValue": 6
+    },
+    {
+        "name": "Spicy Pepper",
+        "category": "Food",
+        "type": "Fruit",
+        "effect": "Spicy",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "1", "1", "1", "1" ],
+        "resaleValue": 3
+    },
+    {
+        "name": "Stamella Shroom",
+        "category": "Food",
+        "type": "Mushroom",
+        "effect": "Energizing",
+        "effectDuration": null,
+        "potencyLevels": [ "1", "2", "4", "5", "7" ],
+        "resaleValue": 5
+    },
+    {
+        "name": "Staminoka Bass",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": "Energizing",
+        "effectDuration": null,
+        "potencyLevels": [ "5", "11", "15" ],
+        "resaleValue": 18
+    },
+    {
+        "name": "Star Fragment",
+        "category": "Food",
+        "type": "Other",
+        "effect": null,
+        "effectDuration": "0:30",
+        "potencyLevels": [],
+        "resaleValue": 300
+    },
+    {
+        "name": "Stealthfin Trout",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": "Sneaky",
+        "effectDuration": "2:0",
+        "potencyLevels": [ "1", "1", "2", "2", "3" ],
+        "resaleValue": 10
+    },
+    {
+        "name": "Sunshroom",
+        "category": "Food",
+        "type": "Mushroom",
+        "effect": "Spicy",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "1", "2", "2", "2" ],
+        "resaleValue": 4
+    },
+    {
+        "name": "Swift Carrot",
+        "category": "Food",
+        "type": "Green",
+        "effect": "Hasty",
+        "effectDuration": "1:0",
+        "potencyLevels": [ "1", "1", "1", "1", "2" ],
+        "resaleValue": 4
+    },
+    {
+        "name": "Swift Violet",
+        "category": "Food",
+        "type": "Green",
+        "effect": "Hasty",
+        "effectDuration": "1:0",
+        "potencyLevels": [ "1", "1", "2", "3", "3" ],
+        "resaleValue": 10
+    },
+    {
+        "name": "Tabantha Wheat",
+        "category": "Food",
+        "type": "Seasoning",
+        "effect": null,
+        "effectDuration": "1:0",
+        "potencyLevels": [],
+        "resaleValue": 3
+    },
+    {
+        "name": "Voltfin Trout",
+        "category": "Food",
+        "type": "Seafood",
+        "effect": "Electro",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "3", "3", "3", "3" ],
+        "resaleValue": 6
+    },
+    {
+        "name": "Voltfruit",
+        "category": "Food",
+        "type": "Fruit",
+        "effect": "Electro",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "1", "1", "2", "2" ],
+        "resaleValue": 4
+    },
+    {
+        "name": "Warm Saffina",
+        "category": "Food",
+        "type": "Green",
+        "effect": "Spicy",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "1", "1", "1", "1" ],
+        "resaleValue": 3
+    },
+    {
+        "name": "Wildberry",
+        "category": "Food",
+        "type": "Fruit",
+        "effect": null,
+        "effectDuration": "0:30",
+        "potencyLevels": [],
+        "resaleValue": 3
+    },
+    {
+        "name": "Zapshroom",
+        "category": "Food",
+        "type": "Mushroom",
+        "effect": "Electro",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "2", "3", "3", "3" ],
+        "resaleValue": 4
+    },
+    {
+        "name": "Dinraal's Scale",
+        "category": "Food",
+        "type": "Filler",
+        "effect": null,
+        "effectDuration": "2:0",
+        "potencyLevels": [],
+        "resaleValue": 1
+    },
+    {
+        "name": "Dinraal's Claw",
+        "category": "Food",
+        "type": "Filler",
+        "effect": null,
+        "effectDuration": "4:0",
+        "potencyLevels": [],
+        "resaleValue": 1
+    },
+    {
+        "name": "Shard of Dinraal's Fang",
+        "category": "Food",
+        "type": "Filler",
+        "effect": null,
+        "effectDuration": "11:0",
+        "potencyLevels": [],
+        "resaleValue": 1
+    },
+    {
+        "name": "Shard of Dinraal's Horn",
+        "category": "Food",
+        "type": "Filler",
+        "effect": null,
+        "effectDuration": "30:0",
+        "potencyLevels": [],
+        "resaleValue": 1
+    },
+    {
+        "name": "Naydra's Scale",
+        "category": "Food",
+        "type": "Filler",
+        "effect": null,
+        "effectDuration": "2:0",
+        "potencyLevels": [],
+        "resaleValue": 1
+    },
+    {
+        "name": "Naydra's Claw",
+        "category": "Food",
+        "type": "Filler",
+        "effect": null,
+        "effectDuration": "4:0",
+        "potencyLevels": [],
+        "resaleValue": 1
+    },
+    {
+        "name": "Shard of Naydra's Fang",
+        "category": "Food",
+        "type": "Filler",
+        "effect": null,
+        "effectDuration": "11:0",
+        "potencyLevels": [],
+        "resaleValue": 1
+    },
+    {
+        "name": "Shard of Naydra's Horn",
+        "category": "Food",
+        "type": "Filler",
+        "effect": null,
+        "effectDuration": "30:0",
+        "potencyLevels": [],
+        "resaleValue": 1
+    },
+    {
+        "name": "Farosh's Scale",
+        "category": "Food",
+        "type": "Filler",
+        "effect": null,
+        "effectDuration": "2:0",
+        "potencyLevels": [],
+        "resaleValue": 150
+    },
+    {
+        "name": "Farosh's Claw",
+        "category": "Food",
+        "type": "Filler",
+        "effect": null,
+        "effectDuration": "4:0",
+        "potencyLevels": [],
+        "resaleValue": 1
+    },
+    {
+        "name": "Shard of Farosh's Fang",
+        "category": "Food",
+        "type": "Filler",
+        "effect": null,
+        "effectDuration": "11:0",
+        "potencyLevels": [],
+        "resaleValue": 250
+    },
+    {
+        "name": "Shard of Farosh's Horn",
+        "category": "Food",
+        "type": "Filler",
+        "effect": null,
+        "effectDuration": "30:0",
+        "potencyLevels": [],
+        "resaleValue": 300
+    },
+    {
+        "name": "Winterwing Butterfly",
+        "category": "Critters",
+        "type": null,
+        "effect": "Chilly",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "1", "1", "1" ],
+        "resaleValue": 2
+    },
+    {
+        "name": "Summerwing Butterfly",
+        "category": "Critters",
+        "type": null,
+        "effect": "Spicy",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "1", "1", "1" ],
+        "resaleValue": 2
+    },
+    {
+        "name": "Thunderwing Butterfly",
+        "category": "Critters",
+        "type": null,
+        "effect": "Electro",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "1", "1", "2" ],
+        "resaleValue": 2
+    },
+    {
+        "name": "Smotherwing Butterfly",
+        "category": "Critters",
+        "type": null,
+        "effect": "Fireproof",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "2", "2", "2", "2" ],
+        "resaleValue": 2
+    },
+    {
+        "name": "Cold Darner",
+        "category": "Critters",
+        "type": null,
+        "effect": "Chilly",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "1", "3", "3" ],
+        "resaleValue": 2
+    },
+    {
+        "name": "Warm Darner",
+        "category": "Critters",
+        "type": null,
+        "effect": "Spicy",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "1", "3", "3" ],
+        "resaleValue": 2
+    },
+    {
+        "name": "Electric Darner",
+        "category": "Critters",
+        "type": null,
+        "effect": "Electro",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "2", "3", "3" ],
+        "resaleValue": 2
+    },
+    {
+        "name": "Restless Cricket",
+        "category": "Critters",
+        "type": null,
+        "effect": "Energizing",
+        "effectDuration": null,
+        "potencyLevels": [ "1", "2", "4", "5" ],
+        "resaleValue": 2
+    },
+    {
+        "name": "Bladed Rhino Beetle",
+        "category": "Critters",
+        "type": null,
+        "effect": "Mighty",
+        "effectDuration": "0:50",
+        "potencyLevels": [ "1", "1", "1", "1" ],
+        "resaleValue": 4
+    },
+    {
+        "name": "Rugged Rhino Beetle",
+        "category": "Critters",
+        "type": null,
+        "effect": "Tough",
+        "effectDuration": "0:50",
+        "potencyLevels": [ "1", "1", "1", "1" ],
+        "resaleValue": 4
+    },
+    {
+        "name": "Energetic Rhino Beetle",
+        "category": "Critters",
+        "type": null,
+        "effect": "Energizing",
+        "effectDuration": null,
+        "potencyLevels": [ "8", "15", "15", "15" ],
+        "resaleValue": 2
+    },
+    {
+        "name": "Sunset Firefly",
+        "category": "Critters",
+        "type": null,
+        "effect": "Sneaky",
+        "effectDuration": "2:0",
+        "potencyLevels": [ "1", "1", "1", "1" ],
+        "resaleValue": 2
+    },
+    {
+        "name": "Hot-footed Frog",
+        "category": "Critters",
+        "type": null,
+        "effect": "Hasty",
+        "effectDuration": "1:0",
+        "potencyLevels": [ "1", "1", "2", "3" ],
+        "resaleValue": 2
+    },
+    {
+        "name": "Tireless Frog",
+        "category": "Critters",
+        "type": null,
+        "effect": "Enduring",
+        "effectDuration": null,
+        "potencyLevels": [ "1", "2", "3", "4" ],
+        "resaleValue": 20
+    },
+    {
+        "name": "Hightail Lizard",
+        "category": "Critters",
+        "type": null,
+        "effect": "Hasty",
+        "effectDuration": "1:0",
+        "potencyLevels": [ "1", "1", "1", "1" ],
+        "resaleValue": 2
+    },
+    {
+        "name": "Hearty Lizard",
+        "category": "Critters",
+        "type": null,
+        "effect": "Hearty",
+        "effectDuration": null,
+        "potencyLevels": [ "4", "8", "12", "16" ],
+        "resaleValue": 20
+    },
+    {
+        "name": "Fireproof Lizard",
+        "category": "Critters",
+        "type": null,
+        "effect": "Fireproof",
+        "effectDuration": "2:30",
+        "potencyLevels": [ "1", "1", "1", "1" ],
+        "resaleValue": 5
+    },
+    {
+        "name": "Bokoblin Horn",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:10",
+        "potencyLevels": null,
+        "resaleValue": 3
+    },
+    {
+        "name": "Bokoblin Fang",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:50",
+        "potencyLevels": null,
+        "resaleValue": 8
+    },
+    {
+        "name": "Bokoblin Guts",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "3:10",
+        "potencyLevels": null,
+        "resaleValue": 20
+    },
+    {
+        "name": "Moblin Horn",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:10",
+        "potencyLevels": null,
+        "resaleValue": 5
+    },
+    {
+        "name": "Moblin Fang",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:50",
+        "potencyLevels": null,
+        "resaleValue": 12
+    },
+    {
+        "name": "Moblin Guts",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "3:10",
+        "potencyLevels": null,
+        "resaleValue": 25
+    },
+    {
+        "name": "Lizalfos Horn",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:10",
+        "potencyLevels": null,
+        "resaleValue": 10
+    },
+    {
+        "name": "Lizalfos Talon",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:50",
+        "potencyLevels": null,
+        "resaleValue": 15
+    },
+    {
+        "name": "Lizalfos Tail",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "3:10",
+        "potencyLevels": null,
+        "resaleValue": 28
+    },
+    {
+        "name": "Icy Lizalfos Tail",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "3:10",
+        "potencyLevels": null,
+        "resaleValue": 35
+    },
+    {
+        "name": "Red Lizalfos Tail",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "3:10",
+        "potencyLevels": null,
+        "resaleValue": 35
+    },
+    {
+        "name": "Yellow Lizalfos Tail",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "3:10",
+        "potencyLevels": null,
+        "resaleValue": 35
+    },
+    {
+        "name": "Lynel Horn",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:10",
+        "potencyLevels": null,
+        "resaleValue": 40
+    },
+    {
+        "name": "Lynel Hoof",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:50",
+        "potencyLevels": null,
+        "resaleValue": 50
+    },
+    {
+        "name": "Lynel Guts",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "3:10",
+        "potencyLevels": null,
+        "resaleValue": 200
+    },
+    {
+        "name": "Chuchu Jelly",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:10",
+        "potencyLevels": null,
+        "resaleValue": 5
+    },
+    {
+        "name": "White Chuchu Jelly",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:50",
+        "potencyLevels": null,
+        "resaleValue": 10
+    },
+    {
+        "name": "Red Chuchu Jelly",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:50",
+        "potencyLevels": null,
+        "resaleValue": 10
+    },
+    {
+        "name": "Yellow Chuchu Jelly",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:50",
+        "potencyLevels": null,
+        "resaleValue": 10
+    },
+    {
+        "name": "Keese Wing",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:10",
+        "potencyLevels": null,
+        "resaleValue": 2
+    },
+    {
+        "name": "Ice Keese Wing",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:50",
+        "potencyLevels": null,
+        "resaleValue": 6
+    },
+    {
+        "name": "Fire Keese Wing",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:50",
+        "potencyLevels": null,
+        "resaleValue": 6
+    },
+    {
+        "name": "Electric Keese Wing",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:50",
+        "potencyLevels": null,
+        "resaleValue": 6
+    },
+    {
+        "name": "Keese Eyeball",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "3:10",
+        "potencyLevels": null,
+        "resaleValue": 20
+    },
+    {
+        "name": "Octorok Tentacle",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:50",
+        "potencyLevels": null,
+        "resaleValue": 10
+    },
+    {
+        "name": "Octorok Eyeball",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:10",
+        "potencyLevels": null,
+        "resaleValue": 25
+    },
+    {
+        "name": "Octo Balloon",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:10",
+        "potencyLevels": null,
+        "resaleValue": 5
+    },
+    {
+        "name": "Hinox Toenail",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:10",
+        "potencyLevels": null,
+        "resaleValue": 20
+    },
+    {
+        "name": "Hinox Tooth",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:50",
+        "potencyLevels": null,
+        "resaleValue": 35
+    },
+    {
+        "name": "Hinox Guts",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "3:10",
+        "potencyLevels": null,
+        "resaleValue": 80
+    },
+    {
+        "name": "Molduga Fin",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:50",
+        "potencyLevels": null,
+        "resaleValue": 30
+    },
+    {
+        "name": "Molduga Guts",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "3:10",
+        "potencyLevels": null,
+        "resaleValue": 110
+    },
+    {
+        "name": "Ancient Screw",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:10",
+        "potencyLevels": null,
+        "resaleValue": 12
+    },
+    {
+        "name": "Ancient Spring",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:10",
+        "potencyLevels": null,
+        "resaleValue": 15
+    },
+    {
+        "name": "Ancient Gear",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:50",
+        "potencyLevels": null,
+        "resaleValue": 30
+    },
+    {
+        "name": "Ancient Shaft",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "1:50",
+        "potencyLevels": null,
+        "resaleValue": 40
+    },
+    {
+        "name": "Ancient Core",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "3:10",
+        "potencyLevels": null,
+        "resaleValue": 80
+    },
+    {
+        "name": "Giant Ancient Core",
+        "category": "Monster Parts",
+        "type": null,
+        "effect": null,
+        "effectDuration": "3:10",
+        "potencyLevels": null,
+        "resaleValue": 200
+    },
+    {
+        "name": "Bird Egg",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 5
+    },
+    {
+        "name": "Fresh Milk",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 5
+    },
+    {
+        "name": "Acorn",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 5
+    },
+    {
+        "name": "Cane Sugar",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 5
+    },
+    {
+        "name": "Chickaloo Tree Nut",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 5
+    },
+    {
+        "name": "Goat Butter",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 5
+    },
+    {
+        "name": "Hylian Rice",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 5
+    },
+    {
+        "name": "Tabantha Wheat",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 5
+    },
+    {
+        "name": "Rock Salt",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 5
+    },
+    {
+        "name": "Goron Spice",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 5
+    },
+    {
+        "name": "Monster Extract",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": null
+    },
+    {
+        "name": "Dinraal's Scale",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 0
+    },
+    {
+        "name": "Dinraal's Claw",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 0
+    },
+    {
+        "name": "Shard of Dinraal's Fang",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 0
+    },
+    {
+        "name": "Shard of Dinraal's Horn",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 0
+    },
+    {
+        "name": "Naydra's Scale",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 0
+    },
+    {
+        "name": "Naydra's Claw",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 0
+    },
+    {
+        "name": "Shard of Naydra's Fang",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 0
+    },
+    {
+        "name": "Shard of Naydra's Horn",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 0
+    },
+    {
+        "name": "Farosh's Scale",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 150
+    },
+    {
+        "name": "Farosh's Claw",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 0
+    },
+    {
+        "name": "Shard of Farosh's Fang",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 250
+    },
+    {
+        "name": "Shard of Farosh's Horn",
+        "category": "Fillers",
+        "type": null,
+        "effect": null,
+        "effectDuration": null,
+        "potencyLevels": null,
+        "resaleValue": 300
+    }
+]
