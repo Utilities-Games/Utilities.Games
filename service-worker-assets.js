@@ -1,11 +1,11 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-lXIoyLitEoOkASz1Q7YnE2G064FxkqvnRpAhVhXKh3Y=",
+      "hash": "sha256-lFhPcCi773JHvC6PDbK+WQdD6zzeW79aIgm4cCJn4tI=",
       "url": "_framework\/Utilities.Games.Models.xml"
     },
     {
-      "hash": "sha256-lXIoyLitEoOkASz1Q7YnE2G064FxkqvnRpAhVhXKh3Y=",
+      "hash": "sha256-lFhPcCi773JHvC6PDbK+WQdD6zzeW79aIgm4cCJn4tI=",
       "url": "_framework\/Utilities.Games.Models.xml"
     },
     {
@@ -181,6 +181,10 @@
       "url": "css\/open-iconic\/README.md"
     },
     {
+      "hash": "sha256-gjP65gA7Pq5RFqvCY8V+uGXFykuBYQlUQWnwolH7B7c=",
+      "url": "data\/platforms.json"
+    },
+    {
       "hash": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
       "url": "favicon.ico"
     },
@@ -307,6 +311,86 @@
     {
       "hash": "sha256-Z3nZvhn9QIZPzArd5ETvfcwVWocCBRZzrwgFnTwXzf4=",
       "url": "Screenshot_LOTRRiseToWar_1024x600.png"
+    },
+    {
+      "hash": "sha256-p4MPA6nc45Mox2\/dbaow46kPPiXio+uL\/1ZQhW0HOS8=",
+      "url": "Subsites\/Halo\/breadcrumb_config.json"
+    },
+    {
+      "hash": "sha256-M6V81Wmh7Ko9oA2iL7\/71eqaqt8avXPIfJMbFQat1Lw=",
+      "url": "Subsites\/Halo\/data\/installments.json"
+    },
+    {
+      "hash": "sha256-4BgmmMd9fSuwwI+fYPikdKLZcdhPafoEXmuu\/7mUVGw=",
+      "url": "Subsites\/Halo\/data\/sagas.json"
+    },
+    {
+      "hash": "sha256-cxkhaZOnn3Z8Bn2xatHbPrtjPQZTEAIZolRL+WsL\/s4=",
+      "url": "Subsites\/Halo\/images\/favicon.png"
+    },
+    {
+      "hash": "sha256-oh1VhfwEZsqegwDahcWkSY+9DCvjKPKHBDtDdOtMLI4=",
+      "url": "Subsites\/Halo\/images\/game_logo.png"
+    },
+    {
+      "hash": "sha256-370mos1uBbiGFfFTz7Yv4Yl8D9oqy8Nan3eQR+4JpyA=",
+      "url": "Subsites\/Halo\/images\/installments\/Halo 2 Anniversary.png"
+    },
+    {
+      "hash": "sha256-ClxDtdvo7x1b7ZPWySyhfdEbWHlojkwcCshY3Rr4fqI=",
+      "url": "Subsites\/Halo\/images\/installments\/Halo 2.png"
+    },
+    {
+      "hash": "sha256-RQchDjx1xn2LvND8xcsjsiXJH6LeGYYhHPh4DxNOYas=",
+      "url": "Subsites\/Halo\/images\/installments\/Halo 3 ODST.png"
+    },
+    {
+      "hash": "sha256-mDj8zC2\/iDzAZwWiKUmSgEDLaa6TdBwYNYR0tfoitM0=",
+      "url": "Subsites\/Halo\/images\/installments\/Halo 3.png"
+    },
+    {
+      "hash": "sha256-aSLCwiVLOcrZc5SyPnjQCSkoBiNW+rdj9\/8fPaAdiww=",
+      "url": "Subsites\/Halo\/images\/installments\/Halo 4.png"
+    },
+    {
+      "hash": "sha256-iE+pTocmy7APQzCm\/1\/pjvvK3k6WzuXAuw2Wx\/B8008=",
+      "url": "Subsites\/Halo\/images\/installments\/Halo 5 Guardians.png"
+    },
+    {
+      "hash": "sha256-pznlUg4ndcZUE4x2R9Tp1z7FUFMaX3qwQCIDlEwDUXw=",
+      "url": "Subsites\/Halo\/images\/installments\/Halo Combat Evolved Anniversary.png"
+    },
+    {
+      "hash": "sha256-hnqg8ymWJifhPShEOv9eHhcEQ0GNUGvIHLHuRjmsrIE=",
+      "url": "Subsites\/Halo\/images\/installments\/Halo Combat Evolved.png"
+    },
+    {
+      "hash": "sha256-Q8woFYgRzeoZ6TwsjBMSYq7Faoc1OlEYO\/QpKdjIv3Y=",
+      "url": "Subsites\/Halo\/images\/installments\/Halo Infinite.png"
+    },
+    {
+      "hash": "sha256-6gvc79sm3VNnYdOnIujs7wqSgtqbeinW6oiCeoUzKxI=",
+      "url": "Subsites\/Halo\/images\/installments\/Halo Reach.png"
+    },
+    {
+      "hash": "sha256-S9HJWSzCimr5nSJZY14CpCyLN5wwSUgiWV3dxvieErk=",
+      "url": "Subsites\/Halo\/images\/installments\/Halo Spartan Assault.png"
+    },
+    {
+      "hash": "sha256-CWgaz53EoKJKwu\/yzsFvj0RE6RgKp1VkkBr94Y9w27g=",
+      "url": "Subsites\/Halo\/images\/installments\/Halo Spartan Strike.png"
+    },
+    {
+      "hash": "sha256-SL4\/ZjfJvbRbiBWTGtFoFuMyxLucKFJ4Ie0egcKPyPc=",
+      "url": "Subsites\/Halo\/images\/installments\/Halo The Master Chief Collection.png"
+    },
+    {
+      "hash": "sha256-AAWzr+H06jKvOSh+4LoQK4A+SCMrW5jK4n+OPjJ0MTY=",
+      "url": "Subsites\/Halo\/images\/installments\/Halo Wars 2.png"
+    },
+    {
+      "hash": "sha256-vqZAEfpETdwYpB3igOt2IuRoPMKvSyy\/AcCuJxwupm0=",
+      "url": "Subsites\/Halo\/images\/installments\/Halo Wars.png"
     },
     {
       "hash": "sha256-BEoZaWPqbBLXVlvaRbNOMrNFbz5hbrzBmrJy+CKYdQ8=",
@@ -1985,11 +2069,11 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-L1ZEeaxce5iwp64xuNXyifaqsCMdX3pqjM5mUHogQcY=",
+      "hash": "sha256-FRIYOO5LXyNrW7h2mqmKfyNSJYXXAUeGv9S8EMlnLAY=",
       "url": "_framework\/Utilities.Games.Models.dll"
     },
     {
-      "hash": "sha256-jUoJnsTtWwR49aw7\/ZhyDVRkxSMwmA6H\/191hiLCg74=",
+      "hash": "sha256-wcCYic9E2l2BXLQDnR1brM+lRoWb3rjkJneifKXAMn8=",
       "url": "_framework\/Utilities.Games.dll"
     },
     {
@@ -2385,7 +2469,7 @@
       "url": "_framework\/zh-Hant\/Microsoft.CodeAnalysis.Workspaces.resources.dll"
     },
     {
-      "hash": "sha256-jlOmXi7gKVa313V70H+6WnIP4StcCqvQbdXgjsvRtIw=",
+      "hash": "sha256-8VLWwigphUUC7TvuI4riO0BAwV8z+SMnykV3bjQYvX0=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -2393,5 +2477,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "mBjsI8PS"
+  "version": "9AqYhnIP"
 };

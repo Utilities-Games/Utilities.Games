@@ -1,0 +1,177 @@
+[
+    {
+        "name": "Smartphone",
+        "type": "HANDHELD"
+    },
+    {
+        "name": "Atari 2600",
+        "brand": "Atari",
+        "line": "Atari",
+        "generation": 2,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Atari 7800",
+        "brand": "Atari",
+        "line": "Atari",
+        "generation": 3,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Dreamcast",
+        "brand": "Sega",
+        "line": "Sega",
+        "generation": 6,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Genesis",
+        "brand": "Sega",
+        "line": "Sega",
+        "generation": 4,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Master System",
+        "brand": "Sega",
+        "line": "Sega",
+        "generation": 3,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Nintendo 64",
+        "brand": "Nintendo",
+        "line": "NES",
+        "generation": 5,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Nintendo Entertainment System",
+        "brand": "Nintendo",
+        "line": "NES",
+        "generation": 3,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "GameCube",
+        "brand": "Nintendo",
+        "line": "NES",
+        "generation": 6,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Odyssey",
+        "brand": "Magnavox",
+        "generation": 1,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "PC",
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Playstation",
+        "brand": "Sony",
+        "line": "Playstation",
+        "generation": 5,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Playstation 2",
+        "brand": "Sony",
+        "line": "Playstation",
+        "generation": 6,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Playstation 3",
+        "brand": "Sony",
+        "line": "Playstation",
+        "generation": 7,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Playstation 4",
+        "brand": "Sony",
+        "line": "Playstation",
+        "generation": 8,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Playstation 5",
+        "brand": "Sony",
+        "line": "Playstation",
+        "generation": 9,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Pong",
+        "brand": "Atari",
+        "line": "Atari",
+        "generation": 1,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Saturn",
+        "brand": "Sega",
+        "line": "Sega",
+        "generation": 5,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Super Nintendo Entertainment System",
+        "brand": "Nintendo",
+        "line": "NES",
+        "generation": 4,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Switch",
+        "brand": "Nintendo",
+        "line": "Switch",
+        "generation": 8,
+        "type": "DOCKING"
+    },
+    {
+        "name": "Wii",
+        "brand": "Nintendo",
+        "line": "Wii",
+        "generation": 7,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Wii U",
+        "brand": "Nintendo",
+        "line": "Wii",
+        "generation": 8,
+        "type": "DOCKING"
+    },
+    {
+        "name": "Xbox",
+        "brand": "Microsoft",
+        "line": "Xbox",
+        "generation": 6,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Xbox 360",
+        "brand": "Microsoft",
+        "line": "Xbox",
+        "generation": 7,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Xbox One",
+        "brand": "Microsoft",
+        "line": "Xbox",
+        "generation": 8,
+        "type": "CONSOLE"
+    },
+    {
+        "name": "Xbox Series X/S",
+        "brand": "Microsoft",
+        "line": "Xbox",
+        "generation": 9,
+        "type": "CONSOLE"
+    }
+]
