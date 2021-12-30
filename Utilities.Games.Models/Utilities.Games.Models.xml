@@ -19,6 +19,31 @@
             Reference to the name of the property on the target object for which to compare the lookup property value(s).
             </summary>
         </member>
+        <member name="T:Utilities.Games.Models.Contracts.Enums.PlatformType">
+            <summary>
+            Types of video game platforms.
+            </summary>
+        </member>
+        <member name="F:Utilities.Games.Models.Contracts.Enums.PlatformType.CONSOLE">
+            <summary>
+            A type of video game platform that is typically a stationary device connected to a display.
+            </summary>
+        </member>
+        <member name="F:Utilities.Games.Models.Contracts.Enums.PlatformType.HANDHELD">
+            <summary>
+            A type of video game platform that is contains its own display and can be played anywhere.
+            </summary>
+        </member>
+        <member name="F:Utilities.Games.Models.Contracts.Enums.PlatformType.DOCKING">
+            <summary>
+            A hybrid type of video game platform that contains its own display and can be played anywhere as well as be docked, natively, to a connected display.
+            </summary>
+        </member>
+        <member name="F:Utilities.Games.Models.Contracts.Enums.PlatformType.VR">
+            <summary>
+            A type of video game platform that consists of a Virtual Reality headset and controllers.
+            </summary>
+        </member>
         <member name="T:Utilities.Games.Models.Contracts.ICharacter">
             <summary>
             Describes a character within a game. See <c>character</c> schema <seealso href="https://schema.org/character"/>
@@ -74,6 +99,31 @@
             List of gaming platforms the installment is capable of running on. See <c>gamePlatform</c> schema <seealso href="https://schema.org/gamePlatform"/>
             </summary>
         </member>
+        <member name="P:Utilities.Games.Models.Contracts.IPlatform.Name">
+            <summary>
+            Name of the platform that supports playing of video game(s).
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.IPlatform.Brand">
+            <summary>
+            Name of the marketing brand this platform was created by.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.IPlatform.Line">
+            <summary>
+            Describes the line for which the platform derives from. For example, the Gameboy Color is part of the Gameboy line.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.IPlatform.Generation">
+            <summary>
+            Describes which generation of video games this platform was released for. Typically synonymous with the Console Wars.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.IPlatform.Type">
+            <summary>
+            Describes the form type of the platform.
+            </summary>
+        </member>
         <member name="T:Utilities.Games.Models.Contracts.IRace">
             <summary>
             Describes a race of creatures, characters, and other NPCs within a game.
@@ -93,6 +143,52 @@
             <summary>
             Name of the franchise saga.
             </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.ISaga.Installments">
+            <summary>
+            List of installment titles associated with the saga.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Platform">
+            <inheritdoc/>
+        </member>
+        <member name="P:Utilities.Games.Models.Platform.Name">
+            <inheritdoc/>
+        </member>
+        <member name="P:Utilities.Games.Models.Platform.Brand">
+            <inheritdoc/>
+        </member>
+        <member name="P:Utilities.Games.Models.Platform.Line">
+            <inheritdoc/>
+        </member>
+        <member name="P:Utilities.Games.Models.Platform.Generation">
+            <inheritdoc/>
+        </member>
+        <member name="P:Utilities.Games.Models.Platform.Type">
+            <inheritdoc/>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.Halo.Installment">
+            <summary>
+            Reference to a specific installment of the franchise
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.Halo.Installment.Name">
+            <inheritdoc/>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.Halo.Installment.Platforms">
+            <inheritdoc/>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.Halo.Installment.Saga">
+            <inheritdoc/>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.Halo.Saga">
+            <inheritdoc/>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.Halo.Saga.Name">
+            <inheritdoc/>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.Halo.Saga.Installments">
+            <inheritdoc/>
         </member>
         <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.AlignmentType">
             <summary>
@@ -750,9 +846,10 @@
             </summary>
         </member>
         <member name="P:Utilities.Games.Models.Subsites.TheLegendOfZelda.Installment.Name">
-            <summary>
-            Name of the game installment
-            </summary>
+            <inheritdoc/>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.TheLegendOfZelda.Installment.Platforms">
+            <inheritdoc/>
         </member>
         <member name="T:Utilities.Games.Models.Subsites.TheLegendOfZelda.Race">
             <summary>

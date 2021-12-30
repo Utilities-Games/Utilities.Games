@@ -8,5 +8,10 @@
         /// Name of the franchise saga.
         /// </summary>
         string Name { get; set; }
+
+        /// <summary>
+        /// List of installment titles associated with the saga.
+        /// </summary>
+        string[] Installments { get; set; }
     }
 }
