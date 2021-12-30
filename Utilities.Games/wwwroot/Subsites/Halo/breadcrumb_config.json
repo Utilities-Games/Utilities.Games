@@ -1,0 +1,14 @@
+[
+    {
+        "match": "halo",
+        "title": "Halo"
+    },
+    {
+        "match": "halo/installments",
+        "title": "Halo Installments"
+    },
+    {
+        "match": "halo/installments/(.+)",
+        "title": "$1"
+    }
+]

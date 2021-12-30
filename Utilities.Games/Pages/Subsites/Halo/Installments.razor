@@ -1,0 +1,59 @@
+﻿@page "/halo/installments"
+@inject HttpClient Http
+@layout Halo_Layout
+
+<h3>Halo&trade; Games</h3>
+<div class="row row-cols-2 row-cols-sm-3 row-cols-md-8 g-4">
+    @if (LoadingInstallments)
+    {
+        <div class="col">
+            <div class="card h-100" aria-hidden="true">
+                <img class="card-img-top" src="" />
+                <div class="card-body">
+                    <h5 class="card-title placeholder-glow"><span class="placeholder col-6"></span></h5>
+                    <p class="card-text placeholder-glow">
+                        <span class="placeholder col-7"></span>
+                        <span class="placeholder col-4"></span>
+                        <span class="placeholder col-4"></span>
+                        <span class="placeholder col-6"></span>
+                        <span class="placeholder col-8"></span>
+                    </p>
+                    <button class="btn btn-primary disabled placeholder float-end"></button>
+                </div>
+            </div>
+        </div>
+    }
+    else if (installments?.Any() == true)
+    {
+        foreach (var installment in installments)
+        {
+            <div class="col">
+                <div class="card h-100">
+                    <img class="card-img-top" src="./Subsites/Halo/images/installments/@(installment.Name.Replace(":", "")).png" />
+                    <div class="card-body">
+                        <h5 class="card-title text-center">@(installment.Name)</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary float-right" href="./halo/installments/@(installment.Name)">View</a>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@code {
+    bool LoadingInstallments = false;
+    private IEnumerable<DataModels.Installment> installments { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        LoadingInstallments = true;
+        var options = new System.Text.Json.JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        installments = await Http.GetFromJsonAsync<DataModels.Installment[]>("Subsites/Halo/data/installments.json", options);
+        LoadingInstallments = false;
+    }
+}
