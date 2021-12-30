@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Original Trilogy",
+        "installments": [
+            "Halo: Combat Evolved",
+            "Halo: Combat Evolved Anniversary",
+            "Halo 2",
+            "Halo 2: Anniversary",
+            "Halo 3"
+        ]
+    },
+    {
+        "name": "Reclaimer",
+        "installments": [
+            "Halo 4",
+            "Halo 5: Guardians",
+            "Halo Infinite"
+        ]
+    }
+]

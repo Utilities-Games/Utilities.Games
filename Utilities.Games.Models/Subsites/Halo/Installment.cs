@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Utilities.Games.Models.Contracts;
+using Utilities.Games.Models.Contracts.Attributes;
 
-namespace Utilities.Games.Models.Subsites.TheLegendOfZelda
+namespace Utilities.Games.Models.Subsites.Halo
 {
     /// <summary>
     /// Reference to a specific installment of the franchise
@@ -14,5 +15,9 @@ namespace Utilities.Games.Models.Subsites.TheLegendOfZelda
 
         /// <inheritdoc/>
         public string[] Platforms { get; set; }
+
+        /// <inheritdoc/>
+        [PseudoForeignKey(typeof(Saga), nameof(Halo.Saga.Name))]
+        public string Saga { get; set; }
     }
 }

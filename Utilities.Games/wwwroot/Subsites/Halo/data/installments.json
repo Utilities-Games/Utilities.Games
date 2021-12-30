@@ -1,0 +1,69 @@
+[
+    {
+        "name": "Halo: Combat Evolved",
+        "platforms": [ "Xbox", "Xbox 360", "Xbox One", "PC" ],
+        "saga": "Original Trilogy"
+    },
+    {
+        "name": "Halo 2",
+        "platforms": [ "Xbox", "Xbox 360", "Xbox One", "PC" ],
+        "saga": "Original Trilogy"
+    },
+    {
+        "name": "Halo 3",
+        "platforms": [ "Xbox 360", "Xbox One", "Xbox Series X/S", "PC" ],
+        "saga": "Original Trilogy"
+    },
+    {
+        "name": "Halo Wars",
+        "platforms": [ "Xbox 360", "Xbox One", "PC" ]
+    },
+    {
+        "name": "Halo 3: ODST",
+        "platforms": [ "Xbox 360", "Xbox One", "Xbox Series X/S", "PC" ]
+    },
+    {
+        "name": "Halo: Reach",
+        "platforms": [ "Xbox 360", "Xbox One", "Xbox Series X/S", "PC" ]
+    },
+    {
+        "name": "Halo: Combat Evolved Anniversary",
+        "platforms": [ "Xbox 360", "Xbox Series X/S", "Xbox One", "PC" ],
+        "saga": "Original Trilogy"
+    },
+    {
+        "name": "Halo 4",
+        "platforms": [ "Xbox 360", "Xbox One", "Xbox Series X/S", "PC" ],
+        "saga": "Reclaimer"
+    },
+    {
+        "name": "Halo: Spartan Assault",
+        "platforms": [ "Xbox 360", "Xbox One", "PC", "Smartphone" ]
+    },
+    {
+        "name": "Halo 2: Anniversary",
+        "platforms": [ "Xbox One", "PC" ]
+    },
+    {
+        "name": "Halo: The Master Chief Collection",
+        "platforms": [ "Xbox One", "Xbox Series X/S", "PC" ]
+    },
+    {
+        "name": "Halo: Spartan Strike",
+        "platforms": [ "Smartphone", "PC" ]
+    },
+    {
+        "name": "Halo 5: Guardians",
+        "platforms": [ "Xbox One" ],
+        "saga": "Reclaimer"
+    },
+    {
+        "name": "Halo Wars 2",
+        "platforms": [ "Xbox One", "PC" ]
+    },
+    {
+        "name": "Halo Infinite",
+        "platforms": [ "Xbox One", "Xbox Series X/S", "PC" ],
+        "saga": "Reclaimer"
+    }
+]
