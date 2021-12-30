@@ -225,7 +225,7 @@
       "url": "images\/GitHub\/GitHub-Mark-Light-64px.png"
     },
     {
-      "hash": "sha256-5IAp9SfDgckItfBu2PewNjRmJGOeZde69jHEwFGDp9k=",
+      "hash": "sha256-0MI88CDnda097fkUUSwJ+t3uEsaO2IKDouMb\/OyoYaw=",
       "url": "index.html"
     },
     {
@@ -283,6 +283,10 @@
     {
       "hash": "sha256-cazm\/imwjXMeXV9kFRRqDMCjhYokBxai\/p86ikc1IZs=",
       "url": "js\/idb.js"
+    },
+    {
+      "hash": "sha256-Be00nUci2Z0oooaYekK8i+q4W96ZvvxIjmqe6wv+C7Q=",
+      "url": "js\/localStore.js"
     },
     {
       "hash": "sha256-FJ3Seeb7XoPWdUPtL7p0TybraHCnGLOyopCn\/X7QeWE=",
@@ -549,7 +553,7 @@
       "url": "Subsites\/LOTR_RiseToWar\/images\/game_logo.png"
     },
     {
-      "hash": "sha256-+pGrSzz83Hvc276LGUFYnTNZIsK3cMtszSHhM609NFs=",
+      "hash": "sha256-GSWmKNwvgc5K5Yywyz5LkdiP7edXq\/uf4p9GdCoGaac=",
       "url": "Subsites\/LOTR_RiseToWar\/js\/localStore.js"
     },
     {
@@ -1765,7 +1769,7 @@
       "url": "Subsites\/TheLegendOfZelda\/images\/ingredients\/Zapshroom.webp"
     },
     {
-      "hash": "sha256-HY5FWyclqIptAIrJAmI6i1Vmeq6pWeb1m5Ia8HTzLA8=",
+      "hash": "sha256-ezggzXOYDJtEp6qoIKB9wAyA8\/p11Yi41oyTole0aRs=",
       "url": "Subsites\/TheLegendOfZelda\/js\/localStore.js"
     },
     {
@@ -1985,7 +1989,7 @@
       "url": "_framework\/Utilities.Games.Models.dll"
     },
     {
-      "hash": "sha256-HBKL0LO+qsUulW7h3RUV9ToeuiliH2M8i9qUMxg59bo=",
+      "hash": "sha256-jUoJnsTtWwR49aw7\/ZhyDVRkxSMwmA6H\/191hiLCg74=",
       "url": "_framework\/Utilities.Games.dll"
     },
     {
@@ -2381,7 +2385,7 @@
       "url": "_framework\/zh-Hant\/Microsoft.CodeAnalysis.Workspaces.resources.dll"
     },
     {
-      "hash": "sha256-aEGwBKSqyQdswUBZoOfBIYburgUnZDo7uU6KRPVd39M=",
+      "hash": "sha256-jlOmXi7gKVa313V70H+6WnIP4StcCqvQbdXgjsvRtIw=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -2389,5 +2393,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "nC1oif4i"
+  "version": "mBjsI8PS"
 };
