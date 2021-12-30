@@ -1,36 +1,10 @@
-﻿(function () {
-    // This code exists to support functionality in LocalRecipeStore.cs. It provides convenient access to
-    // the browser's IndexedDB APIs, along with a preconfigured database structure.
-
-    const db = idb.openDB('LOTR_RiseToWar', 1, {
-        upgrade(db) {
-            db.createObjectStore('userServers', { keyPath: 'serverNumber' });
-            db.createObjectStore('userCommanders', { keyPath: 'id' });
-        },
-    });
-
-    window.LOTR_RiseToWar_localStore = {
-        get: async (storeName, key) => (await db).transaction(storeName).store.get(key),
-        getAll: async (storeName) => (await db).transaction(storeName).store.getAll(),
-        getAllKeys: async (storeName) => (await db).transaction(storeName).store.getAllKeys(),
-        getFirstFromIndex: async (storeName, indexName, direction) => {
-            const cursor = await (await db).transaction(storeName).store.index(indexName).openCursor(null, direction);
-            return (cursor && cursor.value) || null;
-        },
-        put: async (storeName, key, value) => (await db).transaction(storeName, 'readwrite').store.put(value, key === null ? undefined : key),
-        putAllFromJson: async (storeName, json) => {
-            const store = (await db).transaction(storeName, 'readwrite').store;
-            JSON.parse(json).forEach(item => store.put(item));
-        },
-        delete: async (storeName, key) => (await db).transaction(storeName, 'readwrite').store.delete(key),
-        autocompleteKeys: async (storeName, text, maxResults) => {
-            const results = [];
-            let cursor = await (await db).transaction(storeName).store.openCursor(IDBKeyRange.bound(text, text + '\uffff'));
-            while (cursor && results.length < maxResults) {
-                results.push(cursor.key);
-                cursor = await cursor.continue();
-            }
-            return results;
-        }
-    };
-})();
+﻿window.utilities_games.localStores.register("LOTR_RiseToWar_localStore", function () {
+    const VERSION = 1;
+    return window.utilities_games.localStores.installLocalStore(
+        'LOTR_RiseToWar',
+        VERSION,
+        [
+            new window.utilities_games.localStores.objectStoreDto('userServers', { keyPath: 'serverNumber' }),
+            new window.utilities_games.localStores.objectStoreDto('userCommanders', { keyPath: 'id' })
+        ]);
+});

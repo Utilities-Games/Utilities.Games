@@ -14,5 +14,12 @@ namespace Utilities.Games.ImportTool.Views
             var view = new Subsites.LOTR_RiseToWar.MainView();
             view.Run();
         }
+
+        [ViewOption("The Legend of Zelda")]
+        public void TheLegendOfZelda()
+        {
+            var view = new Subsites.TheLegendOfZelda.MainView();
+            view.Run();
+        }
     }
 }

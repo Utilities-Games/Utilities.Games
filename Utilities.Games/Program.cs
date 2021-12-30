@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Text.Json;
 using System.Threading.Tasks;
 using LOTR_RiseToWar = Utilities.Games.Pages.Subsites.LOTR_RiseToWar;
+using TheLegendOfZelda = Utilities.Games.Pages.Subsites.TheLegendOfZelda;
 
 namespace Utilities.Games
 {
@@ -22,6 +23,7 @@ namespace Utilities.Games
             builder.Services.AddScoped<Utilities.Games.Models.Notifications.NotificationTriggers>();
             builder.Services.AddScoped<LOTR_RiseToWar.Models.LocalStores.ServerStore>();
             builder.Services.AddScoped<LOTR_RiseToWar.Models.LocalStores.CommanderStore>();
+            builder.Services.AddScoped<TheLegendOfZelda.Models.LocalStores.IngredientStore>();
 
             var host = builder.Build();
 

@@ -1,0 +1,47 @@
+﻿@page "/thelegendofzelda/ingredients/{name}"
+@inject HttpClient Http
+@layout TheLegendOfZelda_Layout
+
+@if (Loading)
+{
+    <p class="alert alert-light">Loading...</p>
+}
+else if (ingredient != null)
+{
+    <div class="card mx-auto" style="width: 18rem;">
+        <img class="card-img-top" src="./Subsites/TheLegendOfZelda/images/ingredients/@(ingredient.Name).png" />
+        <div class="card-body">
+            <h5 class="card-title text-center">@(ingredient.Name)</h5>
+            <p class="card-text">{Insert Flavor Text Here}</p>
+        </div>
+        <div class="card-footer">
+            <span class="badge bg-primary mx-1">@(ingredient.Category)</span>
+            <span class="badge bg-primary mx-1">@(ingredient.Type)</span>
+        </div>
+    </div>
+}
+else
+{
+    <p class="alert alert-warning">No commander by the name of @(Name).</p>
+}
+
+@code {
+    bool Loading = false;
+    [Parameter]
+    public string Name { get; set; }
+
+    private DataModels.Ingredient ingredient;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Loading = true;
+        var options = new System.Text.Json.JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        Name = Uri.UnescapeDataString(Name);
+        ingredient = (await Http.GetFromJsonAsync<DataModels.Ingredient[]>("Subsites/TheLegendOfZelda/data/ingredients.json", options))
+        .FirstOrDefault(o => o.Name == Name);
+        Loading = false;
+    }
+}

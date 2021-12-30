@@ -19,6 +19,81 @@
             Reference to the name of the property on the target object for which to compare the lookup property value(s).
             </summary>
         </member>
+        <member name="T:Utilities.Games.Models.Contracts.ICharacter">
+            <summary>
+            Describes a character within a game. See <c>character</c> schema <seealso href="https://schema.org/character"/>
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.ICharacter.Name">
+            <summary>
+            The name of the character.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Contracts.IDeveloper">
+            <summary>
+            Describes a developer of a video game. See <c>author</c> schema <seealso href="https://schema.org/author"/>
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.IDeveloper.Name">
+            <summary>
+            Name of the developer
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Contracts.IGameItem">
+            <summary>
+            Describes an in-game item. Based on <c>gameItem</c> schema <seealso href="https://schema.org/gameItem"/>
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.IGameItem.Name">
+            <summary>
+            The name of the item.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.IGameItem.AlternateName">
+            <summary>
+            An alias for the item.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.IGameItem.Description">
+            <summary>
+            A description of the item.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Contracts.IInstallment">
+            <summary>
+            Describes a specific game installment either as standalone or part of a franchise.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.IInstallment.Name">
+            <summary>
+            Name of the game installment.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.IInstallment.Platforms">
+            <summary>
+            List of gaming platforms the installment is capable of running on. See <c>gamePlatform</c> schema <seealso href="https://schema.org/gamePlatform"/>
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Contracts.IRace">
+            <summary>
+            Describes a race of creatures, characters, and other NPCs within a game.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.IRace.Name">
+            <summary>
+            Name of the type of race.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Contracts.ISaga">
+            <summary>
+            Describes a saga of game installments within a franchise.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Contracts.ISaga.Name">
+            <summary>
+            Name of the franchise saga.
+            </summary>
+        </member>
         <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.AlignmentType">
             <summary>
             The alignment of an entity. (ie. Good, Evil, Neutral)
@@ -589,9 +664,104 @@
             Conscription cost per Command of time.
             </summary>
         </member>
-        <member name="P:Utilities.Games.Models.Subsites.LOTR_RiseToWar.UnitCosts.Gold">
+        <member name="P:Utilities.Games.Models.Subsites.TheLegendOfZelda.BaseStatistics.HealthPoints">
             <summary>
-            Conscription cost per Command of Gold.
+            Base health points (HP).
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.TheLegendOfZelda.Enemy">
+            <summary>
+            An enemy creature or character of a specific race.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.TheLegendOfZelda.Enemy.Race">
+            <summary>
+            Reference to the race of the creature or character.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.TheLegendOfZelda.Enemy.Name">
+            <summary>
+            Full name of the creature or character.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.TheLegendOfZelda.Ingredient">
+            <summary>
+            A cooking ingredient as introduced in Breath of the Wild
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.TheLegendOfZelda.Ingredient.Name">
+            <summary>
+            Name of the ingredient 
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.TheLegendOfZelda.Ingredient.Category">
+            <summary>
+            Inventory category for the ingredient.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.TheLegendOfZelda.Ingredient.Type">
+            <summary>
+            Type of ingredient.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.TheLegendOfZelda.Ingredient.Effect">
+            <summary>
+            Name of the Ingredient Effect that the ingredient introduces to the recipe.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.TheLegendOfZelda.Ingredient.EffectDuration">
+            <summary>
+            Duration that the effect lasts.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.TheLegendOfZelda.Ingredient.ResaleValue">
+            <summary>
+            Amount, in rupees, that the item can be resold.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.TheLegendOfZelda.IngredientEffect">
+            <summary>
+            Describes the effects of an ingredient on the player.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.TheLegendOfZelda.IngredientEffect.Name">
+            <summary>
+            The name of the effect. Ie. Attack, Defense, Heat Resistance
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.TheLegendOfZelda.IngredientEffect.MaxPotency">
+            <summary>
+            The mathematical factor for which this effect has on the player.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.TheLegendOfZelda.IngredientEffect.Effect">
+            <summary>
+            Descriptive text of what the effect has on gameplay.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.TheLegendOfZelda.IngredientEffect.HasDuration">
+            <summary>
+            Flag for whether or not the effect lasts within a duration or if it is instant.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.TheLegendOfZelda.Installment">
+            <summary>
+            Reference to a specific installment of the franchise
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.TheLegendOfZelda.Installment.Name">
+            <summary>
+            Name of the game installment
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.TheLegendOfZelda.Race">
+            <summary>
+            A character or NPC race type.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.TheLegendOfZelda.Race.Name">
+            <summary>
+            Name of the type of the character or NPC.
             </summary>
         </member>
     </members>
