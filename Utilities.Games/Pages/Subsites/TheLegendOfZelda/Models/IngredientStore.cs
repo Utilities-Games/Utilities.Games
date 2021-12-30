@@ -9,9 +9,6 @@ using Utilities.Games.Models;
 
 namespace Utilities.Games.Pages.Subsites.TheLegendOfZelda.Models.LocalStores
 {
-    public static class TheLegendOfZelda_LocalStore {
-        public const string SUBSITE_KEY = "TheLegendOfZelda";
-    }
     public class IngredientStore : LocalStore<UserIngredient>
     {
         public override string SubsiteKey => TheLegendOfZelda_LocalStore.SUBSITE_KEY;

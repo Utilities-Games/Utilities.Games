@@ -8,6 +8,8 @@ namespace Utilities.Games.Models
 {
     public abstract class LocalStore<T>
     {
+        const string ROOT_ACCESSOR = "utilities_games.localStores";
+
         /// <summary>
         /// Unique key for the subsite this localstore is tied to.
         /// </summary>
@@ -21,7 +23,7 @@ namespace Utilities.Games.Models
         /// <summary>
         /// Optional override of the local store's prefix.
         /// </summary>
-        public virtual string PREFIX => $"{SubsiteKey}_localStore";
+        public virtual string ACCESSOR => $"{SubsiteKey}_localStore";
 
         private readonly HttpClient httpClient;
         private readonly IJSRuntime js;
@@ -31,6 +33,8 @@ namespace Utilities.Games.Models
             this.httpClient = httpClient;
             this.js = js;
         }
+
+        public ValueTask<bool> Exists() => js.InvokeAsync<bool>($"{ROOT_ACCESSOR}.exists", ACCESSOR);
 
         public abstract object GetKey(T item);
 
@@ -43,18 +47,25 @@ namespace Utilities.Games.Models
             return items;
         }
         ValueTask<IEnumerable<T>> GetAllAsync(string storeName)
-            => js.InvokeAsync<IEnumerable<T>>($"{PREFIX}.getAll", storeName);
+        {
+            return js.InvokeAsync<IEnumerable<T>>($"{ROOT_ACCESSOR}.fromStore.getAll", ACCESSOR, storeName);
+        }
 
         public virtual ValueTask SaveAsync(T item) => PutAsync(STORE_NAME, null, item);
 
         ValueTask<U> GetAsync<U>(string storeName, object key)
-            => js.InvokeAsync<U>($"{PREFIX}.get", storeName, key);
-
+        {
+            return js.InvokeAsync<U>($"{ROOT_ACCESSOR}.fromStore.get", ACCESSOR, storeName, key);
+        }
 
         ValueTask PutAsync<U>(string storeName, object key, U value)
-            => js.InvokeVoidAsync($"{PREFIX}.put", storeName, key, value);
+        {
+            return js.InvokeVoidAsync($"{ROOT_ACCESSOR}.fromStore.put", ACCESSOR, storeName, key, value); ;
+        }
 
         ValueTask DeleteAsync(string storeName, object key)
-            => js.InvokeVoidAsync($"{PREFIX}.delete", storeName, key);
+        {
+            return js.InvokeVoidAsync($"{ROOT_ACCESSOR}.fromStore.delete", ACCESSOR, storeName, key);
+        }
     }
 }
