@@ -1,70 +1,10 @@
 ﻿@inherits LayoutComponentBase
 @layout MainLayout
-@inject HttpClient Http
-@inject NavigationManager NavigationManager
-@using Utilities.Games.Models
 
-<Breadcrumb Links="breadcrumbLinks" />
 <div class="content px-4">
     @Body
 </div>
 <p>Tools for the game <a href="https://www.halowaypoint.com/en-gb" target="_blank"><em>Halo&trade;</em></a>.</p>
 
 @code {
-    private List<BreadcrumbLink> breadcrumbLinks;
-    private List<BreadcrumbConfig> breadcrumbConfig;
-
-    protected override async Task OnInitializedAsync()
-    {
-        var options = new System.Text.Json.JsonSerializerOptions()
-        {
-            PropertyNameCaseInsensitive = true
-        };
-        breadcrumbConfig = await Http.GetFromJsonAsync<List<BreadcrumbConfig>>("./Subsites/Halo/breadcrumb_config.json", options);
-    }
-
-    protected async override void OnParametersSet()
-    {
-        breadcrumbLinks = new List<BreadcrumbLink>();
-        string currentUrl = NavigationManager.Uri;
-        var myUrl = currentUrl.Replace(NavigationManager.BaseUri, string.Empty);
-        if (myUrl.Contains('?')) myUrl = myUrl.Remove(myUrl.IndexOf('?'));
-
-        var pathParts = myUrl.Split('/');
-        var orderIndex = 1;
-
-        foreach (var path in pathParts)
-        {
-            if (path == string.Empty) continue;
-
-            bool isLast = path == pathParts.LastOrDefault();
-            orderIndex++;
-            var address = path;
-
-            var lastLink = breadcrumbLinks.LastOrDefault();
-            if (!string.IsNullOrEmpty(lastLink?.Address))
-            {
-                address = $"{lastLink.Address}/{address}";
-            }
-
-            string title = path;
-            if (title.Contains("?"))
-            {
-                title = title.Remove(title.IndexOf('?'));
-            }
-
-            var config = breadcrumbConfig?.FirstOrDefault(o => o.IsMatch(address));
-            if (config != null || isLast)
-            {
-                breadcrumbLinks.Add(new BreadcrumbLink
-                {
-                    Address = address,
-                    IsActive = isLast,
-                    OrderIndex = orderIndex,
-                    Title = config != null ? config.FormatTitle(address) : title
-                });
-            }
-        }
-        base.OnParametersSet();
-    }
 }

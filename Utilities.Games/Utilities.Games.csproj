@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Blazor.Extensions.Canvas" Version="1.1.1" />
     <PackageReference Include="ChartJs.Blazor.Fork" Version="2.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.11" />
@@ -20,13 +24,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Subsites\Halo\css\" />
     <Folder Include="wwwroot\Subsites\Halo\js\" />
-    <Folder Include="wwwroot\Subsites\LOTR_RiseToWar\css\" />
-    <Folder Include="wwwroot\Subsites\TheLegendOfZelda\css\" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="compilerconfig.json" />
     <None Include="wwwroot\Subsites\LOTR_RiseToWar\images\favicon.ico" />
     <None Include="wwwroot\Subsites\LOTR_RiseToWar\images\game_logo.png" />
   </ItemGroup>

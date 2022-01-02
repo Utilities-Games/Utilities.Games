@@ -1,0 +1,58 @@
+﻿@inject NavigationManager Nav
+@using UriHelper = Utilities.Games.UriHelper
+<div class="card h-100 @(!string.IsNullOrEmpty(Class) ? Class : "") @(!string.IsNullOrEmpty(NavigationUrl) ? "link" : "")" style="@CssVariables" @onclick="@Navigate">
+    @if (!string.IsNullOrEmpty(ImageUrl))
+    {
+        <img
+            class="card-img"
+            src="@(UriHelper.CleanAndEncodeImageUrl(ImageUrl))"
+        />
+    }
+    <div class="card-body">
+        <h5 class="card-title text-center">@Title</h5>
+        @if (Body != null)
+        {
+            <div>@Body</div>
+        }
+    </div>
+    @if (Footer != null)
+    {
+        <div class="card-footer">@Footer</div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public string ImageUrl { get; set; }
+
+    [Parameter]
+    public double? MaximumImageWidth { get; set; }
+
+    [Parameter]
+    public double? MaximumImageHeight { get; set; }
+
+    [Parameter]
+    public RenderFragment Title { get; set; }
+
+    [Parameter]
+    public RenderFragment Body { get; set; }
+
+    [Parameter]
+    public RenderFragment Footer { get; set; }
+
+    [Parameter]
+    public string NavigationUrl { get; set; }
+
+    [Parameter]
+    public string Class { get; set; }
+
+    public string CssVariables => (MaximumImageWidth > 0 ? $"--image-width: {MaximumImageWidth}px;" : "")
+        + (MaximumImageHeight > 0 ? $"--image-height: {MaximumImageHeight}px;" : "");
+
+    void Navigate() {
+        if (!string.IsNullOrEmpty(NavigationUrl))
+        {
+            Nav.NavigateTo(NavigationUrl);
+        }
+    }
+}

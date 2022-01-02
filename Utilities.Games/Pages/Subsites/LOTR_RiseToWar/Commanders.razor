@@ -5,35 +5,30 @@
 <h3>Commanders</h3>
 <p>A Commander maintains up-to three unit types and can be deployed to control territory. Click or tap on a Commander to review their base stats.</p>
 
-<div class="row row-cols-1 row-cols-sm-4 row-cols-md-8 g-4">
-    @if (LoadingCommanders)
-    {
-        <div class="col">
-            <div class="card h-100" aria-hidden="true">
-                <img class="card-img-top" src="" />
-                <div class="card-body">
-                    <h5 class="card-title placeholder-glow"><span class="placeholder col-6"></span></h5>
-                </div>
-            </div>
-        </div>
-    }
-    else if (commanders?.Length > 0)
+<Utilities.Games.Shared.Card.Container Loading="@LoadingCommanders">
+    @if (commanders?.Length > 0)
     {
         foreach (Games.Models.Subsites.LOTR_RiseToWar.Commander commander in commanders)
         {
-            <div class="col">
-                <a class="card h-100" href="./lotr_risetowar/commanders/@(commander.Name)">
-                    <img class="card-img-top" src="./Subsites/LOTR_RiseToWar/images/commanders/@(commander.Name).png" alt="@(commander.Name)" />
-                    <div class="card-body">
-                        <h5 class="card-title text-center">@(commander.Name)</h5>
-                    </div>
-                </a>
-            </div>
+            <Utilities.Games.Shared.Card.Card
+                ImageUrl="@($"./Subsites/LOTR_RiseToWar/images/commanders/{commander.Name}.png")"
+                MaximumImageHeight="200"
+                MaximumImageWidth="200"
+                NavigationUrl="@($"./lotr_risetowar/commanders/{System.Net.WebUtility.UrlEncode(commander.Name)}")"
+            >
+                <Title>@commander.Name</Title>
+            </Utilities.Games.Shared.Card.Card>
         }
-    } else {
-        <p class="alert alert-warning">No commanders found in dataset. Please submit an Issue on GitHub so the developers can take care of it. <a href="https://github.com/Utilities-Games/Utilities.Games/issues/new?assignees=&labels=bug%2C+lotr-risetowar%2C+subsite&template=-bug--lotr--rise-to-war.md&title=%5BBUG%5D%5BLOTR_RiseToWar%5D+%7BBrief+Description%7D">Create Issue on GitHub</a></p>
     }
-</div>
+    else
+    {
+        <Utilities.Games.Shared.Errors.NoItems
+            ItemName="Commander"
+            GitHubLabel="lotr-risetowar"
+            GitHubTemplate="-bug--lotr--rise-to-war.md"
+            GitHubTitle="[BUG][LOTR_RiseToWar] {Brief Description}"></Utilities.Games.Shared.Errors.NoItems>
+    }
+</Utilities.Games.Shared.Card.Container>
 
 @code {
     bool LoadingCommanders = false;

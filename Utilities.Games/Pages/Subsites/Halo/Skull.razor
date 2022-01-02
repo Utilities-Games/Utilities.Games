@@ -1,0 +1,74 @@
+﻿@page "/halo/skulls/{name}"
+@inject HttpClient Http
+@layout Halo_Layout
+
+@if (LoadingSkull)
+{
+    <p class="alert alert-light">Loading...</p>
+}
+else if (skull != null)
+{
+    <Utilities.Games.Shared.Card.Card
+        ImageUrl="@($"./Subsites/Halo/images/skulls/{skull.Name}.png")"
+        MaximumImageWidth="278"
+        MaximumImageHeight="278"
+    >
+        <Title>@skull.Name</Title>
+        <Footer>
+            @if (skull.Installments?.Length > 0)
+            {
+                foreach (var skullInstallment in skull.Installments)
+                {
+                    <span class="badge bg-secondary mx-1">@(skullInstallment.Name)</span>
+                }
+            }
+        </Footer>
+    </Utilities.Games.Shared.Card.Card>
+    @if (skull.Installments?.Length > 0)
+    {
+        <hr />
+        <h4>Appearances</h4>
+        <Utilities.Games.Shared.Card.Container>
+            @foreach (var skullInstallment in skull.Installments)
+            {
+            <Utilities.Games.Shared.Card.Card
+                ImageUrl="@($"./Subsites/Halo/images/installments/{skullInstallment.Name}.png")"
+                NavigationUrl="@($"./halo/installments/{skullInstallment.Name}/skulls/{skull.Name}")"
+            >
+                <Title>@skullInstallment.Name</Title>
+                <Body>
+                    @if (!string.IsNullOrEmpty(skullInstallment.FlavorText))
+                    {
+                        <em>@(skullInstallment.FlavorText)</em>
+                    }
+                </Body>
+            </Utilities.Games.Shared.Card.Card>
+            }
+        </Utilities.Games.Shared.Card.Container>
+    }
+}
+else
+{
+    <p class="alert alert-warning">No installment by the name of @(Name).</p>
+}
+
+@code {
+    bool LoadingSkull = false;
+    [Parameter]
+    public string Name { get; set; }
+
+    private DataModels.Skull skull;
+
+    protected override async Task OnInitializedAsync()
+    {
+        LoadingSkull = true;
+        var options = new System.Text.Json.JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        Name = Uri.UnescapeDataString(Name);
+        skull = (await Http.GetFromJsonAsync<DataModels.Skull[]>("Subsites/Halo/data/skulls.json", options))
+            .FirstOrDefault(o => o.Name == Name);
+        LoadingSkull = false;
+    }
+}

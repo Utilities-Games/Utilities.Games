@@ -1,0 +1,21 @@
+﻿<div class="card-container">
+    @if (Loading)
+    {
+        for (int i = 0; i < 6; i++)
+        {
+            <PlaceholderCard></PlaceholderCard>
+        }
+    }
+    else
+    {
+        @ChildContent
+    }
+</div>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public bool Loading { get; set; }
+}

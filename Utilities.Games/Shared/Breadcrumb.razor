@@ -1,31 +1,99 @@
-﻿@using Utilities.Games.Models
+﻿@inject HttpClient Http
+@using Utilities.Games.Models
 
-@if (Links?.Any() == true)
-{
 <div class="p-2 bg-light">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            @foreach (var link in Links.OrderBy(x => x.OrderIndex))
-            {
-                string title = Uri.UnescapeDataString(link.Title);
-                if (link.IsActive)
+    @if (Loading)
+    {
+        <p class="alert alert-light">Loading...</p>
+    }
+    else if (Links?.Any() == true)
+    {
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                @foreach (var link in Links.OrderBy(x => x.OrderIndex))
                 {
-                    <li class="breadcrumb-item active mt-bread-item" aria-current="page">@(title)</li>
+                    string title = Uri.UnescapeDataString(link.Title);
+                    if (link.IsActive)
+                    {
+                        <li class="breadcrumb-item active mt-bread-item" aria-current="page">@(title)</li>
+                    }
+                    else
+                    {
+                        <li class="breadcrumb-item">
+                            <a class="mt-bread-item-link" href="@link.Address">@(title)</a>
+                        </li>
+                    }
                 }
-                else
-                {
-                    <li class="breadcrumb-item">
-                        <a class="mt-bread-item-link" href="@link.Address">@(title)</a>
-                    </li>
-                }
-            }
-        </ol>
-    </nav>
+            </ol>
+        </nav>
+    }
 </div>
-}
 @code{
     [Parameter]
-    public List<BreadcrumbLink> Links { get; set; } = new List<BreadcrumbLink>();
+    public string ConfigPath { get; set; }
 
-    protected override Task OnParametersSetAsync() => base.OnParametersSetAsync();
+    [Parameter]
+    public string CurrentRoute { get; set; }
+
+    private bool Loading { get; set; }
+
+    private List<BreadcrumbLink> Links { get; set; }
+
+    private List<BreadcrumbConfig> breadcrumbConfig;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var options = new System.Text.Json.JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        breadcrumbConfig = await Http.GetFromJsonAsync<List<BreadcrumbConfig>>(ConfigPath, options);
+    }
+
+    protected async override Task OnParametersSetAsync()
+    {
+        Loading = true;
+        Links = new List<BreadcrumbLink>();
+        var myUrl = CurrentRoute;
+        if (myUrl.Contains('?')) myUrl = myUrl.Remove(myUrl.IndexOf('?'));
+
+        var pathParts = myUrl.Split('/');
+        Console.WriteLine("Processing Breadcrumbs for path '" + myUrl + "'.");
+        var orderIndex = 1;
+
+        foreach (var path in pathParts)
+        {
+            if (path == string.Empty) continue;
+
+            bool isLast = path == pathParts.LastOrDefault();
+            orderIndex++;
+            var address = path;
+
+            var lastLink = Links.LastOrDefault();
+            if (!string.IsNullOrEmpty(lastLink?.Address))
+            {
+                address = $"{lastLink.Address}/{address}";
+            }
+
+            string title = path;
+            if (title.Contains("?"))
+            {
+                title = title.Remove(title.IndexOf('?'));
+            }
+
+            var config = breadcrumbConfig?.FirstOrDefault(o => o.IsMatch(address));
+            if (config != null || isLast)
+            {
+                Links.Add(new BreadcrumbLink
+                {
+                    Address = address,
+                    IsActive = isLast,
+                    OrderIndex = orderIndex,
+                    Title = config != null ? config.FormatTitle(address) : title
+                });
+            }
+        }
+        base.OnParametersSet();
+        Loading = false;
+    }
 }

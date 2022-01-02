@@ -1,0 +1,13 @@
+﻿@import "LOTR_RiseToWar/css/theme.scss";
+@import "TheLegendOfZelda/css/theme.scss";
+@import "Halo/css/theme.scss";
+
+.theme-lotr_risetowar {
+    @include theme_lotr_risetowar;
+}
+.theme-thelegendofzelda {
+    @include theme_thelegendofzelda;
+}
+.theme-halo {
+    @include theme_halo;
+}

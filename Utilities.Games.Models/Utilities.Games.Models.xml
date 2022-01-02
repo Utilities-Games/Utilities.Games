@@ -167,6 +167,61 @@
         <member name="P:Utilities.Games.Models.Platform.Type">
             <inheritdoc/>
         </member>
+        <member name="T:Utilities.Games.Models.Subsites.Halo.Contracts.Difficulty">
+            <summary>
+            Describes the level of difficulty of the campaign.
+            </summary>
+        </member>
+        <member name="F:Utilities.Games.Models.Subsites.Halo.Contracts.Difficulty.Easy">
+            <summary>
+            The lowest difficulty setting for the campaign.
+            </summary>
+        </member>
+        <member name="F:Utilities.Games.Models.Subsites.Halo.Contracts.Difficulty.Normal">
+            <summary>
+            The default difficulty setting for the campaign.
+            </summary>
+        </member>
+        <member name="F:Utilities.Games.Models.Subsites.Halo.Contracts.Difficulty.Heroic">
+            <summary>
+            A slightly above-average difficulty setting for the campaign.
+            </summary>
+        </member>
+        <member name="F:Utilities.Games.Models.Subsites.Halo.Contracts.Difficulty.Legendary">
+            <summary>
+            The highest difficulty setting for the campaign.
+            </summary>
+        </member>
+        <member name="F:Utilities.Games.Models.Subsites.Halo.Contracts.Difficulty.LASO">
+            <summary>
+            A fan-created difficulty that requires the difficulty to be set to Legendary and activating all skulls.
+            </summary>
+        </member>
+        <member name="F:Utilities.Games.Models.Subsites.Halo.Contracts.Difficulty.SLASO">
+            <summary>
+            A fan-created difficulty similar to LASO, but only allows for one player.
+            </summary>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.Halo.Contracts.SkullRarity">
+            <summary>
+            Describes the rarity of a skull.
+            </summary>
+        </member>
+        <member name="F:Utilities.Games.Models.Subsites.Halo.Contracts.SkullRarity.Silver">
+            <summary>
+            Lowest rarity, doesn't effect gameplay.
+            </summary>
+        </member>
+        <member name="F:Utilities.Games.Models.Subsites.Halo.Contracts.SkullRarity.Gold">
+            <summary>
+            Average rarity, effects gameplay.
+            </summary>
+        </member>
+        <member name="F:Utilities.Games.Models.Subsites.Halo.Contracts.SkullRarity.Mythic">
+            <summary>
+            Highest rarity, doesn't effect gameplay.
+            </summary>
+        </member>
         <member name="T:Utilities.Games.Models.Subsites.Halo.Installment">
             <summary>
             Reference to a specific installment of the franchise
@@ -181,6 +236,41 @@
         <member name="P:Utilities.Games.Models.Subsites.Halo.Installment.Saga">
             <inheritdoc/>
         </member>
+        <member name="T:Utilities.Games.Models.Subsites.Halo.InstallmentSkullDetails">
+            <summary>
+            Details of a skull by installment.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.Halo.InstallmentSkullDetails.Name">
+            <summary>
+            Name of the installment.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.Halo.InstallmentSkullDetails.Difficulties">
+            <summary>
+            Difficulties this skull can be acquired on.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.Halo.InstallmentSkullDetails.Effect">
+            <summary>
+            Description of what this skull effects, if anything.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.Halo.InstallmentSkullDetails.FlavorText">
+            <summary>
+            In-game text.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.Halo.InstallmentSkullDetails.Rarity">
+            <summary>
+            Rarity rating of the skull.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.Halo.InstallmentSkullDetails.PointMultiplier">
+            <summary>
+            Multiplier of point. Applicable in campaign and firefight modes.
+            </summary>
+        </member>
         <member name="T:Utilities.Games.Models.Subsites.Halo.Saga">
             <inheritdoc/>
         </member>
@@ -189,6 +279,21 @@
         </member>
         <member name="P:Utilities.Games.Models.Subsites.Halo.Saga.Installments">
             <inheritdoc/>
+        </member>
+        <member name="T:Utilities.Games.Models.Subsites.Halo.Skull">
+            <summary>
+            Reference to a collectible available across the franchise.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.Halo.Skull.Name">
+            <summary>
+            Name of the skull across the franchise.
+            </summary>
+        </member>
+        <member name="P:Utilities.Games.Models.Subsites.Halo.Skull.Installments">
+            <summary>
+            List of installments this skull is found in.
+            </summary>
         </member>
         <member name="T:Utilities.Games.Models.Subsites.LOTR_RiseToWar.AlignmentType">
             <summary>

@@ -1,0 +1,44 @@
+﻿/*https://material.io/resources/color/#!/?view.left=0&view.right=1&primary.color=a55acd&secondary.color=222222*/
+:root {
+    --theme-primary: #a55acd;
+    --theme-primary-light: #d98aff;
+    --theme-primary-dark: #732b9b;
+
+    --theme-accent: #82cd5a;
+    --theme-background: #ffffff;
+
+    --theme-secondary: #6b5acd;
+    --theme-secondary-light: #9e87ff;
+    --theme-secondary-dark: #36309b;
+
+    --theme-text-primary-on-primary: #000000;
+    --theme-text-hint-on-primary: #000000;
+    --theme-text-disabled-on-primary: #000000;
+    --theme-text-icon-on-primary: #000000;
+
+    --theme-text-secondary-on-primary: #000000;
+
+    --theme-text-primary-on-accent: var(--theme-primary);
+    --theme-text-secondary-on-accent: var(--theme-secondary);
+    --theme-text-hint-on-accent: var(--theme-secondary);
+    --theme-text-disabled-on-accent: var(--theme-secondary-light);
+    --theme-text-icon-on-accent: var(--theme-primary);
+
+    --theme-text-primary-on-background: var(--theme-primary);
+    --theme-text-secondary-on-background: var(--theme-secondary);
+    --theme-text-hint-on-background: var(--theme-secondary);
+    --theme-text-disabled-on-background: var(--theme-secondary-light);
+    --theme-text-icon-on-background: var(--theme-primary);
+
+    --theme-text-primary-on-light: #000000;
+    --theme-text-secondary-on-light: #000000;
+    --theme-text-hint-on-light: #000000;
+    --theme-text-disabled-on-light: #000000;
+    --theme-text-icon-on-light: #000000;
+
+    --theme-text-primary-on-dark: #ffffff;
+    --theme-text-secondary-on-dark: #ffffff;
+    --theme-text-hint-on-dark: #ffffff;
+    --theme-text-disabled-on-dark: #ffffff;
+    --theme-text-icon-on-dark: #ffffff;
+}

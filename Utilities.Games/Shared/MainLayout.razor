@@ -1,16 +1,64 @@
 ﻿@inherits LayoutComponentBase
 @inject IJSRuntime JSRuntime
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@using Utilities.Games.Models
 
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+    @if (Loading)
+    {
+        <p class="alert alert-light">Loading Layout...</p>
+    }
+    else
+    {
+        <div class="sidebar">
+            <NavMenu />
+        </div>
 
-    <div class="main">
-        @Body
-    </div>
+        <div class="main">
+            @if (CurrentSubsite != null)
+            {
+                <Breadcrumb CurrentRoute="@CurrentPath" ConfigPath="@($"./Subsites/{CurrentSubsite.Slug}/breadcrumb_config.json")"/>
+            }
+            @Body
+        </div>
+    }
 </div>
 @code{
+    bool Loading { get; set; }
+    string CurrentPath { get; set; }
+
+    List<Subsite> subsites { get; set; }
+
+    Subsite CurrentSubsite { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Loading = true;
+        var options = new System.Text.Json.JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        subsites = await Http.GetFromJsonAsync<List<Subsite>>("./Subsites/subsites.json", options);
+        Loading = false;
+    }
+    protected async override void OnParametersSet() {
+        CurrentPath = NavigationManager.Uri.Replace(NavigationManager.BaseUri, string.Empty);
+        var pathParts = CurrentPath.Split('/', StringSplitOptions.RemoveEmptyEntries);
+        string currentRoot = pathParts.FirstOrDefault();
+        if (!string.IsNullOrEmpty(currentRoot) && subsites?.Count > 0)
+        {
+            Console.WriteLine("Searching for subsite '" + currentRoot + "' in [" + string.Join(',', subsites.Select(o => o.Name).ToArray()) + "' from '" + CurrentPath + "'.");
+            CurrentSubsite = subsites.FirstOrDefault(o => o.Slug.Equals(currentRoot, StringComparison.OrdinalIgnoreCase));
+        } else {
+            CurrentSubsite = null;
+        }
+
+        string themeClass = CurrentSubsite?.Slug?.ToLower() ?? "";
+        await JSRuntime.InvokeVoidAsync("changeTheme", $"theme-{themeClass}");
+
+        base.OnParametersSet();
+    }
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)

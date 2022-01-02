@@ -1,0 +1,29 @@
+﻿<p class="alert alert-warning">No @(ItemName)(s) found in dataset. Please submit an Issue on GitHub so the developers can take care of it. <a href="@GitHubUrl" target="_blank">Create Issue on GitHub</a>
+@if (ChildContent != null) {
+    <br/>
+    @ChildContent
+ } 
+</p>
+
+@code {
+    [Parameter]
+    public string ItemName { get; set; }
+
+    [Parameter]
+    public string GitHubLabel { get; set; }
+
+    [Parameter]
+    public string GitHubTemplate { get; set; }
+
+    [Parameter]
+    public string GitHubTitle { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    string GitHubRootUrl = "https://github.com/Utilities-Games/Utilities.Games/issues/new";
+
+    string GitHubUrl => $"{GitHubRootUrl}?assignees=&labels=bug%2C+{GitHubLabel}%2C+subsite"
+        + (string.IsNullOrEmpty(GitHubTemplate) ? "" : $"&template={GitHubTemplate}")
+        + (string.IsNullOrEmpty(GitHubTitle) ? "" : $"&title={System.Net.WebUtility.UrlEncode(GitHubTitle)}");
+}

@@ -1,0 +1,37 @@
+﻿@page "/halo/skulls"
+@inject HttpClient Http
+@layout Halo_Layout
+
+<h3>Halo&trade; Skulls</h3>
+<Utilities.Games.Shared.Card.Container Loading="@LoadingSkulls">
+    @if (skulls?.Any() == true)
+    {
+        foreach (var skull in skulls)
+        {
+            <Utilities.Games.Shared.Card.Card
+                ImageUrl="@($"./Subsites/Halo/images/skulls/{skull.Name}.png")"
+                MaximumImageWidth="278"
+                MaximumImageHeight="278"
+                NavigationUrl="@($"./halo/skulls/{skull.Name}")"
+            >
+                <Title>@skull.Name</Title>
+            </Utilities.Games.Shared.Card.Card>
+        }
+    }
+</Utilities.Games.Shared.Card.Container>
+
+@code {
+    bool LoadingSkulls = false;
+    private IEnumerable<DataModels.Skull> skulls { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        LoadingSkulls = true;
+        var options = new System.Text.Json.JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        skulls = await Http.GetFromJsonAsync<DataModels.Skull[]>("Subsites/Halo/data/skulls.json", options);
+        LoadingSkulls = false;
+    }
+}

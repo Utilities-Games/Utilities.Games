@@ -8,12 +8,9 @@
 }
 else if (installment != null)
 {
-    <div class="card mx-auto" style="width: 18rem;">
-        <img class="card-img-top" src="./Subsites/Halo/images/installments/@(installment.Name.Replace(":", "")).png" />
-        <div class="card-body">
-            <h5 class="card-title text-center">@(installment.Name)</h5>
-        </div>
-        <div class="card-footer">
+    <Utilities.Games.Shared.Card.Card ImageUrl="@($"./Subsites/Halo/images/installments/{installment.Name}.png")">
+        <Title>@installment.Name</Title>
+        <Footer>
             @if (installment.Platforms?.Length > 0)
             {
                 foreach (var platformName in installment.Platforms)
@@ -21,8 +18,8 @@ else if (installment != null)
                     <span class="badge bg-secondary mx-1">@(platformName)</span>
                 }
             }
-        </div>
-    </div>
+        </Footer>
+    </Utilities.Games.Shared.Card.Card>
 }
 else
 {

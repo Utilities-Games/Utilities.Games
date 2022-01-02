@@ -1,0 +1,83 @@
+﻿@page "/halo/installments/{installment_name}/skulls/{skull_name}"
+@inject HttpClient Http
+@layout Halo_Layout
+
+@if (LoadingSkull)
+{
+    <p class="alert alert-light">Loading...</p>
+}
+else if (skull != null)
+{
+    <Utilities.Games.Shared.Card.Card
+        ImageUrl="@($"./Subsites/Halo/images/skulls/{skull.Name}.png")"
+        MaximumImageWidth="278"
+        MaximumImageHeight="278"
+    >
+        <Title>@skull.Name</Title>
+        <Footer>
+            @if (skull.Installments?.Length > 0)
+            {
+                foreach (var skullInstallment in skull.Installments)
+                {
+                    <span class="badge bg-secondary mx-1">@(skullInstallment.Name)</span>
+                }
+            }
+        </Footer>
+    </Utilities.Games.Shared.Card.Card>
+    <hr />
+    <h4>
+        @(installment.Name)
+        @if (!string.IsNullOrEmpty(installment.FlavorText))
+        {
+            <small>&emsp;&mdash;&emsp;<em>@(installment.FlavorText)</em></small>
+        }
+    </h4>
+    <dl>
+        <dt>Available Difficulties:</dt>
+        <dd>@(string.Join(", ", installment.Difficulties.Select(o => o.ToString())))</dd>
+        <dt>Effect:</dt>
+        <dd>@(installment.Effect)</dd>
+        @if (installment.PointMultiplier != null)
+        {
+            <dt>Point Multiplier:</dt>
+            <dd>x@(installment.PointMultiplier)</dd>
+        }
+        @if (!string.IsNullOrEmpty(installment.Rarity))
+        {
+            <dt>Rarity:</dt>
+            <dd>@(installment.Rarity.ToString())</dd>
+        }
+    </dl>
+}
+else
+{
+    <p class="alert alert-warning">No skull by the name of @(skull_name).</p>
+}
+
+@code {
+    bool LoadingSkull = false;
+    [Parameter]
+    public string installment_name { get; set; }
+    [Parameter]
+    public string skull_name { get; set; }
+
+    private DataModels.Skull skull;
+    private DataModels.InstallmentSkullDetails installment;
+
+    protected override async Task OnInitializedAsync()
+    {
+        LoadingSkull = true;
+        var options = new System.Text.Json.JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        skull_name = Uri.UnescapeDataString(skull_name);
+        skull = (await Http.GetFromJsonAsync<DataModels.Skull[]>("Subsites/Halo/data/skulls.json", options))
+            .FirstOrDefault(o => o.Name == skull_name);
+        if (skull != null)
+        {
+            installment = skull.Installments.FirstOrDefault(o => o.Name == installment_name);
+        }
+        LoadingSkull = false;
+    }
+}

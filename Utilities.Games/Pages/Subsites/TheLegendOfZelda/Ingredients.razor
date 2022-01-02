@@ -5,37 +5,29 @@
 <h3>Ingredients</h3>
 <p>An ingredient can be used to craft recipes in <em>The Legend of Zelda: Breath of the Wild</em>.</p>
 
-<div class="row row-cols-2 row-cols-sm-6 row-cols-md-8 g-4">
-    @if (Loading)
-    {
-        <div class="col">
-            <div class="card h-100" aria-hidden="true">
-                <img class="card-img-top" src="" />
-                <div class="card-body">
-                    <h5 class="card-title placeholder-glow"><span class="placeholder col-6"></span></h5>
-                </div>
-            </div>
-        </div>
-    }
-    else if (ingredients?.Length > 0)
+<Utilities.Games.Shared.Card.Container Loading="@Loading">
+    @if (ingredients?.Length > 0)
     {
         foreach (Games.Models.Subsites.TheLegendOfZelda.Ingredient ingredient in ingredients)
         {
-            <div class="col">
-                <a class="card h-100" href="./thelegendofzelda/ingredients/@(ingredient.Name)">
-                    <img class="card-img-top" src="./Subsites/TheLegendOfZelda/images/ingredients/@(ingredient.Name).png" alt="@(ingredient.Name)" />
-                    <div class="card-body">
-                        <h5 class="card-title text-center">@(ingredient.Name)</h5>
-                    </div>
-                </a>
-            </div>
+            <Utilities.Games.Shared.Card.Card
+                ImageUrl="@($"./Subsites/TheLegendOfZelda/images/ingredients/{ingredient.Name}.png")"
+                NavigationUrl="@($"./thelegendofzelda/ingredients/{ingredient.Name}")"
+                MaximumImageWidth="144"
+                MaximumImageHeight="144"
+            >
+                <Title>@ingredient.Name</Title>
+            </Utilities.Games.Shared.Card.Card>
         }
     }
     else
     {
-        <p class="alert alert-warning">No commanders found in dataset. Please submit an Issue on GitHub so the developers can take care of it. <a href="https://github.com/Utilities-Games/Utilities.Games/issues/new?assignees=&labels=bug%2C+lotr-risetowar%2C+subsite&template=-bug--lotr--rise-to-war.md&title=%5BBUG%5D%5BLOTR_RiseToWar%5D+%7BBrief+Description%7D">Create Issue on GitHub</a></p>
+        <Utilities.Games.Shared.Errors.NoItems
+            ItemName="Ingredient"
+            GitHubLabel="thelegendofzelda"
+            GitHubTitle="[BUG][TheLegendOfZelda] {Brief Description}"></Utilities.Games.Shared.Errors.NoItems>
     }
-</div>
+</Utilities.Games.Shared.Card.Container>
 @code {
     bool Loading = false;
     private DataModels.Ingredient[] ingredients;
