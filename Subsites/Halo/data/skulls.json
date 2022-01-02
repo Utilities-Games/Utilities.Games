@@ -1,0 +1,420 @@
+[
+    {
+        "name": "Anger",
+        "installments": [
+            {
+                "name": "Halo 2",
+                "difficulties": [ "Legendary" ],
+                "effect": "Enemies and allies fire their weapons faster and more frequently."
+            }
+        ]
+    },
+    {
+        "name": "Assassins",
+        "installments": [
+            {
+                "name": "Halo 2",
+                "difficulties": [ "Legendary" ],
+                "effect": "All enemies in game are permanently cloaked. Allies can sometimes see them but mostly they can't, so they can't help much."
+            }
+        ]
+    },
+    {
+        "name": "Black Eye",
+        "installments": [
+            {
+                "name": "Halo 2",
+                "difficulties": [ "Legendary" ],
+                "effect": "Your shield does not charge normally. To charge your shields you must kill something (enemy, ally, or turret) with a melee attack (anything but the Energy Sword). You can charge your shields into the Overshield range by doing this (one kill will charge 100% of your normal shields). Also activates subtitles during cut scenes. Additionally, this skull causes the falling snow in the multiplayer level Lockout to disappear."
+            },
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "The player's shields will only regenerate by performing melee attacks. The Energy Sword and Gravity Hammer's RT attacks, the shockwave created by the Gravity Hammer's swing, and hijacking also count as melee attacks and will recharge your shield.",
+                "rarity": "Gold",
+                "pointMultiplier": 1.5,
+                "flavorText": "Bash your way to better health."
+            },
+            {
+                "name": "Halo Infinite",
+                "difficulties": [ "Easy", "Normal", "Heroic", "Legendary" ],
+                "effect": "Your shields only recharge when you melee enemies.",
+                "flavorText": "Better get punchy."
+            }
+        ]
+    },
+    {
+        "name": "Blind",
+        "installments": [
+            {
+                "name": "Halo 2",
+                "difficulties": [ "Easy", "Normal", "Heroic", "Legendary" ],
+                "effect": "Your heads-up display becomes invisible. In other words, you cannot see your weapon (unless it's the Energy Sword, which has a glitched appearance with this skull), body, shields, ammunition, motion tracker, or use your flashlight. Muzzle flare from weapons though, are still visible."
+            },
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "Your entire Heads-Up Display is disabled. You can't see your weapon, shield meter, motion sensor, or ammo/grenade count.",
+                "rarity": "Silver",
+                "flavorText": "Shoot from the hip."
+            },
+            {
+                "name": "Halo Infinite",
+                "difficulties": [ "Easy", "Normal", "Heroic", "Legendary" ],
+                "effect": "HUD and weapon do not display onscreen.",
+                "flavorText": "Great for shooting photos, bad for shooting enemies."
+            }
+        ]
+    },
+    {
+        "name": "Catch",
+        "installments": [
+            {
+                "name": "Halo 2",
+                "difficulties": [ "Legendary" ],
+                "effect": "A.I. will throw more grenades. Also, everybody (allies and enemies) will drop two grenades of their kind (humans drop frag grenades and aliens drop plasma grenades) Flood will drop grenades depending on whether they're human or Covenant."
+            },
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "All AI-controlled units, friend or foe, throw grenades more often and have unlimited grenades. Even scripted grenades are affected: on the level Crow's Nest, the Warthog will be destroyed by up to four Plasma Grenades. The Skull has no effect on Flood.",
+                "rarity": "Gold",
+                "pointMultiplier": 1.5,
+                "flavorText": "Pull pin. Count to three. Throw."
+            },
+            {
+                "name": "Halo Infinite",
+                "difficulties": [ "Easy", "Normal", "Heroic", "Legendary" ],
+                "effect": "Enemies throw and drop more grenades.",
+                "flavorText": "Hold these for us."
+            }
+        ]
+    },
+    {
+        "name": "Envy",
+        "installments": [
+            {
+                "name": "Halo 2",
+                "difficulties": [ "Legendary" ],
+                "effect": "The Master Chief now has an Active camouflage just like the Arbiter's. However, there is no visible timer, so remember: five second cloak with ten second recharge on Legendary (the cloak and recharge times are longer and shorter, respectively, on easier difficulties). To fully exploit the effects of this skull, execute the permanent invisibility glitch."
+            }
+        ]
+    },
+    {
+        "name": "Famine",
+        "installments": [
+            {
+                "name": "Halo 2",
+                "difficulties": [ "Legendary" ],
+                "effect": "All dropped weapons have half ammo. Weapons that spawned on the floor or spawned with are unaffected."
+            },
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "All weapons that are dropped by enemies or are scripted to spawn on the ground (e.g. near a crashed Pelican or group of dead bodies) have reduced ammunition or charge. However, weapons found in cases still have the normal amount of ammo.",
+                "rarity": "Gold",
+                "pointMultiplier": 2.0,
+                "flavorText": "Trust us. Bring a magazine."
+            },
+            {
+                "name": "Halo Infinite",
+                "difficulties": [ "Easy", "Normal", "Heroic", "Legendary" ],
+                "effect": "Weapons dropped by enemies have half the ammo they normally would.",
+                "flavorText": "I'm out!"
+            }
+        ]
+    },
+    {
+        "name": "Ghost",
+        "installments": [
+            {
+                "name": "Halo 2",
+                "difficulties": [ "Legendary" ],
+                "effect": "A.I. characters will not flinch from attacks, melee or otherwise."
+            }
+        ]
+    },
+    {
+        "name": "Grunt Birthday Party",
+        "installments": [
+            {
+                "name": "Halo 2",
+                "difficulties": [ "Legendary" ],
+                "effect": "Headshots turn into Plasma Grenade explosions. You must first take down an Elite's shield for this to work on one. You also need to shoot Brutes and fellow Marines twice (if they don't have a helmet or you shoot marines in their face, you only need to shoot them once) in the head for this to work. You can also give a headshot to a dead body and it will still explode. This skull doesn't affect Hunters, Drones or Sentinels. Keep in mind that the Flood's \"head\" is actually their sensory antennae, so you need to shoot them in the chest area."
+            },
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "If an Unggoy is shot in the head with any headshot-capable weapon (such as the Battle rifle or Sniper rifle), a popping sound plays, a sound of children cheering plays, and colorful confetti explodes out of the Unggoy. The confetti explosion causes minor damage to nearby enemies.",
+                "rarity": "Silver",
+                "flavorText": "Light a match..."
+            },
+            {
+                "name": "Halo Infinite",
+                "difficulties": [ "Easy", "Normal", "Heroic", "Legendary" ],
+                "effect": "Grunt headshots lead to glorious celebrations.",
+                "flavorText": "Maybe it's the methane?"
+            }
+        ]
+    },
+    {
+        "name": "IWHBYD (I Would Have Been Your Daddy)",
+        "installments": [
+            {
+                "name": "Halo 2",
+                "difficulties": [ "Legendary" ],
+                "effect": "The rarity of combat dialog is changed, rare lines become far more common but common lines are still present at their normal rate."
+            },
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "Unlocks new and often humorous dialogue for the AI.",
+                "rarity": "Silver",
+                "flavorText": "But a dog beat me over the fence!"
+            },
+            {
+                "name": "Halo Infinite",
+                "difficulties": [ "Easy", "Normal", "Heroic", "Legendary" ],
+                "effect": "Rare combat dialogue becomes more common.",
+                "flavorText": "Did they really just say that?"
+            }
+        ]
+    },
+    {
+        "name": "Iron",
+        "installments": [
+            {
+                "name": "Halo 2",
+                "difficulties": [ "Legendary" ],
+                "effect": "When playing co-op, if either player dies the game restarts you at your last checkpoint. The effect resembles the effect already in place on Legendary difficulty, making it a somewhat redundant skull."
+            },
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "If you die while playing solo, you will respawn at the very beginning of the level and the \"Revert to Last Checkpoint\" option is no longer available. If any player dies while playing Co-op, all players will be reset to the last checkpoint.",
+                "rarity": "Gold",
+                "pointMultiplier": 3.0,
+                "flavorText": "Death carries a heavy price..."
+            }
+        ]
+    },
+    {
+        "name": "Mythic",
+        "installments": [
+            {
+                "name": "Halo 2",
+                "difficulties": [ "Legendary" ],
+                "effect": "Enemies have more health and shielding, and are therefore harder to kill. Note: health and shielding increase more as the enemies rise in rank. A red Grunt will not gain as much health as a white Grunt. Similarly, a blue Elite Minor will gain a small bit of health, but an Ultra Elite will gain a ridiculous amount of both shielding and health, to the point that a Plasma Pistol overcharge won't drop their shields even halfway. Besides that, it also makes your allies gain a small bit of health, and the skull will make allies immune to being meleed."
+            },
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Easy", "Normal", "Heroic", "Legendary" ],
+                "effect": "All Covenant enemies have twice the amount of health.",
+                "rarity": "Gold",
+                "pointMultiplier": 2.0,
+                "flavorText": "Coverage under the Covenant Health Plan."
+            },
+            {
+                "name": "Halo Infinite",
+                "difficulties": [ "Easy", "Normal", "Heroic", "Legendary" ],
+                "effect": "Enemies have increased health.",
+                "flavorText": "Becuase it wasn't hard enough."
+            }
+        ]
+    },
+    {
+        "name": "Sputnik",
+        "installments": [
+            {
+                "name": "Halo 2",
+                "difficulties": [ "Legendary" ],
+                "effect": "The mass of certain objects is severely reduced, making them fly further when smacked with a melee hit, or when they are near an explosion. Weapon damage seems to have strengthened slightly. It also has the added effect of making enemies turn around when you hit them, allowing you to kill them in two hits. With the Sputnik skull's effect in place, players can reach nearly impossible places and much higher altitudes using Grenade Jumps. Also, your melee has strengthened force. This skull can be used to obtain the Scarab Gun by allowing the player to reach massive heights, and is a key component if you want to get the Soccer Ball Easter egg."
+            }
+        ]
+    },
+    {
+        "name": "Whuppopotamus (That's Just... Wrong)",
+        "installments": [
+            {
+                "name": "Halo 2",
+                "difficulties": [ "Legendary" ],
+                "effect": "That's Just... Wrong strengthens the hearing of both allies and enemies. They will now notice the slightest sound of reloading or drawing a weapon, footsteps, etc., rendering active camouflage useless. All computer-controlled characters have better accuracy."
+            }
+        ]
+    },
+    {
+        "name": "Thunderstorm",
+        "installments": [
+            {
+                "name": "Halo 2",
+                "difficulties": [ "Legendary" ],
+                "effect": "Causes most enemy and ally units to be their highest rank. Elites and Grunts will become Ultras, Jackals will become Majors (orange shields), Sentinels will be Majors (gold) except for the ones in the levels the Arbiter and the Oracle, Brutes will become Captains and all Flood Elites will have shields. Spec Ops, Rangers, Honor Guard Elites, Drones, Hunters, Jackal snipers, Flood humans, Marines, Gunner Grunts and basically everyone else are unaffected."
+            },
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "All enemies and allies are promoted to the highest available rank. The number of shielded Flood Sangheili Combat Forms and shielded Sentinels is increased.",
+                "rarity": "Gold",
+                "pointMultiplier": 1.5,
+                "flavorText": "Field promotions for everyone."
+            },
+            {
+                "name": "Halo Infinite",
+                "difficulties": [ "Easy", "Normal", "Heroic", "Legendary" ],
+                "effect": "Upgrades the rank of most enemies.",
+                "flavorText": "Promotions for everybody."
+            }
+        ]
+    },
+    {
+        "name": "Tough Luck",
+        "installments": [
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "Enemies will more often successfully dodge grenades, weapon projectiles, and vehicle splatter attempts.",
+                "rarity": "Gold",
+                "pointMultiplier": 1.5,
+                "flavorText": "Your foes always make every saving throw."
+            }
+        ]
+    },
+    {
+        "name": "Fog",
+        "installments": [
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "Your motion sensor is disabled.",
+                "rarity": "Gold",
+                "pointMultiplier": 1.5,
+                "flavorText": "You'll miss those eyes in the back of your head..."
+            },
+            {
+                "name": "Halo Infinite",
+                "difficulties": [ "Easy", "Normal", "Heroic", "Legendary" ],
+                "effect": "Disables motion tracker.",
+                "flavorText": "They could be anywhere."
+            }
+        ]
+    },
+    {
+        "name": "Tilt",
+        "installments": [
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "All enemy weaknesses and resistances double. For example, Jiralhanae armor is twice as weak to plasma weapons and twice as strong against projectile weapons.",
+                "rarity": "Gold",
+                "pointMultiplier": 2.0,
+                "flavorText": "What was once resistance is now immunity."
+            }
+        ]
+    },
+    {
+        "name": "Cowbell",
+        "installments": [
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "Explosions and melee attacks launch characters and objects farther, but the damage is not affected.",
+                "rarity": "Silver",
+                "flavorText": "More bang for your buck."
+            },
+            {
+                "name": "Halo Infinite",
+                "difficulties": [ "Easy", "Normal", "Heroic", "Legendary" ],
+                "effect": "Acceleration from explosions is increased.",
+                "flavorText": "Because we needed more Cowbell."
+            }
+        ]
+    },
+    {
+        "name": "Orbital",
+        "installments": [
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "",
+                "rarity": "Mythic"
+            }
+        ]
+    },
+    {
+        "name": "Assembly",
+        "installments": [
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "",
+                "rarity": "Mythic"
+            }
+        ]
+    },
+    {
+        "name": "Sandbox",
+        "installments": [
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "",
+                "rarity": "Mythic"
+            }
+        ]
+    },
+    {
+        "name": "Heretic",
+        "installments": [
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "",
+                "rarity": "Mythic"
+            }
+        ]
+    },
+    {
+        "name": "Longshore",
+        "installments": [
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "",
+                "rarity": "Mythic"
+            }
+        ]
+    },
+    {
+        "name": "Citadel",
+        "installments": [
+            {
+                "name": "Halo 3",
+                "difficulties": [ "Normal", "Heroic", "Legendary" ],
+                "effect": "",
+                "rarity": "Mythic"
+            }
+        ]
+    },
+    {
+        "name": "Boom",
+        "installments": [
+            {
+                "name": "Halo Infinite",
+                "difficulties": [ "Easy", "Normal", "Heroic", "Legendary" ],
+                "effect": "Doubles explosion radius.",
+                "flavorText": "Behold, the Temple of Boom."
+            }
+        ]
+    },
+    {
+        "name": "Bandana",
+        "installments": [
+            {
+                "name": "Halo Infinite",
+                "difficulties": [ "Easy", "Normal", "Heroic", "Legendary" ],
+                "effect": "Grants unlimited weapon ammo and grenades, and removes equipment cooldowns.",
+                "flavorText": "We did say Infinite."
+            }
+        ]
+    }
+]

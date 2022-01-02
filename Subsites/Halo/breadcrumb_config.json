@@ -1,14 +1,30 @@
 [
     {
-        "match": "halo",
+        "match": "^halo$",
         "title": "Halo"
     },
     {
-        "match": "halo/installments",
+        "match": "^halo/installments$",
         "title": "Halo Installments"
     },
     {
-        "match": "halo/installments/(.+)",
+        "match": "^halo/installments/([^\/]+)$",
+        "title": "$1"
+    },
+    {
+        "match": "^halo/installments/([^\/]+)/skulls$",
+        "title": "$1 Skulls"
+    },
+    {
+        "match": "^halo/installments/([^\/]+)/skulls/([^\/]+)$",
+        "title": "$2"
+    },
+    {
+        "match": "^halo/skulls$",
+        "title": "Halo Skulls"
+    },
+    {
+        "match": "^halo/skulls/([^\/]+)$",
         "title": "$1"
     }
 ]

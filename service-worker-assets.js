@@ -1,11 +1,11 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-lFhPcCi773JHvC6PDbK+WQdD6zzeW79aIgm4cCJn4tI=",
+      "hash": "sha256-HziichiURO7nxpt28uHyGo2IHIYYKYWT7P35n09D69o=",
       "url": "_framework\/Utilities.Games.Models.xml"
     },
     {
-      "hash": "sha256-lFhPcCi773JHvC6PDbK+WQdD6zzeW79aIgm4cCJn4tI=",
+      "hash": "sha256-HziichiURO7nxpt28uHyGo2IHIYYKYWT7P35n09D69o=",
       "url": "_framework\/Utilities.Games.Models.xml"
     },
     {
@@ -13,8 +13,16 @@
       "url": "ChartJsBlazorInterop.js"
     },
     {
-      "hash": "sha256-SO\/fuIIWUxoIu1OABrOpK5n\/AvzxJcg+0H3PT1eutAE=",
+      "hash": "sha256-4WMEBsvCVFpDCla4DWlkjcjOKuWJq9EAma1ctc+Cnws=",
       "url": "css\/app.css"
+    },
+    {
+      "hash": "sha256-DzOUzZbWNgMUpYy09V3smuGmq9Uucz9fiBzvVrGgP2E=",
+      "url": "css\/app.min.css"
+    },
+    {
+      "hash": "sha256-0q5b\/G09Xrvx\/Qw43NEttwiyz85x2qaJzaUZCFZzdW4=",
+      "url": "css\/app.scss"
     },
     {
       "hash": "sha256-tx53gXjwM1Jwr4HKujuQe2SOsUf\/B9zcndHucxEfxtU=",
@@ -181,6 +189,18 @@
       "url": "css\/open-iconic\/README.md"
     },
     {
+      "hash": "sha256-FyYpy4im81BGICEGfvA9jvxAbxTDifFxTRrfLHjkpLY=",
+      "url": "css\/theme.css"
+    },
+    {
+      "hash": "sha256-2aq4aaevRBkw024AmqUq9AySbS1ialKSqfQ5r7e7+Gc=",
+      "url": "css\/theme.min.css"
+    },
+    {
+      "hash": "sha256-cqhtM5HaV0cDSLLoAboMFRLvJgRwIglrmKM\/I7mg5as=",
+      "url": "css\/theme.scss"
+    },
+    {
       "hash": "sha256-gjP65gA7Pq5RFqvCY8V+uGXFykuBYQlUQWnwolH7B7c=",
       "url": "data\/platforms.json"
     },
@@ -229,7 +249,7 @@
       "url": "images\/GitHub\/GitHub-Mark-Light-64px.png"
     },
     {
-      "hash": "sha256-0MI88CDnda097fkUUSwJ+t3uEsaO2IKDouMb\/OyoYaw=",
+      "hash": "sha256-FTqki8FynVMrtYpSgu5fuYqldtaci4Ivk7kDUStl1fs=",
       "url": "index.html"
     },
     {
@@ -301,6 +321,10 @@
       "url": "js\/popper\/popper.min.js"
     },
     {
+      "hash": "sha256-yTyXRAB2dWNNPn6QIcFyUsuD2HxOEESPjNSE85JZ6fk=",
+      "url": "js\/theme.js"
+    },
+    {
       "hash": "sha256-KLwBEJ9+JMSON1szhFlkWQ163GtmWpkfH8hvjWenDSI=",
       "url": "manifest.json"
     },
@@ -313,8 +337,12 @@
       "url": "Screenshot_LOTRRiseToWar_1024x600.png"
     },
     {
-      "hash": "sha256-p4MPA6nc45Mox2\/dbaow46kPPiXio+uL\/1ZQhW0HOS8=",
+      "hash": "sha256-DJpSpetqdmuGQkJ6pIDuRh\/Kp2m39KS2YLPctCb1J54=",
       "url": "Subsites\/Halo\/breadcrumb_config.json"
+    },
+    {
+      "hash": "sha256-weFBX\/9pUtSi6qvojXHHQT6DRC\/5SyRtzhI0Int77G4=",
+      "url": "Subsites\/Halo\/css\/theme.scss"
     },
     {
       "hash": "sha256-M6V81Wmh7Ko9oA2iL7\/71eqaqt8avXPIfJMbFQat1Lw=",
@@ -323,6 +351,10 @@
     {
       "hash": "sha256-4BgmmMd9fSuwwI+fYPikdKLZcdhPafoEXmuu\/7mUVGw=",
       "url": "Subsites\/Halo\/data\/sagas.json"
+    },
+    {
+      "hash": "sha256-2589zDqOE3qdysgkGJKwI5yJnia95lDdL729qw9feq8=",
+      "url": "Subsites\/Halo\/data\/skulls.json"
     },
     {
       "hash": "sha256-cxkhaZOnn3Z8Bn2xatHbPrtjPQZTEAIZolRL+WsL\/s4=",
@@ -393,8 +425,56 @@
       "url": "Subsites\/Halo\/images\/installments\/Halo Wars.png"
     },
     {
+      "hash": "sha256-3nztOcfLJ69bkr3L9YU8Fc9eOLkDfGwB3LFKwiern3E=",
+      "url": "Subsites\/Halo\/images\/skulls\/Black Eye.png"
+    },
+    {
+      "hash": "sha256-w5GhVqtFvYLI7YdgCoyIJ59Vxi4p0qSKs5T6O9+WPN8=",
+      "url": "Subsites\/Halo\/images\/skulls\/Blind.png"
+    },
+    {
+      "hash": "sha256-QKWZ8LHKR6CAazkueZ+\/YYsIWe3GcPPbsHMX5sYdOww=",
+      "url": "Subsites\/Halo\/images\/skulls\/Cowbell.png"
+    },
+    {
+      "hash": "sha256-NVEer2WLe5IyHFjd8qMf5LBnX2gfu2I80RPz7Y8F\/Vc=",
+      "url": "Subsites\/Halo\/images\/skulls\/Famine.png"
+    },
+    {
+      "hash": "sha256-DWhw5FotngiFi5FNFbSgodInNkrhZ5esxKzLGJ9AotQ=",
+      "url": "Subsites\/Halo\/images\/skulls\/Grunt Birthday Party.png"
+    },
+    {
+      "hash": "sha256-ls715joh3MVoYhjMWNjozbKwJe5LO4FplmIN8Wpa\/Qo=",
+      "url": "Subsites\/Halo\/images\/skulls\/Iron.png"
+    },
+    {
+      "hash": "sha256-dm1SQzMTIPwVHa0que5U9GLSPPLE4qVfNGMvrNACpe4=",
+      "url": "Subsites\/Halo\/images\/skulls\/IWHBYD (I Would Have Been Your Daddy).png"
+    },
+    {
+      "hash": "sha256-kJg9jg4dH71mEFEAejdbmWNy+PZk2X4eOfWxyrGUxvE=",
+      "url": "Subsites\/Halo\/images\/skulls\/Mythic.png"
+    },
+    {
+      "hash": "sha256-ZpSun\/icq0nH0Td5fLC1gRbbTStAsuAFChBRtHEehJk=",
+      "url": "Subsites\/Halo\/images\/skulls\/Thunderstorm.png"
+    },
+    {
+      "hash": "sha256-jlZLbg2VrFXhHnNsXR9sK7Knzuzv9MrJZ7JXnjb7\/sE=",
+      "url": "Subsites\/Halo\/images\/skulls\/Tilt.png"
+    },
+    {
+      "hash": "sha256-Q9A4IyBAdTkBgNHgazymhXKyY4zbpAepXl0ctSln9qA=",
+      "url": "Subsites\/Halo\/images\/skulls\/Tough Luck.png"
+    },
+    {
       "hash": "sha256-BEoZaWPqbBLXVlvaRbNOMrNFbz5hbrzBmrJy+CKYdQ8=",
       "url": "Subsites\/LOTR_RiseToWar\/breadcrumb_config.json"
+    },
+    {
+      "hash": "sha256-VkLpmFgGiTRoQv0YfasycYCZggWNVEE+g9pWZHiKnoI=",
+      "url": "Subsites\/LOTR_RiseToWar\/css\/theme.scss"
     },
     {
       "hash": "sha256-KzrE6MUd63dmcGrQgPpsMQbSahyamd\/gRo2vjgoBVQ4=",
@@ -641,8 +721,16 @@
       "url": "Subsites\/LOTR_RiseToWar\/js\/localStore.js"
     },
     {
+      "hash": "sha256-U\/\/qlm2mQ1zqpjf6fMJEwAtUFOKgU37uUG1X61f\/aB0=",
+      "url": "Subsites\/subsites.json"
+    },
+    {
       "hash": "sha256-mCe3wuzMRXmqIZzkdUR3xiMrYPZUttO+v2zm4H3lB8w=",
       "url": "Subsites\/TheLegendOfZelda\/breadcrumb_config.json"
+    },
+    {
+      "hash": "sha256-IOomolJs\/OLRkmPEKqnsFaUEKDRxQdxhf8lUzfPB71Q=",
+      "url": "Subsites\/TheLegendOfZelda\/css\/theme.scss"
     },
     {
       "hash": "sha256-fVs3AVRSK1tdITsyttLM2jTF\/eolpCQzfQ9ulgtGUQQ=",
@@ -1857,6 +1945,18 @@
       "url": "Subsites\/TheLegendOfZelda\/js\/localStore.js"
     },
     {
+      "hash": "sha256-2WKcpPgQLVe6Vik7EyxlN3e9h5\/P1VgAwXPo5BMRBDo=",
+      "url": "Subsites\/themes.css"
+    },
+    {
+      "hash": "sha256-jwX3DbkjuzSKakUD9nHKk1DaRRbbTBpCQYEpRzTyiBk=",
+      "url": "Subsites\/themes.min.css"
+    },
+    {
+      "hash": "sha256-H1qNyFiVypSFie0fixgAKqR7qD4y\/OwZRNXljqtOwc4=",
+      "url": "Subsites\/themes.scss"
+    },
+    {
       "hash": "sha256-\/mwFhTTF4Kca8PG7G6rxaGqCueWH9XbWEIK1Fm8GbFg=",
       "url": "_framework\/dotnet.timezones.blat"
     },
@@ -1885,7 +1985,7 @@
       "url": "_framework\/dotnet.5.0.2.js"
     },
     {
-      "hash": "sha256-+uZXo5mzaXSl8f0dFhbvPreUJzwAc8jbv9LtWFVGGes=",
+      "hash": "sha256-+7FixzHbKp4ShjBkQDfySO1+apBcwtGdGiKjlpyN4Sg=",
       "url": "Utilities.Games.styles.css"
     },
     {
@@ -2069,11 +2169,11 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-FRIYOO5LXyNrW7h2mqmKfyNSJYXXAUeGv9S8EMlnLAY=",
+      "hash": "sha256-OrvYedgbnFpcSxTuHmWSy8fs8dPoNSzHazgZo+iov2w=",
       "url": "_framework\/Utilities.Games.Models.dll"
     },
     {
-      "hash": "sha256-wcCYic9E2l2BXLQDnR1brM+lRoWb3rjkJneifKXAMn8=",
+      "hash": "sha256-XKgMxHz2K9wme7oPXC4Ut6hTmq+rt13Dvs530vNSQig=",
       "url": "_framework\/Utilities.Games.dll"
     },
     {
@@ -2469,7 +2569,7 @@
       "url": "_framework\/zh-Hant\/Microsoft.CodeAnalysis.Workspaces.resources.dll"
     },
     {
-      "hash": "sha256-8VLWwigphUUC7TvuI4riO0BAwV8z+SMnykV3bjQYvX0=",
+      "hash": "sha256-f4kDkKIHHOP1+Y2qgHnL7ZGQKPq2crDZ56d9i\/MA3O0=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -2477,5 +2577,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "9AqYhnIP"
+  "version": "byWJbUP7"
 };

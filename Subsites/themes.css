@@ -1,0 +1,29 @@
+﻿.theme-lotr_risetowar {
+  --theme-primary: #A59040;
+  --theme-primary-light: #d8c06e;
+  --theme-primary-dark: #746312;
+  --theme-accent: #4054a5;
+  --theme-background: #ffffff;
+  --theme-secondary: #f0e027;
+  --theme-secondary-light: #ffff63;
+  --theme-secondary-dark: #b9af00; }
+
+.theme-thelegendofzelda {
+  --theme-primary: #309261;
+  --theme-primary-light: #64c38f;
+  --theme-primary-dark: #006337;
+  --theme-accent: #923061;
+  --theme-background: #ffffff;
+  --theme-secondary: #d2ce37;
+  --theme-secondary-light: #ffff6b;
+  --theme-secondary-dark: #9d9d00; }
+
+.theme-halo {
+  --theme-primary: #8790a0;
+  --theme-primary-light: #b7c0d1;
+  --theme-primary-dark: #5a6372;
+  --theme-accent: #a09787;
+  --theme-background: #ffffff;
+  --theme-secondary: #383f4b;
+  --theme-secondary-light: #626a77;
+  --theme-secondary-dark: #121923; }

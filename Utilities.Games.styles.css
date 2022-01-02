@@ -1,134 +1,51 @@
-/* /Shared/MainLayout.razor.rz.scp.css */
-.page[b-6hhtjhpsvq] {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
+/* /Shared/Card/Card.razor.rz.scp.css */
+.card[b-raofvfn8uz] {
+  --image-width: 18rem;
+  --image-height: 15vh;
+  width: var(--image-width);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(180deg, var(--theme-primary) 0%, var(--theme-primary-light) 70%);
+  color: var(--theme-text-primary-on-primary); }
+  .card.link[b-raofvfn8uz] {
+    cursor: pointer; }
+    .card.link:hover[b-raofvfn8uz] {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+  .card .card-img[b-raofvfn8uz] {
+    width: 100%;
+    height: var(--image-height);
+    object-fit: cover;
+    object-position: center 15%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit; }
+  .card.art .card-img[b-raofvfn8uz] {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    animation: panImage-b-raofvfn8uz 20s ease alternate infinite;
+    border-radius: inherit;
+    filter: brightness(0.5) grayscale(0.6);
+    background-color: black; }
+  .card.art:hover .card-img[b-raofvfn8uz] {
+    object-fit: contain;
+    animation: unset; }
 
-.main[b-6hhtjhpsvq] {
-    flex: 1;
-}
-
-.sidebar[b-6hhtjhpsvq] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
-}
-
-.top-row[b-6hhtjhpsvq] {
-    background-color: #f7f7f7;
-    border-bottom: 1px solid #d6d5d5;
-    justify-content: flex-end;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-}
-
-    .top-row[b-6hhtjhpsvq]  a, .top-row .btn-link[b-6hhtjhpsvq] {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-    }
-
-    .top-row a:first-child[b-6hhtjhpsvq] {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-@media (max-width: 640.98px) {
-    .top-row:not(.auth)[b-6hhtjhpsvq] {
-        display: none;
-    }
-
-    .top-row.auth[b-6hhtjhpsvq] {
-        justify-content: space-between;
-    }
-
-    .top-row a[b-6hhtjhpsvq], .top-row .btn-link[b-6hhtjhpsvq] {
-        margin-left: 0;
-    }
-}
-
-@media (min-width: 641px) {
-    .page[b-6hhtjhpsvq] {
-        flex-direction: row;
-    }
-
-    .sidebar[b-6hhtjhpsvq] {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-
-    .top-row[b-6hhtjhpsvq] {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .main > div[b-6hhtjhpsvq] {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
-}
-/* /Shared/NavMenu.razor.rz.scp.css */
-.navbar-toggler[b-zbvw7psqng] {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.top-row[b-zbvw7psqng] {
-    height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
-}
-
-.navbar-brand[b-zbvw7psqng] {
-    font-size: 1.1rem;
-}
-
-.oi[b-zbvw7psqng] {
-    width: 2rem;
-    font-size: 1.1rem;
-    vertical-align: text-top;
-    top: -2px;
-}
-
-.nav-item[b-zbvw7psqng] {
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
-}
-
-    .nav-item:first-of-type[b-zbvw7psqng] {
-        padding-top: 1rem;
-    }
-
-    .nav-item:last-of-type[b-zbvw7psqng] {
-        padding-bottom: 1rem;
-    }
-
-    .nav-item[b-zbvw7psqng]  a {
-        color: #d7d7d7;
-        border-radius: 4px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
-    }
-
-.nav-item[b-zbvw7psqng]  a.active {
-    background-color: rgba(255,255,255,0.25);
+@keyframes panImage-b-raofvfn8uz {
+  0% {
+    object-position: center 0%; }
+  100% {
+    object-position: center 100%; } }
+  .card.art .card-img ~ .card-body[b-raofvfn8uz] {
+    z-index: 1;
     color: white;
-}
-
-.nav-item[b-zbvw7psqng]  a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
-}
-
-@media (min-width: 641px) {
-    .navbar-toggler[b-zbvw7psqng] {
-        display: none;
-    }
-
-    .collapse[b-zbvw7psqng] {
-        /* Never collapse the sidebar for wide screens */
-        display: block;
-    }
-}
+    min-height: 40vh; }
+/* /Shared/Card/Container.razor.rz.scp.css */
+.card-container[b-qjc93c372c] {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around; }
