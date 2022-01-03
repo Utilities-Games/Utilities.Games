@@ -45,7 +45,53 @@
     <script src="./Subsites/LOTR_RiseToWar/js/localStore.js"></script>
     <script src="./Subsites/TheLegendOfZelda/js/localStore.js"></script>
     <script src="_framework/blazor.webassembly.js"></script>
-    <script>navigator.serviceWorker.register('service-worker.js');</script>
+    <script>
+        window.serviceWorker = {
+            registration: null,
+            update: function () {
+                if (window.serviceWorker.registration.waiting) {
+                    window.serviceWorker.registration.waiting.postMessage({ action: 'skipWaiting' });
+                }
+            },
+            addUpdateAvailableListener: function (dotNetObjectRef) {
+                window.serviceWorker._updateAvailableAudience.push(dotNetObjectRef);
+            },
+            _updateAvailableAudience: [],
+            triggerUpdateEvent: function () {
+                for (var i = 0; i < window.serviceWorker._updateAvailableAudience.length; i++) {
+                    window.serviceWorker._updateAvailableAudience[i].invokeMethodAsync("OnUpdateAvailable");
+                }
+            }
+        };
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(function (reg) {
+                    window.serviceWorker.registration = reg;
+                    window.serviceWorker.registration.addEventListener('updatefound', function () {
+                        var checkForUpdates = function (state) {
+                            switch (state) {
+                                case 'installed':
+                                    if (navigator.serviceWorker.controller) {
+                                        window.serviceWorker.triggerUpdateEvent();
+                                    }
+                                default:
+                            }
+                        }
+                        var listenForChanges = function (registrationType) {
+                            if (typeof window.serviceWorker.registration[registrationType] !== 'undefined' && window.serviceWorker.registration[registrationType] !== null) {
+                                window.serviceWorker.registration[registrationType].addEventListener("statechange", (function () {
+                                    if (this.registration) {
+                                        checkForUpdates(this.registration.state);
+                                    }
+                                }).bind({ registration: window.serviceWorker.registration[registrationType] }));
+                            }
+                        }
+                        listenForChanges('installing');
+                        listenForChanges('waiting');
+                    });
+                });
+        }
+    </script>
     <script src='_content/Blazor.Extensions.Canvas/blazor.extensions.canvas.js'></script>
     <script>
         function renderJS(timeStamp) {

@@ -4,9 +4,42 @@
     --theme-primary-dark: #746312;
 
     --theme-accent: #4054a5;
-    --theme-background: #ffffff;
+    --theme-background: #CFCBBE;
+    
+    --theme-gradient: linear-gradient(180deg, var(--theme-secondary) 0%, var(--theme-secondary-light) 70%);
 
-    --theme-secondary: #f0e027;
-    --theme-secondary-light: #ffff63;
-    --theme-secondary-dark: #b9af00;
+    --theme-secondary: #9A620A;/* #f0e027;*/
+    --theme-secondary-light: #f2a427;
+    --theme-secondary-dark: #784d07;
+    
+    --theme-text-primary-on-primary: #000000;
+    --theme-text-hint-on-primary: #000000;
+    --theme-text-disabled-on-primary: #000000;
+    --theme-text-icon-on-primary: #000000;
+
+    --theme-text-secondary-on-primary: #000000;
+
+    --theme-text-primary-on-accent: #000000;
+    --theme-text-secondary-on-accent: #000000;
+    --theme-text-hint-on-accent: #000000;
+    --theme-text-disabled-on-accent: #000000;
+    --theme-text-icon-on-accent: #000000;
+
+    --theme-text-primary-on-background: #000000;
+    --theme-text-secondary-on-background: #000000;
+    --theme-text-hint-on-background: #000000;
+    --theme-text-disabled-on-background: #000000;
+    --theme-text-icon-on-background: #000000;
+
+    --theme-text-primary-on-light: #000000;
+    --theme-text-secondary-on-light: #000000;
+    --theme-text-hint-on-light: #000000;
+    --theme-text-disabled-on-light: #000000;
+    --theme-text-icon-on-light: #000000;
+
+    --theme-text-primary-on-dark: #ffffff;
+    --theme-text-secondary-on-dark: #ffffff;
+    --theme-text-hint-on-dark: #ffffff;
+    --theme-text-disabled-on-dark: #ffffff;
+    --theme-text-icon-on-dark: #ffffff;
 }

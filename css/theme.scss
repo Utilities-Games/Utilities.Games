@@ -1,15 +1,17 @@
 ﻿/*https://material.io/resources/color/#!/?view.left=0&view.right=1&primary.color=a55acd&secondary.color=222222*/
-:root {
+@mixin theme_default {
     --theme-primary: #a55acd;
     --theme-primary-light: #d98aff;
     --theme-primary-dark: #732b9b;
 
     --theme-accent: #82cd5a;
-    --theme-background: #ffffff;
+    --theme-background: #222222;
 
-    --theme-secondary: #6b5acd;
-    --theme-secondary-light: #9e87ff;
-    --theme-secondary-dark: #36309b;
+    --theme-gradient: linear-gradient(180deg, var(--theme-secondary) 0%, var(--theme-secondary-light) 70%);
+
+    --theme-secondary: #689BA6;
+    --theme-secondary-light: #add1d1;
+    --theme-secondary-dark: #47606E;
 
     --theme-text-primary-on-primary: #000000;
     --theme-text-hint-on-primary: #000000;
@@ -18,17 +20,17 @@
 
     --theme-text-secondary-on-primary: #000000;
 
-    --theme-text-primary-on-accent: var(--theme-primary);
-    --theme-text-secondary-on-accent: var(--theme-secondary);
-    --theme-text-hint-on-accent: var(--theme-secondary);
-    --theme-text-disabled-on-accent: var(--theme-secondary-light);
-    --theme-text-icon-on-accent: var(--theme-primary);
+    --theme-text-primary-on-accent: #000000;
+    --theme-text-secondary-on-accent: #000000;
+    --theme-text-hint-on-accent: #000000;
+    --theme-text-disabled-on-accent: #000000;
+    --theme-text-icon-on-accent: #000000;
 
-    --theme-text-primary-on-background: var(--theme-primary);
-    --theme-text-secondary-on-background: var(--theme-secondary);
-    --theme-text-hint-on-background: var(--theme-secondary);
-    --theme-text-disabled-on-background: var(--theme-secondary-light);
-    --theme-text-icon-on-background: var(--theme-primary);
+    --theme-text-primary-on-background: #ffffff;
+    --theme-text-secondary-on-background: #ffffff;
+    --theme-text-hint-on-background: #ffffff;
+    --theme-text-disabled-on-background: #ffffff;
+    --theme-text-icon-on-background: #ffffff;
 
     --theme-text-primary-on-light: #000000;
     --theme-text-secondary-on-light: #000000;
