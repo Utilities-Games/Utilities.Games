@@ -2,13 +2,16 @@
   --image-width: 18rem;
   --image-height: 15vh;
   width: var(--image-width);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-image: linear-gradient(180deg, var(--theme-primary) 0%, var(--theme-primary-light) 70%);
+  box-shadow: 0 4px 8px 0 var(--theme-primary);
+  background-image: var(--theme-gradient);
   color: var(--theme-text-primary-on-primary); }
   .card.link {
     cursor: pointer; }
     .card.link:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+      box-shadow: 0 8px 16px 0 var(--theme-primary);
+      transform-style: preserve-3d;
+      transform: perspective(9cm) rotateX(2deg);
+      transition: transform ease 0.2s; }
   .card .card-img {
     width: 100%;
     height: var(--image-height);
@@ -27,9 +30,11 @@
     animation: panImage 20s ease alternate infinite;
     border-radius: inherit;
     filter: brightness(0.5) grayscale(0.6);
-    background-color: black; }
+    background-color: var(--theme-primary-dark);
+    border: 1px solid var(--theme-secondary); }
   .card.art:hover .card-img {
     object-fit: contain;
+    object-position: center;
     animation: unset; }
 
 @keyframes panImage {
@@ -39,5 +44,12 @@
     object-position: center 100%; } }
   .card.art .card-img ~ .card-body {
     z-index: 1;
-    color: white;
-    min-height: 40vh; }
+    color: var(--theme-text-primary-on-dark);
+    min-height: 40vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .card.art .card-img ~ .card-body .card-title {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px 3px; }

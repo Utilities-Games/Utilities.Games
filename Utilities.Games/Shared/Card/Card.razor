@@ -1,6 +1,6 @@
 ﻿@inject NavigationManager Nav
 @using UriHelper = Utilities.Games.UriHelper
-<div class="card h-100 @(!string.IsNullOrEmpty(Class) ? Class : "") @(!string.IsNullOrEmpty(NavigationUrl) ? "link" : "")" style="@CssVariables" @onclick="@Navigate">
+<div class="card @(!string.IsNullOrEmpty(Class) ? Class : "") @(!string.IsNullOrEmpty(NavigationUrl) ? "link" : "")" style="@CssVariables" @onclick="@Navigate">
     @if (!string.IsNullOrEmpty(ImageUrl))
     {
         <img

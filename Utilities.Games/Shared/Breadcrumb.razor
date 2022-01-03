@@ -1,7 +1,7 @@
 ﻿@inject HttpClient Http
 @using Utilities.Games.Models
 
-<div class="p-2 bg-light">
+<div class="breadcrumb-container p-2">
     @if (Loading)
     {
         <p class="alert alert-light">Loading...</p>
@@ -10,6 +10,9 @@
     {
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a class="mt-bread-item-link" href="./">Home</a>
+                </li>
                 @foreach (var link in Links.OrderBy(x => x.OrderIndex))
                 {
                     string title = Uri.UnescapeDataString(link.Title);

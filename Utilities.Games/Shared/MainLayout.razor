@@ -18,19 +18,23 @@
         <div class="main">
             @if (CurrentSubsite != null)
             {
-                <Breadcrumb CurrentRoute="@CurrentPath" ConfigPath="@($"./Subsites/{CurrentSubsite.Slug}/breadcrumb_config.json")"/>
+                <Breadcrumb CurrentRoute="@CurrentPath" ConfigPath="@($"./Subsites/{CurrentSubsite.Slug}/breadcrumb_config.json")" />
             }
             @Body
         </div>
+        <Utilities.Games.Shared.Toast.UpdatePWA UpdateAvailable="@PWAUpdateAvailable" ActionCallback="@HandleUpdateCallback"></Utilities.Games.Shared.Toast.UpdatePWA>
     }
 </div>
 @code{
     bool Loading { get; set; }
+    bool PWAUpdateAvailable { get; set; }
     string CurrentPath { get; set; }
 
     List<Subsite> subsites { get; set; }
 
     Subsite CurrentSubsite { get; set; }
+
+    private UpdateAvailableEventInterop UpdateAvailableInterop { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
@@ -65,7 +69,20 @@
         {
             await JSRuntime.InvokeAsync<IJSObjectReference>("import", "/js/popper/popper.min.js");
             await JSRuntime.InvokeAsync<IJSObjectReference>("import", "/js/bootstrap/bootstrap.min.js");
+
+            UpdateAvailableInterop = new(JSRuntime);
+            await UpdateAvailableInterop.SetupCallback(async () => await HandleUpdateAvailable());
         }
     }
 
+    private async Task HandleUpdateAvailable() {
+        Console.WriteLine("PWA Update Available");
+        PWAUpdateAvailable = true;
+        StateHasChanged();
+    }
+
+    void HandleUpdateCallback(bool updated) {
+        PWAUpdateAvailable = !updated;
+        StateHasChanged();
+    }
 }

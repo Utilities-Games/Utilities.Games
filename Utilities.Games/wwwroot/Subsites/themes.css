@@ -3,27 +3,106 @@
   --theme-primary-light: #d8c06e;
   --theme-primary-dark: #746312;
   --theme-accent: #4054a5;
-  --theme-background: #ffffff;
-  --theme-secondary: #f0e027;
-  --theme-secondary-light: #ffff63;
-  --theme-secondary-dark: #b9af00; }
+  --theme-background: #CFCBBE;
+  --theme-gradient: linear-gradient(180deg, var(--theme-secondary) 0%, var(--theme-secondary-light) 70%);
+  --theme-secondary: #9A620A;
+  /* #f0e027;*/
+  --theme-secondary-light: #f2a427;
+  --theme-secondary-dark: #784d07;
+  --theme-text-primary-on-primary: #000000;
+  --theme-text-hint-on-primary: #000000;
+  --theme-text-disabled-on-primary: #000000;
+  --theme-text-icon-on-primary: #000000;
+  --theme-text-secondary-on-primary: #000000;
+  --theme-text-primary-on-accent: #000000;
+  --theme-text-secondary-on-accent: #000000;
+  --theme-text-hint-on-accent: #000000;
+  --theme-text-disabled-on-accent: #000000;
+  --theme-text-icon-on-accent: #000000;
+  --theme-text-primary-on-background: #000000;
+  --theme-text-secondary-on-background: #000000;
+  --theme-text-hint-on-background: #000000;
+  --theme-text-disabled-on-background: #000000;
+  --theme-text-icon-on-background: #000000;
+  --theme-text-primary-on-light: #000000;
+  --theme-text-secondary-on-light: #000000;
+  --theme-text-hint-on-light: #000000;
+  --theme-text-disabled-on-light: #000000;
+  --theme-text-icon-on-light: #000000;
+  --theme-text-primary-on-dark: #ffffff;
+  --theme-text-secondary-on-dark: #ffffff;
+  --theme-text-hint-on-dark: #ffffff;
+  --theme-text-disabled-on-dark: #ffffff;
+  --theme-text-icon-on-dark: #ffffff; }
 
 .theme-thelegendofzelda {
   --theme-primary: #309261;
   --theme-primary-light: #64c38f;
   --theme-primary-dark: #006337;
   --theme-accent: #923061;
-  --theme-background: #ffffff;
+  --theme-background: #5B3D14;
+  --theme-gradient: linear-gradient(180deg, var(--theme-secondary) 0%, var(--theme-secondary-light) 70%);
   --theme-secondary: #d2ce37;
   --theme-secondary-light: #ffff6b;
-  --theme-secondary-dark: #9d9d00; }
+  --theme-secondary-dark: #9d9d00;
+  --theme-text-primary-on-primary: #000000;
+  --theme-text-hint-on-primary: #000000;
+  --theme-text-disabled-on-primary: #000000;
+  --theme-text-icon-on-primary: #000000;
+  --theme-text-secondary-on-primary: #000000;
+  --theme-text-primary-on-accent: var(--theme-primary);
+  --theme-text-secondary-on-accent: var(--theme-secondary);
+  --theme-text-hint-on-accent: var(--theme-secondary);
+  --theme-text-disabled-on-accent: var(--theme-secondary-light);
+  --theme-text-icon-on-accent: var(--theme-primary);
+  --theme-text-primary-on-background: var(--theme-primary);
+  --theme-text-secondary-on-background: var(--theme-secondary);
+  --theme-text-hint-on-background: var(--theme-secondary);
+  --theme-text-disabled-on-background: var(--theme-secondary-light);
+  --theme-text-icon-on-background: var(--theme-primary);
+  --theme-text-primary-on-light: #000000;
+  --theme-text-secondary-on-light: #000000;
+  --theme-text-hint-on-light: #000000;
+  --theme-text-disabled-on-light: #000000;
+  --theme-text-icon-on-light: #000000;
+  --theme-text-primary-on-dark: #ffffff;
+  --theme-text-secondary-on-dark: #ffffff;
+  --theme-text-hint-on-dark: #ffffff;
+  --theme-text-disabled-on-dark: #ffffff;
+  --theme-text-icon-on-dark: #ffffff; }
 
 .theme-halo {
   --theme-primary: #8790a0;
   --theme-primary-light: #b7c0d1;
   --theme-primary-dark: #5a6372;
-  --theme-accent: #a09787;
-  --theme-background: #ffffff;
+  --theme-accent: #6FBEFF;
+  --theme-background: #a09787;
+  --theme-gradient: linear-gradient(180deg, var(--theme-secondary) 0%, var(--theme-secondary-light) 70%);
   --theme-secondary: #383f4b;
   --theme-secondary-light: #626a77;
-  --theme-secondary-dark: #121923; }
+  --theme-secondary-dark: #121923;
+  --theme-text-primary-on-primary: #000000;
+  --theme-text-hint-on-primary: #000000;
+  --theme-text-disabled-on-primary: #000000;
+  --theme-text-icon-on-primary: #000000;
+  --theme-text-secondary-on-primary: #41464b;
+  --theme-text-primary-on-accent: #000000;
+  --theme-text-secondary-on-accent: #000000;
+  --theme-text-hint-on-accent: #000000;
+  --theme-text-disabled-on-accent: #000000;
+  --theme-text-icon-on-accent: #000000;
+  --theme-text-primary-on-background: #000000;
+  --theme-text-secondary-on-background: #000000;
+  --theme-text-hint-on-background: #000000;
+  --theme-text-disabled-on-background: #000000;
+  --theme-text-icon-on-background: #000000;
+  --theme-text-primary-on-light: #000000;
+  --theme-text-secondary-on-light: #000000;
+  --theme-text-hint-on-light: #000000;
+  --theme-text-disabled-on-light: #000000;
+  --theme-text-icon-on-light: #000000;
+  --theme-text-primary-on-dark: #ffffff;
+  --theme-text-secondary-on-dark: #ffffff;
+  --theme-text-hint-on-dark: #ffffff;
+  --theme-text-disabled-on-dark: #ffffff;
+  --theme-text-icon-on-dark: #ffffff; }

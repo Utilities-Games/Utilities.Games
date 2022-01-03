@@ -1,4 +1,4 @@
-var CACHE_NAME = "v0.1.1";
+var CACHE_NAME = "v0.1.28";
 
 // In development, always fetch from the network and do not enable offline support.
 // This is because caching would make development more difficult (changes would not
@@ -26,9 +26,11 @@ self.addEventListener('install', (event) => {
                 './icon-512.png',
                 './icon-512_mono.png',
                 './css/app.css',
+                './Subsites/themes.css',
                 './css/bootstrap/bootstrap.min.css',
                 './js/idb.js',
-                './js/localStore.js'
+                './js/localStore.js',
+                './js/theme.js'
             ]))
     );
 });
@@ -40,6 +42,13 @@ self.addEventListener('message', function (event) {
 });
 
 self.addEventListener('activate', event => {
+    caches.keys().then(function (keys) {
+        const invalidCaches = keys.filter(c => c !== CACHE_NAME);
+        if (invalidCaches) {
+            invalidCaches.map(ic => caches.delete(ic));
+        }
+    });
+
     event.waitUntil(self.clients.claim().then(() => {
         // See https://developer.mozilla.org/en-US/docs/Web/API/Clients/matchAll
         return self.clients.matchAll({ type: 'window' });

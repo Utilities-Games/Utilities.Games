@@ -1,8 +1,15 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 @import url('theme.scss');
+@import "theme.scss";
+
+:root {
+    @include theme_default;
+}
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: var(--theme-background);
+    color: var(--theme-text-primary-on-background);
 }
 
 a, .btn-link {
@@ -62,7 +69,40 @@ a, .btn-link {
 
 .sidebar {
     /*background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);*/
-    background-image: linear-gradient(180deg, var(--theme-primary) 0%, var(--theme-primary-light) 70%);
+    background-color: var(--theme-primary-light);
+    background-image: var(--theme-gradient);
+    color: var(--theme-text-primary-on-light);
+
+    .dropdown-menu {
+        background-color: var(--theme-primary-dark);
+        color: var(--theme-text-primary-on-dark);
+
+        .dropdown-item {
+            color: var(--theme-text-primary-on-dark);
+
+            &.active {
+                background-color: var(--theme-accent);
+                color: var(--theme-text-primary-on-accent);
+            }
+        }
+    }
+}
+
+.breadcrumb-container {
+    background-color: var(--theme-primary);
+    color: var(--theme-text-primary-on-primary);
+
+    .breadcrumb {
+        .breadcrumb-item {
+            color: var(--theme-text-primary-on-primary);
+            text-shadow: 0 0 1px #fff 
+                         0 0 3px var(--theme-accent);
+
+            &.active {
+                color: var(--theme-text-secondary-on-primary);
+            }
+        }
+    }
 }
 
 .top-row {
@@ -129,6 +169,13 @@ a, .btn-link {
 
 .navbar-toggler {
     background-color: inherit; /* rgba(255, 255, 255, 0.1);*/
+}
+.navbar-toggler-icon {
+    width: 32px;
+    height: 32px;
+    background-color: var(--theme-background);
+    border-radius: 50%;
+    object-fit: scale-down;
 }
 
 

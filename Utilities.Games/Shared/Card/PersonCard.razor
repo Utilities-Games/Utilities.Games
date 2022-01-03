@@ -1,0 +1,28 @@
+﻿@using Utilities.Games.Models.Contracts
+
+<Card
+    ImageUrl="@ImageUrl"
+    Class="@($"card-person {Class}")"
+    itemscope
+    itemtype="https://schema.org/Person"
+>
+    <Title><span itemprop="name">@Character.Name</span></Title>
+    <Body>@Body</Body>
+    <Footer>@Footer</Footer>
+</Card>
+@code {
+    [Parameter]
+    public string Class { get; set; }
+
+    [Parameter]
+    public string ImageUrl { get; set; }
+
+    [Parameter]
+    public ICharacter Character { get; set; }
+
+    [Parameter]
+    public RenderFragment Body { get; set; }
+
+    [Parameter]
+    public RenderFragment Footer { get; set; }
+}
