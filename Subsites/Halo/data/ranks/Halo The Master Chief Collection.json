@@ -1,0 +1,1982 @@
+[
+    {
+        "tier": 1,
+        "name": "Rookie",
+        "minimumXp": "0",
+        "nextLevelXp": "3000"
+    },
+    {
+        "tier": 2,
+        "name": "Recruit",
+        "minimumXp": "3,000",
+        "nextLevelXp": "7000"
+    },
+    {
+        "tier": 3,
+        "name": "Private",
+        "minimumXp": "10,000",
+        "nextLevelXp": "10000"
+    },
+    {
+        "tier": 4,
+        "name": "Private Second Class",
+        "minimumXp": "20,000",
+        "nextLevelXp": "13000"
+    },
+    {
+        "tier": 5,
+        "name": "Private First Class",
+        "minimumXp": "33,000",
+        "nextLevelXp": "16000"
+    },
+    {
+        "tier": 6,
+        "name": "Lance Corporal",
+        "minimumXp": "49,000",
+        "nextLevelXp": "19000"
+    },
+    {
+        "tier": 7,
+        "name": "Corporal",
+        "minimumXp": "68,000",
+        "nextLevelXp": "22000"
+    },
+    {
+        "tier": 8,
+        "name": "Sergeant",
+        "minimumXp": "90,000",
+        "nextLevelXp": "25000"
+    },
+    {
+        "tier": 9,
+        "name": "Sergeant Second Class",
+        "minimumXp": "115,000",
+        "nextLevelXp": "29000"
+    },
+    {
+        "tier": 10,
+        "name": "Sergeant First Class",
+        "minimumXp": "144,000",
+        "nextLevelXp": "33000"
+    },
+    {
+        "tier": 11,
+        "name": "Staff Sergeant",
+        "minimumXp": "177,000",
+        "nextLevelXp": "37000"
+    },
+    {
+        "tier": 12,
+        "name": "Gunnery Sergeant",
+        "minimumXp": "214,000",
+        "nextLevelXp": "41000"
+    },
+    {
+        "tier": 13,
+        "name": "First Sergeant",
+        "minimumXp": "255,000",
+        "nextLevelXp": "45000"
+    },
+    {
+        "tier": 14,
+        "name": "Sergeant Major",
+        "minimumXp": "300,000",
+        "nextLevelXp": "49000"
+    },
+    {
+        "tier": 15,
+        "name": "Command Sergeant Major",
+        "minimumXp": "349,000",
+        "nextLevelXp": "55000"
+    },
+    {
+        "tier": 16,
+        "name": "Warrant Officer",
+        "minimumXp": "404,000",
+        "nextLevelXp": "60000"
+    },
+    {
+        "tier": 17,
+        "name": "Warrant Officer Third Class",
+        "minimumXp": "464,000",
+        "nextLevelXp": "65000"
+    },
+    {
+        "tier": 18,
+        "name": "Warrant Officer Second Class",
+        "minimumXp": "529,000",
+        "nextLevelXp": "70000"
+    },
+    {
+        "tier": 19,
+        "name": "Warrant Officer First Class",
+        "minimumXp": "599,000",
+        "nextLevelXp": "76000"
+    },
+    {
+        "tier": 20,
+        "name": "Chief Warrant Officer",
+        "minimumXp": "675,000",
+        "nextLevelXp": "84000"
+    },
+    {
+        "tier": 21,
+        "name": "Second Lieutenant",
+        "minimumXp": "759,000",
+        "nextLevelXp": "93000"
+    },
+    {
+        "tier": 22,
+        "name": "First Lieutenant",
+        "minimumXp": "852,000",
+        "nextLevelXp": "102000"
+    },
+    {
+        "tier": 23,
+        "name": "Captain",
+        "minimumXp": "954,000",
+        "nextLevelXp": "112000"
+    },
+    {
+        "tier": 24,
+        "name": "Major",
+        "minimumXp": "1,066,000",
+        "nextLevelXp": "122000"
+    },
+    {
+        "tier": 25,
+        "name": "Lieutenant Colonel",
+        "minimumXp": "1,188,000",
+        "nextLevelXp": "133000"
+    },
+    {
+        "tier": 26,
+        "name": "Colonel",
+        "minimumXp": "1,321,000",
+        "nextLevelXp": "142000"
+    },
+    {
+        "tier": 27,
+        "name": "Brigadier General",
+        "minimumXp": "1,463,000",
+        "nextLevelXp": "150000"
+    },
+    {
+        "tier": 28,
+        "name": "Major General",
+        "minimumXp": "1,613,000",
+        "nextLevelXp": "156000"
+    },
+    {
+        "tier": 29,
+        "name": "Lieutenant General",
+        "minimumXp": "1,769,000",
+        "nextLevelXp": "160000"
+    },
+    {
+        "tier": 30,
+        "name": "General",
+        "minimumXp": "1,929,000",
+        "nextLevelXp": "16000"
+    },
+    {
+        "tier": 31,
+        "name": "Rookie",
+        "minimumXp": "1,945,000",
+        "nextLevelXp": "20000"
+    },
+    {
+        "tier": 32,
+        "name": "Recruit",
+        "minimumXp": "1,965,000",
+        "nextLevelXp": "24000"
+    },
+    {
+        "tier": 33,
+        "name": "Private",
+        "minimumXp": "1,989,000",
+        "nextLevelXp": "28000"
+    },
+    {
+        "tier": 34,
+        "name": "Private Second Class",
+        "minimumXp": "2,017,000",
+        "nextLevelXp": "32000"
+    },
+    {
+        "tier": 35,
+        "name": "Private First Class",
+        "minimumXp": "2,049,000",
+        "nextLevelXp": "36000"
+    },
+    {
+        "tier": 36,
+        "name": "Lance Corporal",
+        "minimumXp": "2,085,000",
+        "nextLevelXp": "41000"
+    },
+    {
+        "tier": 37,
+        "name": "Corporal",
+        "minimumXp": "2,126,000",
+        "nextLevelXp": "46000"
+    },
+    {
+        "tier": 38,
+        "name": "Sergeant",
+        "minimumXp": "2,172,000",
+        "nextLevelXp": "51000"
+    },
+    {
+        "tier": 39,
+        "name": "Sergeant Second Class",
+        "minimumXp": "2,223,000",
+        "nextLevelXp": "56000"
+    },
+    {
+        "tier": 40,
+        "name": "Sergeant First Class",
+        "minimumXp": "2,279,000",
+        "nextLevelXp": "62000"
+    },
+    {
+        "tier": 41,
+        "name": "Staff Sergeant",
+        "minimumXp": "2,341,000",
+        "nextLevelXp": "68000"
+    },
+    {
+        "tier": 42,
+        "name": "Gunnery Sergeant",
+        "minimumXp": "2,409,000",
+        "nextLevelXp": "74000"
+    },
+    {
+        "tier": 43,
+        "name": "First Sergeant",
+        "minimumXp": "2,483,000",
+        "nextLevelXp": "80000"
+    },
+    {
+        "tier": 44,
+        "name": "Sergeant Major",
+        "minimumXp": "2,563,000",
+        "nextLevelXp": "86000"
+    },
+    {
+        "tier": 45,
+        "name": "Command Sergeant Major",
+        "minimumXp": "2,649,000",
+        "nextLevelXp": "92000"
+    },
+    {
+        "tier": 46,
+        "name": "Warrant Officer",
+        "minimumXp": "2,741,000",
+        "nextLevelXp": "98000"
+    },
+    {
+        "tier": 47,
+        "name": "Warrant Officer Third Class",
+        "minimumXp": "2,839,000",
+        "nextLevelXp": "105000"
+    },
+    {
+        "tier": 48,
+        "name": "Warrant Officer Second Class",
+        "minimumXp": "2,944,000",
+        "nextLevelXp": "112000"
+    },
+    {
+        "tier": 49,
+        "name": "Warrant Officer First Class",
+        "minimumXp": "3,056,000",
+        "nextLevelXp": "120000"
+    },
+    {
+        "tier": 50,
+        "name": "Chief Warrant Officer",
+        "minimumXp": "3,176,000",
+        "nextLevelXp": "128000"
+    },
+    {
+        "tier": 51,
+        "name": "Second Lieutenant",
+        "minimumXp": "3,304,000",
+        "nextLevelXp": "136000"
+    },
+    {
+        "tier": 52,
+        "name": "First Lieutenant",
+        "minimumXp": "3,440,000",
+        "nextLevelXp": "144000"
+    },
+    {
+        "tier": 53,
+        "name": "Captain",
+        "minimumXp": "3,584,000",
+        "nextLevelXp": "152000"
+    },
+    {
+        "tier": 54,
+        "name": "Major",
+        "minimumXp": "3,736,000",
+        "nextLevelXp": "160000"
+    },
+    {
+        "tier": 55,
+        "name": "Lieutenant Colonel",
+        "minimumXp": "3,896,000",
+        "nextLevelXp": "170000"
+    },
+    {
+        "tier": 56,
+        "name": "Colonel",
+        "minimumXp": "4,066,000",
+        "nextLevelXp": "180000"
+    },
+    {
+        "tier": 57,
+        "name": "Brigadier General",
+        "minimumXp": "4,246,000",
+        "nextLevelXp": "190000"
+    },
+    {
+        "tier": 58,
+        "name": "Major General",
+        "minimumXp": "4,436,000",
+        "nextLevelXp": "205000"
+    },
+    {
+        "tier": 59,
+        "name": "Lieutenant General",
+        "minimumXp": "4,641,000",
+        "nextLevelXp": "220000"
+    },
+    {
+        "tier": 60,
+        "name": "General",
+        "minimumXp": "4,861,000",
+        "nextLevelXp": "35000"
+    },
+    {
+        "tier": 61,
+        "name": "Rookie",
+        "minimumXp": "4,896,000",
+        "nextLevelXp": "40000"
+    },
+    {
+        "tier": 62,
+        "name": "Recruit",
+        "minimumXp": "4,936,000",
+        "nextLevelXp": "45000"
+    },
+    {
+        "tier": 63,
+        "name": "Private",
+        "minimumXp": "4,981,000",
+        "nextLevelXp": "50000"
+    },
+    {
+        "tier": 64,
+        "name": "Private Second Class",
+        "minimumXp": "5,031,000",
+        "nextLevelXp": "55000"
+    },
+    {
+        "tier": 65,
+        "name": "Private First Class",
+        "minimumXp": "5,086,000",
+        "nextLevelXp": "60000"
+    },
+    {
+        "tier": 66,
+        "name": "Lance Corporal",
+        "minimumXp": "5,146,000",
+        "nextLevelXp": "65000"
+    },
+    {
+        "tier": 67,
+        "name": "Corporal",
+        "minimumXp": "5,211,000",
+        "nextLevelXp": "70000"
+    },
+    {
+        "tier": 68,
+        "name": "Sergeant",
+        "minimumXp": "5,281,000",
+        "nextLevelXp": "75000"
+    },
+    {
+        "tier": 69,
+        "name": "Sergeant Second Class",
+        "minimumXp": "5,356,000",
+        "nextLevelXp": "80000"
+    },
+    {
+        "tier": 70,
+        "name": "Sergeant First Class",
+        "minimumXp": "5,436,000",
+        "nextLevelXp": "90000"
+    },
+    {
+        "tier": 71,
+        "name": "Staff Sergeant",
+        "minimumXp": "5,526,000",
+        "nextLevelXp": "100000"
+    },
+    {
+        "tier": 72,
+        "name": "Gunnery Sergeant",
+        "minimumXp": "5,626,000",
+        "nextLevelXp": "110000"
+    },
+    {
+        "tier": 73,
+        "name": "First Sergeant",
+        "minimumXp": "5,736,000",
+        "nextLevelXp": "120000"
+    },
+    {
+        "tier": 74,
+        "name": "Sergeant Major",
+        "minimumXp": "5,856,000",
+        "nextLevelXp": "130000"
+    },
+    {
+        "tier": 75,
+        "name": "Command Sergeant Major",
+        "minimumXp": "5,986,000",
+        "nextLevelXp": "140000"
+    },
+    {
+        "tier": 76,
+        "name": "Warrant Officer",
+        "minimumXp": "6,126,000",
+        "nextLevelXp": "150000"
+    },
+    {
+        "tier": 77,
+        "name": "Warrant Officer Third Class",
+        "minimumXp": "6,276,000",
+        "nextLevelXp": "160000"
+    },
+    {
+        "tier": 78,
+        "name": "Warrant Officer Second Class",
+        "minimumXp": "6,436,000",
+        "nextLevelXp": "170000"
+    },
+    {
+        "tier": 79,
+        "name": "Warrant Officer First Class",
+        "minimumXp": "6,606,000",
+        "nextLevelXp": "185000"
+    },
+    {
+        "tier": 80,
+        "name": "Chief Warrant Officer",
+        "minimumXp": "6,791,000",
+        "nextLevelXp": "200000"
+    },
+    {
+        "tier": 81,
+        "name": "Second Lieutenant",
+        "minimumXp": "6,991,000",
+        "nextLevelXp": "215000"
+    },
+    {
+        "tier": 82,
+        "name": "First Lieutenant",
+        "minimumXp": "7,206,000",
+        "nextLevelXp": "230000"
+    },
+    {
+        "tier": 83,
+        "name": "Captain",
+        "minimumXp": "7,436,000",
+        "nextLevelXp": "245000"
+    },
+    {
+        "tier": 84,
+        "name": "Major",
+        "minimumXp": "7,681,000",
+        "nextLevelXp": "260000"
+    },
+    {
+        "tier": 85,
+        "name": "Lieutenant Colonel",
+        "minimumXp": "7,941,000",
+        "nextLevelXp": "280000"
+    },
+    {
+        "tier": 86,
+        "name": "Colonel",
+        "minimumXp": "8,221,000",
+        "nextLevelXp": "300000"
+    },
+    {
+        "tier": 87,
+        "name": "Brigadier General",
+        "minimumXp": "8,521,000",
+        "nextLevelXp": "330000"
+    },
+    {
+        "tier": 88,
+        "name": "Major General",
+        "minimumXp": "8,851,000",
+        "nextLevelXp": "360000"
+    },
+    {
+        "tier": 89,
+        "name": "Lieutenant General",
+        "minimumXp": "9,211,000",
+        "nextLevelXp": "400000"
+    },
+    {
+        "tier": 90,
+        "name": "General",
+        "minimumXp": "9,611,000",
+        "nextLevelXp": "60000"
+    },
+    {
+        "tier": 91,
+        "name": "Rookie",
+        "minimumXp": "9,671,000",
+        "nextLevelXp": "66000"
+    },
+    {
+        "tier": 92,
+        "name": "Recruit",
+        "minimumXp": "9,737,000",
+        "nextLevelXp": "72000"
+    },
+    {
+        "tier": 93,
+        "name": "Private",
+        "minimumXp": "9,809,000",
+        "nextLevelXp": "78000"
+    },
+    {
+        "tier": 94,
+        "name": "Private Second Class",
+        "minimumXp": "9,887,000",
+        "nextLevelXp": "86000"
+    },
+    {
+        "tier": 95,
+        "name": "Private First Class",
+        "minimumXp": "9,973,000",
+        "nextLevelXp": "94000"
+    },
+    {
+        "tier": 96,
+        "name": "Lance Corporal",
+        "minimumXp": "10,067,000",
+        "nextLevelXp": "102000"
+    },
+    {
+        "tier": 97,
+        "name": "Corporal",
+        "minimumXp": "10,169,000",
+        "nextLevelXp": "110000"
+    },
+    {
+        "tier": 98,
+        "name": "Sergeant",
+        "minimumXp": "10,279,000",
+        "nextLevelXp": "120000"
+    },
+    {
+        "tier": 99,
+        "name": "Sergeant Second Class",
+        "minimumXp": "10,399,000",
+        "nextLevelXp": "130000"
+    },
+    {
+        "tier": 100,
+        "name": "Sergeant First Class",
+        "minimumXp": "10,529,000",
+        "nextLevelXp": "140000"
+    },
+    {
+        "tier": 101,
+        "name": "Staff Sergeant",
+        "minimumXp": "10,669,000",
+        "nextLevelXp": "150000"
+    },
+    {
+        "tier": 102,
+        "name": "Gunnery Sergeant",
+        "minimumXp": "10,819,000",
+        "nextLevelXp": "160000"
+    },
+    {
+        "tier": 103,
+        "name": "First Sergeant",
+        "minimumXp": "10,979,000",
+        "nextLevelXp": "175000"
+    },
+    {
+        "tier": 104,
+        "name": "Sergeant Major",
+        "minimumXp": "11,154,000",
+        "nextLevelXp": "190000"
+    },
+    {
+        "tier": 105,
+        "name": "Command Sergeant Major",
+        "minimumXp": "11,344,000",
+        "nextLevelXp": "220000"
+    },
+    {
+        "tier": 106,
+        "name": "Warrant Officer",
+        "minimumXp": "11,564,000",
+        "nextLevelXp": "240000"
+    },
+    {
+        "tier": 107,
+        "name": "Warrant Officer Third Class",
+        "minimumXp": "11,804,000",
+        "nextLevelXp": "260000"
+    },
+    {
+        "tier": 108,
+        "name": "Warrant Officer Second Class",
+        "minimumXp": "12,064,000",
+        "nextLevelXp": "280000"
+    },
+    {
+        "tier": 109,
+        "name": "Warrant Officer First Class",
+        "minimumXp": "12,344,000",
+        "nextLevelXp": "300000"
+    },
+    {
+        "tier": 110,
+        "name": "Chief Warrant Officer",
+        "minimumXp": "12,644,000",
+        "nextLevelXp": "325000"
+    },
+    {
+        "tier": 111,
+        "name": "Second Lieutenant",
+        "minimumXp": "12,969,000",
+        "nextLevelXp": "350000"
+    },
+    {
+        "tier": 112,
+        "name": "First Lieutenant",
+        "minimumXp": "13,319,000",
+        "nextLevelXp": "375000"
+    },
+    {
+        "tier": 113,
+        "name": "Captain",
+        "minimumXp": "13,694,000",
+        "nextLevelXp": "400000"
+    },
+    {
+        "tier": 114,
+        "name": "Major",
+        "minimumXp": "14,094,000",
+        "nextLevelXp": "425000"
+    },
+    {
+        "tier": 115,
+        "name": "Lieutenant Colonel",
+        "minimumXp": "14,519,000",
+        "nextLevelXp": "460000"
+    },
+    {
+        "tier": 116,
+        "name": "Colonel",
+        "minimumXp": "14,979,000",
+        "nextLevelXp": "520000"
+    },
+    {
+        "tier": 117,
+        "name": "Brigadier General",
+        "minimumXp": "15,499,000",
+        "nextLevelXp": "575000"
+    },
+    {
+        "tier": 118,
+        "name": "Major General",
+        "minimumXp": "16,074,000",
+        "nextLevelXp": "650000"
+    },
+    {
+        "tier": 119,
+        "name": "Lieutenant General",
+        "minimumXp": "16,724,000",
+        "nextLevelXp": "750000"
+    },
+    {
+        "tier": 120,
+        "name": "General",
+        "minimumXp": "17,474,000",
+        "nextLevelXp": "100000"
+    },
+    {
+        "tier": 121,
+        "name": "Rookie",
+        "minimumXp": "17,574,000",
+        "nextLevelXp": "110000"
+    },
+    {
+        "tier": 122,
+        "name": "Recruit",
+        "minimumXp": "17,684,000",
+        "nextLevelXp": "120000"
+    },
+    {
+        "tier": 123,
+        "name": "Private",
+        "minimumXp": "17,804,000",
+        "nextLevelXp": "130000"
+    },
+    {
+        "tier": 124,
+        "name": "Private Second Class",
+        "minimumXp": "17,934,000",
+        "nextLevelXp": "140000"
+    },
+    {
+        "tier": 125,
+        "name": "Private First Class",
+        "minimumXp": "18,074,000",
+        "nextLevelXp": "150000"
+    },
+    {
+        "tier": 126,
+        "name": "Lance Corporal",
+        "minimumXp": "18,224,000",
+        "nextLevelXp": "165000"
+    },
+    {
+        "tier": 127,
+        "name": "Corporal",
+        "minimumXp": "18,389,000",
+        "nextLevelXp": "180000"
+    },
+    {
+        "tier": 128,
+        "name": "Sergeant",
+        "minimumXp": "18,569,000",
+        "nextLevelXp": "195000"
+    },
+    {
+        "tier": 129,
+        "name": "Sergeant Second Class",
+        "minimumXp": "18,764,000",
+        "nextLevelXp": "210000"
+    },
+    {
+        "tier": 130,
+        "name": "Sergeant First Class",
+        "minimumXp": "18,974,000",
+        "nextLevelXp": "230000"
+    },
+    {
+        "tier": 131,
+        "name": "Staff Sergeant",
+        "minimumXp": "19,204,000",
+        "nextLevelXp": "250000"
+    },
+    {
+        "tier": 132,
+        "name": "Gunnery Sergeant",
+        "minimumXp": "19,454,000",
+        "nextLevelXp": "270000"
+    },
+    {
+        "tier": 133,
+        "name": "First Sergeant",
+        "minimumXp": "19,724,000",
+        "nextLevelXp": "290000"
+    },
+    {
+        "tier": 134,
+        "name": "Sergeant Major",
+        "minimumXp": "20,014,000",
+        "nextLevelXp": "310000"
+    },
+    {
+        "tier": 135,
+        "name": "Command Sergeant Major",
+        "minimumXp": "20,324,000",
+        "nextLevelXp": "340000"
+    },
+    {
+        "tier": 136,
+        "name": "Warrant Officer",
+        "minimumXp": "20,664,000",
+        "nextLevelXp": "370000"
+    },
+    {
+        "tier": 137,
+        "name": "Warrant Officer Third Class",
+        "minimumXp": "21,034,000",
+        "nextLevelXp": "400000"
+    },
+    {
+        "tier": 138,
+        "name": "Warrant Officer Second Class",
+        "minimumXp": "21,434,000",
+        "nextLevelXp": "450000"
+    },
+    {
+        "tier": 139,
+        "name": "Warrant Officer First Class",
+        "minimumXp": "21,884,000",
+        "nextLevelXp": "500000"
+    },
+    {
+        "tier": 140,
+        "name": "Chief Warrant Officer",
+        "minimumXp": "22,384,000",
+        "nextLevelXp": "560000"
+    },
+    {
+        "tier": 141,
+        "name": "Second Lieutenant",
+        "minimumXp": "22,944,000",
+        "nextLevelXp": "620000"
+    },
+    {
+        "tier": 142,
+        "name": "First Lieutenant",
+        "minimumXp": "23,564,000",
+        "nextLevelXp": "680000"
+    },
+    {
+        "tier": 143,
+        "name": "Captain",
+        "minimumXp": "24,244,000",
+        "nextLevelXp": "720000"
+    },
+    {
+        "tier": 144,
+        "name": "Major",
+        "minimumXp": "24,964,000",
+        "nextLevelXp": "800000"
+    },
+    {
+        "tier": 145,
+        "name": "Lieutenant Colonel",
+        "minimumXp": "25,764,000",
+        "nextLevelXp": "880000"
+    },
+    {
+        "tier": 146,
+        "name": "Colonel",
+        "minimumXp": "26,644,000",
+        "nextLevelXp": "980000"
+    },
+    {
+        "tier": 147,
+        "name": "Brigadier General",
+        "minimumXp": "27,624,000",
+        "nextLevelXp": "1100000"
+    },
+    {
+        "tier": 148,
+        "name": "Major General",
+        "minimumXp": "28,724,000",
+        "nextLevelXp": "1200000"
+    },
+    {
+        "tier": 149,
+        "name": "Lieutenant General",
+        "minimumXp": "29,924,000",
+        "nextLevelXp": "1300000"
+    },
+    {
+        "tier": 150,
+        "name": "General",
+        "minimumXp": "31,224,000",
+        "nextLevelXp": "150000"
+    },
+    {
+        "tier": 151,
+        "name": "Rookie",
+        "minimumXp": "31,374,000",
+        "nextLevelXp": "165000"
+    },
+    {
+        "tier": 152,
+        "name": "Recruit",
+        "minimumXp": "31,539,000",
+        "nextLevelXp": "180000"
+    },
+    {
+        "tier": 153,
+        "name": "Private",
+        "minimumXp": "31,719,000",
+        "nextLevelXp": "200000"
+    },
+    {
+        "tier": 154,
+        "name": "Private Second Class",
+        "minimumXp": "31,919,000",
+        "nextLevelXp": "220000"
+    },
+    {
+        "tier": 155,
+        "name": "Private First Class",
+        "minimumXp": "32,139,000",
+        "nextLevelXp": "240000"
+    },
+    {
+        "tier": 156,
+        "name": "Lance Corporal",
+        "minimumXp": "32,379,000",
+        "nextLevelXp": "260000"
+    },
+    {
+        "tier": 157,
+        "name": "Corporal",
+        "minimumXp": "32,639,000",
+        "nextLevelXp": "290000"
+    },
+    {
+        "tier": 158,
+        "name": "Sergeant",
+        "minimumXp": "32,929,000",
+        "nextLevelXp": "320000"
+    },
+    {
+        "tier": 159,
+        "name": "Sergeant Second Class",
+        "minimumXp": "33,249,000",
+        "nextLevelXp": "350000"
+    },
+    {
+        "tier": 160,
+        "name": "Sergeant First Class",
+        "minimumXp": "33,599,000",
+        "nextLevelXp": "380000"
+    },
+    {
+        "tier": 161,
+        "name": "Staff Sergeant",
+        "minimumXp": "33,979,000",
+        "nextLevelXp": "420000"
+    },
+    {
+        "tier": 162,
+        "name": "Gunnery Sergeant",
+        "minimumXp": "34,399,000",
+        "nextLevelXp": "460000"
+    },
+    {
+        "tier": 163,
+        "name": "First Sergeant",
+        "minimumXp": "34,859,000",
+        "nextLevelXp": "500000"
+    },
+    {
+        "tier": 164,
+        "name": "Sergeant Major",
+        "minimumXp": "35,359,000",
+        "nextLevelXp": "550000"
+    },
+    {
+        "tier": 165,
+        "name": "Command Sergeant Major",
+        "minimumXp": "35,909,000",
+        "nextLevelXp": "600000"
+    },
+    {
+        "tier": 166,
+        "name": "Warrant Officer",
+        "minimumXp": "36,509,000",
+        "nextLevelXp": "650000"
+    },
+    {
+        "tier": 167,
+        "name": "Warrant Officer Third Class",
+        "minimumXp": "37,159,000",
+        "nextLevelXp": "700000"
+    },
+    {
+        "tier": 168,
+        "name": "Warrant Officer Second Class",
+        "minimumXp": "37,859,000",
+        "nextLevelXp": "750000"
+    },
+    {
+        "tier": 169,
+        "name": "Warrant Officer First Class",
+        "minimumXp": "38,609,000",
+        "nextLevelXp": "800000"
+    },
+    {
+        "tier": 170,
+        "name": "Chief Warrant Officer",
+        "minimumXp": "39,409,000",
+        "nextLevelXp": "900000"
+    },
+    {
+        "tier": 171,
+        "name": "Second Lieutenant",
+        "minimumXp": "40,309,000",
+        "nextLevelXp": "1000000"
+    },
+    {
+        "tier": 172,
+        "name": "First Lieutenant",
+        "minimumXp": "41,309,000",
+        "nextLevelXp": "1150000"
+    },
+    {
+        "tier": 173,
+        "name": "Captain",
+        "minimumXp": "42,459,000",
+        "nextLevelXp": "1300000"
+    },
+    {
+        "tier": 174,
+        "name": "Major",
+        "minimumXp": "43,759,000",
+        "nextLevelXp": "1500000"
+    },
+    {
+        "tier": 175,
+        "name": "Lieutenant Colonel",
+        "minimumXp": "45,259,000",
+        "nextLevelXp": "1700000"
+    },
+    {
+        "tier": 176,
+        "name": "Colonel",
+        "minimumXp": "46,959,000",
+        "nextLevelXp": "1900000"
+    },
+    {
+        "tier": 177,
+        "name": "Brigadier General",
+        "minimumXp": "48,859,000",
+        "nextLevelXp": "2100000"
+    },
+    {
+        "tier": 178,
+        "name": "Major General",
+        "minimumXp": "50,959,000",
+        "nextLevelXp": "2300000"
+    },
+    {
+        "tier": 179,
+        "name": "Lieutenant General",
+        "minimumXp": "53,259,000",
+        "nextLevelXp": "2500000"
+    },
+    {
+        "tier": 180,
+        "name": "General",
+        "minimumXp": "55,759,000",
+        "nextLevelXp": "300000"
+    },
+    {
+        "tier": 181,
+        "name": "Rookie",
+        "minimumXp": "56,059,000",
+        "nextLevelXp": "350000"
+    },
+    {
+        "tier": 182,
+        "name": "Recruit",
+        "minimumXp": "56,409,000",
+        "nextLevelXp": "400000"
+    },
+    {
+        "tier": 183,
+        "name": "Private",
+        "minimumXp": "56,809,000",
+        "nextLevelXp": "450000"
+    },
+    {
+        "tier": 184,
+        "name": "Private Second Class",
+        "minimumXp": "57,259,000",
+        "nextLevelXp": "500000"
+    },
+    {
+        "tier": 185,
+        "name": "Private First Class",
+        "minimumXp": "57,759,000",
+        "nextLevelXp": "550000"
+    },
+    {
+        "tier": 186,
+        "name": "Lance Corporal",
+        "minimumXp": "58,309,000",
+        "nextLevelXp": "600000"
+    },
+    {
+        "tier": 187,
+        "name": "Corporal",
+        "minimumXp": "58,909,000",
+        "nextLevelXp": "675000"
+    },
+    {
+        "tier": 188,
+        "name": "Sergeant",
+        "minimumXp": "59,584,000",
+        "nextLevelXp": "750000"
+    },
+    {
+        "tier": 189,
+        "name": "Sergeant Second Class",
+        "minimumXp": "60,334,000",
+        "nextLevelXp": "825000"
+    },
+    {
+        "tier": 190,
+        "name": "Sergeant First Class",
+        "minimumXp": "61,159,000",
+        "nextLevelXp": "900000"
+    },
+    {
+        "tier": 191,
+        "name": "Staff Sergeant",
+        "minimumXp": "62,059,000",
+        "nextLevelXp": "975000"
+    },
+    {
+        "tier": 192,
+        "name": "Gunnery Sergeant",
+        "minimumXp": "63,034,000",
+        "nextLevelXp": "1075000"
+    },
+    {
+        "tier": 193,
+        "name": "First Sergeant",
+        "minimumXp": "64,109,000",
+        "nextLevelXp": "1175000"
+    },
+    {
+        "tier": 194,
+        "name": "Sergeant Major",
+        "minimumXp": "65,284,000",
+        "nextLevelXp": "1275000"
+    },
+    {
+        "tier": 195,
+        "name": "Command Sergeant Major",
+        "minimumXp": "66,559,000",
+        "nextLevelXp": "1375000"
+    },
+    {
+        "tier": 196,
+        "name": "Warrant Officer",
+        "minimumXp": "67,934,000",
+        "nextLevelXp": "1475000"
+    },
+    {
+        "tier": 197,
+        "name": "Warrant Officer Third Class",
+        "minimumXp": "69,409,000",
+        "nextLevelXp": "1575000"
+    },
+    {
+        "tier": 198,
+        "name": "Warrant Officer Second Class",
+        "minimumXp": "70,984,000",
+        "nextLevelXp": "1675000"
+    },
+    {
+        "tier": 199,
+        "name": "Warrant Officer First Class",
+        "minimumXp": "72,659,000",
+        "nextLevelXp": "1800000"
+    },
+    {
+        "tier": 200,
+        "name": "Chief Warrant Officer",
+        "minimumXp": "74,459,000",
+        "nextLevelXp": "1950000"
+    },
+    {
+        "tier": 201,
+        "name": "Second Lieutenant",
+        "minimumXp": "76,409,000",
+        "nextLevelXp": "2100000"
+    },
+    {
+        "tier": 202,
+        "name": "First Lieutenant",
+        "minimumXp": "78,509,000",
+        "nextLevelXp": "2250000"
+    },
+    {
+        "tier": 203,
+        "name": "Captain",
+        "minimumXp": "80,759,000",
+        "nextLevelXp": "2400000"
+    },
+    {
+        "tier": 204,
+        "name": "Major",
+        "minimumXp": "83,159,000",
+        "nextLevelXp": "2550000"
+    },
+    {
+        "tier": 205,
+        "name": "Lieutenant Colonel",
+        "minimumXp": "85,709,000",
+        "nextLevelXp": "2700000"
+    },
+    {
+        "tier": 206,
+        "name": "Colonel",
+        "minimumXp": "88,409,000",
+        "nextLevelXp": "2900000"
+    },
+    {
+        "tier": 207,
+        "name": "Brigadier General",
+        "minimumXp": "91,309,000",
+        "nextLevelXp": "3200000"
+    },
+    {
+        "tier": 208,
+        "name": "Major General",
+        "minimumXp": "94,509,000",
+        "nextLevelXp": "3500000"
+    },
+    {
+        "tier": 209,
+        "name": "Lieutenant General",
+        "minimumXp": "98,009,000",
+        "nextLevelXp": "3800000"
+    },
+    {
+        "tier": 210,
+        "name": "General",
+        "minimumXp": "101,809,000",
+        "nextLevelXp": "600000"
+    },
+    {
+        "tier": 211,
+        "name": "Rookie",
+        "minimumXp": "102,409,000",
+        "nextLevelXp": "700000"
+    },
+    {
+        "tier": 212,
+        "name": "Recruit",
+        "minimumXp": "103,109,000",
+        "nextLevelXp": "800000"
+    },
+    {
+        "tier": 213,
+        "name": "Private",
+        "minimumXp": "103,909,000",
+        "nextLevelXp": "900000"
+    },
+    {
+        "tier": 214,
+        "name": "Private Second Class",
+        "minimumXp": "104,809,000",
+        "nextLevelXp": "1000000"
+    },
+    {
+        "tier": 215,
+        "name": "Private First Class",
+        "minimumXp": "105,809,000",
+        "nextLevelXp": "1100000"
+    },
+    {
+        "tier": 216,
+        "name": "Lance Corporal",
+        "minimumXp": "106,909,000",
+        "nextLevelXp": "1200000"
+    },
+    {
+        "tier": 217,
+        "name": "Corporal",
+        "minimumXp": "108,109,000",
+        "nextLevelXp": "1350000"
+    },
+    {
+        "tier": 218,
+        "name": "Sergeant",
+        "minimumXp": "109,459,000",
+        "nextLevelXp": "1500000"
+    },
+    {
+        "tier": 219,
+        "name": "Sergeant Second Class",
+        "minimumXp": "110,959,000",
+        "nextLevelXp": "1650000"
+    },
+    {
+        "tier": 220,
+        "name": "Sergeant First Class",
+        "minimumXp": "112,609,000",
+        "nextLevelXp": "1800000"
+    },
+    {
+        "tier": 221,
+        "name": "Staff Sergeant",
+        "minimumXp": "114,409,000",
+        "nextLevelXp": "1950000"
+    },
+    {
+        "tier": 222,
+        "name": "Gunnery Sergeant",
+        "minimumXp": "116,359,000",
+        "nextLevelXp": "2100000"
+    },
+    {
+        "tier": 223,
+        "name": "First Sergeant",
+        "minimumXp": "118,459,000",
+        "nextLevelXp": "2300000"
+    },
+    {
+        "tier": 224,
+        "name": "Sergeant Major",
+        "minimumXp": "120,759,000",
+        "nextLevelXp": "2500000"
+    },
+    {
+        "tier": 225,
+        "name": "Command Sergeant Major",
+        "minimumXp": "123,259,000",
+        "nextLevelXp": "2750000"
+    },
+    {
+        "tier": 226,
+        "name": "Warrant Officer",
+        "minimumXp": "126,009,000",
+        "nextLevelXp": "3000000"
+    },
+    {
+        "tier": 227,
+        "name": "Warrant Officer Third Class",
+        "minimumXp": "129,009,000",
+        "nextLevelXp": "3250000"
+    },
+    {
+        "tier": 228,
+        "name": "Warrant Officer Second Class",
+        "minimumXp": "132,259,000",
+        "nextLevelXp": "3500000"
+    },
+    {
+        "tier": 229,
+        "name": "Warrant Officer First Class",
+        "minimumXp": "135,759,000",
+        "nextLevelXp": "3750000"
+    },
+    {
+        "tier": 230,
+        "name": "Chief Warrant Officer",
+        "minimumXp": "139,509,000",
+        "nextLevelXp": "4000000"
+    },
+    {
+        "tier": 231,
+        "name": "Second Lieutenant",
+        "minimumXp": "143,509,000",
+        "nextLevelXp": "4250000"
+    },
+    {
+        "tier": 232,
+        "name": "First Lieutenant",
+        "minimumXp": "147,759,000",
+        "nextLevelXp": "4500000"
+    },
+    {
+        "tier": 233,
+        "name": "Captain",
+        "minimumXp": "152,259,000",
+        "nextLevelXp": "4750000"
+    },
+    {
+        "tier": 234,
+        "name": "Major",
+        "minimumXp": "157,009,000",
+        "nextLevelXp": "5000000"
+    },
+    {
+        "tier": 235,
+        "name": "Lieutenant Colonel",
+        "minimumXp": "162,009,000",
+        "nextLevelXp": "5250000"
+    },
+    {
+        "tier": 236,
+        "name": "Colonel",
+        "minimumXp": "167,259,000",
+        "nextLevelXp": "5500000"
+    },
+    {
+        "tier": 237,
+        "name": "Brigadier General",
+        "minimumXp": "172,759,000",
+        "nextLevelXp": "5750000"
+    },
+    {
+        "tier": 238,
+        "name": "Major General",
+        "minimumXp": "178,509,000",
+        "nextLevelXp": "6100000"
+    },
+    {
+        "tier": 239,
+        "name": "Lieutenant General",
+        "minimumXp": "184,609,000",
+        "nextLevelXp": "6500000"
+    },
+    {
+        "tier": 240,
+        "name": "General",
+        "minimumXp": "191,109,000",
+        "nextLevelXp": "900000"
+    },
+    {
+        "tier": 241,
+        "name": "Rookie",
+        "minimumXp": "192,009,000",
+        "nextLevelXp": "1050000"
+    },
+    {
+        "tier": 242,
+        "name": "Recruit",
+        "minimumXp": "193,059,000",
+        "nextLevelXp": "1200000"
+    },
+    {
+        "tier": 243,
+        "name": "Private",
+        "minimumXp": "194,259,000",
+        "nextLevelXp": "1350000"
+    },
+    {
+        "tier": 244,
+        "name": "Private Second Class",
+        "minimumXp": "195,609,000",
+        "nextLevelXp": "1500000"
+    },
+    {
+        "tier": 245,
+        "name": "Private First Class",
+        "minimumXp": "197,109,000",
+        "nextLevelXp": "1650000"
+    },
+    {
+        "tier": 246,
+        "name": "Lance Corporal",
+        "minimumXp": "198,759,000",
+        "nextLevelXp": "1800000"
+    },
+    {
+        "tier": 247,
+        "name": "Corporal",
+        "minimumXp": "200,559,000",
+        "nextLevelXp": "2000000"
+    },
+    {
+        "tier": 248,
+        "name": "Sergeant",
+        "minimumXp": "202,559,000",
+        "nextLevelXp": "2200000"
+    },
+    {
+        "tier": 249,
+        "name": "Sergeant Second Class",
+        "minimumXp": "204,759,000",
+        "nextLevelXp": "2400000"
+    },
+    {
+        "tier": 250,
+        "name": "Sergeant First Class",
+        "minimumXp": "207,159,000",
+        "nextLevelXp": "2600000"
+    },
+    {
+        "tier": 251,
+        "name": "Staff Sergeant",
+        "minimumXp": "209,759,000",
+        "nextLevelXp": "2800000"
+    },
+    {
+        "tier": 252,
+        "name": "Gunnery Sergeant",
+        "minimumXp": "212,559,000",
+        "nextLevelXp": "3000000"
+    },
+    {
+        "tier": 253,
+        "name": "First Sergeant",
+        "minimumXp": "215,559,000",
+        "nextLevelXp": "3200000"
+    },
+    {
+        "tier": 254,
+        "name": "Sergeant Major",
+        "minimumXp": "218,759,000",
+        "nextLevelXp": "3500000"
+    },
+    {
+        "tier": 255,
+        "name": "Command Sergeant Major",
+        "minimumXp": "222,259,000",
+        "nextLevelXp": "3800000"
+    },
+    {
+        "tier": 256,
+        "name": "Warrant Officer",
+        "minimumXp": "226,059,000",
+        "nextLevelXp": "4100000"
+    },
+    {
+        "tier": 257,
+        "name": "Warrant Officer Third Class",
+        "minimumXp": "230,159,000",
+        "nextLevelXp": "4500000"
+    },
+    {
+        "tier": 258,
+        "name": "Warrant Officer Second Class",
+        "minimumXp": "234,659,000",
+        "nextLevelXp": "5000000"
+    },
+    {
+        "tier": 259,
+        "name": "Warrant Officer First Class",
+        "minimumXp": "239,659,000",
+        "nextLevelXp": "5500000"
+    },
+    {
+        "tier": 260,
+        "name": "Chief Warrant Officer",
+        "minimumXp": "245,159,000",
+        "nextLevelXp": "6000000"
+    },
+    {
+        "tier": 261,
+        "name": "Second Lieutenant",
+        "minimumXp": "251,159,000",
+        "nextLevelXp": "7000000"
+    },
+    {
+        "tier": 262,
+        "name": "First Lieutenant",
+        "minimumXp": "258,159,000",
+        "nextLevelXp": "8000000"
+    },
+    {
+        "tier": 263,
+        "name": "Captain",
+        "minimumXp": "266,159,000",
+        "nextLevelXp": "9000000"
+    },
+    {
+        "tier": 264,
+        "name": "Major",
+        "minimumXp": "275,159,000",
+        "nextLevelXp": "10000000"
+    },
+    {
+        "tier": 265,
+        "name": "Lieutenant Colonel",
+        "minimumXp": "285,159,000",
+        "nextLevelXp": "11000000"
+    },
+    {
+        "tier": 266,
+        "name": "Colonel",
+        "minimumXp": "296,159,000",
+        "nextLevelXp": "12000000"
+    },
+    {
+        "tier": 267,
+        "name": "Brigadier General",
+        "minimumXp": "308,159,000",
+        "nextLevelXp": "13000000"
+    },
+    {
+        "tier": 268,
+        "name": "Major General",
+        "minimumXp": "321,159,000",
+        "nextLevelXp": "14000000"
+    },
+    {
+        "tier": 269,
+        "name": "Lieutenant General",
+        "minimumXp": "335,159,000",
+        "nextLevelXp": "15000000"
+    },
+    {
+        "tier": 270,
+        "name": "General",
+        "minimumXp": "350,159,000",
+        "nextLevelXp": "1500000"
+    },
+    {
+        "tier": 271,
+        "name": "Rookie",
+        "minimumXp": "351,659,000",
+        "nextLevelXp": "1800000"
+    },
+    {
+        "tier": 272,
+        "name": "Recruit",
+        "minimumXp": "353,459,000",
+        "nextLevelXp": "2250000"
+    },
+    {
+        "tier": 273,
+        "name": "Private",
+        "minimumXp": "355,709,000",
+        "nextLevelXp": "2600000"
+    },
+    {
+        "tier": 274,
+        "name": "Private Second Class",
+        "minimumXp": "358,309,000",
+        "nextLevelXp": "3000000"
+    },
+    {
+        "tier": 275,
+        "name": "Private First Class",
+        "minimumXp": "361,309,000",
+        "nextLevelXp": "3500000"
+    },
+    {
+        "tier": 276,
+        "name": "Lance Corporal",
+        "minimumXp": "364,809,000",
+        "nextLevelXp": "4000000"
+    },
+    {
+        "tier": 277,
+        "name": "Corporal",
+        "minimumXp": "368,809,000",
+        "nextLevelXp": "4500000"
+    },
+    {
+        "tier": 278,
+        "name": "Sergeant",
+        "minimumXp": "373,309,000",
+        "nextLevelXp": "5000000"
+    },
+    {
+        "tier": 279,
+        "name": "Sergeant Second Class",
+        "minimumXp": "378,309,000",
+        "nextLevelXp": "5500000"
+    },
+    {
+        "tier": 280,
+        "name": "Sergeant First Class",
+        "minimumXp": "383,809,000",
+        "nextLevelXp": "6000000"
+    },
+    {
+        "tier": 281,
+        "name": "Staff Sergeant",
+        "minimumXp": "389,809,000",
+        "nextLevelXp": "6600000"
+    },
+    {
+        "tier": 282,
+        "name": "Gunnery Sergeant",
+        "minimumXp": "396,409,000",
+        "nextLevelXp": "7200000"
+    },
+    {
+        "tier": 283,
+        "name": "First Sergeant",
+        "minimumXp": "403,609,000",
+        "nextLevelXp": "7800000"
+    },
+    {
+        "tier": 284,
+        "name": "Sergeant Major",
+        "minimumXp": "411,409,000",
+        "nextLevelXp": "8400000"
+    },
+    {
+        "tier": 285,
+        "name": "Command Sergeant Major",
+        "minimumXp": "419,809,000",
+        "nextLevelXp": "9000000"
+    },
+    {
+        "tier": 286,
+        "name": "Warrant Officer",
+        "minimumXp": "428,809,000",
+        "nextLevelXp": "9600000"
+    },
+    {
+        "tier": 287,
+        "name": "Warrant Officer Third Class",
+        "minimumXp": "438,409,000",
+        "nextLevelXp": "10200000"
+    },
+    {
+        "tier": 288,
+        "name": "Warrant Officer Second Class",
+        "minimumXp": "448,609,000",
+        "nextLevelXp": "11000000"
+    },
+    {
+        "tier": 289,
+        "name": "Warrant Officer First Class",
+        "minimumXp": "459,609,000",
+        "nextLevelXp": "12000000"
+    },
+    {
+        "tier": 290,
+        "name": "Chief Warrant Officer",
+        "minimumXp": "471,609,000",
+        "nextLevelXp": "13000000"
+    },
+    {
+        "tier": 291,
+        "name": "Second Lieutenant",
+        "minimumXp": "484,609,000",
+        "nextLevelXp": "14000000"
+    },
+    {
+        "tier": 292,
+        "name": "First Lieutenant",
+        "minimumXp": "498,609,000",
+        "nextLevelXp": "15000000"
+    },
+    {
+        "tier": 293,
+        "name": "Captain",
+        "minimumXp": "513,609,000",
+        "nextLevelXp": "16000000"
+    },
+    {
+        "tier": 294,
+        "name": "Major",
+        "minimumXp": "529,609,000",
+        "nextLevelXp": "17000000"
+    },
+    {
+        "tier": 295,
+        "name": "Lieutenant Colonel",
+        "minimumXp": "546,609,000",
+        "nextLevelXp": "18500000"
+    },
+    {
+        "tier": 296,
+        "name": "Colonel",
+        "minimumXp": "565,109,000",
+        "nextLevelXp": "20000000"
+    },
+    {
+        "tier": 297,
+        "name": "Brigadier General",
+        "minimumXp": "585,109,000",
+        "nextLevelXp": "22500000"
+    },
+    {
+        "tier": 298,
+        "name": "Major General",
+        "minimumXp": "607,609,000",
+        "nextLevelXp": "25000000"
+    },
+    {
+        "tier": 299,
+        "name": "Lieutenant General",
+        "minimumXp": "632,609,000",
+        "nextLevelXp": "30000000"
+    },
+    {
+        "tier": 300,
+        "name": "General",
+        "minimumXp": "662,609,000",
+        "nextLevelXp": "2000000"
+    },
+    {
+        "tier": 301,
+        "name": "Rookie",
+        "minimumXp": "664,609,000",
+        "nextLevelXp": "3000000"
+    },
+    {
+        "tier": 302,
+        "name": "Recruit",
+        "minimumXp": "667,609,000",
+        "nextLevelXp": "4000000"
+    },
+    {
+        "tier": 303,
+        "name": "Private",
+        "minimumXp": "671,609,000",
+        "nextLevelXp": "5000000"
+    },
+    {
+        "tier": 304,
+        "name": "Private Second Class",
+        "minimumXp": "676,609,000",
+        "nextLevelXp": "6000000"
+    },
+    {
+        "tier": 305,
+        "name": "Private First Class",
+        "minimumXp": "682,609,000",
+        "nextLevelXp": "7000000"
+    },
+    {
+        "tier": 306,
+        "name": "Lance Corporal",
+        "minimumXp": "689,609,000",
+        "nextLevelXp": "8000000"
+    },
+    {
+        "tier": 307,
+        "name": "Corporal",
+        "minimumXp": "697,609,000",
+        "nextLevelXp": "9000000"
+    },
+    {
+        "tier": 308,
+        "name": "Sergeant",
+        "minimumXp": "706,609,000",
+        "nextLevelXp": "10000000"
+    },
+    {
+        "tier": 309,
+        "name": "Sergeant Second Class",
+        "minimumXp": "716,609,000",
+        "nextLevelXp": "11000000"
+    },
+    {
+        "tier": 310,
+        "name": "Sergeant First Class",
+        "minimumXp": "727,609,000",
+        "nextLevelXp": "12000000"
+    },
+    {
+        "tier": 311,
+        "name": "Staff Sergeant",
+        "minimumXp": "739,609,000",
+        "nextLevelXp": "13000000"
+    },
+    {
+        "tier": 312,
+        "name": "Gunnery Sergeant",
+        "minimumXp": "752,609,000",
+        "nextLevelXp": "14000000"
+    },
+    {
+        "tier": 313,
+        "name": "First Sergeant",
+        "minimumXp": "766,609,000",
+        "nextLevelXp": "15000000"
+    },
+    {
+        "tier": 314,
+        "name": "Sergeant Major",
+        "minimumXp": "781,609,000",
+        "nextLevelXp": "16000000"
+    },
+    {
+        "tier": 315,
+        "name": "Command Sergeant Major",
+        "minimumXp": "797,609,000",
+        "nextLevelXp": "17000000"
+    },
+    {
+        "tier": 316,
+        "name": "Warrant Officer",
+        "minimumXp": "814,609,000",
+        "nextLevelXp": "18000000"
+    },
+    {
+        "tier": 317,
+        "name": "Warrant Officer Third Class",
+        "minimumXp": "832,609,000",
+        "nextLevelXp": "19000000"
+    },
+    {
+        "tier": 318,
+        "name": "Warrant Officer Second Class",
+        "minimumXp": "851,609,000",
+        "nextLevelXp": "20000000"
+    },
+    {
+        "tier": 319,
+        "name": "Warrant Officer First Class",
+        "minimumXp": "871,609,000",
+        "nextLevelXp": "21000000"
+    },
+    {
+        "tier": 320,
+        "name": "Chief Warrant Officer",
+        "minimumXp": "892,609,000",
+        "nextLevelXp": "22000000"
+    },
+    {
+        "tier": 321,
+        "name": "Second Lieutenant",
+        "minimumXp": "914,609,000",
+        "nextLevelXp": "24000000"
+    },
+    {
+        "tier": 322,
+        "name": "First Lieutenant",
+        "minimumXp": "938,609,000",
+        "nextLevelXp": "26000000"
+    },
+    {
+        "tier": 323,
+        "name": "Captain",
+        "minimumXp": "964,609,000",
+        "nextLevelXp": "28000000"
+    },
+    {
+        "tier": 324,
+        "name": "Major",
+        "minimumXp": "992,609,000",
+        "nextLevelXp": "30000000"
+    },
+    {
+        "tier": 325,
+        "name": "Lieutenant Colonel",
+        "minimumXp": "1,022,609,000",
+        "nextLevelXp": "32500000"
+    },
+    {
+        "tier": 326,
+        "name": "Colonel",
+        "minimumXp": "1,055,109,000",
+        "nextLevelXp": "35000000"
+    },
+    {
+        "tier": 327,
+        "name": "Brigadier General",
+        "minimumXp": "1,090,109,000",
+        "nextLevelXp": "42500000"
+    },
+    {
+        "tier": 328,
+        "name": "Major General",
+        "minimumXp": "1,132,609,000",
+        "nextLevelXp": "50000000"
+    },
+    {
+        "tier": 329,
+        "name": "Lieutenant General",
+        "minimumXp": "1,182,609,000",
+        "nextLevelXp": "99999999"
+    },
+    {
+        "tier": 330,
+        "name": "General",
+        "minimumXp": "1,282,608,999",
+        "nextLevelXp": null
+    }
+]
