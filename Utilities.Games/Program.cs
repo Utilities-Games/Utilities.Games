@@ -9,6 +9,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using LOTR_RiseToWar = Utilities.Games.Pages.Subsites.LOTR_RiseToWar;
 using TheLegendOfZelda = Utilities.Games.Pages.Subsites.TheLegendOfZelda;
+using Halo = Utilities.Games.Pages.Subsites.Halo;
 
 namespace Utilities.Games
 {
@@ -22,9 +23,12 @@ namespace Utilities.Games
 
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
             builder.Services.AddScoped<Utilities.Games.Models.Notifications.NotificationTriggers>();
+
             builder.Services.AddScoped<LOTR_RiseToWar.Models.LocalStores.ServerStore>();
             builder.Services.AddScoped<LOTR_RiseToWar.Models.LocalStores.CommanderStore>();
             builder.Services.AddScoped<TheLegendOfZelda.Models.LocalStores.IngredientStore>();
+            builder.Services.AddScoped<Halo.Models.LocalStores.SkullStore>();
+            builder.Services.AddScoped<Halo.Models.LocalStores.RankStore>();
 
             var host = builder.Build();
 

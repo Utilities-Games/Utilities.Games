@@ -1,0 +1,75 @@
+﻿@page "/halo/installments/{name}/skulls"
+@inject HttpClient Http
+@inject Halo.Models.LocalStores.SkullStore LocalSkullStore
+@layout Halo_Layout
+
+<PageTitle>@Name Skulls - Halo&trade; - Utilities.Games</PageTitle>
+
+@if (LoadingInstallment)
+{
+    <p class="alert alert-light">Loading...</p>
+} else if (installment != null)
+{
+<h3>Halo&trade; Skulls</h3>
+<Utilities.Games.Shared.Card.Container Loading="@(LoadingSkulls && LoadingSkullCollection)">
+    @if (skulls?.Any() == true)
+    {
+        foreach (var skull in skulls)
+        {
+            <Utilities.Games.Shared.Card.Card
+                ImageUrl="@($"./Subsites/Halo/images/skulls/{skull.Name}.png")"
+                MaximumImageWidth="185"
+                MaximumImageHeight="278"
+                NavigationUrl="@($"./halo/installments/{installment.Name}/skulls/{skull.Name}")"
+            >
+                <Title>@skull.Name</Title>
+                <Footer>
+                    <Utilities.Games.Pages.Subsites.Halo.Components.CollectedSkullButton SkullCollection="@SkullCollection" Installment="@installment.Name" Skull="@skull.Name"></Utilities.Games.Pages.Subsites.Halo.Components.CollectedSkullButton>
+                </Footer>
+            </Utilities.Games.Shared.Card.Card>
+        }
+    } else {
+    <Utilities.Games.Shared.Errors.NoItems ItemName="@($"{installment.Name} Skull")"></Utilities.Games.Shared.Errors.NoItems>
+    }
+    </Utilities.Games.Shared.Card.Container>
+} else
+{
+    <Utilities.Games.Shared.Errors.NoItems ItemName="Installment"></Utilities.Games.Shared.Errors.NoItems>
+}
+
+@code {
+    bool LoadingInstallment = false;
+    [Parameter]
+    public string Name { get; set; }
+
+    private DataModels.Installment installment;
+
+    bool LoadingSkulls = false;
+    private IEnumerable<DataModels.Skull> skulls { get; set; }
+
+    bool LoadingSkullCollection = false;
+    private IEnumerable<Halo.Models.LocalStores.CollectedSkull> SkullCollection { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        LoadingSkullCollection = true;
+        SkullCollection = await LocalSkullStore.GetAll();
+        LoadingSkullCollection = false;
+
+        LoadingInstallment = true;
+        var options = new System.Text.Json.JsonSerializerOptions()
+        {
+            PropertyNameCaseInsensitive = true
+        };
+        Name = Uri.UnescapeDataString(Name);
+        installment = (await Http.GetFromJsonAsync<DataModels.Installment[]>("Subsites/Halo/data/installments.json", options))
+            .FirstOrDefault(o => o.Name.Equals(Name, StringComparison.OrdinalIgnoreCase));
+        LoadingInstallment = false;
+
+        LoadingSkulls = true;
+        skulls = await Http.GetFromJsonAsync<DataModels.Skull[]>("Subsites/Halo/data/skulls.json", options);
+        skulls = skulls?.Where(o => o.Installments.Any(i => i.Name.Equals(Name, StringComparison.OrdinalIgnoreCase)));
+        LoadingSkulls = false;
+    }
+}

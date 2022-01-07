@@ -1,0 +1,44 @@
+﻿@inject Halo.Models.LocalStores.SkullStore LocalSkullStore
+
+<div>
+    @if (SkullCollection.Any(o => o.Skull.Equals(Skull) && o.Installment.Equals(Installment))) {
+        <button type="button" class="btn btn-secondary" disabled>Claimed!</button>
+    } else {
+        <button type="button" class="btn btn-primary" @onclick="@ClaimSkull" @onclick:stopPropagation="true">Claim!</button>
+    }
+    if (CollectedInOtherGames > 0)
+    {
+    <p class="small text-muted">Collected @CollectedInOtherGames others</p>
+    }
+</div>
+
+
+@code {
+    [Parameter]
+    public IEnumerable<Halo.Models.LocalStores.CollectedSkull> SkullCollection { get; set; }
+    
+    [Parameter]
+    public string Installment { get; set; }
+    
+    [Parameter]
+    public string Skull { get; set; }
+
+    int CollectedInOtherGames { get; set; }
+
+    protected override void OnInitialized()
+    {
+        CollectedInOtherGames = SkullCollection.Count(o => o.Skull.Equals(Skull) && o.Installment != Installment);
+    }
+
+    async void ClaimSkull()
+    {
+        Halo.Models.LocalStores.CollectedSkull collectedSkull = new Models.LocalStores.CollectedSkull()
+            {
+                Installment = Installment,
+                Skull = Skull
+            };
+        await LocalSkullStore.SaveAsync(collectedSkull);
+        SkullCollection = await LocalSkullStore.GetAll();
+        StateHasChanged();
+    }
+}

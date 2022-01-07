@@ -16,15 +16,6 @@ else if (skull != null)
         MaximumImageHeight="278"
     >
         <Title>@skull.Name</Title>
-        <Footer>
-            @if (skull.Installments?.Length > 0)
-            {
-                foreach (var skullInstallment in skull.Installments)
-                {
-                    <span class="badge bg-secondary mx-1">@(skullInstallment.Name)</span>
-                }
-            }
-        </Footer>
     </Utilities.Games.Shared.Card.Card>
     @if (skull.Installments?.Length > 0)
     {

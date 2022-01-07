@@ -24,10 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Subsites\Halo\js\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="compilerconfig.json" />
     <None Include="wwwroot\Subsites\LOTR_RiseToWar\images\favicon.ico" />
     <None Include="wwwroot\Subsites\LOTR_RiseToWar\images\game_logo.png" />

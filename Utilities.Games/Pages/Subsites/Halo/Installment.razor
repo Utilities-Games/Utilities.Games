@@ -1,5 +1,6 @@
 ﻿@page "/halo/installments/{name}"
 @inject HttpClient Http
+@inject Halo.Models.LocalStores.SkullStore LocalSkullStore
 @layout Halo_Layout
 
 <PageTitle>@Name - Halo&trade; - Utilities.Games</PageTitle>
@@ -22,6 +23,8 @@ else if (installment != null)
             }
         </Footer>
     </Utilities.Games.Shared.Card.Card>
+    <hr/>
+    
 }
 else
 {
@@ -34,6 +37,9 @@ else
     public string Name { get; set; }
 
     private DataModels.Installment installment;
+        
+    bool LoadingSkullCollection = false;
+    private IEnumerable<Halo.Models.LocalStores.CollectedSkull> SkullCollection { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
@@ -46,5 +52,9 @@ else
         installment = (await Http.GetFromJsonAsync<DataModels.Installment[]>("Subsites/Halo/data/installments.json", options))
             .FirstOrDefault(o => o.Name == Name);
         LoadingInstallment = false;
+
+        LoadingSkullCollection = true;
+        SkullCollection = await LocalSkullStore.GetAll();
+        LoadingSkullCollection = false;
     }
 }
