@@ -233,7 +233,7 @@
       "url": "images\/GitHub\/GitHub-Mark-Light-64px.png"
     },
     {
-      "hash": "sha256-RndozK+4fm5LdaEOE8RDe\/4Bzn10C4yA0YQtJCOkqNM=",
+      "hash": "sha256-fG7m0mROYpQJyalavMDWQPI1lIF9OVr2\/JrMYQOHz\/U=",
       "url": "index.html"
     },
     {
@@ -455,6 +455,10 @@
     {
       "hash": "sha256-Q9A4IyBAdTkBgNHgazymhXKyY4zbpAepXl0ctSln9qA=",
       "url": "Subsites\/Halo\/images\/skulls\/Tough Luck.png"
+    },
+    {
+      "hash": "sha256-1VLEFa3WawveckArbUljcSD3WbhFV9ERTurj1XOr4Ds=",
+      "url": "Subsites\/Halo\/js\/localStore.js"
     },
     {
       "hash": "sha256-BEoZaWPqbBLXVlvaRbNOMrNFbz5hbrzBmrJy+CKYdQ8=",
@@ -1977,7 +1981,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-WQDPJzOmuqVjACHBN\/0yABDBwwFtoDqIT7yeYmRUmkI=",
+      "hash": "sha256-6VbGCl0o\/Ghr6wgarSQ2QlozecoBWljFceCLJmxOadY=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -2017,7 +2021,7 @@
       "url": "_framework\/Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
-      "hash": "sha256-sKCxddDcMFArxofY9mlwfBGtHb5xQUg44SnWhCKZinM=",
+      "hash": "sha256-AP4qjumKEmxNLdZdyESAa4++Gy+1FCUqszim21hDk+A=",
       "url": "_framework\/Microsoft.AspNetCore.Components.Web.dll"
     },
     {
@@ -2605,7 +2609,7 @@
       "url": "_framework\/System.Xml.XPath.XDocument.dll"
     },
     {
-      "hash": "sha256-ucIF6qS1aRY73zIHqy73nVI6nfqZPyrdP98r\/kV8jSY=",
+      "hash": "sha256-Mv1S+BaBdhgurPeKpWPS4pEWurD3uZXrKjie\/VVKaMQ=",
       "url": "_framework\/Utilities.Games.dll"
     },
     {
@@ -3249,5 +3253,5 @@
       "url": "_content\/ChartJs.Blazor.Fork\/ChartJsBlazorInterop.js"
     }
   ],
-  "version": "sTHPxoZG"
+  "version": "\/88bVel3"
 };

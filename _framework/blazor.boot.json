@@ -16,7 +16,7 @@
       "MessagePack.dll": "sha256-EfqQSZ6cxlYiULJA7Bkbbvi9NH8YCtzA9VP86yl6ceE=",
       "Microsoft.AspNetCore.Components.dll": "sha256-SuyZxzwkOAZeOlGWIrQWawyTMT6p\/UIiI9AgCvOp\/5Q=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-OTFwEs5wXpvsoZaYAVoYwmtQYydFQ\/1ULaLA8KKpiQk=",
-      "Microsoft.AspNetCore.Components.Web.dll": "sha256-sKCxddDcMFArxofY9mlwfBGtHb5xQUg44SnWhCKZinM=",
+      "Microsoft.AspNetCore.Components.Web.dll": "sha256-AP4qjumKEmxNLdZdyESAa4++Gy+1FCUqszim21hDk+A=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-2fbR6RpUxEMnL89Bp4BedWtQJQRpzWAu87gh1UjPAWk=",
       "Microsoft.AspNetCore.Razor.Language.dll": "sha256-3CZs+RU5CM39kxvBFAlBhIf4Ks295LQRx0pp75nSwTE=",
       "Microsoft.AspNetCore.WebUtilities.dll": "sha256-D5akJeBd7NNITuzAXxlX7zl2jfsc4uTKyeEKwwNhqoo=",
@@ -163,7 +163,7 @@
       "System.Xml.XDocument.dll": "sha256-tsb3AtAfUMFTz3B+0T6a\/K+wx1nUCOpHPX1TeQqsdiM=",
       "System.Xml.XPath.dll": "sha256-U1nrLfF0pzbYOqIRA9NOeCKyuYDjZbmg10UpkUIKFC0=",
       "System.Xml.XPath.XDocument.dll": "sha256-hOEG8ojmyehENVwAt83WbMaj0T72Xzw7W3MHLTtEGjI=",
-      "Utilities.Games.dll": "sha256-ucIF6qS1aRY73zIHqy73nVI6nfqZPyrdP98r\/kV8jSY=",
+      "Utilities.Games.dll": "sha256-Mv1S+BaBdhgurPeKpWPS4pEWurD3uZXrKjie\/VVKaMQ=",
       "Utilities.Games.Models.dll": "sha256-iKzqrBqTGdLI\/TsWg7dSD71nb9auLndLE+WWwvSAJvo="
     },
     "extensions": null,
